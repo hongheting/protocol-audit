@@ -1,0 +1,36 @@
+{
+  "tech_version": "0.1.3.2-review-windows",
+  "total_chars": 2994,
+  "chars_sent": 2994,
+  "window_count": 1,
+  "window_budget_chars": 14000,
+  "max_windows": 3,
+  "methods_detected": true,
+  "methods_included": true,
+  "methods_spans": [
+    {
+      "start": 939,
+      "end": 2994,
+      "label": "4 实验设计与分组"
+    }
+  ],
+  "truncated": false,
+  "omitted_char_count": 0,
+  "omitted_ranges": [],
+  "comprehensive": true,
+  "notes": [
+    "短文不截断"
+  ],
+  "windows": [
+    {
+      "window_id": "W01",
+      "start": 0,
+      "end": 2994,
+      "char_len": 2994,
+      "priority": 0,
+      "reason": "短文全文入窗（未截断）",
+      "text_sha16": "ea51722b386e1060",
+      "preview": "植物促生菌剂对干旱胁迫下玉米生长及土壤团聚体稳定性的影响\n\n盆栽试验方案（ProtocolAudit Trial 3 测试稿）\n\n研究类型：温室盆栽控制实验；研究对象：玉米幼苗、植物促生细菌及两类土壤；试验周期：28 d；方案版本：1.0。\n\n1 研究背景与目标\n\n干旱胁迫会降低玉米幼苗的生长和养分吸收能力。植物促生细菌可能通过改善根系生长、改变根际微环境及促进土壤团聚体形成，增强植物对水分胁迫的耐受性。本研究采用一株具有胞外聚合物（EPS）产生能力的 Bacillus ve"
+    }
+  ]
+}

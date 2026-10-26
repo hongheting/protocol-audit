@@ -1,0 +1,226 @@
+{
+  "trial": "trial5",
+  "mode": "LLM实测-重跑-Trial5-V0.1.3.3",
+  "code_version": "0.1.3.3",
+  "science_freeze": "V0.1.2",
+  "reliability_patch": "V0.1.3.3-review-truncation",
+  "rules_postprocess": "V0.1.3.1",
+  "review_window_tech": "V0.1.3.2",
+  "ce_scope_note": "V0.1.3.3",
+  "spatial_rule_decision": "本轮不纳入（见 V0.1.3.3-空间混杂规则验证.md）",
+  "no_single_batch_regex_expand": true,
+  "no_sterilization_rule": true,
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "source": "/workspace/product/protocol-audit/real-trials/trial5.docx",
+  "started_at": "2026-10-25T23:24:58+08:00",
+  "provider_requested": "glm",
+  "model_requested": "glm-4.6",
+  "no_gold_injected": true,
+  "finished_at": "2026-10-25T23:29:57+08:00",
+  "elapsed_s": 298.8,
+  "schema_ok": true,
+  "schema_errors": [],
+  "boundary_note": "学科边界：本次按 environmental 规则审查（环境/生物/化学）。findings 来源统计：llm_review=2，rule=2，partial_fallback=0。引擎：V0.1.3.3 结构规则/后处理 + 方法优先审查窗 + 审查截断扩容重试（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 解析可靠性与 0.1.3.3 审查可靠性；外推严重度与软去重收窄；CE 限制句 scope_note；提取/窗口策略为独立技术版本）+ LLM 解析+ LLM 科学审查（完整）。不得将模拟输出冒充实测。",
+  "coverage_note": "已解析块 44；手动补充 0；未解析资产 0。 review_coverage[0.1.3.2-review-windows]: 全文 2752 字，送审 2752 字/1 窗（单窗上限 14000）。方法段已检出且已入窗。可声称覆盖本次送审窗口（非未解析资产）。短文不截断。",
+  "summary": {
+    "verdict": "awaiting_clarification",
+    "blocker_count": 0,
+    "high_count": 3,
+    "confirmed_count": 1,
+    "needs_info_count": 2,
+    "suggestion_count": 1,
+    "one_liner": "确认问题 1，待核实 2，建议 1；请先回答关键追问。",
+    "strongest_supported_claim": "相对最稳的主张：结论主要适用于本次水源、涂层配方和试验条件；关于长期现场性能及普遍作用机制的判断，需要结合后续独立验证。"
+  },
+  "findings_brief": [
+    {
+      "id": "F01",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "相关性/表征共变不足以支持主要机制主张"
+    },
+    {
+      "id": "F02",
+      "origin": "rule",
+      "category": "needs_info",
+      "severity": "high",
+      "title": "「平行/重复」独立性未写清"
+    },
+    {
+      "id": "F03",
+      "origin": "llm_review",
+      "category": "suggestion",
+      "severity": "high",
+      "title": "处理效应与空间位置混杂"
+    },
+    {
+      "id": "F04",
+      "origin": "llm_review",
+      "category": "needs_info",
+      "severity": "medium",
+      "title": "容器内试片逐步破坏性移除可能干扰后续时间点的测定"
+    }
+  ],
+  "origin_counts": {
+    "rule": 2,
+    "llm_review": 2
+  },
+  "rules_only_count": 2,
+  "llm_incremental_titles": [
+    "处理效应与空间位置混杂",
+    "容器内试片逐步破坏性移除可能干扰后续时间点的测定"
+  ],
+  "ce_brief": [
+    {
+      "id": "CE01",
+      "hypothesis_id": "H1",
+      "row_kind": "claim",
+      "design_supports": "partial",
+      "claim": "H1：CA@MSiO₂涂层防污效果优于对照且存在掺量效应"
+    },
+    {
+      "id": "CE02",
+      "hypothesis_id": "H2",
+      "row_kind": "claim",
+      "design_supports": "partial",
+      "claim": "H2：接触角及表面状态变化与生物附着指标存在相关性"
+    },
+    {
+      "id": "CE03",
+      "hypothesis_id": "H3",
+      "row_kind": "claim",
+      "design_supports": "partial",
+      "claim": "H3：筛选出可用于后续耦合试验的候选涂层"
+    },
+    {
+      "id": "CE04",
+      "hypothesis_id": "SCOPE",
+      "row_kind": "scope_note",
+      "design_supports": "yes",
+      "claim": "结论主要适用于本次水源、涂层配方和试验条件；关于长期现场性能及普遍作用机制的判断，需要结合后续独立验证。"
+    }
+  ],
+  "optimizer": {
+    "optimizer_incomplete": false,
+    "blocker_action_map": [],
+    "change_notes": [
+      {
+        "id": "C01",
+        "addresses_finding_ids": [
+          "F03"
+        ],
+        "text": ""
+      },
+      {
+        "id": "C02",
+        "addresses_finding_ids": [
+          "F04"
+        ],
+        "text": ""
+      },
+      {
+        "id": "C03",
+        "addresses_finding_ids": [
+          "F01"
+        ],
+        "text": ""
+      },
+      {
+        "id": "C04",
+        "addresses_finding_ids": [
+          "F02"
+        ],
+        "text": ""
+      }
+    ]
+  },
+  "calls": {
+    "n_calls": 2,
+    "n_ok": 2,
+    "n_fail": 0,
+    "n_expand_retry": 0,
+    "fail_errors": [],
+    "latency_ms_sum": 298689,
+    "purposes": [
+      "design_extract",
+      "scientific_review"
+    ],
+    "models": [
+      "glm-4.6"
+    ],
+    "tokens": {
+      "prompt": 7024,
+      "completion": 11832,
+      "reasoning": 8307,
+      "total": 18856
+    },
+    "cost": "未知（未配置单价表；仅记录 token）",
+    "calls": [
+      {
+        "ts": "2026-10-25T23:24:58+08:00",
+        "purpose": "design_extract",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 160276,
+        "prompt_tokens": 3074,
+        "completion_tokens": 6705,
+        "finish_reason": "stop",
+        "max_tokens": 8192,
+        "error": null
+      },
+      {
+        "ts": "2026-10-25T23:27:38+08:00",
+        "purpose": "scientific_review",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 138413,
+        "prompt_tokens": 3950,
+        "completion_tokens": 5127,
+        "finish_reason": "stop",
+        "max_tokens": 8192,
+        "error": null
+      }
+    ]
+  },
+  "review_coverage": {
+    "tech_version": "0.1.3.2-review-windows",
+    "total_chars": 2752,
+    "chars_sent": 2752,
+    "window_count": 1,
+    "window_budget_chars": 14000,
+    "max_windows": 3,
+    "methods_detected": true,
+    "methods_included": true,
+    "methods_spans": [
+      {
+        "start": 31,
+        "end": 2752,
+        "label": "统计分析前核对处理组、容器编号、试片编号和采样日期，报告所有排除样本及理由。"
+      }
+    ],
+    "truncated": false,
+    "omitted_char_count": 0,
+    "omitted_ranges": [],
+    "comprehensive": true,
+    "notes": [
+      "短文不截断"
+    ],
+    "windows": [
+      {
+        "window_id": "W01",
+        "start": 0,
+        "end": 2752,
+        "char_len": 2752,
+        "priority": 0,
+        "reason": "短文全文入窗（未截断）",
+        "text_sha16": "1cb8454a886457b0",
+        "preview": "淡水微宇宙中 CA@MSiO₂ 涂层掺量对生物污损形成的影响\n\n实验方案（Trial 5 测试稿）\n\n研究类型：淡水室内加速微宇宙实验；研究阶段：涂层配方筛选与防污效能评价；计划周期：28 d。\n\n说明：本文件为供实验方案审查流程测试的完整方案文本，不包含审查结论、缺陷标注或标准答案。\n\n1. 研究背景与目标\n\n淡水环境中的人工浸水表面会逐步形成由有机物吸附、细菌附着及后续生物膜发展构成的污损层。介孔二氧化硅可作为功能组分载体，柠檬酸修饰介孔二氧化硅（CA@MSiO₂）可能改"
+      }
+    ]
+  }
+}

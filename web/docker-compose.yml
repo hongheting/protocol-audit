@@ -1,0 +1,18 @@
+# Local smoke only — not for production secrets in git.
+# Usage (from protocol-audit root):
+#   docker compose -f web/docker-compose.yml up --build
+services:
+  protocol-audit:
+    build:
+      context: ..
+      dockerfile: web/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: "8080"
+      PROTOCOL_AUDIT_ENV: production
+      PROTOCOL_AUDIT_SECRET: local-compose-secret-change-me
+      PROTOCOL_AUDIT_DEMO_PASSWORD: local-demo-pw
+      PROTOCOL_AUDIT_LLM: "off"
+    # Do not bake BIGMODEL key here; pass via env file locally if needed:
+    # env_file: ["/workspace/secrets/bigmodel-coding.env"]

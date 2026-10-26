@@ -1,0 +1,63 @@
+{
+  "trial": "trial1",
+  "source": "/workspace/product/protocol-audit/real-trials/trial1.docx",
+  "started_at": "2026-10-25T18:08:44+08:00",
+  "mode": "LLM实测",
+  "provider_requested": "glm",
+  "model_requested": "glm-4.6",
+  "finished_at": "2026-10-25T18:14:55+08:00",
+  "wall_s": 371.4,
+  "ok": true,
+  "schema_ok": true,
+  "schema_errors": [],
+  "n_findings": 10,
+  "confirmed": 10,
+  "needs_info": 0,
+  "verdict": "needs_redesign",
+  "llm_calls": {
+    "n_calls": 2,
+    "n_ok": 2,
+    "n_fail": 0,
+    "fail_errors": [],
+    "latency_ms_sum": 371270,
+    "purposes": [
+      "design_extract",
+      "scientific_review"
+    ],
+    "models": [
+      "glm-4.6"
+    ],
+    "tokens": {
+      "prompt": 5849,
+      "completion": 13906,
+      "reasoning": 10468,
+      "total": 19755
+    },
+    "cost": "未知（日志无单价；仅有 token 计数若 API 返回）",
+    "calls": [
+      {
+        "ts": "2026-10-25T18:08:44+08:00",
+        "purpose": "design_extract",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 213934,
+        "prompt_tokens": 3047,
+        "completion_tokens": 8192,
+        "error": null
+      },
+      {
+        "ts": "2026-10-25T18:12:18+08:00",
+        "purpose": "scientific_review",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 157336,
+        "prompt_tokens": 2802,
+        "completion_tokens": 5714,
+        "error": null
+      }
+    ]
+  },
+  "parse_llm_ok": true,
+  "review_llm_ok": null,
+  "boundary_note": "学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：V0.1.1 结构规则+ LLM 科学审查；LLM 解析回退至启发式。不得将模拟输出冒充实测。"
+}

@@ -1,0 +1,5 @@
+[2026-10-25T23:24:58+08:00] START trial5-rerun-v0133 version=0.1.3.3 prompt_match=True
+[2026-10-25T23:27:38+08:00] review_windows n=None comprehensive=True methods_detected=True truncated=False
+[2026-10-25T23:27:38+08:00] parse ok=True expand=False finish=stop
+[2026-10-25T23:29:57+08:00] schema_errors=0 findings=4
+[2026-10-25T23:29:57+08:00] DONE Trial5 re-run V0.1.3.3  finished=2026-10-25T23:29:57+08:00  elapsed=298.8s | prompt_match=True  schema_ok=True | review_coverage comprehensive=True truncated=False | findings=4 origins={'rule': 2, 'llm_review': 2}

@@ -1,0 +1,11 @@
+source: real-trials/trial1.docx
+goal: unspecified default
+verdict: awaiting_clarification | 确认问题 1，待核实 1，建议 0；请先回答关键追问。
+findings: 2 confirmed 1 needs_info 1 suggestion 0
+  - F01 [confirmed/high] 缺少空白/未处理对照
+  - F02 [needs_info/high] 「平行/重复」独立性未写清
+questions: 1
+CE rows: 1
+Plan A notes: 2
+wrote: real-trials/trial1.docx.audit-report.json
+schema: OK

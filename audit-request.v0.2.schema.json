@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://protocolaudit.local/schemas/audit-request.v0.2.json",
+  "title": "AuditRequest",
+  "description": "ProtocolAudit audit request schema 0.2.0 (+additive 0.2.1 fields: design_override, confirm_design). Kickoff audit only when confirm_design=true after ParsePreview. Design/schema only; no running prototype.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.2.0",
+      "description": "Optional on request; clients may omit. Reports always emit 0.2.0."
+    },
+    "protocol_text": {
+      "type": "string",
+      "minLength": 0,
+      "description": "实验方案原文（纯文本或 Markdown）。若同时提供 source_file，以解析结果为准，本字段可作为用户手改覆盖。"
+    },
+    "discipline": {
+      "type": "string",
+      "enum": [
+        "environmental",
+        "biology",
+        "chemistry",
+        "auto"
+      ],
+      "default": "auto"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en",
+        "auto"
+      ],
+      "default": "zh-CN"
+    },
+    "research_goal_level": {
+      "type": "string",
+      "enum": [
+        "unspecified",
+        "exploratory",
+        "treatment_effect",
+        "mechanism_causal",
+        "generalizability"
+      ],
+      "description": "默认 unspecified；证据不足时不得自动升为 mechanism_causal。仅当用户明确选择或方案明确声明时才用更强层级。",
+      "default": "unspecified"
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "allow_public_literature_search": {
+          "type": "boolean",
+          "default": false,
+          "description": "是否允许用方案文本触发公开文献/Web 检索；默认 false"
+        },
+        "retain_protocol": {
+          "type": "boolean",
+          "default": true,
+          "description": "是否在服务端保留原文；false 表示尽量阅后即焚（实现可选）"
+        }
+      }
+    },
+    "focus": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "hypothesis",
+          "claim_evidence",
+          "controls",
+          "confounding",
+          "pseudoreplication",
+          "sample_size",
+          "endpoints",
+          "statistics",
+          "reproducibility"
+        ]
+      },
+      "description": "可选：只审这些维度；空=全审"
+    },
+    "clarifying_answers": {
+      "type": "array",
+      "description": "用户对上一轮 clarifying_questions 的回答，用于复审",
+      "items": {
+        "type": "object",
+        "required": [
+          "question_id",
+          "answer"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "question_id": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "organism_or_system": {
+          "type": "string"
+        },
+        "claimed_n": {
+          "type": "string",
+          "description": "作者自述的 n，原文摘录"
+        }
+      }
+    },
+    "source_file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "filename",
+        "media_type"
+      ],
+      "description": "V0.1 必须支持的上传源；服务端解析为文本后再进 Parser",
+      "properties": {
+        "filename": {
+          "type": "string",
+          "minLength": 1
+        },
+        "media_type": {
+          "type": "string",
+          "enum": [
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "application/pdf",
+            "text/plain",
+            "text/markdown"
+          ]
+        },
+        "byte_size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "storage_ref": {
+          "type": "string",
+          "description": "服务端临时对象引用；客户端可不传"
+        }
+      }
+    },
+    "parse_options": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pdf_mode": {
+          "type": "string",
+          "enum": [
+            "text",
+            "ocr_fallback"
+          ],
+          "default": "text",
+          "description": "text=文本层（P0）；ocr_fallback 为 P1 尽力而为，非 V0.1 验收硬门槛"
+        },
+        "keep_page_markers": {
+          "type": "boolean",
+          "default": true
+        },
+        "prefer_tables": {
+          "type": "boolean",
+          "default": true,
+          "description": "优先可靠解析 Word 表格与文本层 PDF 表格"
+        },
+        "scanned_pdf_ocr": {
+          "type": "string",
+          "enum": [
+            "off",
+            "best_effort"
+          ],
+          "default": "off",
+          "description": "V0.1 默认 off（P1）；失败路径依赖警告+手动补表"
+        },
+        "allow_manual_table_paste": {
+          "type": "boolean",
+          "default": true,
+          "description": "扫描/抽取失败时允许用户粘贴表"
+        }
+      }
+    },
+    "confirm_design": {
+      "type": "boolean",
+      "default": false,
+      "description": "用户确认 ParsePreview 中的结构化设计后置 true，才启动完整审查"
+    },
+    "design_override": {
+      "type": "object",
+      "description": "用户在 ParsePreview 中编辑后的结构化实验设计（覆盖自动解析）；字段与 Experimental Design / identification 对齐，允许部分字段",
+      "additionalProperties": true,
+      "properties": {
+        "research_question": {
+          "type": "string"
+        },
+        "hypotheses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "research_goal_level": {
+          "type": "string",
+          "enum": [
+            "unspecified",
+            "exploratory",
+            "treatment_effect",
+            "mechanism_causal",
+            "generalizability"
+          ]
+        },
+        "experimental_unit": {
+          "type": "string"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "controls": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "outcomes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "replication": {
+          "type": "object"
+        },
+        "statistical_plan": {
+          "type": "string"
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "user_edits_summary": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "required": [
+        "protocol_text"
+      ],
+      "not": {
+        "required": [
+          "source_file"
+        ]
+      },
+      "properties": {
+        "protocol_text": {
+          "type": "string",
+          "minLength": 40
+        }
+      }
+    },
+    {
+      "required": [
+        "source_file"
+      ],
+      "properties": {
+        "protocol_text": {
+          "type": "string",
+          "minLength": 0
+        }
+      }
+    }
+  ]
+}

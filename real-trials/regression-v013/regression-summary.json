@@ -1,0 +1,176 @@
+{
+  "version": "0.1.3",
+  "generated_at": "2026-10-25T21:55:35+08:00",
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705",
+    "matches_freeze": true
+  },
+  "trials": {
+    "trial1": {
+      "pass_type": "离线重放",
+      "structural_rule_ids": [
+        "structural_container_confound",
+        "structural_corr_not_cause",
+        "structural_destructive_rm",
+        "structural_factorial_interaction",
+        "structural_over_extrapolation",
+        "structural_pooling_n1",
+        "structural_position_confound",
+        "structural_pseudoreplication",
+        "structural_solvent_confound",
+        "structural_uv_dose"
+      ],
+      "plan_a_from_saved_findings": {
+        "optimizer_incomplete": false,
+        "blocker_action_map": [
+          {
+            "finding_id": "F01",
+            "action": "在水槽层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽层面独立重复缺失",
+            "problem": "水槽与处理锁定或子样本当 n 导致效应不可分/伪重复",
+            "verification": "每处理具备≥2 独立水槽后，主效应/交互估计不再依赖单水槽内子样本",
+            "change_note_id": "C01",
+            "covered": true,
+            "uncovered_reason": null
+          },
+          {
+            "finding_id": "F02",
+            "action": "在水槽层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽层面独立重复缺失",
+            "problem": "水槽与处理锁定或子样本当 n 导致效应不可分/伪重复",
+            "verification": "每处理具备≥2 独立水槽后，主效应/交互估计不再依赖单水槽内子样本",
+            "change_note_id": "C01",
+            "covered": true,
+            "uncovered_reason": null
+          }
+        ],
+        "change_note_summaries": [
+          "在水槽层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽层面独立重复缺失",
+          "增加助溶剂/载体/助剂对照，使目标处理效应可分",
+          "解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应",
+          "按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据",
+          "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定",
+          "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据"
+        ],
+        "tank_level_repeat_ok": true
+      },
+      "plan_a_from_rules_only": {
+        "optimizer_incomplete": false,
+        "blocker_count": 3
+      }
+    },
+    "trial2": {
+      "pass_type": "离线重放",
+      "no_trial1_bleed": true,
+      "optimizer_incomplete": false,
+      "blocker_action_map": [
+        {
+          "finding_id": "F03",
+          "action": "解耦锁定因素：在目标因子各水平使用同一调节方式，或做正交对照以分离伴随因子；否则降级无法分离的主效应主张",
+          "problem": "当伴随因子（如缓冲体系）与目标因子（如 pH）水平一一锁定且缺少同水平解耦对照时，观测变化无法归因于目标因子本身。",
+          "verification": "复审该 blocker 是否仍阻断主要结论",
+          "change_note_id": "C01",
+          "covered": true,
+          "uncovered_reason": null
+        }
+      ],
+      "structural_rule_ids": [
+        "legacy_missing_replication",
+        "legacy_missing_stats"
+      ],
+      "change_notes": [
+        "解耦锁定因素：在目标因子各水平使用同一调节方式，或做正交对照以分离伴随因子；否则降级无法分离的主效应主张",
+        "将混合暴露改为单因子（及必要组合）设计，使声称的主导组分效应可估计；不可在鸡尾酒设计上归因单一组分",
+        "校正重复取样造成的体积/质量变化（按剩余体积或累计取样质量衡算），或改为各时间点独立反应管/破坏性取样",
+        "再生/循环各轮称量（或衡算）固体质量并校正投加量，避免把机械流失记成再生失效",
+        "为改性/处理流程增加工艺空白（同步骤但不加功能组分，或匹配热处理/浸渍），使功能组分效应与工艺效应可分",
+        "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+        "显式定义实验单位（当前解析：独立实验单位）；统计仅对独立重复推断"
+      ]
+    },
+    "trial3": {
+      "pass_type": "离线重放（Plan A 对盲测 saved findings）+ 规则测试（代表盆/单批次）",
+      "F03_covered": true,
+      "F04_covered": true,
+      "blocker_coverage_rate": 1.0,
+      "optimizer_incomplete": false,
+      "blocker_action_map": [
+        {
+          "finding_id": "F03",
+          "action": "解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应",
+          "problem": "处理因素与空间位置/微气候完全混杂",
+          "verification": "位置与处理正交或区组后，处理效应估计不再依赖固定台面层",
+          "change_note_id": "C02",
+          "covered": true,
+          "uncovered_reason": null
+        },
+        {
+          "finding_id": "F05",
+          "action": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定",
+          "problem": "在D7-D21多次取土并补入石英砂，导致土壤基质被严重稀释和物理结构破坏，D28测定水稳性团聚体(MWD)已不能代表原土壤的真实结构响应；D14拔除1株改变了盆内剩余植株的根际空间与资源竞争状态，D28生物量与根系指标受密度骤降的干扰，处理间失去可比性。",
+          "verification": "复审该 blocker 是否仍阻断主要结论",
+          "change_note_id": "C04",
+          "covered": true,
+          "uncovered_reason": null
+        }
+      ],
+      "change_notes": [
+        {
+          "id": "C01",
+          "addresses": [
+            "F04"
+          ],
+          "summary": "增加助溶剂/载体/助剂对照，使目标处理效应可分"
+        },
+        {
+          "id": "C02",
+          "addresses": [
+            "F03"
+          ],
+          "summary": "解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应"
+        },
+        {
+          "id": "C03",
+          "addresses": [
+            "F06"
+          ],
+          "summary": "按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据"
+        },
+        {
+          "id": "C04",
+          "addresses": [
+            "F05"
+          ],
+          "summary": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定"
+        },
+        {
+          "id": "C05",
+          "addresses": [
+            "F01",
+            "F07"
+          ],
+          "summary": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据"
+        },
+        {
+          "id": "C06",
+          "addresses": [
+            "F02"
+          ],
+          "summary": "显式定义实验单位（当前解析：盆）；统计仅对独立重复推断"
+        }
+      ],
+      "new_rules_hit": {
+        "representative_unit": true,
+        "single_batch": true,
+        "titles": [
+          "相关性/表征共变不足以支持主要机制主张",
+          "由短周期/简化工况试验外推长期或工程依据过度",
+          "以代表单元指导整组补水/处理时，组内独立性待核实",
+          "材料/菌剂为单批次制备，跨批次推广边界待明确"
+        ]
+      },
+      "no_bleed": true,
+      "schema_errors_sample": [],
+      "schema_ok": true
+    }
+  }
+}

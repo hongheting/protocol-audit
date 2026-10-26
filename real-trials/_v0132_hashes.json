@@ -1,0 +1,16 @@
+{
+  "version": "0.1.3.2",
+  "frozen_at": "2026-10-25T22:56:24+08:00",
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "file_sha256": {
+    "protocol_audit/review_windows.py": "5c52035a4a055fbbe71fc9a221632938c78e135991ae2b75e692e8978611bf66",
+    "protocol_audit/llm_review.py": "b6562eba99f420f6d84dd845da143446c25b9c3cdd28ddc8a442967211c15a57",
+    "protocol_audit/report.py": "f4bb54fe193f35c51f68edf88dff74d5ed38161faaaa5fb100fe080e913b70b0",
+    "protocol_audit/__init__.py": "102d23e10f55c5952e7c69331394ee1a98f1191c0cfb316d153f47dfd45cb9f4"
+  },
+  "note": "technical review-window only; science Prompt frozen"
+}

@@ -1,0 +1,589 @@
+{
+  "llm_meta": {
+    "provider": "glm",
+    "purpose": "design_extract",
+    "ok": true,
+    "schema_errors": [],
+    "fallback": false,
+    "hard_fail": false,
+    "truncation_detected": false,
+    "expanded_retry": false,
+    "max_tokens_initial": 8192,
+    "max_tokens_used": 8192,
+    "attempts": [
+      {
+        "max_tokens": 8192,
+        "expanded": false,
+        "ok": true,
+        "finish_reason": "stop",
+        "usage": {
+          "prompt_tokens": 3149,
+          "completion_tokens": 8037,
+          "reasoning_tokens": 4199,
+          "total_tokens": 11186
+        },
+        "latency_ms": 203765,
+        "error": null,
+        "length_truncated": false,
+        "json_truncated_looks": false,
+        "json_ok": true,
+        "truncated": false
+      }
+    ],
+    "model": "glm-4.6",
+    "usage": {
+      "prompt_tokens": 3149,
+      "completion_tokens": 8037,
+      "reasoning_tokens": 4199,
+      "total_tokens": 11186
+    },
+    "latency_ms": 203765,
+    "request_id": "20261025222258478751f456544af5",
+    "finish_reason": "stop",
+    "error": null
+  },
+  "design_extract": {
+    "parse_status": "ok",
+    "research_question": "植物促生菌剂在不同水分条件和土壤背景下对玉米幼苗生长的影响，以及根际EPS、土壤团聚体稳定性与植物响应之间的关系",
+    "research_goal_level": "unspecified",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "接种植物促生菌剂能够提高玉米幼苗生物量，并减轻干旱处理对生长的抑制作用。",
+        "expected_conclusion": "接种菌剂提高生物量，缓解干旱抑制",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "H1：接种植物促生菌剂能够提高玉米幼苗生物量，并减轻干旱处理对生长的抑制作用。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-8"
+          }
+        ]
+      },
+      {
+        "id": "H2",
+        "text": "菌剂通过提高根际 EPS 水平和土壤团聚体稳定性改善土壤水分保持能力，进而促进玉米生长；EPS 是该效应的主要作用机制。",
+        "expected_conclusion": "EPS及团聚体稳定性提高，改善保水能力并促生",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "H2：菌剂通过提高根际 EPS 水平和土壤团聚体稳定性改善土壤水分保持能力，进而促进玉米生长；EPS 是该效应的主要作用机制。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-9"
+          }
+        ]
+      },
+      {
+        "id": "H3",
+        "text": "菌剂在退化黄土和参考农田土壤中均能产生稳定的促生效果，28 d 盆栽结果可为退化旱地的推广应用提供依据。",
+        "expected_conclusion": "两类土壤中促生效果稳定，具应用潜力",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "H3：菌剂在退化黄土和参考农田土壤中均能产生稳定的促生效果，28 d 盆栽结果可为退化旱地的推广应用提供依据。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-10"
+          }
+        ]
+      }
+    ],
+    "factors": [
+      {
+        "name": "土壤类型",
+        "levels": [
+          "退化黄土（L）",
+          "参考农田土壤（R）"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "土壤类型包括退化黄土和参考农田土壤",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-18"
+          },
+          {
+            "source_file": "trial3.docx",
+            "original_text": "土壤类型 | 退化黄土（L） | 参考农田土壤（R）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "水分处理",
+        "levels": [
+          "正常供水（W）",
+          "干旱胁迫（D）"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "灌水水平包括正常供水和干旱胁迫",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-18"
+          },
+          {
+            "source_file": "trial3.docx",
+            "original_text": "水分处理 | 正常供水（W） | 干旱胁迫（D）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "菌剂处理",
+        "levels": [
+          "不接种（I−）",
+          "接种（I+）"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "菌剂处理包括接种和不接种",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-18"
+          },
+          {
+            "source_file": "trial3.docx",
+            "original_text": "菌剂处理 | 不接种（I−） | 接种（I+）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "name": "L-W-I−",
+        "treatment": "退化黄土，正常供水，不接种",
+        "factor_levels": {
+          "土壤类型": "退化黄土（L）",
+          "水分处理": "正常供水（W）",
+          "菌剂处理": "不接种（I−）"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "control",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "L-W-I− | 退化黄土 | 正常供水 | 不接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "L-W-I+",
+        "treatment": "退化黄土，正常供水，接种",
+        "factor_levels": {
+          "土壤类型": "退化黄土（L）",
+          "水分处理": "正常供水（W）",
+          "菌剂处理": "接种（I+）"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "L-W-I+ | 退化黄土 | 正常供水 | 接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "L-D-I−",
+        "treatment": "退化黄土，干旱胁迫，不接种",
+        "factor_levels": {
+          "土壤类型": "退化黄土（L）",
+          "水分处理": "干旱胁迫（D）",
+          "菌剂处理": "不接种（I−）"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "control",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "L-D-I− | 退化黄土 | 干旱胁迫 | 不接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "L-D-I+",
+        "treatment": "退化黄土，干旱胁迫，接种",
+        "factor_levels": {
+          "土壤类型": "退化黄土（L）",
+          "水分处理": "干旱胁迫（D）",
+          "菌剂处理": "接种（I+）"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "L-D-I+ | 退化黄土 | 干旱胁迫 | 接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "R-W-I−",
+        "treatment": "参考农田土壤，正常供水，不接种",
+        "factor_levels": {
+          "土壤类型": "参考农田土壤（R）",
+          "水分处理": "正常供水（W）",
+          "菌剂处理": "不接种（I−）"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "control",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "R-W-I− | 参考农田土壤 | 正常供水 | 不接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "R-W-I+",
+        "treatment": "参考农田土壤，正常供水，接种",
+        "factor_levels": {
+          "土壤类型": "参考农田土壤（R）",
+          "水分处理": "正常供水（W）",
+          "菌剂处理": "接种（I+）"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "R-W-I+ | 参考农田土壤 | 正常供水 | 接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "R-D-I−",
+        "treatment": "参考农田土壤，干旱胁迫，不接种",
+        "factor_levels": {
+          "土壤类型": "参考农田土壤（R）",
+          "水分处理": "干旱胁迫（D）",
+          "菌剂处理": "不接种（I−）"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "control",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "R-D-I− | 参考农田土壤 | 干旱胁迫 | 不接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "R-D-I+",
+        "treatment": "参考农田土壤，干旱胁迫，接种",
+        "factor_levels": {
+          "土壤类型": "参考农田土壤（R）",
+          "水分处理": "干旱胁迫（D）",
+          "菌剂处理": "接种（I+）"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "R-D-I+ | 参考农田土壤 | 干旱胁迫 | 接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "type": "solvent",
+        "label": "无菌生理盐水(I−)",
+        "present": true,
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "不接种组每盆加入 10 mL 无菌生理盐水。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-22"
+          }
+        ]
+      },
+      {
+        "type": "reference",
+        "label": "正常供水(W)",
+        "present": true,
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "灌水水平包括正常供水和干旱胁迫",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-18"
+          }
+        ]
+      }
+    ],
+    "units": {
+      "allocation_unit": "盆",
+      "independent_experimental_unit": "盆",
+      "subsample_unit": "株",
+      "technical_replicate_unit": "技术复孔",
+      "nesting": "株嵌套于盆，技术复孔嵌套于样品",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "每个处理组合设置 4 盆，共 32 盆。每盆保留 3 株玉米。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-18"
+        },
+        {
+          "source_file": "trial3.docx",
+          "original_text": "所有比色和酶标类测定均设置 3 个技术复孔",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-29"
+        }
+      ]
+    },
+    "timepoints": {
+      "points": [
+        "D0",
+        "D7",
+        "D14",
+        "D21",
+        "D28"
+      ],
+      "repeated_measures": true,
+      "destructive_assay": true,
+      "returned_after_assay": false,
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "从开始水分处理之日记为 D0，连续培养 28 d。D0、D7、D14、D21 和 D28 记录植株生长指标",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-26"
+        },
+        {
+          "source_file": "trial3.docx",
+          "original_text": "D7、D14、D21、D28 | 株高、SPAD | 同一盆内编号植株重复测量",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-3"
+        }
+      ]
+    },
+    "endpoints": [
+      {
+        "text": "株高、叶片数、SPAD (D0基线)",
+        "supports_claims": [],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D0 | 株高、叶片数、SPAD | 每盆对 3 株编号植株测量 | 基线描述",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "株高、SPAD (D7-D28动态)",
+        "supports_claims": [
+          "H1"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D7、D14、D21、D28 | 株高、SPAD | 同一盆内编号植株重复测量 | 生长动态",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "根际土壤 EPS (D7, D14, D21)",
+        "supports_claims": [
+          "H2"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D7、D14、D21 | 根际土壤 EPS | 每盆取约 20 g 根际土壤，采后补入等质量灭菌石英砂 | EPS 动态",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "根系形态、根系活力 (D14)",
+        "supports_claims": [
+          "H1"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D14 | 根系形态、根系活力 | 每盆随机取 1 株，连根取出测定；剩余植株继续培养 | 中期根系响应",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "地上部/根系生物量、根系水力指标 (D28)",
+        "supports_claims": [
+          "H1"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D28 | 地上部/根系生物量、根系水力指标 | 收获每盆剩余植株并按盆记录 | 终点生长响应",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "水稳性团聚体、土壤含水特征 (D28)",
+        "supports_claims": [
+          "H2"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D28 | 水稳性团聚体、土壤含水特征 | 每盆混匀剩余土壤后取样 | 土壤结构响应",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "C1",
+        "text": "接种菌剂能够提高玉米生物量，并减轻干旱处理的负面影响",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "预期接种菌剂能够提高玉米生物量，并减轻干旱处理的负面影响",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-35"
+          }
+        ]
+      },
+      {
+        "id": "C2",
+        "text": "接种处理可能提高根际 EPS 和水稳性团聚体比例",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "接种处理可能提高根际 EPS 和水稳性团聚体比例。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-35"
+          }
+        ]
+      },
+      {
+        "id": "C3",
+        "text": "以 EPS 促进团聚体形成、改善水分条件为核心的作用解释",
+        "kind": "mechanism",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "若各项指标方向一致，将进一步提出以 EPS 促进团聚体形成、改善水分条件为核心的作用解释",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-36"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "table_id": "t-1",
+        "table_kind": "treatment_group_table",
+        "caption": "因素与水平设置说明",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "因素 | 水平 1 | 水平 2 | 设置说明",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "table_id": "t-2",
+        "table_kind": "treatment_group_table",
+        "caption": "处理编号与分组详情",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "处理编号 | 土壤 | 水分 | 菌剂 | 盆数",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "table_id": "t-3",
+        "table_kind": "sampling_schedule_table",
+        "caption": "测定指标与采样安排",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "时间 | 测定项目 | 取样方式 | 用途",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      }
+    ],
+    "statistical_plan": "对D28终点指标采用三因素方差分析(土壤类型、水分处理、菌剂处理)，显著时采用Tukey法多重比较；每个采样日株高和SPAD采用单因素方差分析和Tukey多重比较；采用Pearson相关分析评估EPS、MWD、SPAD和生物量之间的相关性；显著性水平p<0.05",
+    "unknowns": [],
+    "notes": []
+  }
+}

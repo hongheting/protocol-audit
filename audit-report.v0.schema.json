@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://protocolaudit.local/schemas/audit-report.v0.json",
+  "title": "AuditReport (DEPRECATED → 0.2.1)",
+  "description": "DEPRECATED. Use audit-report.v0.2.schema.json (schema_version 0.2.1).",
+  "deprecated": true,
+  "type": "object",
+  "required": [
+    "see"
+  ],
+  "properties": {
+    "see": {
+      "const": "audit-report.v0.2.schema.json"
+    }
+  }
+}

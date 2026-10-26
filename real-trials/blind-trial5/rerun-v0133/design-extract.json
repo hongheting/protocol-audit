@@ -1,0 +1,410 @@
+{
+  "llm_meta": {
+    "provider": "glm",
+    "purpose": "design_extract",
+    "ok": true,
+    "schema_errors": [],
+    "fallback": false,
+    "hard_fail": false,
+    "truncation_detected": false,
+    "expanded_retry": false,
+    "max_tokens_initial": 8192,
+    "max_tokens_used": 8192,
+    "attempts": [
+      {
+        "max_tokens": 8192,
+        "expanded": false,
+        "ok": true,
+        "finish_reason": "stop",
+        "usage": {
+          "prompt_tokens": 3074,
+          "completion_tokens": 6705,
+          "reasoning_tokens": 3658,
+          "total_tokens": 9779
+        },
+        "latency_ms": 160276,
+        "error": null,
+        "length_truncated": false,
+        "json_truncated_looks": false,
+        "json_ok": true,
+        "truncated": false
+      }
+    ],
+    "model": "glm-4.6",
+    "usage": {
+      "prompt_tokens": 3074,
+      "completion_tokens": 6705,
+      "reasoning_tokens": 3658,
+      "total_tokens": 9779
+    },
+    "latency_ms": 160276,
+    "request_id": "20261025232458b14fb531be034d37",
+    "finish_reason": "stop",
+    "error": null
+  },
+  "design_extract": {
+    "parse_status": "ok",
+    "research_question": "在统一淡水微宇宙条件下，不同CA@MSiO₂掺量涂层的防污表现差异及适宜掺量筛选",
+    "research_goal_level": "unspecified",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "在一定掺量范围内，CA@MSiO₂ 涂层可降低浸水表面的生物附着量，且防污效果随掺量变化。",
+        "expected_conclusion": "CA@MSiO₂涂层防污效果优于对照且存在掺量效应",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "H1：在一定掺量范围内，CA@MSiO₂ 涂层可降低浸水表面的生物附着量，且防污效果随掺量变化。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-8"
+          }
+        ]
+      },
+      {
+        "id": "H2",
+        "text": "CA@MSiO₂ 掺量会改变涂层表面接触角和浸水后的表面状态，这些变化与生物附着指标有关。",
+        "expected_conclusion": "接触角及表面状态变化与生物附着指标存在相关性",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "H2：CA@MSiO₂ 掺量会改变涂层表面接触角和浸水后的表面状态，这些变化与生物附着指标有关。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-9"
+          }
+        ]
+      },
+      {
+        "id": "H3",
+        "text": "28 d 室内微宇宙筛选出的适宜配方，可作为后续淡水防污耦合试验的候选涂层。",
+        "expected_conclusion": "筛选出可用于后续耦合试验的候选涂层",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "H3：28 d 室内微宇宙筛选出的适宜配方，可作为后续淡水防污耦合试验的候选涂层。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-10"
+          }
+        ]
+      }
+    ],
+    "factors": [
+      {
+        "name": "涂层处理/填料掺量",
+        "levels": [
+          "C0 (0%)",
+          "S3 (未修饰MSiO₂ 3%)",
+          "CA1 (CA@MSiO₂ 1%)",
+          "CA3 (CA@MSiO₂ 3%)",
+          "CA5 (CA@MSiO₂ 5%)"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "组别 | 涂层处理 | 填料掺量（占涂层固体组分） | 容器数 | 每容器试片数\nC0 | 基础涂层，不加功能填料 | 0% | 4 | 3\nS3 | 基础涂层 + 未修饰 MSiO₂ | 3% | 4 | 3\nCA1 | 基础涂层 + CA@MSiO₂ | 1% | 4 | 3\nCA3 | 基础涂层 + CA@MSiO₂ | 3% | 4 | 3\nCA5 | 基础涂层 + CA@MSiO₂ | 5% | 4 | 3",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "name": "C0",
+        "treatment": "基础涂层，不加功能填料",
+        "factor_levels": {
+          "涂层处理/填料掺量": "C0 (0%)"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "control",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "C0 | 基础涂层，不加功能填料 | 0% | 4 | 3",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "S3",
+        "treatment": "基础涂层 + 未修饰 MSiO₂",
+        "factor_levels": {
+          "涂层处理/填料掺量": "S3 (未修饰MSiO₂ 3%)"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "reference",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "S3 | 基础涂层 + 未修饰 MSiO₂ | 3% | 4 | 3",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "CA1",
+        "treatment": "基础涂层 + CA@MSiO₂",
+        "factor_levels": {
+          "涂层处理/填料掺量": "CA1 (CA@MSiO₂ 1%)"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "CA1 | 基础涂层 + CA@MSiO₂ | 1% | 4 | 3",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "CA3",
+        "treatment": "基础涂层 + CA@MSiO₂",
+        "factor_levels": {
+          "涂层处理/填料掺量": "CA3 (CA@MSiO₂ 3%)"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "CA3 | 基础涂层 + CA@MSiO₂ | 3% | 4 | 3",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "CA5",
+        "treatment": "基础涂层 + CA@MSiO₂",
+        "factor_levels": {
+          "涂层处理/填料掺量": "CA5 (CA@MSiO₂ 5%)"
+        },
+        "container_id": null,
+        "n_claimed": "4",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "CA5 | 基础涂层 + CA@MSiO₂ | 5% | 4 | 3",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "type": "negative",
+        "label": "C0",
+        "present": true,
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "C0 | 基础涂层，不加功能填料 | 0%",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "type": "reference",
+        "label": "S3",
+        "present": true,
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "S3 | 基础涂层 + 未修饰 MSiO₂ | 3%",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      }
+    ],
+    "units": {
+      "allocation_unit": "试片",
+      "independent_experimental_unit": "微宇宙容器",
+      "subsample_unit": "试片（每容器3片，对应3个时间点）",
+      "technical_replicate_unit": "复孔",
+      "nesting": "处理施加于试片，同一处理的3片试片嵌套于同一微宇宙容器内，不同时间点破坏性取不同的试片；技术复孔嵌套于试片",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial5.docx",
+          "original_text": "每个处理配置 4 个独立微宇宙容器。每个容器悬挂同一处理的 3 片试片，分别用于第 7、14 和 28 d 取样。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-17"
+        },
+        {
+          "source_file": "trial5.docx",
+          "original_text": "统计时将同一处理组、同一时间点的全部试片测定值作为独立观测值，每组每个时间点 n = 4；技术复孔先取均值后进入统计。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-30"
+        }
+      ]
+    },
+    "timepoints": {
+      "points": [
+        "D0",
+        "D7",
+        "D14",
+        "D28"
+      ],
+      "repeated_measures": false,
+      "destructive_assay": true,
+      "returned_after_assay": false,
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial5.docx",
+          "original_text": "第 7、14 和 28 d 分别取出每个容器中的一片试片。取样后的容器继续运行至下一时间点。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-25"
+        }
+      ]
+    },
+    "endpoints": [
+      {
+        "text": "附着生物量（OD₅₉₀）",
+        "supports_claims": [
+          "C1",
+          "C2"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "生物附着 | 附着生物量 | 结晶紫染色，乙醇洗脱后测定 OD₅₉₀；每片试片测 3 个技术复孔并取均值 | D7、D14、D28",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "text": "表面覆盖率",
+        "supports_claims": [
+          "C1"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "生物附着 | 表面覆盖率 | 固定光照和放大倍数拍摄试片，图像分析计算覆盖面积比例 | D7、D14、D28",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "text": "静态水接触角",
+        "supports_claims": [
+          "C2"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "涂层性质 | 静态水接触角 | 每片试片测量 5 个位置并取平均值 | 暴露前、D28",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "text": "质量变化与外观",
+        "supports_claims": [],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "涂层稳定性 | 质量变化与外观 | 暴露前后称量，记录起泡、裂纹、脱落及颜色变化 | 暴露前、D28",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "C1",
+        "text": "CA@MSiO₂ 的适宜掺量能够降低淡水微宇宙中试片表面的早期生物附着，不同掺量之间可能存在差异。",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "预期 CA@MSiO₂ 的适宜掺量能够降低淡水微宇宙中试片表面的早期生物附着，不同掺量之间可能存在差异。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-39"
+          }
+        ]
+      },
+      {
+        "id": "C2",
+        "text": "表面润湿性变化对防污效果有贡献",
+        "kind": "mechanism",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "若 CA@MSiO₂ 处理同时表现出接触角变化和附着量降低，则据此讨论表面润湿性变化对防污效果的可能贡献。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-31"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "table_id": "t-1",
+        "table_kind": "treatment_group_table",
+        "caption": "组别、涂层处理、填料掺量、容器数及试片数",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "组别 | 涂层处理 | 填料掺量（占涂层固体组分） | 容器数 | 每容器试片数",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "table_id": "t-2",
+        "table_kind": "other",
+        "caption": "测定指标与方法",
+        "locations": [
+          {
+            "source_file": "trial5.docx",
+            "original_text": "指标类别 | 指标 | 测定方式 | 采样时间",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      }
+    ],
+    "statistical_plan": "以附着生物量OD₅₉₀为主要指标，表面覆盖率、接触角和质量变化为辅助指标；各时间点分别进行单因素方差分析（ANOVA），Tukey法多重比较；Pearson相关分析检验接触角与附着生物量关系；数据不满足正态性或方差齐性时进行对数转换。",
+    "unknowns": [],
+    "notes": [
+      "D0时间点仅用于水体背景指标测定，涂层及生物指标始于D7",
+      "S3组作为未修饰MSiO₂的参考对照，旨在分离柠檬酸修饰的效应",
+      "统计声明的n=4基于容器独立观测，与每个容器3片试片对应3个破坏性时间点的设计一致"
+    ]
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://protocolaudit.local/schemas/parse-preview.v0.2.json",
+  "title": "ParsePreview",
+  "description": "Word/PDF 摄取后、完整审查前的可编辑中间态。用户确认/编辑后方可 kickoff AuditRequest(confirm_design=true)。",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "source_file",
+    "ingested_blocks",
+    "extracted_design",
+    "unparsed_assets",
+    "parse_warnings",
+    "user_confirmed"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.2.0"
+    },
+    "source_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "media_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "application/pdf",
+        "text/plain",
+        "text/markdown",
+        null
+      ]
+    },
+    "ingested_blocks": {
+      "type": "array",
+      "description": "带锚点的段落/表格块",
+      "items": {
+        "type": "object",
+        "required": [
+          "block_id",
+          "block_type",
+          "text"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "block_id": {
+            "type": "string"
+          },
+          "block_type": {
+            "type": "string",
+            "enum": [
+              "paragraph",
+              "table",
+              "heading",
+              "other"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "paragraph_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "table_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "section_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "extracted",
+              "manual_input",
+              "ocr_best_effort"
+            ],
+            "default": "extracted",
+            "description": "extracted=自动抽取；manual_input=用户粘贴/补表；ocr_best_effort=可选 OCR（P1）"
+          }
+        }
+      }
+    },
+    "extracted_design": {
+      "type": "object",
+      "description": "可编辑 Experimental Design 草稿；用户可改后作为 design_override",
+      "additionalProperties": true
+    },
+    "unparsed_assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "asset_type",
+          "reason"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "asset_type": {
+            "type": "string",
+            "enum": [
+              "image",
+              "flowchart",
+              "other",
+              "scanned_table"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "page_number": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "section_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "caption_hint": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "parse_warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tables_parsed_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "user_confirmed": {
+      "type": "boolean",
+      "description": "false=仅预览；true=用户已确认可进入审查"
+    },
+    "user_edits_summary": {
+      "type": "string",
+      "description": "用户相对自动提取的修改摘要"
+    },
+    "confirmed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "manual_supplements": {
+      "type": "array",
+      "description": "用户手动粘贴的表格/文本，已合并进 ingested_blocks 时仍保留审计痕迹",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "text",
+          "source"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "table",
+              "text",
+              "other"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "source": {
+            "const": "manual_input"
+          },
+          "replaces_unparsed_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "limited_audit_recommended": {
+      "type": "boolean",
+      "default": false,
+      "description": "关键设计信息仍缺且用户未补时为 true；下游不得声称全面审查"
+    }
+  }
+}

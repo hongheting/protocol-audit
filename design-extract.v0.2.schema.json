@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://protocol-audit.local/design-extract.v0.2.schema.json",
+  "title": "ProtocolAudit DesignExtract 0.2",
+  "type": "object",
+  "required": ["hypotheses", "groups", "tables", "parse_status"],
+  "additionalProperties": true,
+  "properties": {
+    "parse_status": {
+      "type": "string",
+      "enum": ["ok", "partial", "failed", "unknown"]
+    },
+    "research_question": {"type": "string"},
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "text"],
+        "properties": {
+          "id": {"type": "string"},
+          "text": {"type": "string"},
+          "expected_conclusion": {"type": "string"},
+          "status": {"type": "string", "enum": ["stated", "inferred", "unknown", "missing"]},
+          "locations": {"type": "array", "items": {"type": "object"}}
+        }
+      }
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "levels": {"type": "array", "items": {"type": "string"}},
+          "status": {"type": "string"},
+          "locations": {"type": "array"}
+        }
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "treatment": {"type": "string"},
+          "factor_levels": {"type": "object"},
+          "container_id": {"type": ["string", "null"]},
+          "n_claimed": {"type": ["string", "number", "null"]},
+          "role": {"type": "string"},
+          "status": {"type": "string"},
+          "locations": {"type": "array"}
+        }
+      }
+    },
+    "controls": {"type": "array"},
+    "units": {
+      "type": "object",
+      "properties": {
+        "allocation_unit": {"type": ["string", "null"]},
+        "independent_experimental_unit": {"type": ["string", "null"]},
+        "subsample_unit": {"type": ["string", "null"]},
+        "technical_replicate_unit": {"type": ["string", "null"]},
+        "nesting": {"type": "string"},
+        "status": {"type": "string"},
+        "locations": {"type": "array"}
+      }
+    },
+    "timepoints": {
+      "type": "object",
+      "properties": {
+        "points": {"type": "array", "items": {"type": "string"}},
+        "repeated_measures": {"type": ["boolean", "null"]},
+        "destructive_assay": {"type": ["boolean", "null"]},
+        "returned_after_assay": {"type": ["boolean", "null"]},
+        "status": {"type": "string"},
+        "locations": {"type": "array"}
+      }
+    },
+    "endpoints": {"type": "array"},
+    "claims": {"type": "array"},
+    "tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["table_id", "table_kind"],
+        "properties": {
+          "table_id": {"type": "string"},
+          "table_kind": {
+            "type": "string",
+            "enum": [
+              "treatment_group_table",
+              "metadata_table",
+              "sampling_schedule_table",
+              "other",
+              "unknown"
+            ]
+          },
+          "caption": {"type": "string"},
+          "locations": {"type": "array"}
+        }
+      }
+    },
+    "statistical_plan": {"type": "string"},
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

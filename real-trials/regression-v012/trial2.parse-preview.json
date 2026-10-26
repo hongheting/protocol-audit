@@ -1,0 +1,1056 @@
+{
+  "schema_version": "0.2.0",
+  "source_file": "trial2.docx",
+  "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "ingested_blocks": [
+    {
+      "block_id": "p-1",
+      "block_type": "paragraph",
+      "text": "镧改性生物炭对低浓度磷去除及循环再生性能的影响研究",
+      "page_number": null,
+      "paragraph_id": "p-1",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-2",
+      "block_type": "paragraph",
+      "text": "实验方案（讨论稿）",
+      "page_number": null,
+      "paragraph_id": "p-2",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-3",
+      "block_type": "paragraph",
+      "text": "研究方向：环境材料与水污染控制    |    方案版本：2026.10",
+      "page_number": null,
+      "paragraph_id": "p-3",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-4",
+      "block_type": "heading",
+      "text": "1 研究背景与目标",
+      "page_number": null,
+      "paragraph_id": "p-4",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-5",
+      "block_type": "paragraph",
+      "text": "城镇污水深度处理过程中，低浓度磷的稳定去除是实现出水营养盐控制的重要环节。生物炭具有原料易得、孔隙结构可调等特点，但原始生物炭对磷酸盐的吸附能力通常有限。通过负载镧组分构建复合吸附材料，有望提高低浓度磷的去除性能，并改善材料重复利用的经济性。",
+      "page_number": null,
+      "paragraph_id": "p-5",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-6",
+      "block_type": "paragraph",
+      "text": "本研究以市政污水深度处理场景为背景，制备原始生物炭（BC）与镧改性生物炭（La-BC），通过批式吸附实验比较其除磷性能、考察不同水化学条件下的变化以及连续再生后的性能保持情况，并结合表面表征分析可能的作用过程。",
+      "page_number": null,
+      "paragraph_id": "p-6",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-7",
+      "block_type": "heading",
+      "text": "1.1 研究假设",
+      "page_number": null,
+      "paragraph_id": "p-7",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-8",
+      "block_type": "paragraph",
+      "text": "H1：镧改性可显著提高生物炭对正磷酸盐的去除能力，且提高主要来源于材料表面镧位点与磷酸根之间的特异性结合。",
+      "page_number": null,
+      "paragraph_id": "p-8",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-9",
+      "block_type": "paragraph",
+      "text": "H2：La-BC 在不同 pH 和典型共存组分条件下仍能保持较高的磷去除能力，表明其对污水中磷具有较好的选择性与适应性。",
+      "page_number": null,
+      "paragraph_id": "p-9",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-10",
+      "block_type": "paragraph",
+      "text": "H3：La-BC 经多轮碱洗再生后仍具有稳定除磷效果，可为市政污水深度处理单元的持续运行提供材料依据。",
+      "page_number": null,
+      "paragraph_id": "p-10",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-11",
+      "block_type": "heading",
+      "text": "2 实验材料与制备",
+      "page_number": null,
+      "paragraph_id": "p-11",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-12",
+      "block_type": "heading",
+      "text": "2.1 生物炭及改性材料",
+      "page_number": null,
+      "paragraph_id": "p-12",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-13",
+      "block_type": "paragraph",
+      "text": "以稻壳为原料，洗净、干燥后在氮气气氛下于 500 ℃ 热解 2 h，粉碎并筛分至 100–200 目，得到原始生物炭（BC）。称取部分 BC 加入 0.10 mol/L LaCl₃ 溶液，室温振荡浸渍 12 h，过滤后于 80 ℃ 干燥，并于 250 ℃ 进一步热处理 2 h，水洗至洗液电导率趋于稳定，再干燥得到 La-BC。原始 BC 按热解后筛分的方式直接用于吸附实验。",
+      "page_number": null,
+      "paragraph_id": "p-13",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-14",
+      "block_type": "paragraph",
+      "text": "两类材料均测定灰分、比表面积及孔结构，并采用 SEM–EDS、FTIR 和 XPS 分析形貌及表面元素信息。吸附前后各选取一批材料进行 FTIR 与 XPS 对比，结合 P 2p、La 3d 等信号变化讨论磷的固定过程。",
+      "page_number": null,
+      "paragraph_id": "p-14",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-15",
+      "block_type": "heading",
+      "text": "2.2 实验水样与测定",
+      "page_number": null,
+      "paragraph_id": "p-15",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-16",
+      "block_type": "paragraph",
+      "text": "基础实验使用超纯水配制 KH₂PO₄ 储备液，以 PO₄³⁻-P 计设置目标初始浓度。低浓度筛选实验统一使用 2.0 mg P/L，恒温振荡温度设为 25 ± 1 ℃。过滤后采用钼酸铵分光光度法测定溶解性正磷酸盐；吸附前后记录初始与终点 pH。每批分析设标准曲线、试剂空白及平行测定。",
+      "page_number": null,
+      "paragraph_id": "p-16",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-17",
+      "block_type": "heading",
+      "text": "3 实验设计",
+      "page_number": null,
+      "paragraph_id": "p-17",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-18",
+      "block_type": "heading",
+      "text": "3.1 材料比较与剂量筛选",
+      "page_number": null,
+      "paragraph_id": "p-18",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-19",
+      "block_type": "paragraph",
+      "text": "先在初始磷浓度 2.0 mg P/L、初始 pH 约 7.0 条件下进行基础比较。反应液体积为 50 mL，吸附剂投加量 0.50 g/L，振荡 24 h 后取上清液过滤测定。每个处理设置 3 个独立锥形瓶，均由对应材料的一批次制备样品分装而来。为初步考察投加量作用，La-BC 另设置 0.10、0.25、0.50、1.00 g/L 四个剂量，其他条件相同。",
+      "page_number": null,
+      "paragraph_id": "p-19",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-20",
+      "block_type": "paragraph",
+      "text": "表 1  基础实验分组",
+      "page_number": null,
+      "paragraph_id": "p-20",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-1",
+      "block_type": "table",
+      "text": "编号 | 处理名称 | 吸附材料 | 投加量 | 用途\nG0 | 无材料空白 | 无 | 0 | 评价溶液与容器背景变化\nG1 | 原始生物炭 | BC | 0.50 g/L | 材料基准比较\nG2 | 镧改性生物炭 | La-BC | 0.50 g/L | 改性效果比较\nD1–D4 | La-BC 剂量组 | La-BC | 0.10–1.00 g/L | 筛选适宜投加量",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-1",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-21",
+      "block_type": "paragraph",
+      "text": "说明：剂量组中的 0.50 g/L 与 G2 采用相同处理条件，可共用相应试验数据。",
+      "page_number": null,
+      "paragraph_id": "p-21",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-22",
+      "block_type": "heading",
+      "text": "3.2 pH 与共存组分影响",
+      "page_number": null,
+      "paragraph_id": "p-22",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-23",
+      "block_type": "paragraph",
+      "text": "在 2.0 mg P/L、La-BC 0.50 g/L 条件下，分别使用 10 mmol/L 柠檬酸盐、HEPES 和硼酸盐缓冲体系，将反应体系初始 pH 调节至 5.0、7.0 和 9.0，反应 24 h 后比较除磷率，并据此判断材料对 pH 变化的适应性。缓冲体系分别按目标 pH 配置，实验不另外设置相同 pH 下的缓冲体系对照。",
+      "page_number": null,
+      "paragraph_id": "p-23",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-24",
+      "block_type": "paragraph",
+      "text": "共存组分实验以 2.0 mg P/L 的基础水样为参照，在另一组水样中同时加入 Ca²⁺（40 mg/L）、Mg²⁺（15 mg/L）、HCO₃⁻（120 mg/L）和腐殖酸（5 mg/L），以模拟二级出水常见无机盐及溶解性有机物的综合影响。通过比较两类水样的终点除磷率，重点讨论碳酸氢根与磷酸根对材料位点的竞争作用，并评价材料在复杂出水中的选择性。",
+      "page_number": null,
+      "paragraph_id": "p-24",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-25",
+      "block_type": "heading",
+      "text": "3.3 吸附动力学与等温实验",
+      "page_number": null,
+      "paragraph_id": "p-25",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-26",
+      "block_type": "paragraph",
+      "text": "动力学实验使用 50 mL 离心管，每管初始加入 50 mL 磷溶液与 La-BC（0.50 g/L）。分别在 5、15、30、60、120、240、360 min 取 1.5 mL 悬液，经 0.45 μm 滤膜过滤后测定磷浓度；取样后不补加新液。按固定的初始体积 50 mL 计算各时刻表观吸附量 qₜ = (C₀ − Cₜ) × 0.050 / m，并拟合准一级与准二级动力学模型。每个条件设置 3 个独立反应管，同一反应管用于各时间点连续取样。",
+      "page_number": null,
+      "paragraph_id": "p-26",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-27",
+      "block_type": "paragraph",
+      "text": "等温实验设置初始浓度 0.5、1、2、5、10、20 mg P/L，La-BC 投加量固定为 0.50 g/L，反应 24 h 后测定终点浓度，采用 Langmuir 和 Freundlich 模型拟合平衡吸附数据。",
+      "page_number": null,
+      "paragraph_id": "p-27",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-28",
+      "block_type": "heading",
+      "text": "3.4 材料再生及循环实验",
+      "page_number": null,
+      "paragraph_id": "p-28",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-29",
+      "block_type": "paragraph",
+      "text": "取完成吸附的 La-BC，使用 0.10 mol/L NaOH 溶液振荡解吸 30 min，超纯水洗涤后 60 ℃ 干燥，再将回收固体全部投入新的 50 mL、2.0 mg P/L 的磷溶液中，重复“吸附—碱洗—再吸附”共 5 轮。",
+      "page_number": null,
+      "paragraph_id": "p-29",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-30",
+      "block_type": "paragraph",
+      "text": "每轮设 3 个独立反应瓶；材料只在首轮投加前和第 5 轮结束后称量干质量，中间各轮不重新调整投加量。循环性能主要以各轮磷去除率和相对于首轮的去除率保持比例评价。",
+      "page_number": null,
+      "paragraph_id": "p-30",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-31",
+      "block_type": "heading",
+      "text": "3.5 采样与分析安排",
+      "page_number": null,
+      "paragraph_id": "p-31",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-32",
+      "block_type": "paragraph",
+      "text": "表 2  样品采集与测试安排",
+      "page_number": null,
+      "paragraph_id": "p-32",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-2",
+      "block_type": "table",
+      "text": "样品类别 | 采样节点 | 测试指标 | 样品处理\n基础吸附 | 0 h、24 h | 正磷酸盐、pH | 上清液过滤后立即检测\npH / 共存组分 | 0 h、24 h | 正磷酸盐、pH | 每组 3 个独立反应瓶\n动力学 | 5–360 min（7 点） | 正磷酸盐 | 同管依次取样，不补液\n等温实验 | 24 h | 正磷酸盐 | 不同初始浓度独立反应\n循环再生 | 每轮结束 | 正磷酸盐、材料质量（首末轮） | 固体回收再用于下一轮\n表面表征 | 吸附前、吸附后 | FTIR、XPS、SEM–EDS | 代表性干燥固体",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-2",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-33",
+      "block_type": "heading",
+      "text": "4 数据处理与统计分析",
+      "page_number": null,
+      "paragraph_id": "p-33",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-34",
+      "block_type": "paragraph",
+      "text": "除磷率按 R = (C₀ − Cₑ) / C₀ × 100% 计算，吸附量按 qₑ = (C₀ − Cₑ) × V / m 计算。数据以均值 ± 标准差表示。对 BC 与 La-BC 的除磷率采用独立样本 t 检验，对不同 pH、剂量、共存组分和再生轮次分别开展单因素方差分析，必要时采用 Tukey 事后多重比较。显著性水平为 p < 0.05。动力学与等温模型以拟合优度和参数合理性综合选择。",
+      "page_number": null,
+      "paragraph_id": "p-34",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-35",
+      "block_type": "paragraph",
+      "text": "对于连续取样的动力学实验，各时间点浓度分别计算并用于模型拟合；再生实验各轮的去除率分别比较。技术检测复孔先取均值形成反应瓶数据，再进行统计分析。",
+      "page_number": null,
+      "paragraph_id": "p-35",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-36",
+      "block_type": "heading",
+      "text": "5 预期结果与结论应用",
+      "page_number": null,
+      "paragraph_id": "p-36",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-37",
+      "block_type": "paragraph",
+      "text": "预期 La-BC 相比 BC 在 2.0 mg P/L 条件下表现出更高的除磷率，XPS 中磷与镧的结合能信息变化将用于说明镧—磷配位是提升吸附能力的主导机制。不同 pH 和共存组分实验预计能够确认材料具有较好的水质适应性及对磷的选择性。",
+      "page_number": null,
+      "paragraph_id": "p-37",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-38",
+      "block_type": "paragraph",
+      "text": "若连续 5 轮再生后除磷率保持在初始水平的 80% 以上，则认为其具有良好的再生稳定性；结合低浓度磷实验结果，进一步提出其适合用于城镇污水厂二级出水深度除磷的连续运行单元，并为长期材料投用提供依据。",
+      "page_number": null,
+      "paragraph_id": "p-38",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-39",
+      "block_type": "heading",
+      "text": "6 实施计划与质量控制",
+      "page_number": null,
+      "paragraph_id": "p-39",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-40",
+      "block_type": "paragraph",
+      "text": "第 1 周完成材料制备及基础表征；第 2–3 周完成剂量、pH 和共存组分实验；第 4 周完成动力学与等温实验；第 5 周完成五轮再生和吸附后表征；第 6 周进行数据整理与论文初稿撰写。整个实验期间统一使用同批 KH₂PO₄ 储备液，分析仪器按当日标准曲线校准，原始数据及拟合参数单独归档。",
+      "page_number": null,
+      "paragraph_id": "p-40",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    }
+  ],
+  "extracted_design": {
+    "research_question": "镧改性生物炭对低浓度磷去除及循环再生性能的影响",
+    "hypotheses": [
+      "H1：镧改性可显著提高生物炭对正磷酸盐的去除能力，且提高主要来源于材料表面镧位点与磷酸根之间的特异性结合。",
+      "H2：La-BC 在不同 pH 和典型共存组分条件下仍能保持较高的磷去除能力，表明其对污水中磷具有较好的选择性与适应性。",
+      "H3：La-BC 经多轮碱洗再生后仍具有稳定除磷效果，可为市政污水深度处理单元的持续运行提供材料依据。"
+    ],
+    "research_goal_level": "unspecified",
+    "research_goal_level_source": "default",
+    "experimental_unit": "独立锥形瓶/反应管",
+    "groups": [
+      {
+        "name": "G0",
+        "treatment": "无材料空白",
+        "n_claimed": "3",
+        "status": "stated",
+        "quote": "无材料空白",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "G0 | 无材料空白 | 无 | 0 | 评价溶液与容器背景变化",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ],
+        "control_role_hint": "blank",
+        "container_id": null,
+        "factor_levels": {
+          "吸附材料类型": "无",
+          "吸附剂投加量": "0 g/L"
+        }
+      },
+      {
+        "name": "G1",
+        "treatment": "原始生物炭",
+        "n_claimed": "3",
+        "status": "stated",
+        "quote": "原始生物炭",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "G1 | 原始生物炭 | BC | 0.50 g/L | 材料基准比较",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ],
+        "control_role_hint": "reference",
+        "container_id": null,
+        "factor_levels": {
+          "吸附材料类型": "BC",
+          "吸附剂投加量": "0.50 g/L"
+        }
+      },
+      {
+        "name": "G2",
+        "treatment": "镧改性生物炭",
+        "n_claimed": "3",
+        "status": "stated",
+        "quote": "镧改性生物炭",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "G2 | 镧改性生物炭 | La-BC | 0.50 g/L | 改性效果比较",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ],
+        "control_role_hint": "experimental",
+        "container_id": null,
+        "factor_levels": {
+          "吸附材料类型": "La-BC",
+          "吸附剂投加量": "0.50 g/L"
+        }
+      },
+      {
+        "name": "D1-D4",
+        "treatment": "La-BC 剂量组",
+        "n_claimed": "3",
+        "status": "stated",
+        "quote": "La-BC 剂量组",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "D1–D4 | La-BC 剂量组 | La-BC | 0.10–1.00 g/L | 筛选适宜投加量",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ],
+        "control_role_hint": "experimental",
+        "container_id": null,
+        "factor_levels": {
+          "吸附材料类型": "La-BC",
+          "吸附剂投加量": "0.10–1.00 g/L"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "type": "blank",
+        "label": "无材料空白",
+        "present": true,
+        "excludes_alternative": "",
+        "status": "stated",
+        "quote": "无材料空白",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "G0 | 无材料空白 | 无 | 0 | 评价溶液与容器背景变化",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "type": "blank",
+        "label": "试剂空白",
+        "present": true,
+        "excludes_alternative": "",
+        "status": "stated",
+        "quote": "试剂空白",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "每批分析设标准曲线、试剂空白及平行测定。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-16"
+          }
+        ]
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "正磷酸盐浓度",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "过滤后采用钼酸铵分光光度法测定溶解性正磷酸盐",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-16"
+          }
+        ],
+        "supports_claims": [
+          "C1",
+          "C3",
+          "C4"
+        ]
+      },
+      {
+        "text": "除磷率",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "除磷率按 R = (C₀ − Cₑ) / C₀ × 100% 计算",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-34"
+          }
+        ],
+        "supports_claims": [
+          "C1",
+          "C3",
+          "C4"
+        ]
+      },
+      {
+        "text": "吸附量",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "吸附量按 qₑ = (C₀ − Cₑ) × V / m 计算",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-34"
+          }
+        ],
+        "supports_claims": [
+          "C1"
+        ]
+      },
+      {
+        "text": "pH",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "吸附前后记录初始与终点 pH。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-16"
+          }
+        ],
+        "supports_claims": [
+          "C3"
+        ]
+      },
+      {
+        "text": "材料质量",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "材料只在首轮投加前和第 5 轮结束后称量干质量",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-30"
+          }
+        ],
+        "supports_claims": [
+          "C4"
+        ]
+      },
+      {
+        "text": "表面元素与形貌表征 (FTIR, XPS, SEM-EDS)",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "采用 SEM–EDS、FTIR 和 XPS 分析形貌及表面元素信息。吸附前后各选取一批材料进行 FTIR 与 XPS 对比，结合 P 2p、La 3d 等信号变化讨论磷的固定过程。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-14"
+          }
+        ],
+        "supports_claims": [
+          "C2"
+        ]
+      }
+    ],
+    "replication": {
+      "text": "分配单位=锥形瓶/离心管; 子样本=上清液/悬液滤液; 声称为独立单位=独立锥形瓶/反应管",
+      "status": "contradictory",
+      "ambiguous_parallel": true,
+      "has_biological": false,
+      "has_technical": true,
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "每个处理设置 3 个独立锥形瓶",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-19"
+        },
+        {
+          "source_file": "trial2.docx",
+          "original_text": "每个条件设置 3 个独立反应管",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-26"
+        },
+        {
+          "source_file": "trial2.docx",
+          "original_text": "技术检测复孔先取均值形成反应瓶数据，再进行统计分析。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-35"
+        }
+      ]
+    },
+    "statistical_plan": "数据以均值 ± 标准差表示。对 BC 与 La-BC 的除磷率采用独立样本 t 检验，对不同 pH、剂量、共存组分和再生轮次分别开展单因素方差分析，必要时采用 Tukey 事后多重比较。显著性水平为 p < 0.05。动力学与等温模型以拟合优度和参数合理性综合选择。技术检测复孔先取均值形成反应瓶数据，再进行统计分析。",
+    "statistics_status": "stated",
+    "statistics_locations": [
+      {
+        "source_file": "trial2.docx",
+        "original_text": "4 数据处理与统计分析",
+        "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "paragraph_id": "p-33"
+      }
+    ],
+    "claims": [
+      "La-BC 相比 BC 在 2.0 mg P/L 条件下表现出更高的除磷率",
+      "镧—磷配位是提升吸附能力的主导机制",
+      "La-BC具有较好的水质适应性及对磷的选择性",
+      "连续 5 轮再生后除磷率保持在初始水平的 80% 以上，具有良好的再生稳定性",
+      "适合用于城镇污水厂二级出水深度除磷的连续运行单元"
+    ],
+    "field_meta": {
+      "research_question_status": "stated",
+      "research_question_locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "1.1 研究假设",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-7"
+        }
+      ],
+      "hypothesis_status": "stated",
+      "hypothesis_locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "H1：镧改性可显著提高生物炭对正磷酸盐的去除能力，且提高主要来源于材料表面镧位点与磷酸根之间的特异性结合。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-8"
+        },
+        {
+          "source_file": "trial2.docx",
+          "original_text": "预期 La-BC 相比 BC 在 2.0 mg P/L 条件下表现出更高的除磷率，XPS 中磷与镧的结合能信息变化将用于说明镧—磷配位是提升吸附能力的主导机制。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-37"
+        }
+      ],
+      "experimental_unit_status": "stated",
+      "experimental_unit_locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "除磷率按 R = (C₀ − Cₑ) / C₀ × 100% 计算，吸附量按 qₑ = (C₀ − Cₑ) × V / m 计算。数据以均值 ± 标准差表示。对 BC 与 La-BC 的除磷率采用独立样本 t 检验，对不同 pH、剂量、共存组分和再生轮次分别开展单因素方差分析，必要时采用 Tukey 事后多重比较。显著性水平为 p < 0.05。动力学与等温模型以拟合优度和参数合理性综合选择。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-34"
+        }
+      ]
+    },
+    "hypotheses_structured": [
+      {
+        "id": "H1",
+        "text": "镧改性可显著提高生物炭对正磷酸盐的去除能力，且提高主要来源于材料表面镧位点与磷酸根之间的特异性结合。",
+        "expected_conclusion": "La-BC 相比 BC 在 2.0 mg P/L 条件下表现出更高的除磷率，镧—磷配位是提升吸附能力的主导机制。",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "H1：镧改性可显著提高生物炭对正磷酸盐的去除能力，且提高主要来源于材料表面镧位点与磷酸根之间的特异性结合。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-8"
+          },
+          {
+            "source_file": "trial2.docx",
+            "original_text": "预期 La-BC 相比 BC 在 2.0 mg P/L 条件下表现出更高的除磷率，XPS 中磷与镧的结合能信息变化将用于说明镧—磷配位是提升吸附能力的主导机制。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-37"
+          }
+        ]
+      },
+      {
+        "id": "H2",
+        "text": "La-BC 在不同 pH 和典型共存组分条件下仍能保持较高的磷去除能力，表明其对污水中磷具有较好的选择性与适应性。",
+        "expected_conclusion": "材料具有较好的水质适应性及对磷的选择性。",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "H2：La-BC 在不同 pH 和典型共存组分条件下仍能保持较高的磷去除能力，表明其对污水中磷具有较好的选择性与适应性。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-9"
+          },
+          {
+            "source_file": "trial2.docx",
+            "original_text": "不同 pH 和共存组分实验预计能够确认材料具有较好的水质适应性及对磷的选择性。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-37"
+          }
+        ]
+      },
+      {
+        "id": "H3",
+        "text": "La-BC 经多轮碱洗再生后仍具有稳定除磷效果，可为市政污水深度处理单元的持续运行提供材料依据。",
+        "expected_conclusion": "连续 5 轮再生后除磷率保持在初始水平的 80% 以上，具有良好的再生稳定性。",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "H3：La-BC 经多轮碱洗再生后仍具有稳定除磷效果，可为市政污水深度处理单元的持续运行提供材料依据。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-10"
+          },
+          {
+            "source_file": "trial2.docx",
+            "original_text": "若连续 5 轮再生后除磷率保持在初始水平的 80% 以上，则认为其具有良好的再生稳定性",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-38"
+          }
+        ]
+      }
+    ],
+    "table_classifications": [
+      {
+        "table_id": "t-1",
+        "table_kind": "treatment_group_table",
+        "caption": "表 1  基础实验分组"
+      },
+      {
+        "table_id": "t-2",
+        "table_kind": "sampling_schedule_table",
+        "caption": "表 2  样品采集与测试安排"
+      }
+    ],
+    "units": {
+      "allocation_unit": "锥形瓶/离心管",
+      "independent_experimental_unit": "独立锥形瓶/反应管",
+      "subsample_unit": "上清液/悬液滤液",
+      "technical_replicate_unit": "复孔",
+      "nesting": "技术重复(复孔)嵌套于子样本(上清液)，子样本嵌套于独立实验单位(反应瓶)",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "每个处理设置 3 个独立锥形瓶",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-19"
+        },
+        {
+          "source_file": "trial2.docx",
+          "original_text": "每个条件设置 3 个独立反应管",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-26"
+        },
+        {
+          "source_file": "trial2.docx",
+          "original_text": "技术检测复孔先取均值形成反应瓶数据，再进行统计分析。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-35"
+        }
+      ]
+    },
+    "timepoints": {
+      "points": [
+        "0 h",
+        "5 min",
+        "15 min",
+        "30 min",
+        "60 min",
+        "120 min",
+        "240 min",
+        "360 min",
+        "24 h",
+        "每轮结束"
+      ],
+      "repeated_measures": true,
+      "destructive_assay": false,
+      "returned_after_assay": true,
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "同一反应管用于各时间点连续取样。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-26"
+        },
+        {
+          "source_file": "trial2.docx",
+          "original_text": "再将回收固体全部投入新的 50 mL、2.0 mg P/L 的磷溶液中，重复“吸附—碱洗—再吸附”共 5 轮。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-29"
+        }
+      ]
+    },
+    "claims_structured": [
+      {
+        "id": "C1",
+        "text": "La-BC 相比 BC 在 2.0 mg P/L 条件下表现出更高的除磷率",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "预期 La-BC 相比 BC 在 2.0 mg P/L 条件下表现出更高的除磷率",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-37"
+          }
+        ]
+      },
+      {
+        "id": "C2",
+        "text": "镧—磷配位是提升吸附能力的主导机制",
+        "kind": "mechanism",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "XPS 中磷与镧的结合能信息变化将用于说明镧—磷配位是提升吸附能力的主导机制。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-37"
+          }
+        ]
+      },
+      {
+        "id": "C3",
+        "text": "La-BC具有较好的水质适应性及对磷的选择性",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "不同 pH 和共存组分实验预计能够确认材料具有较好的水质适应性及对磷的选择性。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-37"
+          }
+        ]
+      },
+      {
+        "id": "C4",
+        "text": "连续 5 轮再生后除磷率保持在初始水平的 80% 以上，具有良好的再生稳定性",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "若连续 5 轮再生后除磷率保持在初始水平的 80% 以上，则认为其具有良好的再生稳定性",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-38"
+          }
+        ]
+      },
+      {
+        "id": "C5",
+        "text": "适合用于城镇污水厂二级出水深度除磷的连续运行单元",
+        "kind": "extrapolation",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "进一步提出其适合用于城镇污水厂二级出水深度除磷的连续运行单元，并为长期材料投用提供依据。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-38"
+          }
+        ]
+      }
+    ],
+    "factors": [
+      {
+        "name": "吸附材料类型",
+        "levels": [
+          "BC",
+          "La-BC"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "每个处理设置 3 个独立锥形瓶，均由对应材料的一批次制备样品分装而来。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-19"
+          }
+        ]
+      },
+      {
+        "name": "吸附剂投加量",
+        "levels": [
+          "0 g/L",
+          "0.10 g/L",
+          "0.25 g/L",
+          "0.50 g/L",
+          "1.00 g/L"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "吸附剂投加量 0.50 g/L...La-BC 另设置 0.10、0.25、0.50、1.00 g/L 四个剂量",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-19"
+          }
+        ]
+      },
+      {
+        "name": "初始pH",
+        "levels": [
+          "5.0",
+          "7.0",
+          "9.0"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "将反应体系初始 pH 调节至 5.0、7.0 和 9.0",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-23"
+          }
+        ]
+      },
+      {
+        "name": "共存组分",
+        "levels": [
+          "基础水样",
+          "含Ca²⁺、Mg²⁺、HCO₃⁻和腐殖酸水样"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "以 2.0 mg P/L 的基础水样为参照，在另一组水样中同时加入 Ca²⁺（40 mg/L）、Mg²⁺（15 mg/L）、HCO₃⁻（120 mg/L）和腐殖酸（5 mg/L）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-24"
+          }
+        ]
+      },
+      {
+        "name": "初始磷浓度",
+        "levels": [
+          "0.5 mg P/L",
+          "1 mg P/L",
+          "2 mg P/L",
+          "5 mg P/L",
+          "10 mg P/L",
+          "20 mg P/L"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "等温实验设置初始浓度 0.5、1、2、5、10、20 mg P/L",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-27"
+          }
+        ]
+      },
+      {
+        "name": "再生轮次",
+        "levels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "重复“吸附—碱洗—再吸附”共 5 轮。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-29"
+          }
+        ]
+      }
+    ]
+  },
+  "unparsed_assets": [],
+  "parse_warnings": [],
+  "tables_parsed_count": 2,
+  "user_confirmed": false,
+  "user_edits_summary": "",
+  "confirmed_at": null,
+  "manual_supplements": [],
+  "limited_audit_recommended": false
+}

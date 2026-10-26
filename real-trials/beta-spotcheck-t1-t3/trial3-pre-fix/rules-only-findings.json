@@ -1,0 +1,32 @@
+[
+  [
+    "重复测量与破坏性检测冲突",
+    "confirmed",
+    "high",
+    "structural_destructive_rm"
+  ],
+  [
+    "相关性/表征共变不足以支持主要机制主张",
+    "confirmed",
+    "high",
+    "structural_corr_not_cause"
+  ],
+  [
+    "由短周期/简化工况试验外推长期或工程依据过度",
+    "confirmed",
+    "blocker",
+    "structural_over_extrapolation"
+  ],
+  [
+    "以代表单元指导整组补水/处理时，组内独立性待核实",
+    "needs_info",
+    "medium",
+    "structural_representative_unit_dosing"
+  ],
+  [
+    "材料/菌剂为单批次制备，跨批次推广边界待明确",
+    "needs_info",
+    "medium",
+    "structural_single_batch_material"
+  ]
+]

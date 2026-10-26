@@ -1,0 +1,23 @@
+{
+  "trial": "trial5",
+  "mode": "LLM实测-重跑-Trial5-V0.1.3.3",
+  "code_version": "0.1.3.3",
+  "science_freeze": "V0.1.2",
+  "reliability_patch": "V0.1.3.3-review-truncation",
+  "rules_postprocess": "V0.1.3.1",
+  "review_window_tech": "V0.1.3.2",
+  "ce_scope_note": "V0.1.3.3",
+  "spatial_rule_decision": "本轮不纳入（见 V0.1.3.3-空间混杂规则验证.md）",
+  "no_single_batch_regex_expand": true,
+  "no_sterilization_rule": true,
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "source": "/workspace/product/protocol-audit/real-trials/trial5.docx",
+  "started_at": "2026-10-25T23:24:58+08:00",
+  "provider_requested": "glm",
+  "model_requested": "glm-4.6",
+  "no_gold_injected": true
+}

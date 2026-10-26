@@ -1,0 +1,72 @@
+{
+  "findings": [
+    {
+      "id": "F01",
+      "rule_id": "structural_corr_not_cause",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "相关性/表征共变不足以支持主要机制主张"
+    },
+    {
+      "id": "F02",
+      "rule_id": "structural_over_extrapolation",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "由短周期/简化工况试验外推长期或工程依据过度"
+    },
+    {
+      "id": "F03",
+      "rule_id": "structural_representative_unit_dosing",
+      "category": "needs_info",
+      "severity": "medium",
+      "title": "以代表单元指导整组补水/处理时，组内独立性待核实"
+    },
+    {
+      "id": "F04",
+      "rule_id": "structural_single_batch_material",
+      "category": "needs_info",
+      "severity": "medium",
+      "title": "材料/菌剂为单批次制备，跨批次推广边界待明确"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "question": "「代表单元」指导整组补水/处理时：是否逐盆（或逐实验单元）监测与校准？代表读数如何映射到同组其他单元？如何保证组内处理暴露一致？",
+      "blocks_dimensions": [
+        "pseudoreplication",
+        "confounding"
+      ],
+      "priority": "high",
+      "context_quote": "",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "；干旱组逐步降水并维持在约 40% 田间持水量。每天记录各组代表盆的质量变化，并据此调整同组盆栽的补水量。\n\n5.3 试验周期\n\n从开始水分处理之日记为 D0，连续培养 28 d。D0、D7、D14、D21 和 D28 ",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "char_start": 1768,
+          "char_end": 1771
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "question": "关键材料/菌剂是否仅同一制备批次？当前设计拟支持的主张范围是批次内处理比较，还是跨批次/生产放大？若为后者，是否有独立制备批次或批间变异估计？",
+      "blocks_dimensions": [
+        "reproducibility",
+        "claim_evidence"
+      ],
+      "priority": "high",
+      "context_quote": "",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "浓度调整为约 1×10^8 CFU/mL。所有接种处理均使用同一批培养所得菌液。\n\n供试土壤包括退化黄土（L）和参考农田土壤（R），分别采集后风干、过 2 mm 筛并混匀。每盆装土 3.0 kg。试验前测定土壤 pH、有",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "char_start": 739,
+          "char_end": 742
+        }
+      ]
+    }
+  ]
+}

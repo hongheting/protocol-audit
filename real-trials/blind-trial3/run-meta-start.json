@@ -1,0 +1,27 @@
+{
+  "trial": "trial3",
+  "mode": "LLM实测-盲测",
+  "code_version": "0.1.2.1",
+  "science_freeze": "V0.1.2",
+  "reliability_patch": "V0.1.2.1",
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "file_hashes": {
+    "llm_parse.py": "e003c8cd419979d5381451604e8318431e6d0436a0a6e42d6ad1c83d6797076e",
+    "llm_review.py": "827c34c0db383482027ff714e4e1cfc79be72ec2a3a87180e23038231ccfe0c2",
+    "llm_client.py": "f369ccc234c67b9cf0b447f8f2fbd50613f384727f98a36b78c2264ca860f35f",
+    "pipeline.py": "3114d08003da68d3ced529af0b761ef776f53e60d1546cf6b8ff6df4a2bb30d2",
+    "rules_structural.py": "e5facd47485676557a47b74f3680cd83006ae5edf3466bad428f9b87f32d3ea9",
+    "claim_evidence.py": "f318320c6351be05d3d8492321fd8702c5b4c95ad37f17a180d8ddcb90fbfa17",
+    "optimizer_a.py": "05329f985aae487de37f91d1f2bc39cc73b8366820bb0c1133d75961ed23cb6b"
+  },
+  "source": "/workspace/product/protocol-audit/real-trials/trial3.docx",
+  "started_at": "2026-10-25T21:36:49+08:00",
+  "provider_requested": "glm",
+  "model_requested": "glm-4.6",
+  "no_gold_injected": true,
+  "no_trial3_specific_rules": true
+}

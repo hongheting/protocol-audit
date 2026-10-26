@@ -1,0 +1,243 @@
+{
+  "schema_version": "gold-0.1",
+  "protocol_id": "trial1",
+  "source_file": "trial1.docx",
+  "title": "介孔二氧化硅功能涂层与脉冲 UV-C 联用对淡水生物膜附着的影响",
+  "engine_under_test_note": "评测专用；禁止进入生产 Prompt；禁止针对本文件硬编码结论",
+  "primary_metric": "识别影响结论成立的关键缺陷，而非问题数量",
+  "core_issues": [
+    {
+      "id": "G1",
+      "title": "UV-C 与水槽完全混杂（处理因素与实验容器一一对应）",
+      "severity": "blocker",
+      "category": "confirmed",
+      "dimension": "confounding",
+      "experimental_level": "tank",
+      "locations": [
+        {"paragraph_id": "p-16", "original_text_excerpt": "UV-C 模块安装在 B 水槽上方"},
+        {"table_id": "t-2", "original_text_excerpt": "脉冲 UV-C | 所在水槽"},
+        {"paragraph_id": "p-21", "original_text_excerpt": "暂不另外设置水槽层面的平行"}
+      ],
+      "expected_judgment": "A 槽全无 UV、B 槽全有 UV，各仅 1 槽；UV 主效应与 H2 交互均不可与水槽效应分离；处理分配单位为水槽。",
+      "acceptable_equivalent_phrases": [
+        "处理与水槽混杂",
+        "UV 与容器完全混杂",
+        "tank confounding",
+        "treatment nested in tank",
+        "因素与实验容器一一对应",
+        "无法分离 UV 与水槽效应"
+      ],
+      "must_not_false_positive": false
+    },
+    {
+      "id": "G2",
+      "title": "伪重复：挂板为同槽子样本，方案将挂板当 n=3 独立样本",
+      "severity": "blocker",
+      "category": "confirmed",
+      "dimension": "pseudoreplication",
+      "experimental_level": "coupon",
+      "locations": [
+        {"paragraph_id": "p-20", "original_text_excerpt": "将每组 3 片挂板视为 3 个平行样"},
+        {"paragraph_id": "p-32", "original_text_excerpt": "挂板作为独立样本，取 n = 3"}
+      ],
+      "expected_judgment": "处理施加单位是水槽；同槽挂板为子样本/伪重复，不能当作独立实验单位。",
+      "acceptable_equivalent_phrases": [
+        "伪重复",
+        "pseudoreplication",
+        "挂板不是独立重复",
+        "子样本",
+        "实验单位是水槽",
+        "n=3 挂板非独立"
+      ],
+      "must_not_false_positive": false
+    },
+    {
+      "id": "G3",
+      "title": "助溶剂混杂：功能颗粒用有机助溶剂预分散，基础涂层不加且无助溶剂对照",
+      "severity": "high",
+      "category": "confirmed",
+      "dimension": "controls",
+      "experimental_level": "assay",
+      "locations": [
+        {"paragraph_id": "p-13", "original_text_excerpt": "不另设置助溶剂单独处理组"}
+      ],
+      "expected_judgment": "H1 的颗粒效应与助溶剂效应不可分。",
+      "acceptable_equivalent_phrases": [
+        "助溶剂混杂",
+        "溶剂对照缺失",
+        "vehicle control",
+        "载体对照",
+        "颗粒效应与溶剂不可分"
+      ],
+      "must_not_false_positive": false
+    },
+    {
+      "id": "G4",
+      "title": "协同/析因判据错误：B4 低于 B2&B3 ≠ 协同；应用 2×2 交互检验",
+      "severity": "high",
+      "category": "confirmed",
+      "dimension": "statistics",
+      "experimental_level": "claim",
+      "locations": [
+        {"paragraph_id": "p-33", "original_text_excerpt": "即判定功能涂层与 UV-C 形成显著协同效应"},
+        {"paragraph_id": "p-32", "original_text_excerpt": "one-way ANOVA"}
+      ],
+      "expected_judgment": "2×2 析因应检验交互项；one-way ANOVA+Tukey 不当作为协同判据。",
+      "acceptable_equivalent_phrases": [
+        "交互效应",
+        "析因",
+        "factorial",
+        "不等于协同",
+        "2×2",
+        "interaction term",
+        "one-way ANOVA 不适合"
+      ],
+      "must_not_false_positive": false
+    },
+    {
+      "id": "G5",
+      "title": "重复测量与破坏性测定冲突：结晶紫后冲洗放回，D7/14/21 非独立",
+      "severity": "high",
+      "category": "confirmed",
+      "dimension": "endpoints",
+      "experimental_level": "coupon",
+      "locations": [
+        {"paragraph_id": "p-24", "original_text_excerpt": "测定结束后以去离子水轻轻冲洗挂板表面，再放回原水槽"},
+        {"table_id": "t-3", "original_text_excerpt": "D7|D14|D21"},
+        {"paragraph_id": "p-32", "original_text_excerpt": "按独立时间点分别分析"}
+      ],
+      "expected_judgment": "染色/冲洗改变生物膜；后续时间点不能当作独立观测。",
+      "acceptable_equivalent_phrases": [
+        "破坏性测定",
+        "destructive",
+        "重复测量冲突",
+        "染色后放回",
+        "时间点非独立",
+        "repeated measures"
+      ],
+      "must_not_false_positive": false
+    },
+    {
+      "id": "G6",
+      "title": "主张过度：H3 相关≠主要机制；单轮 21d 室内外推工程长期依据",
+      "severity": "high",
+      "category": "confirmed",
+      "dimension": "claim_evidence",
+      "experimental_level": "claim",
+      "locations": [
+        {"paragraph_id": "p-9", "original_text_excerpt": "主要通过改变涂层表面润湿性"},
+        {"paragraph_id": "p-33", "original_text_excerpt": "认定为主要防污机制"},
+        {"paragraph_id": "p-37", "original_text_excerpt": "长期防污要求，并作为后续工程应用的主要技术依据"}
+      ],
+      "expected_judgment": "接触角-附着量相关不能认定主要机制；单轮室内试验不足以支撑取水口长期工程外推。可记为 G6 合并，或 6a 机制 + 6b 外推。",
+      "acceptable_equivalent_phrases": [
+        "相关不等于因果",
+        "机制过度",
+        "correlation is not causation",
+        "外推过度",
+        "工程依据不足",
+        "主张降级",
+        "润湿性并非已证明的主要机制"
+      ],
+      "must_not_false_positive": false,
+      "sub_issues": ["G6a_mechanism", "G6b_extrapolation"]
+    }
+  ],
+  "secondary_issues": [
+    {
+      "id": "G7",
+      "title": "EPS 三片混样导致每组 n=1",
+      "severity": "medium",
+      "category": "confirmed",
+      "dimension": "sample_size",
+      "experimental_level": "assay",
+      "locations": [
+        {"paragraph_id": "p-29", "original_text_excerpt": "同一组的 3 片挂板样品混合后测定"}
+      ],
+      "expected_judgment": "混样后每组仅 1 个观测，无法做组间统计，只能描述。",
+      "acceptable_equivalent_phrases": ["混样", "pooled", "n=1", "无法统计"],
+      "must_not_false_positive": false
+    },
+    {
+      "id": "G8",
+      "title": "挂板固定排列不随机 → 位置混杂",
+      "severity": "medium",
+      "category": "confirmed",
+      "dimension": "confounding",
+      "experimental_level": "coupon",
+      "locations": [
+        {"paragraph_id": "p-18", "original_text_excerpt": "按编号顺序依次排列，运行期间不调整位置"}
+      ],
+      "expected_judgment": "位置（流场、距灯距离）可能与处理混杂。",
+      "acceptable_equivalent_phrases": ["未随机", "位置混杂", "固定排列", "randomization"],
+      "must_not_false_positive": false
+    },
+    {
+      "id": "G9",
+      "title": "UV 剂量未在挂板处水下实测",
+      "severity": "medium",
+      "category": "confirmed",
+      "dimension": "reproducibility",
+      "experimental_level": "tank",
+      "locations": [
+        {"paragraph_id": "p-16", "original_text_excerpt": "暂不进行挂板表面的水下实际辐照剂量测定"}
+      ],
+      "expected_judgment": "仅空气 3 cm 测量，剂量无法在挂板处报告或复现。",
+      "acceptable_equivalent_phrases": ["剂量未测", "水下辐照", "dose not measured", "不可复现"],
+      "must_not_false_positive": false
+    }
+  ],
+  "sound_designs_must_not_flag": [
+    {
+      "id": "S1",
+      "title": "96 孔复孔取均值作为挂板值（技术重复处理正确）",
+      "severity": "low",
+      "category": "suggestion",
+      "dimension": "pseudoreplication",
+      "experimental_level": "technical_replicate",
+      "locations": [
+        {"paragraph_id": "p-27", "original_text_excerpt": "每份洗脱液测 3 个孔，三个孔的均值作为该挂板的测定值"}
+      ],
+      "expected_judgment": "技术重复已正确聚合到挂板水平，不应报伪重复或要求把孔当作独立 n。",
+      "acceptable_equivalent_phrases": [],
+      "must_not_false_positive": true,
+      "false_positive_patterns": ["96孔.*伪重复", "复孔.*独立样本", "缺少技术重复聚合"]
+    },
+    {
+      "id": "S2",
+      "title": "B0/B1 是有效参照/对照；不得报缺少空白对照",
+      "severity": "high",
+      "category": "confirmed",
+      "dimension": "controls",
+      "experimental_level": "assay",
+      "locations": [
+        {"table_id": "t-2", "original_text_excerpt": "B0 | 裸不锈钢"},
+        {"paragraph_id": "p-20", "original_text_excerpt": "B0 作为裸基材参照组"}
+      ],
+      "expected_judgment": "B0 裸基材参照、B1 基础涂层无 UV 为有效对照/参照，不得误报「缺少空白对照」。",
+      "acceptable_equivalent_phrases": [],
+      "must_not_false_positive": true,
+      "false_positive_patterns": ["缺少空白", "缺少未处理对照", "缺少空白/未处理对照", "missing blank"]
+    }
+  ],
+  "plan_a_requirements": {
+    "must_address": [
+      "水槽/容器层面独立重复，或明确降级无法检验 UV/交互的主张",
+      "助溶剂对照或等价剥离颗粒与溶剂",
+      "2×2 交互分析（而非仅换 ANOVA 掩盖设计）",
+      "停止破坏性测定后放回，或改为牺牲性时间点设计",
+      "收紧 H3 机制与工程外推表述"
+    ],
+    "must_not": [
+      "仅建议更换统计模型而不处理水槽层面独立重复",
+      "机械新增无意义空白对照组（B0/B1 已存在）",
+      "把采样时间点当作处理组"
+    ]
+  },
+  "scoring": {
+    "core_ids": ["G1", "G2", "G3", "G4", "G5", "G6"],
+    "secondary_ids": ["G7", "G8", "G9"],
+    "false_positive_ids": ["S1", "S2"],
+    "minimum_success": "核心 6 项中至少识别混杂+伪重复，并覆盖助溶剂或析因/重复测量中的多数 confirmed；不得误报缺空白对照；Plan A 提到水槽/容器层面重复或主张降级"
+  }
+}

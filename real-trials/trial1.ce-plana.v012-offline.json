@@ -1,0 +1,542 @@
+{
+  "findings": [
+    {
+      "id": "F01",
+      "dimension": "confounding",
+      "severity": "blocker",
+      "category": "confirmed",
+      "title": "处理因素与实验容器完全混杂",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "每份洗脱液测 3 个孔，三个孔的均值作为该挂板的测定值。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-27"
+        }
+      ],
+      "why_invalidates": "UV（或其他处理）与水槽/容器一一对应时，处理主效应与容器效应无法分离；交互/协同主张在结构上不可检验。",
+      "fix": "在容器层面设置独立重复（每处理多个水槽/反应器），或明确降级主张：不得宣称可分离的 UV 主效应或处理×UV 交互；不可仅靠更换统计模型掩盖。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "high",
+      "hard_error": true,
+      "rule_id": "structural_container_confound"
+    },
+    {
+      "id": "F02",
+      "dimension": "pseudoreplication",
+      "severity": "blocker",
+      "category": "confirmed",
+      "title": "伪重复：子样本被当作独立实验单位",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "据统计与结果判断\n\n所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3。采用单因素方差分析（one-way ANOVA）比较 B0—B4 的差异，组间多重比较使用 Tukey 检验，以 p < 0.",
+          "media_type": "docx",
+          "char_start": 2181,
+          "char_end": 2189
+        }
+      ],
+      "why_invalidates": "处理分配在容器层面时，同容器内挂板/片为子样本；将子样本当 n 会低估变异、抬高假阳性。",
+      "fix": "以处理分配单位（如水槽）为独立实验单位做推断；或增加容器层面独立重复。技术重复（复孔）可聚合，但不得把同槽挂板当独立 n。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "high",
+      "hard_error": true,
+      "rule_id": "structural_pseudoreplication"
+    },
+    {
+      "id": "F03",
+      "dimension": "controls",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "助溶剂/载体与处理混杂且缺少匹配对照",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "同一批次内制备，室温固化 72 h。\n\n功能颗粒先以少量有机助溶剂预分散，再加入树脂混合液；未添加功能颗粒的基础涂层按原配方制备。配制时记录涂层外观与干膜厚度，不另设置助溶剂单独处理组。\n\n2.2  水体与设备\n\n试验水",
+          "media_type": "docx",
+          "char_start": 685,
+          "char_end": 688
+        }
+      ],
+      "why_invalidates": "功能组分效应与助溶剂效应不可分，处理效应主张证据被破坏。",
+      "fix": "增加助溶剂单独处理对照（或等价载体对照），使溶剂暴露在组间匹配。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "low",
+      "hard_error": true,
+      "rule_id": "structural_solvent_confound"
+    },
+    {
+      "id": "F04",
+      "dimension": "statistics",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "析因/协同判据不当（需交互项，而非仅 one-way 多重比较）",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "）对涂层防污性能的影响，分析其与脉冲 UV-C 之间是否存在协同效应，并讨论涂层润湿性变化在附着抑制中的作用。\n\n拟验证假设 H1：功能颗粒掺入涂层后，可降低附着生物量。\n\n拟验证假设 H2：功能涂层与 UV-C 联用时",
+          "media_type": "docx",
+          "char_start": 341,
+          "char_end": 343
+        }
+      ],
+      "why_invalidates": "「联用组低于两单因素组」不等于协同；2×2 析因应检验交互效应（并声明加性/乘性尺度）。",
+      "fix": "按析因结构报告主效应与交互；协同主张需预定义交互检验，不能靠 Tukey 事后比较替代。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "low",
+      "hard_error": true,
+      "rule_id": "structural_factorial_interaction"
+    },
+    {
+      "id": "F05",
+      "dimension": "endpoints",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "重复测量与破坏性检测冲突",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "组均跟踪同一批挂板：测定结束后以去离子水轻轻冲洗挂板表面，再放回原水槽继续培养。\n\n表 2  采样与测试计划\n\n时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 ",
+          "media_type": "docx",
+          "char_start": 1638,
+          "char_end": 1640
+        }
+      ],
+      "why_invalidates": "破坏性测定（如结晶紫染色）后冲洗放回，改变生物膜状态；后续时间点不是同一过程的独立观测。",
+      "fix": "改为各时间点独立牺牲样品，或仅在终点做破坏性测定；勿将污染后的重复测量当作独立时间点分析。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "medium",
+      "hard_error": true,
+      "rule_id": "structural_destructive_rm"
+    },
+    {
+      "id": "F06",
+      "dimension": "claim_evidence",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "相关性/表征共变不足以支持主要机制主张",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "附着生物量呈显著相关，则进一步将表面润湿性变化认定为主要防污机制。\n\n最终拟绘制不同处理的生物膜附着变化曲线、接触角与附着量相关性图，以及展示组合处理效果的机理示意图。\n\n6  预期结果与应用讨论\n\n预计功能涂层相对于基",
+          "media_type": "docx",
+          "char_start": 2397,
+          "char_end": 2399
+        }
+      ],
+      "why_invalidates": "相关分析或吸附前后表征共变只说明伴随变化，不能单独认定「主要/主导机制」。",
+      "fix": "下调为伴随/相关描述；若要机制结论，需能排除替代解释的操纵或对照（而非仅增加拟合优度）。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "medium",
+      "hard_error": true,
+      "rule_id": "structural_corr_not_cause"
+    },
+    {
+      "id": "F07",
+      "dimension": "claim_evidence",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "由短周期/简化工况试验外推长期或工程依据过度",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "式能够满足淡水取水口及水下监测设备的长期防污要求，并作为后续工程应用的主要技术依据。\n\n7  质量控制及实施说明\n\n实验开始前统一检查挂板规格、涂层外观及光源运行状态；试验期间定期清理水槽外壁，避免额外遮光。对于异常样品",
+          "media_type": "docx",
+          "char_start": 2611,
+          "char_end": 2613
+        }
+      ],
+      "why_invalidates": "短周期、批式或简化水质的实验室结果不能直接作为长期工程/连续运行单元的主要依据。",
+      "fix": "收紧应用表述为「初步实验室证据」；长期或工程主张需更长周期、相关工况或现场/中试验证。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "none",
+      "hard_error": true,
+      "rule_id": "structural_over_extrapolation"
+    },
+    {
+      "id": "F08",
+      "dimension": "sample_size",
+      "severity": "medium",
+      "category": "confirmed",
+      "title": "混样导致每组有效 n=1",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": " 72 h。\n\n功能颗粒先以少量有机助溶剂预分散，再加入树脂混合液；未添加功能颗粒的基础涂层按原配方制备。配制时记录涂层外观与干膜厚度，不另设置助溶剂单独处理组。\n\n2.2  水体与设备\n\n试验水取自某城市湖泊近岸区域，",
+          "media_type": "docx",
+          "char_start": 697,
+          "char_end": 699
+        }
+      ],
+      "why_invalidates": "同组多样品混合后每组仅一个观测，无法估计组内变异。",
+      "fix": "分样测定或明确该指标仅作描述性展示、不参与推断统计。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "low",
+      "hard_error": false,
+      "rule_id": "structural_pooling_n1"
+    },
+    {
+      "id": "F09",
+      "dimension": "confounding",
+      "severity": "medium",
+      "category": "confirmed",
+      "title": "挂板位置固定未随机，可能引入位置混杂",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "5 片。所有挂板固定在水槽侧壁挂架上，各组挂板按编号顺序依次排列，运行期间不调整位置。\n\n表 1  处理分组与布置\n\n编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈",
+          "media_type": "docx",
+          "char_start": 1113,
+          "char_end": 1115
+        }
+      ],
+      "why_invalidates": "流场、遮光、距灯距离等与处理可能混杂。",
+      "fix": "随机化或区组化挂板位置，并报告位置设计。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "low",
+      "hard_error": false,
+      "rule_id": "structural_position_confound"
+    },
+    {
+      "id": "F10",
+      "dimension": "reproducibility",
+      "severity": "medium",
+      "category": "confirmed",
+      "title": "UV 剂量未在挂板处水下实测",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "、距灯面 3 cm 处测量辐照度。实验期间暂不进行挂板表面的水下实际辐照剂量测定。\n\n3  实验分组、布置与重复设置\n\n各组按表 1 设置。每组设置 3 片挂板，共计 15 片。所有挂板固定在水槽侧壁挂架上，各组挂板按编",
+          "media_type": "docx",
+          "char_start": 1028,
+          "char_end": 1030
+        }
+      ],
+      "why_invalidates": "仅空气侧额定/点测无法报告挂板处实际剂量，妨碍复现与效应解释。",
+      "fix": "在挂板位置进行水下辐照剂量测定并写入方案。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "low",
+      "hard_error": false,
+      "rule_id": "structural_uv_dose"
+    }
+  ],
+  "claim_evidence_map": {
+    "rows": [
+      {
+        "id": "CE01",
+        "claim": "H1：功能涂层组（B2）附着生物量显著低于基础涂层组（B1）",
+        "evidence_from_design": "比较：组间比较（B0:裸不锈钢基材，无涂层，无UV-C；B1:基础涂层，无功能颗粒，无UV-C；B2:功能涂层，1.5%功能颗粒，无UV-C；B3:基础涂层，无功能颗粒，施加UV-C；B4:功能涂层，1.5%功能颗粒，施加UV-C）；相关因素：功能颗粒[无/1.5%]；脉冲UV-C[否/是]；指标：OD590（结晶紫染色法表征附着生物量）；静态水接触角（评价涂层润湿性）；EPS三维荧光光谱信号",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "处理因素与实验容器完全混杂；伪重复：子样本被当作独立实验单位；助溶剂/载体与处理混杂且缺少匹配对照",
+        "aligned_goal_levels": [
+          "treatment_effect",
+          "exploratory"
+        ],
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "拟验证假设 H1：功能颗粒掺入涂层后，可降低附着生物量。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-7"
+          }
+        ],
+        "hypothesis_id": "H1",
+        "planned_comparison": "组间比较（B0:裸不锈钢基材，无涂层，无UV-C；B1:基础涂层，无功能颗粒，无UV-C；B2:功能涂层，1.5%功能颗粒，无UV-C；B3:基础涂层，无功能颗粒，施加UV-C；B4:功能涂层，1.5%功能颗粒，施加UV-C）；相关因素：功能颗粒[无/1.5%]；脉冲UV-C[否/是]",
+        "endpoints": [
+          "OD590（结晶紫染色法表征附着生物量）",
+          "静态水接触角（评价涂层润湿性）",
+          "EPS三维荧光光谱信号"
+        ],
+        "evidence_needed": "与假设对齐的对照、独立实验单位与终点",
+        "design_supports": "no",
+        "fix_hint": "在容器层面设置独立重复（每处理多个水槽/反应器），或明确降级主张：不得宣称可分离的 UV 主效应或处理×UV 交互；不可仅靠更换统计模型掩盖。"
+      },
+      {
+        "id": "CE02",
+        "claim": "H2：联用组（B4）附着量下降幅度显著高于B2与B3",
+        "evidence_from_design": "比较：析因/联用比较（因素：功能颗粒[无/1.5%]；脉冲UV-C[否/是]；分组：B0:裸不锈钢基材，无涂层，无UV-C；B1:基础涂层，无功能颗粒，无UV-C；B2:功能涂层，1.5%功能颗粒，无UV-C；B3:基础涂层，无功能颗粒，施加UV-C；B4:功能涂层，1.5%功能颗粒，施加UV-C）；指标：OD590（结晶紫染色法表征附着生物量）；静态水接触角（评价涂层润湿性）；EPS三维荧光光谱信号",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "处理因素与实验容器完全混杂；伪重复：子样本被当作独立实验单位；助溶剂/载体与处理混杂且缺少匹配对照；析因/协同判据不当（需交互项，而非仅 one-way 多重比较）；挂板位置固定未随机，可能引入位置混杂",
+        "aligned_goal_levels": [
+          "treatment_effect"
+        ],
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "拟验证假设 H2：功能涂层与 UV-C 联用时，附着量下降幅度高于单独施加其中任一措施，表明二者存在协同抑制。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-8"
+          }
+        ],
+        "hypothesis_id": "H2",
+        "planned_comparison": "析因/联用比较（因素：功能颗粒[无/1.5%]；脉冲UV-C[否/是]；分组：B0:裸不锈钢基材，无涂层，无UV-C；B1:基础涂层，无功能颗粒，无UV-C；B2:功能涂层，1.5%功能颗粒，无UV-C；B3:基础涂层，无功能颗粒，施加UV-C；B4:功能涂层，1.5%功能颗粒，施加UV-C）",
+        "endpoints": [
+          "OD590（结晶紫染色法表征附着生物量）",
+          "静态水接触角（评价涂层润湿性）",
+          "EPS三维荧光光谱信号"
+        ],
+        "evidence_needed": "在水槽层面可估计的交互；预定义交互检验；非伪重复 n",
+        "design_supports": "no",
+        "fix_hint": "在容器层面设置独立重复（每处理多个水槽/反应器），或明确降级主张：不得宣称可分离的 UV 主效应或处理×UV 交互；不可仅靠更换统计模型掩盖。"
+      },
+      {
+        "id": "CE03",
+        "claim": "H3：功能涂层组接触角与附着生物量呈显著相关",
+        "evidence_from_design": "比较：处理效应比较（B0:裸不锈钢基材，无涂层，无UV-C；B1:基础涂层，无功能颗粒，无UV-C；B2:功能涂层，1.5%功能颗粒，无UV-C；B3:基础涂层，无功能颗粒，施加UV-C；B4:功能涂层，1.5%功能颗粒，施加UV-C）+ 机制相关表征/操纵；机制主张需能排除替代解释，而非仅共变；指标：OD590（结晶紫染色法表征附着生物量）；静态水接触角（评价涂层润湿性）；EPS三维荧光光谱信号",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "相关或表征共变不能证明「主要/主导机制」",
+        "aligned_goal_levels": [
+          "mechanism_causal"
+        ],
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "拟验证假设 H3：功能颗粒主要通过改变涂层表面润湿性，减少初期微生物附着。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-9"
+          }
+        ],
+        "hypothesis_id": "H3",
+        "planned_comparison": "处理效应比较（B0:裸不锈钢基材，无涂层，无UV-C；B1:基础涂层，无功能颗粒，无UV-C；B2:功能涂层，1.5%功能颗粒，无UV-C；B3:基础涂层，无功能颗粒，施加UV-C；B4:功能涂层，1.5%功能颗粒，施加UV-C）+ 机制相关表征/操纵；机制主张需能排除替代解释，而非仅共变",
+        "endpoints": [
+          "OD590（结晶紫染色法表征附着生物量）",
+          "静态水接触角（评价涂层润湿性）",
+          "EPS三维荧光光谱信号"
+        ],
+        "evidence_needed": "能排除替代机制的操纵或对照，而非仅相关/表征共变",
+        "design_supports": "no",
+        "fix_hint": "降为相关/伴随描述，或增加机制分离实验（如工艺空白、位点阻断、定量分配）"
+      },
+      {
+        "id": "CE04",
+        "claim": "该联用方式能够满足淡水取水口及水下监测设备的长期防污要求",
+        "evidence_from_design": "比较：实验室短期/简化体系 → 工程或连续运行主张；指标：OD590（结晶紫染色法表征附着生物量）；静态水接触角（评价涂层润湿性）；EPS三维荧光光谱信号",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "短周期/简化工况的实验室结果不足以直接支撑长期或工程运行主张",
+        "aligned_goal_levels": [
+          "generalizability"
+        ],
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "及水下监测设备的长期防污要求，并作为后续工程应用的主要技术依据。\n\n7  质量控制及实施说明\n\n实验开始前统一检查挂板规格、涂层外观及光源运行状态；试验期间定期",
+            "media_type": "docx"
+          }
+        ],
+        "hypothesis_id": "EXTRAP",
+        "planned_comparison": "实验室短期结果 → 工程/连续运行性能",
+        "endpoints": [
+          "OD590（结晶紫染色法表征附着生物量）",
+          "静态水接触角（评价涂层润湿性）",
+          "EPS三维荧光光谱信号"
+        ],
+        "evidence_needed": "更长周期、相关工况或现场/中试验证",
+        "design_supports": "no",
+        "fix_hint": "将应用表述降为初步实验室证据；补相关工况、更长周期或现场/中试验证后再谈工程依据"
+      }
+    ],
+    "notes": [
+      "当前 research_goal_level=unspecified（未在证据不足时自动升为 mechanism_causal）。",
+      "Claim–Evidence 按假设分行；比较句由分组/因素/主张类型生成，禁止按 H 编号套领域模板。"
+    ]
+  },
+  "optimizer": {
+    "plan_id": "A",
+    "title": "最小必要修改",
+    "rationale": "只修改会直接影响主要结论可靠性的关键证据缺口（分配单位重复、对照可分性、因素解耦、取样衡算、主张边界等），最大程度保留原方案；表述跟随本方案的分配单位与 findings，不套用无关领域模具；不以换模型替代设计重复。",
+    "revised_group_table": {
+      "columns": [
+        "group_name",
+        "treatment",
+        "control_role",
+        "n_suggested",
+        "replicate_unit",
+        "notes"
+      ],
+      "rows": [
+        {
+          "row_id": "G01",
+          "group_name": "B0",
+          "treatment": "裸不锈钢基材，无涂层，无UV-C",
+          "control_role": "negative",
+          "n_suggested": "每处理 ≥2–3 独立水槽",
+          "replicate_unit": "水槽层面的独立实验单位（挂板表面测定位置/洗脱液不计独立 n）",
+          "notes": "裸不锈钢基材，无涂层，无UV-C；Plan A：补水槽层面重复或降级无法分离的因素主张"
+        },
+        {
+          "row_id": "G02",
+          "group_name": "B1",
+          "treatment": "基础涂层，无功能颗粒，无UV-C",
+          "control_role": "negative",
+          "n_suggested": "每处理 ≥2–3 独立水槽",
+          "replicate_unit": "水槽层面的独立实验单位（挂板表面测定位置/洗脱液不计独立 n）",
+          "notes": "基础涂层，无功能颗粒，无UV-C；Plan A：补水槽层面重复或降级无法分离的因素主张"
+        },
+        {
+          "row_id": "G03",
+          "group_name": "B2",
+          "treatment": "功能涂层，1.5%功能颗粒，无UV-C",
+          "control_role": "experimental",
+          "n_suggested": "每处理 ≥2–3 独立水槽",
+          "replicate_unit": "水槽层面的独立实验单位（挂板表面测定位置/洗脱液不计独立 n）",
+          "notes": "功能涂层，1.5%功能颗粒，无UV-C；Plan A：补水槽层面重复或降级无法分离的因素主张"
+        },
+        {
+          "row_id": "G04",
+          "group_name": "B3",
+          "treatment": "基础涂层，无功能颗粒，施加UV-C",
+          "control_role": "experimental",
+          "n_suggested": "每处理 ≥2–3 独立水槽",
+          "replicate_unit": "水槽层面的独立实验单位（挂板表面测定位置/洗脱液不计独立 n）",
+          "notes": "基础涂层，无功能颗粒，施加UV-C；Plan A：补水槽层面重复或降级无法分离的因素主张"
+        },
+        {
+          "row_id": "G05",
+          "group_name": "B4",
+          "treatment": "功能涂层，1.5%功能颗粒，施加UV-C",
+          "control_role": "experimental",
+          "n_suggested": "每处理 ≥2–3 独立水槽",
+          "replicate_unit": "水槽层面的独立实验单位（挂板表面测定位置/洗脱液不计独立 n）",
+          "notes": "功能涂层，1.5%功能颗粒，施加UV-C；Plan A：补水槽层面重复或降级无法分离的因素主张"
+        },
+        {
+          "row_id": "G06",
+          "group_name": "助溶剂/载体对照",
+          "treatment": "基础基质 + 匹配助溶剂（无功能组分）",
+          "control_role": "solvent",
+          "n_suggested": "每处理 ≥2–3 独立水槽",
+          "replicate_unit": "水槽层面的独立实验单位（挂板表面测定位置/洗脱液不计独立 n）",
+          "notes": "Plan A：剥离功能组分效应与助溶剂/载体效应"
+        }
+      ],
+      "notes": [
+        "水槽层面独立重复是证据缺口核心；换 ANOVA/混合模型不能替代。",
+        "Plan A 优先修改主张边界，不机械堆叠新实验组。"
+      ]
+    },
+    "change_notes": [
+      {
+        "id": "C01",
+        "summary": "在处理分配单位（水槽）层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽层面独立重复缺失",
+        "addresses_finding_ids": [
+          "F01",
+          "F02"
+        ],
+        "burden": "high"
+      },
+      {
+        "id": "C02",
+        "summary": "增加助溶剂/载体对照，使目标处理效应可分",
+        "addresses_finding_ids": [
+          "F03"
+        ],
+        "burden": "low"
+      },
+      {
+        "id": "C03",
+        "summary": "按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据",
+        "addresses_finding_ids": [
+          "F04"
+        ],
+        "burden": "none"
+      },
+      {
+        "id": "C04",
+        "summary": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定",
+        "addresses_finding_ids": [
+          "F05"
+        ],
+        "burden": "medium"
+      },
+      {
+        "id": "C05",
+        "summary": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+        "addresses_finding_ids": [
+          "F06",
+          "F07"
+        ],
+        "burden": "none"
+      }
+    ]
+  }
+}

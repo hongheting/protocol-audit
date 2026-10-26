@@ -1,0 +1,709 @@
+{
+  "schema_version": "0.2.0",
+  "source_file": "trial1.docx",
+  "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "ingested_blocks": [
+    {
+      "block_id": "p-1",
+      "block_type": "paragraph",
+      "text": "研究计划  /  Research protocol",
+      "page_number": null,
+      "paragraph_id": "p-1",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-2",
+      "block_type": "paragraph",
+      "text": "介孔二氧化硅功能涂层与脉冲 UV-C 联用对淡水生物膜附着的影响",
+      "page_number": null,
+      "paragraph_id": "p-2",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-3",
+      "block_type": "paragraph",
+      "text": "室内低流速微宇宙试验方案（实验前讨论稿）",
+      "page_number": null,
+      "paragraph_id": "p-3",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-1",
+      "block_type": "table",
+      "text": "方案版本 | v0.4 | 拟定日期 | 2026-10-25\n研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-1",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-4",
+      "block_type": "heading",
+      "text": "1  研究背景、目标与假设",
+      "page_number": null,
+      "paragraph_id": "p-4",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-5",
+      "block_type": "paragraph",
+      "text": "天然淡水中的微生物可在浸没表面形成生物膜，进而促进后续污损。功能涂层与物理防污手段的联用，可能降低附着量并改善长时间运行稳定性。本方案拟在室内低流速水体中，对比普通树脂涂层、添加功能颗粒的涂层及脉冲 UV-C 处理的防污效果。",
+      "page_number": null,
+      "paragraph_id": "p-5",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-6",
+      "block_type": "paragraph",
+      "text": "研究目标：评价介孔二氧化硅负载植物源活性组分（以下简称“功能颗粒”）对涂层防污性能的影响，分析其与脉冲 UV-C 之间是否存在协同效应，并讨论涂层润湿性变化在附着抑制中的作用。",
+      "page_number": null,
+      "paragraph_id": "p-6",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-7",
+      "block_type": "paragraph",
+      "text": "拟验证假设 H1：功能颗粒掺入涂层后，可降低附着生物量。",
+      "page_number": null,
+      "paragraph_id": "p-7",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-8",
+      "block_type": "paragraph",
+      "text": "拟验证假设 H2：功能涂层与 UV-C 联用时，附着量下降幅度高于单独施加其中任一措施，表明二者存在协同抑制。",
+      "page_number": null,
+      "paragraph_id": "p-8",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-9",
+      "block_type": "paragraph",
+      "text": "拟验证假设 H3：功能颗粒主要通过改变涂层表面润湿性，减少初期微生物附着。",
+      "page_number": null,
+      "paragraph_id": "p-9",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-10",
+      "block_type": "heading",
+      "text": "2  实验材料与室内微宇宙体系",
+      "page_number": null,
+      "paragraph_id": "p-10",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-11",
+      "block_type": "heading",
+      "text": "2.1  基材与涂层制备",
+      "page_number": null,
+      "paragraph_id": "p-11",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-12",
+      "block_type": "paragraph",
+      "text": "选用 304 不锈钢挂板，规格为 25 mm × 25 mm × 2 mm。挂板经过统一打磨、乙醇清洁、自然干燥后使用。基础涂层为实验室常用的丙烯酸树脂体系，干膜厚度控制在约 80 ± 15 μm。功能颗粒在涂层中的投加量按干膜质量的 1.5% 计。涂层全部在同一批次内制备，室温固化 72 h。",
+      "page_number": null,
+      "paragraph_id": "p-12",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-13",
+      "block_type": "paragraph",
+      "text": "功能颗粒先以少量有机助溶剂预分散，再加入树脂混合液；未添加功能颗粒的基础涂层按原配方制备。配制时记录涂层外观与干膜厚度，不另设置助溶剂单独处理组。",
+      "page_number": null,
+      "paragraph_id": "p-13",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-14",
+      "block_type": "heading",
+      "text": "2.2  水体与设备",
+      "page_number": null,
+      "paragraph_id": "p-14",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-15",
+      "block_type": "paragraph",
+      "text": "试验水取自某城市湖泊近岸区域，在同日上午采集约 60 L，混合后经粗筛去除大型杂质，不进行灭菌。所有反应容器均使用该批水样。设置两套独立的 20 L 玻璃水槽，分别标记为 A 和 B。水槽持续曝气及低速循环，水温控制在 23 ± 1 ℃。每隔 7 d 补充同一储存桶中的备用水，以维持液位。",
+      "page_number": null,
+      "paragraph_id": "p-15",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-16",
+      "block_type": "paragraph",
+      "text": "UV-C 模块安装在 B 水槽上方，发射波长为 275 nm，每日 09:00 开启 15 min；A 水槽不安装光源。灯具输出由供应商给出的额定辐照参数表征，首次安装时在空气中、距灯面 3 cm 处测量辐照度。实验期间暂不进行挂板表面的水下实际辐照剂量测定。",
+      "page_number": null,
+      "paragraph_id": "p-16",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-17",
+      "block_type": "heading",
+      "text": "3  实验分组、布置与重复设置",
+      "page_number": null,
+      "paragraph_id": "p-17",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-18",
+      "block_type": "paragraph",
+      "text": "各组按表 1 设置。每组设置 3 片挂板，共计 15 片。所有挂板固定在水槽侧壁挂架上，各组挂板按编号顺序依次排列，运行期间不调整位置。",
+      "page_number": null,
+      "paragraph_id": "p-18",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-19",
+      "block_type": "paragraph",
+      "text": "表 1  处理分组与布置",
+      "page_number": null,
+      "paragraph_id": "p-19",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-2",
+      "block_type": "table",
+      "text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-2",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-20",
+      "block_type": "paragraph",
+      "text": "将每组 3 片挂板视为 3 个平行样。B1 与 B2 用于比较功能颗粒的涂层效应，B1 与 B3 用于比较 UV-C 效应，B4 与 B2、B3 的差异用于评价联用优势。B0 作为裸基材参照组，不参与功能颗粒与 UV-C 的交互分析。",
+      "page_number": null,
+      "paragraph_id": "p-20",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-21",
+      "block_type": "paragraph",
+      "text": "整个微宇宙试验按上述布置独立运行 1 轮；考虑到两套水槽体积、水温和水源相同，暂不另外设置水槽层面的平行。",
+      "page_number": null,
+      "paragraph_id": "p-21",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-22",
+      "block_type": "heading",
+      "text": "4  运行、采样与检测",
+      "page_number": null,
+      "paragraph_id": "p-22",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-23",
+      "block_type": "heading",
+      "text": "4.1  运行过程与采样时间",
+      "page_number": null,
+      "paragraph_id": "p-23",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-24",
+      "block_type": "paragraph",
+      "text": "以浸没首日为 D0，连续运行至 D21。计划在 D7、D14、D21 各取出每组 3 片挂板进行生物膜附着量测定。为提高不同时间点数据的可比性，各组均跟踪同一批挂板：测定结束后以去离子水轻轻冲洗挂板表面，再放回原水槽继续培养。",
+      "page_number": null,
+      "paragraph_id": "p-24",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-25",
+      "block_type": "paragraph",
+      "text": "表 2  采样与测试计划",
+      "page_number": null,
+      "paragraph_id": "p-25",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-3",
+      "block_type": "table",
+      "text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-3",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-26",
+      "block_type": "heading",
+      "text": "4.2  检测指标与方法",
+      "page_number": null,
+      "paragraph_id": "p-26",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-27",
+      "block_type": "paragraph",
+      "text": "（1）主要终点：以结晶紫染色后的 OD590 表征附着生物量。每片挂板进行一次染色，洗脱液分装至 96 孔板，每份洗脱液测 3 个孔，三个孔的均值作为该挂板的测定值。不同涂层的 OD590 直接进行组间比较。",
+      "page_number": null,
+      "paragraph_id": "p-27",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-28",
+      "block_type": "paragraph",
+      "text": "（2）表面性质：采用静态水接触角评价 D0 和 D21 的涂层润湿性；每片挂板选择三个位置测定，取其平均值。涂层形貌用光学显微镜观察。",
+      "page_number": null,
+      "paragraph_id": "p-28",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-29",
+      "block_type": "paragraph",
+      "text": "（3）辅助表征：在 D14 收集挂板表面刮取液，用三维荧光光谱分析 EPS 信号变化；为满足检测体积，同一组的 3 片挂板样品混合后测定。",
+      "page_number": null,
+      "paragraph_id": "p-29",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-30",
+      "block_type": "paragraph",
+      "text": "（4）运行记录：记录水温、pH、电导率和浊度，水质每周测定 2 次。B 水槽按照 UV-C 定时器记录每日开灯持续时间。",
+      "page_number": null,
+      "paragraph_id": "p-30",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-31",
+      "block_type": "heading",
+      "text": "5  数据统计与结果判断",
+      "page_number": null,
+      "paragraph_id": "p-31",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-32",
+      "block_type": "paragraph",
+      "text": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3。采用单因素方差分析（one-way ANOVA）比较 B0—B4 的差异，组间多重比较使用 Tukey 检验，以 p < 0.05 为显著性水平。D7、D14、D21 按独立时间点分别分析。",
+      "page_number": null,
+      "paragraph_id": "p-32",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-33",
+      "block_type": "paragraph",
+      "text": "若 B4 的平均附着量显著低于 B2 与 B3，同时 B4 的降低幅度最大，即判定功能涂层与 UV-C 形成显著协同效应。若功能涂层组的接触角与附着生物量呈显著相关，则进一步将表面润湿性变化认定为主要防污机制。",
+      "page_number": null,
+      "paragraph_id": "p-33",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-34",
+      "block_type": "paragraph",
+      "text": "最终拟绘制不同处理的生物膜附着变化曲线、接触角与附着量相关性图，以及展示组合处理效果的机理示意图。",
+      "page_number": null,
+      "paragraph_id": "p-34",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-35",
+      "block_type": "heading",
+      "text": "6  预期结果与应用讨论",
+      "page_number": null,
+      "paragraph_id": "p-35",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-36",
+      "block_type": "paragraph",
+      "text": "预计功能涂层相对于基础涂层可以降低微生物附着，脉冲 UV-C 能进一步抑制生物膜积累。通过分析处理间差异和润湿性结果，阐明功能涂层与 UV-C 的协同防污机制。",
+      "page_number": null,
+      "paragraph_id": "p-36",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-37",
+      "block_type": "paragraph",
+      "text": "如 21 d 内 B4 组持续维持最低附着量，拟据此提出该联用方式能够满足淡水取水口及水下监测设备的长期防污要求，并作为后续工程应用的主要技术依据。",
+      "page_number": null,
+      "paragraph_id": "p-37",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-38",
+      "block_type": "heading",
+      "text": "7  质量控制及实施说明",
+      "page_number": null,
+      "paragraph_id": "p-38",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-39",
+      "block_type": "paragraph",
+      "text": "实验开始前统一检查挂板规格、涂层外观及光源运行状态；试验期间定期清理水槽外壁，避免额外遮光。对于异常样品，结合实验记录判断是否剔除；缺失值不进行插补。试验全过程保留原始吸光度、照片和水质记录。",
+      "page_number": null,
+      "paragraph_id": "p-39",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-40",
+      "block_type": "paragraph",
+      "text": "本方案尚处于实验前讨论阶段，预计根据设备可用性和首轮结果再做必要调整。",
+      "page_number": null,
+      "paragraph_id": "p-40",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    }
+  ],
+  "extracted_design": {
+    "research_question": "1  研究背景、目标与假设",
+    "hypotheses": [
+      "1  研究背景、目标与假设"
+    ],
+    "research_goal_level": "unspecified",
+    "research_goal_level_source": "default",
+    "experimental_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+    "groups": [
+      {
+        "name": "研究方向",
+        "treatment": "淡水防污与功能涂层",
+        "n_claimed": "计划周期",
+        "status": "stated",
+        "quote": "研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "方案版本 | v0.4 | 拟定日期 | 2026-10-25\n研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "B0",
+        "treatment": "裸不锈钢",
+        "n_claimed": "—",
+        "status": "stated",
+        "quote": "B0 | 裸不锈钢 | — | 否 | A | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B1",
+        "treatment": "基础涂层",
+        "n_claimed": "—",
+        "status": "stated",
+        "quote": "B1 | 基础涂层 | — | 否 | A | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B2",
+        "treatment": "功能涂层",
+        "n_claimed": "1.5%",
+        "status": "stated",
+        "quote": "B2 | 功能涂层 | 1.5% | 否 | A | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B3",
+        "treatment": "基础涂层",
+        "n_claimed": "—",
+        "status": "stated",
+        "quote": "B3 | 基础涂层 | — | 是 | B | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B4",
+        "treatment": "功能涂层",
+        "n_claimed": "1.5%",
+        "status": "stated",
+        "quote": "B4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "D0",
+        "treatment": "接触角、干膜厚度、初始质量测定",
+        "n_claimed": "每组 3 片挂板",
+        "status": "stated",
+        "quote": "D0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "name": "D7",
+        "treatment": "结晶紫染色法测定表面附着量；记录水质",
+        "n_claimed": "每组 3 片挂板",
+        "status": "stated",
+        "quote": "D7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "name": "D14",
+        "treatment": "结晶紫染色、EPS 荧光分析；记录水质",
+        "n_claimed": "每组 3 片挂板",
+        "status": "stated",
+        "quote": "D14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "name": "D21",
+        "treatment": "结晶紫染色、表面接触角及终点生物膜观察",
+        "n_claimed": "每组 3 片挂板",
+        "status": "stated",
+        "quote": "D21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "type": "blank",
+        "label": "空白对照",
+        "present": false,
+        "excludes_alternative": "排除基线/未处理背景效应",
+        "status": "missing",
+        "quote": "",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "（方案中未明确写出空白对照）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          }
+        ]
+      },
+      {
+        "type": "solvent",
+        "label": "溶剂对照",
+        "present": false,
+        "excludes_alternative": "排除溶剂本身对终点的影响",
+        "status": "missing",
+        "quote": "",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "（方案中未明确写出溶剂对照）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          }
+        ]
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "生长/生物量",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "拟验证假设 H1：功能颗粒掺入涂层后，可降低附着生物量。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-7"
+          }
+        ]
+      }
+    ],
+    "replication": {
+      "text": "重复设置",
+      "status": "contradictory",
+      "ambiguous_parallel": true,
+      "has_biological": false,
+      "has_technical": false,
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "3  实验分组、布置与重复设置",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-17"
+        }
+      ]
+    },
+    "statistical_plan": "5  数据统计与结果判断",
+    "statistics_status": "stated",
+    "statistics_locations": [
+      {
+        "source_file": "trial1.docx",
+        "original_text": "5  数据统计与结果判断",
+        "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "paragraph_id": "p-31"
+      }
+    ],
+    "claims": [],
+    "field_meta": {
+      "research_question_status": "stated",
+      "research_question_locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "1  研究背景、目标与假设",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-4"
+        }
+      ],
+      "hypothesis_status": "stated",
+      "hypothesis_locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "1  研究背景、目标与假设",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-4"
+        }
+      ],
+      "experimental_unit_status": "stated",
+      "experimental_unit_locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3。采用单因素方差分析（one-way ANOVA）比较 B0—B4 的差异，组间多重比较使用 Tukey 检验，以 p < 0.05 为显著性水平。D7、D14、D21 按独立时间点分别分析。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-32"
+        }
+      ]
+    }
+  },
+  "unparsed_assets": [],
+  "parse_warnings": [
+    "LLM 解析不可用或失败，已回退启发式提取；报告 boundary 会标明。"
+  ],
+  "tables_parsed_count": 3,
+  "user_confirmed": false,
+  "user_edits_summary": "",
+  "confirmed_at": null,
+  "manual_supplements": [],
+  "limited_audit_recommended": false
+}

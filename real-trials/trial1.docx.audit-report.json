@@ -1,0 +1,664 @@
+{
+  "schema_version": "0.2.1",
+  "discipline_resolved": "environmental",
+  "boundary_note": "学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：确定性启发式规则（V0.1 skeleton A），非多 Agent LLM 长文。",
+  "research_goal_level": "unspecified",
+  "research_goal_level_source": "default",
+  "ingest_manifest": {
+    "source_file": "trial1.docx",
+    "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "parse_warnings": [],
+    "blocks_count": 43,
+    "tables_count": 3,
+    "unparsed_assets": []
+  },
+  "design_confirmation": {
+    "status": "confirmed",
+    "confirmed_at": "2026-10-25T15:48:55+08:00",
+    "notes": ""
+  },
+  "summary": {
+    "verdict": "awaiting_clarification",
+    "blocker_count": 0,
+    "high_count": 2,
+    "confirmed_count": 1,
+    "needs_info_count": 1,
+    "suggestion_count": 0,
+    "one_liner": "确认问题 1，待核实 1，建议 0；请先回答关键追问。",
+    "strongest_supported_claim": "在澄清与最小修改前，最多可讨论处理相关变化，不宜主张机制介导。"
+  },
+  "identification": {
+    "research_question": {
+      "text": "1  研究背景、目标与假设",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "1  研究背景、目标与假设",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-4"
+        }
+      ]
+    },
+    "hypothesis": {
+      "text": "1  研究背景、目标与假设",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "1  研究背景、目标与假设",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-4"
+        }
+      ]
+    },
+    "independent_vars": [],
+    "dependent_vars": [
+      {
+        "text": "生长/生物量",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "拟验证假设 H1：功能颗粒掺入涂层后，可降低附着生物量。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-7"
+          }
+        ]
+      }
+    ],
+    "experimental_unit": {
+      "text": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3。采用单因素方差分析（one-way ANOVA）比较 B0—B4 的差异，组间多重比较使用 Tukey 检验，以 p < 0.05 为显著性水平。D7、D14、D21 按独立时间点分别分析。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-32"
+        }
+      ]
+    },
+    "groups": [
+      {
+        "name": "研究方向",
+        "treatment": "淡水防污与功能涂层",
+        "n_claimed": "计划周期",
+        "status": "stated",
+        "quote": "研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "方案版本 | v0.4 | 拟定日期 | 2026-10-25\n研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "B0",
+        "treatment": "裸不锈钢",
+        "n_claimed": "—",
+        "status": "stated",
+        "quote": "B0 | 裸不锈钢 | — | 否 | A | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B1",
+        "treatment": "基础涂层",
+        "n_claimed": "—",
+        "status": "stated",
+        "quote": "B1 | 基础涂层 | — | 否 | A | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B2",
+        "treatment": "功能涂层",
+        "n_claimed": "1.5%",
+        "status": "stated",
+        "quote": "B2 | 功能涂层 | 1.5% | 否 | A | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B3",
+        "treatment": "基础涂层",
+        "n_claimed": "—",
+        "status": "stated",
+        "quote": "B3 | 基础涂层 | — | 是 | B | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B4",
+        "treatment": "功能涂层",
+        "n_claimed": "1.5%",
+        "status": "stated",
+        "quote": "B4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "D0",
+        "treatment": "接触角、干膜厚度、初始质量测定",
+        "n_claimed": "每组 3 片挂板",
+        "status": "stated",
+        "quote": "D0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "name": "D7",
+        "treatment": "结晶紫染色法测定表面附着量；记录水质",
+        "n_claimed": "每组 3 片挂板",
+        "status": "stated",
+        "quote": "D7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "name": "D14",
+        "treatment": "结晶紫染色、EPS 荧光分析；记录水质",
+        "n_claimed": "每组 3 片挂板",
+        "status": "stated",
+        "quote": "D14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "name": "D21",
+        "treatment": "结晶紫染色、表面接触角及终点生物膜观察",
+        "n_claimed": "每组 3 片挂板",
+        "status": "stated",
+        "quote": "D21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "type": "blank",
+        "label": "空白对照",
+        "present": false,
+        "excludes_alternative": "排除基线/未处理背景效应",
+        "status": "missing",
+        "quote": "",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "（方案中未明确写出空白对照）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          }
+        ]
+      },
+      {
+        "type": "solvent",
+        "label": "溶剂对照",
+        "present": false,
+        "excludes_alternative": "排除溶剂本身对终点的影响",
+        "status": "missing",
+        "quote": "",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "（方案中未明确写出溶剂对照）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          }
+        ]
+      }
+    ],
+    "endpoints": [
+      {
+        "text": "生长/生物量",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "拟验证假设 H1：功能颗粒掺入涂层后，可降低附着生物量。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-7"
+          }
+        ]
+      }
+    ],
+    "replication": {
+      "text": "重复设置",
+      "status": "contradictory",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "3  实验分组、布置与重复设置",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-17"
+        }
+      ]
+    },
+    "statistics": {
+      "text": "5  数据统计与结果判断",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "5  数据统计与结果判断",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-31"
+        }
+      ]
+    },
+    "claims": [],
+    "gaps": [
+      "replication",
+      "controls"
+    ]
+  },
+  "claim_evidence_map": {
+    "rows": [
+      {
+        "id": "CE01",
+        "claim": "处理/污染物影响目标生物学过程",
+        "evidence_from_design": "分组或终点信息不完整",
+        "judgment": "当前对照不足，处理效应主张证据薄弱",
+        "gap": "缺少可靠对照以支持处理效应",
+        "aligned_goal_levels": [
+          "treatment_effect",
+          "exploratory"
+        ],
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "1  研究背景、目标与假设",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-4"
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "当前 research_goal_level=unspecified（未在证据不足时自动升为 mechanism_causal）。"
+    ]
+  },
+  "clarifying_questions": [
+    {
+      "id": "Q01",
+      "question": "请确认：文中的「三个平行/重复」是独立开展的实验批次（或独立生物重复），还是同一批样品的三个检测平行/复孔？",
+      "blocks_dimensions": [
+        "pseudoreplication",
+        "statistics"
+      ],
+      "priority": "critical",
+      "context_quote": "重复设置",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "3  实验分组、布置与重复设置",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-17"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "dimension": "controls",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "缺少空白/未处理对照",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "（方案中未明确写出空白对照）",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "why_invalidates": "无法区分处理效应与基线漂移或测定背景。",
+      "fix": "增加与处理组平行的空白对照（除处理因素外其余条件一致）。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "low",
+      "hard_error": true
+    },
+    {
+      "id": "F02",
+      "dimension": "pseudoreplication",
+      "severity": "high",
+      "category": "needs_info",
+      "title": "「平行/重复」独立性未写清",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "3  实验分组、布置与重复设置",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-17"
+        }
+      ],
+      "why_invalidates": "若三个平行为同一实验单位的技术重复，直接作独立样本会低估变异、抬高假阳性。",
+      "fix": "明确实验单位：独立批次/独立生物重复 vs 技术复孔；统计仅对独立单位推断。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "unknown",
+      "hard_error": false
+    }
+  ],
+  "optimizer": {
+    "plan_id": "A",
+    "title": "最小必要修改",
+    "rationale": "只修改会直接影响主要结论可靠性的关键问题（对照、实验单位、主张边界），最大程度保留原方案；不默认叠加组学或大量新终点。",
+    "revised_group_table": {
+      "columns": [
+        "group_name",
+        "treatment",
+        "control_role",
+        "n_suggested",
+        "replicate_unit",
+        "notes"
+      ],
+      "rows": [
+        {
+          "row_id": "G01",
+          "group_name": "空白对照",
+          "treatment": "无处理 / 培养基对照",
+          "control_role": "blank",
+          "n_suggested": "待确认：独立重复 vs 技术平行",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "Plan A：补空白对照"
+        },
+        {
+          "row_id": "G02",
+          "group_name": "研究方向",
+          "treatment": "淡水防污与功能涂层",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d"
+        },
+        {
+          "row_id": "G03",
+          "group_name": "B0",
+          "treatment": "裸不锈钢",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "B0 | 裸不锈钢 | — | 否 | A | 3 片"
+        },
+        {
+          "row_id": "G04",
+          "group_name": "B1",
+          "treatment": "基础涂层",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "B1 | 基础涂层 | — | 否 | A | 3 片"
+        },
+        {
+          "row_id": "G05",
+          "group_name": "B2",
+          "treatment": "功能涂层",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "B2 | 功能涂层 | 1.5% | 否 | A | 3 片"
+        },
+        {
+          "row_id": "G06",
+          "group_name": "B3",
+          "treatment": "基础涂层",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "B3 | 基础涂层 | — | 是 | B | 3 片"
+        },
+        {
+          "row_id": "G07",
+          "group_name": "B4",
+          "treatment": "功能涂层",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "B4 | 功能涂层 | 1.5% | 是 | B | 3 片"
+        },
+        {
+          "row_id": "G08",
+          "group_name": "D0",
+          "treatment": "接触角、干膜厚度、初始质量测定",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "D0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板"
+        },
+        {
+          "row_id": "G09",
+          "group_name": "D7",
+          "treatment": "结晶紫染色法测定表面附着量；记录水质",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "D7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板"
+        },
+        {
+          "row_id": "G10",
+          "group_name": "D14",
+          "treatment": "结晶紫染色、EPS 荧光分析；记录水质",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "D14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板"
+        },
+        {
+          "row_id": "G11",
+          "group_name": "D21",
+          "treatment": "结晶紫染色、表面接触角及终点生物膜观察",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立生物重复（技术复孔另计，不计入 n）",
+          "replicate_unit": "独立生物重复/独立实验批次（待你确认后锁定）",
+          "notes": "D21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板"
+        }
+      ],
+      "notes": []
+    },
+    "change_notes": [
+      {
+        "id": "C01",
+        "summary": "增加空白对照，与处理组平行操作",
+        "addresses_finding_ids": [
+          "F01"
+        ],
+        "burden": "low"
+      },
+      {
+        "id": "C02",
+        "summary": "在方案中显式定义实验单位；统计仅对独立重复推断；暂不扩大组学/终点",
+        "addresses_finding_ids": [
+          "F02"
+        ],
+        "burden": "low"
+      }
+    ]
+  },
+  "group_table": {
+    "columns": [
+      "group_name",
+      "treatment",
+      "control_role",
+      "n_suggested",
+      "replicate_unit",
+      "notes"
+    ],
+    "rows": [
+      {
+        "row_id": "G01",
+        "group_name": "研究方向",
+        "treatment": "淡水防污与功能涂层",
+        "control_role": "experimental",
+        "n_suggested": "计划周期",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d"
+      },
+      {
+        "row_id": "G02",
+        "group_name": "B0",
+        "treatment": "裸不锈钢",
+        "control_role": "experimental",
+        "n_suggested": "—",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "B0 | 裸不锈钢 | — | 否 | A | 3 片"
+      },
+      {
+        "row_id": "G03",
+        "group_name": "B1",
+        "treatment": "基础涂层",
+        "control_role": "experimental",
+        "n_suggested": "—",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "B1 | 基础涂层 | — | 否 | A | 3 片"
+      },
+      {
+        "row_id": "G04",
+        "group_name": "B2",
+        "treatment": "功能涂层",
+        "control_role": "experimental",
+        "n_suggested": "1.5%",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "B2 | 功能涂层 | 1.5% | 否 | A | 3 片"
+      },
+      {
+        "row_id": "G05",
+        "group_name": "B3",
+        "treatment": "基础涂层",
+        "control_role": "experimental",
+        "n_suggested": "—",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "B3 | 基础涂层 | — | 是 | B | 3 片"
+      },
+      {
+        "row_id": "G06",
+        "group_name": "B4",
+        "treatment": "功能涂层",
+        "control_role": "experimental",
+        "n_suggested": "1.5%",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "B4 | 功能涂层 | 1.5% | 是 | B | 3 片"
+      },
+      {
+        "row_id": "G07",
+        "group_name": "D0",
+        "treatment": "接触角、干膜厚度、初始质量测定",
+        "control_role": "experimental",
+        "n_suggested": "每组 3 片挂板",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "D0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板"
+      },
+      {
+        "row_id": "G08",
+        "group_name": "D7",
+        "treatment": "结晶紫染色法测定表面附着量；记录水质",
+        "control_role": "experimental",
+        "n_suggested": "每组 3 片挂板",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "D7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板"
+      },
+      {
+        "row_id": "G09",
+        "group_name": "D14",
+        "treatment": "结晶紫染色、EPS 荧光分析；记录水质",
+        "control_role": "experimental",
+        "n_suggested": "每组 3 片挂板",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "D14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板"
+      },
+      {
+        "row_id": "G10",
+        "group_name": "D21",
+        "treatment": "结晶紫染色、表面接触角及终点生物膜观察",
+        "control_role": "experimental",
+        "n_suggested": "每组 3 片挂板",
+        "replicate_unit": "所有定量指标按“均值 ± 标准差”整理，挂板作为独立样本，取 n = 3",
+        "notes": "D21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板"
+      }
+    ],
+    "notes": []
+  },
+  "literature_hints": [],
+  "reverse_review": {
+    "enabled": false,
+    "status": "deferred_v0_2",
+    "preview_strongest_claim": "在澄清与最小修改前，最多可讨论处理相关变化，不宜主张机制介导。",
+    "note": "完整逆向审查延后到 V0.2；此处仅提供 strongest_supported_claim 预览。"
+  },
+  "privacy_applied": {
+    "public_literature_search_used": false,
+    "note": "V0.1 骨架默认不触发公开文献检索"
+  },
+  "limited_audit": false,
+  "coverage_note": "已解析块 43；手动补充 0；未解析资产 0。"
+}

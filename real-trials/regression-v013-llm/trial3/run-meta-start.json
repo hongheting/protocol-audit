@@ -1,0 +1,30 @@
+{
+  "trial": "trial3",
+  "mode": "LLM实测-回归-V0.1.3",
+  "code_version": "0.1.3",
+  "science_freeze": "V0.1.2",
+  "reliability_patch": "V0.1.2.1",
+  "rules_postprocess": "V0.1.3",
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "file_hashes": {
+    "llm_parse.py": "e003c8cd419979d5381451604e8318431e6d0436a0a6e42d6ad1c83d6797076e",
+    "llm_review.py": "3d812ddfcde05fab51cafc1592c9c9c820731fcc37037388b1cee96b7bbd2bf4",
+    "llm_client.py": "f369ccc234c67b9cf0b447f8f2fbd50613f384727f98a36b78c2264ca860f35f",
+    "pipeline.py": "3114d08003da68d3ced529af0b761ef776f53e60d1546cf6b8ff6df4a2bb30d2",
+    "rules_structural.py": "5326a592a4765b5c222edca7448e8321234855ee3df920a64b36df7ef19d4255",
+    "claim_evidence.py": "46d6ff29d64bdffc487813ef0a288c61ec5b836a28a0adc3f7c82f8328aa8c36",
+    "optimizer_a.py": "3ed3b4c6f1c5899cbf619cd8a9de568c4c8b68de21ff0304c9155754b7640111",
+    "report.py": "ea044ca74b9aa23bff03042dcffad368896956deaa1334be9e35870a0209496c",
+    "rules.py": "334c5ed2a09f755c1751c7b235be9f08505b0d0730b6e69acae9cf6b41ae78f2"
+  },
+  "source": "/workspace/product/protocol-audit/real-trials/trial3.docx",
+  "started_at": "2026-10-25T22:01:55+08:00",
+  "provider_requested": "glm",
+  "model_requested": "glm-4.6",
+  "no_gold_injected": true,
+  "no_trial3_specific_rules": true
+}

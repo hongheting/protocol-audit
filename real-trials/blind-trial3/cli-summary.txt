@@ -1,0 +1,23 @@
+source: /workspace/product/protocol-audit/real-trials/trial3.docx
+version: 0.1.2.1
+goal: unspecified default
+boundary: 学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：V0.1.2.1 结构规则（可靠性补丁；科学 Prompt 未改）+ LLM 解析+ LLM 科学审查。不得将模拟输出冒充实测。
+verdict: awaiting_clarification | 确认问题 5，待核实 1，建议 1；请先回答关键追问。
+findings: 7 confirmed 5 needs_info 1 suggestion 1
+  - F01 [confirmed/high] rule= | 相关性/表征共变不足以支持主要机制主张
+  - F02 [needs_info/high] rule= | 「平行/重复」独立性未写清
+  - F03 [confirmed/blocker] rule= | 灌水处理与温室台面位置完全混杂
+  - F04 [confirmed/high] rule= | 接种液助剂海藻糖与菌剂效应混杂
+  - F05 [confirmed/blocker] rule= | 破坏性采样破坏了终点测量的系统完整性与有效性
+  - F06 [confirmed/high] rule= | 时间序列数据的单因素方差分析丧失析因交互检验能力
+  - F07 [suggestion/medium] rule= | 盆栽控制条件外推至田间退化旱地缺乏依据
+CE rows: 3
+  - CE01 supports=partial | H1：接种菌剂提高生物量并缓解干旱抑制
+  - CE02 supports=no | H2：EPS及团聚体稳定性介导了菌剂的促生效应
+  - CE03 supports=no | H3：菌剂在两种土壤中均有效且盆栽结果可外推
+Plan A notes: 4
+  - C01: 按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据
+  - C02: 停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定
+  - C03: 收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据
+  - C04: 显式定义实验单位（当前解析：盆）；统计仅对独立重复推断
+schema_errors: OK

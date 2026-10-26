@@ -1,0 +1,62 @@
+[
+  [
+    "处理因素与实验容器完全混杂",
+    "confirmed",
+    "blocker",
+    "structural_container_confound"
+  ],
+  [
+    "伪重复：子样本被当作独立实验单位",
+    "confirmed",
+    "blocker",
+    "structural_pseudoreplication"
+  ],
+  [
+    "助溶剂/载体与处理混杂且缺少匹配对照",
+    "confirmed",
+    "high",
+    "structural_solvent_confound"
+  ],
+  [
+    "析因/协同判据不当（需交互项，而非仅 one-way 多重比较）",
+    "confirmed",
+    "high",
+    "structural_factorial_interaction"
+  ],
+  [
+    "重复测量与破坏性检测冲突",
+    "confirmed",
+    "high",
+    "structural_destructive_rm"
+  ],
+  [
+    "相关性/表征共变不足以支持主要机制主张",
+    "confirmed",
+    "high",
+    "structural_corr_not_cause"
+  ],
+  [
+    "由短周期/简化工况试验外推长期或工程依据过度",
+    "confirmed",
+    "blocker",
+    "structural_over_extrapolation"
+  ],
+  [
+    "混样导致每组有效 n=1",
+    "confirmed",
+    "medium",
+    "structural_pooling_n1"
+  ],
+  [
+    "挂板位置固定未随机，可能引入位置混杂",
+    "confirmed",
+    "medium",
+    "structural_position_confound"
+  ],
+  [
+    "UV 剂量未在挂板处水下实测",
+    "confirmed",
+    "medium",
+    "structural_uv_dose"
+  ]
+]

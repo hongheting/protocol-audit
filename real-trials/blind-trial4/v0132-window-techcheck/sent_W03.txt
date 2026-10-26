@@ -1,0 +1,147 @@
+【原文定位 31952:45952】
+
+致谢
+
+参考文献
+
+附录
+
+参考文献
+
+[1]Y. Xia, X. Wen, B. Zhang, Y. Yang. Diversity and assembly patterns of activated sludge microbial communities: A review. Biotechnology Advances, 2018, 36(4): 1038-1047
+
+[2]张冰. 菌藻共生好氧颗粒污泥的形成机理及基于QS的强化机制: [博士]. 哈尔滨工业大学, 2020
+
+[3]C. Arutselvan, H. K. Seenivasan, F. Lewis Oscar, G. Ramya, N. Thuy Lan Chi, A. Pugazhendhi, et al. Review on wastewater treatment by microalgae in different cultivation systems and its importance in biodiesel production. Fuel, 2022, 324: 124623
+
+[4]李伟. 菌藻共生好氧颗粒污泥的形成机理及其资源化利用研究: [硕士]. 哈尔滨工业大学, 2020
+
+[5]A. L. Gonçalves, J. C. M. Pires, M. Simões. A review on the use of microalgal consortia for wastewater treatment. Algal Research, 2017, 24: 403-415
+
+[6]R. Ramanan, B. H. Kim, D. H. Cho, H. M. Oh, H. S. Kim. Algae–bacteria interactions: Evolution, ecology and emerging applications. Biotechnology Advances, 2016, 34(1): 14-29
+
+[7]C. Zhang, Q. Li, L. Fu, D. Zhou, J. C. Crittenden. Quorum sensing molecules in activated sludge could trigger microalgae lipid synthesis. Bioresource Technology, 2018, 263: 576-582
+
+[8]X. Lu, Y. Wang, C. Chen, Z. Feng, Y. Huo, D. Zhou. C12-HSL is an across-boundary signal molecule that could alleviate fungi Galactomyces’s filamentation: A new mechanism on activated sludge bulking. Environmental Research, 2022, 204: 111823
+
+[9]C. Zhang, S. H. Ho, A. Li, L. Fu, D. Zhou. Co-culture of Chlorella and Scenedesmus could enhance total lipid production under bacteria quorum sensing molecule stress. Journal of Water Process Engineering, 2021, 39: 101739
+
+[10]B. Zhang, W. Li, Y. Guo, Z. Zhang, W. Shi, F. Cui, et al. Microalgal-bacterial consortia: From interspecies interactions to biotechnological applications. Renewable and Sustainable Energy Reviews, 2020, 118: 109563
+
+[11]P. Praveen, K. C. Loh. Photosynthetic aeration in biological wastewater treatment using immobilized microalgae-bacteria symbiosis. Applied Microbiology and Biotechnology, 2015, 99(23): 10345-10354
+
+[12]C. Zhang, S. Li, S. H. Ho. Converting nitrogen and phosphorus wastewater into bioenergy using microalgae-bacteria consortia: A critical review. Bioresource Technology, 2021, 342: 126056
+
+[13]E. J. H. Van Dijk, M. Pronk, M. C. M. Van Loosdrecht. A settling model for full-scale aerobic granular sludge. Water Research, 2020, 186: 116135
+
+[14]B. Nguyen Quoc, S. Wei, M. Armenta, R. Bucher, P. Sukapanpotharam, D. A. Stahl, et al. Aerobic granular sludge: Impact of size distribution on nitrification capacity. Water Research, 2021, 188: 116445
+
+[15]V. R. A. Ferreira, C. L. Amorim, S. M. Cravo, M. E. Tiritan, P. M. L. Castro, C. M. M. Afonso. Fluoroquinolones biosorption onto microbial biomass: activated sludge and aerobic granular sludge. International Biodeterioration & Biodegradation, 2016, 110: 53-60
+
+[16]Y. Wang, J. Wang, Z. Liu, X. Huang, F. Fang, J. Guo, et al. Effect of EPS and its forms of aerobic granular sludge on sludge aggregation performance during granulation process based on XDLVO theory. Science of The Total Environment, 2021, 795: 148682
+
+[17]A. M. S. Paulo, C. L. Amorim, J. Costa, D. P. Mesquita, E. C. Ferreira, P. M. L. Castro. Long-term stability of a non-adapted aerobic granular sludge process treating fish canning wastewater associated to EPS producers in the core microbiome. Science of The Total Environment, 2021, 756: 144007
+
+[18]高景峰, 王时杰, 樊晓燕, 潘凯玲, 张丽芳, 张树军, 等. 同步脱氮除磷好氧颗粒污泥培养过程微生物群落变化. 环境科学, 2017, 38(11): 4696-4705
+
+[19]J. Xia, L. Ye, H. Ren, X. X. Zhang. Microbial community structure and function in aerobic granular sludge. Applied Microbiology and Biotechnology, 2018, 102(9): 3967-3979
+
+[20]J. H. Tay, Q. S. Liu, Y. Liu. Microscopic observation of aerobic granulation in sequential aerobic sludge blanket reactor. Journal of Applied Microbiology, 2001, 91(1): 168-175
+
+[21]N. A. Hamiruddin, N. A. Awang, S. N. Mohd Shahpudin, N. S. Zaidi, M. A. M. Said, B. Chaplot, et al. Effects of wastewater type on stability and operating conditions control strategy in relation to the formation of aerobic granular sludge – a review. Water Science and Technology, 2021, 84(9): 2113-2130
+
+[22]J. Ming, Q. Wang, B. A. Yoza, J. Liang, H. Guo, J. Li, et al. Bioreactor performance using biochar and its effect on aerobic granulation. Bioresource Technology, 2020, 300: 122620
+
+[23]Y. Liu, Z. Liu, F. Wang, Y. Chen, P. Kuschk, X. Wang. Regulation of aerobic granular sludge reformulation after granular sludge broken: Effect of poly aluminum chloride (PAC). Bioresource Technology, 2014, 158: 201-208
+
+[24]D. R. De Graaff, M. C. M. Van Loosdrecht, M. Pronk. Stable granulation of seawater-adapted aerobic granular sludge with filamentous Thiothrix bacteria. Water Research, 2020, 175: 115683
+
+[25]S. Deng, L. Wang, H. Su. Role and influence of extracellular polymeric substances on the preparation of aerobic granular sludge. Journal of Environmental Management, 2016, 173: 49-54
+
+[26]S. J. Sarma, J. H. Tay, A. Chu. Finding Knowledge Gaps in Aerobic Granulation Technology. Trends in Biotechnology, 2017, 35(1): 66-78
+
+[27]Z. Zhang, Z. Yu, J. Dong, Z. Wang, K. Ma, X. Xu, et al. Stability of aerobic granular sludge under condition of low influent C/N ratio: Correlation of sludge property and functional microorganism. Bioresource Technology, 2018, 270: 391-399
+
+[28]R. Lemaire, Z. Yuan, L. L. Blackall, G. R. Crocetti. Microbial distribution of Accumulibacter spp. and Competibacter spp. in aerobic granules from a lab‐scale biological nutrient removal system. Environmental Microbiology, 2008, 10(2): 354-363
+
+[29]M. Pronk, M. K. De Kreuk, B. De Bruin, P. Kamminga, R. Kleerebezem, M. C. M. Van Loosdrecht. Full scale performance of the aerobic granular sludge process for sewage treatment. Water Research, 2015, 84: 207-217
+
+[30]B. Zhang, P. N. L. Lens, W. Shi, R. Zhang, Z. Zhang, Y. Guo, et al. Enhancement of aerobic granulation and nutrient removal by an algal–bacterial consortium in a lab-scale photobioreactor. Chemical Engineering Journal, 2018, 334: 2373-2382
+
+[31]M. Sales, T. Marinho, I. C. Marinho, S. Gavazza, M. T. Kato, B. S. Magnus, et al. Start-up strategies to develop aerobic granular sludge and photogranules in sequential batch reactors. Science of The Total Environment, 2022, 828: 154402
+
+[32]J. Cao, F. Chen, Z. Fang, Y. Gu, H. Wang, J. Lu, et al. Effect of filamentous algae in a microalgal-bacterial granular sludge system treating saline wastewater: Assessing stability, lipid production and nutrients removal. Bioresource Technology, 2022, 354: 127182
+
+[33]L. Liu, H. Fan, Y. Liu, C. Liu, X. Huang. Development of algae-bacteria granular consortia in photo-sequencing batch reactor. Bioresource Technology, 2017, 232: 64-71
+
+[34]B. Zhang, J. Shi, W. Shi, Y. Guo, P. N. L. Lens, B. Zhang. Effect of different inocula on the granulation process, reactor performance and biodiesel production of algal-bacterial granular sludge (ABGS) under low aeration conditions. Chemosphere, 2023, 345: 140391
+
+[35]S. Rahimi, O. Modin, I. Mijakovic. Technologies for biological removal and recovery of nitrogen from wastewater. Biotechnology Advances, 2020, 43: 107570
+
+[36]E. Walters, A. Hille, M. He, C. Ochmann, H. Horn. Simultaneous nitrification/denitrification in a biofilm airlift suspension (BAS) reactor with biodegradable carrier material. Water Research, 2009, 43(18): 4461-4468
+
+[37]F. Jaramillo, M. Orchard, C. Muñoz, M. Zamorano, C. Antileo. Advanced strategies to improve nitrification process in sequencing batch reactors - A review. Journal of Environmental Management, 2018, 218: 154-164
+
+[38]B. Kartal, J. G. Kuenen, M. C. M. Van Loosdrecht. Sewage Treatment with Anammox. Science, 2010, 328(5979): 702-703
+
+[39]B. Kartal, N. M. De Almeida, W. J. Maalcke, H. J. M. Op Den Camp, M. S. M. Jetten, J. T. Keltjens. How to make a living from anaerobic ammonium oxidation. FEMS Microbiology Reviews, 2013, 37(3): 428-461
+
+[40]M. A. H. J. Van Kessel, D. R. Speth, M. Albertsen, P. H. Nielsen, H. J. M. Op Den Camp, B. Kartal, et al. Complete nitrification by a single microorganism. Nature, 2015, 528(7583): 555-559
+
+[41]J. D. Caranto, K. M. Lancaster. Nitric oxide is an obligate bacterial nitrification intermediate produced by hydroxylamine oxidoreductase. Proceedings of the National Academy of Sciences, 2017, 114(31): 8217-8222
+
+[42]H. Daims, S. Lücker, M. Wagner. A New Perspective on Microbes Formerly Known as Nitrite-Oxidizing Bacteria. Trends in Microbiology, 2016, 24(9): 699-712
+
+[43]B. Kartal, W. J. Maalcke, N. M. De Almeida, I. Cirpus, J. Gloerich, W. Geerts, et al. Molecular mechanism of anaerobic ammonium oxidation. Nature, 2011, 479(7371): 127-130
+
+[44]李佳, 汪涵, 王亚宜. 城市污水生物脱氮提质增效技术现状与展望. 能源环境保护, 2023, 37(2): 48-61
+
+[45]L. A. Robertson, J. G. Kuenen, R. Kleijntjens. Aerobic denitrification and heterotrophic nitrification byThiosphaera pantotropha. Antonie van Leeuwenhoek, 1985, 51(4): 445-445
+
+[46]M. M. M. Kuypers, H. K. Marchant, B. Kartal. The microbial nitrogen-cycling network. Nature Reviews Microbiology, 2018, 16(5): 263-276
+
+[47]M. Wu, T. Hou, Y. Liu, L. Miao, G. Ai, L. Ma, et al. Novel Alcaligenes ammonioxydans sp. nov. from wastewater treatment sludge oxidizes ammonia to  N 2  with a previously unknown pathway. Environmental Microbiology, 2021, 23(11): 6965-6980
+
+[48]R. Muñoz, B. Guieysse. Algal–bacterial processes for the treatment of hazardous contaminants: A review. Water Research, 2006, 40(15): 2799-2815
+
+[49]R. Muñoz, M. Jacinto, B. Guieysse, B. Mattiasson. Combined carbon and nitrogen removal from acetonitrile using algal–bacterial bioreactors. Applied Microbiology and Biotechnology, 2005, 67(5): 699-707
+
+[50]Y. Su, A. Mennerich, B. Urban. Municipal wastewater treatment and biomass accumulation with a wastewater-born and settleable algal-bacterial culture. Water Research, 2011, 45(11): 3351-3358
+
+[51]L. E. de-Bashan, Y. Bashan. Immobilized microalgae for removing pollutants: Review of practical aspects. Bioresource Technology, 2010, 101(6): 1611-1627
+
+[52]J. Ma, X. Ni, C. Cai, Y. Da, K. Hu, R. Guo, et al. Insights into greenhouse gas emissions from a wastewater treatment plant in vulnerable water areas of China. Science of The Total Environment, 2023, 902: 166017
+
+[53]X. Chen, Y. J. Lee, T. Yuan, Z. Lei, Y. Adachi, Z. Zhang, et al. A review on recovery of extracellular biopolymers from flocculent and granular activated sludges: Cognition, key influencing factors, applications, and challenges. Bioresource Technology, 2022, 363: 127854
+
+[54]Z. Zhao, S. Liu, X. Yang, Z. Lei, K. Shimizu, Z. Zhang, et al. Stability and performance of algal-bacterial granular sludge in shaking photo-sequencing batch reactors with special focus on phosphorus accumulation. Bioresource Technology, 2019, 280: 497-501
+
+[55]H. Chang, H. Feng, R. Wang, X. Zhang, J. Wang, C. Li, et al. Enhanced energy recovery from landfill leachate by linking light and dark bio-reactions: Underlying synergistic effects of dual microalgal interaction. Water Research, 2023, 231: 119578
+
+[56]X. Song, F. Kong, B. F. Liu, Q. Song, N. Q. Ren, H. Y. Ren. Thallium-mediated NO signaling induced lipid accumulation in microalgae and its role in heavy metal bioremediation. Water Research, 2023, 239: 120027
+
+[57]B. Ji. Towards environment-sustainable wastewater treatment and reclamation by the non-aerated microalgal-bacterial granular sludge process: Recent advances and future directions. Science of The Total Environment, 2022, 806: 150707
+
+[58]B. Ji, C. Liu. CO2 improves the microalgal-bacterial granular sludge towards carbon-negative wastewater treatment. Water Research, 2022, 208: 117865
+
+[59]X. Liu, B. Ji, A. Li. Enhancing biolipid production and self-flocculation of Chlorella vulgaris by extracellular polymeric substances from granular sludge with CO2 addition: Microscopic mechanism of microalgae-bacteria symbiosis. Water Research, 2023, 236: 119960
+
+[60]Y. Shen, J. Gao, L. Li. Municipal wastewater treatment via co-immobilized microalgal-bacterial symbiosis: Microorganism growth and nutrients removal. Bioresource Technology, 2017, 243: 905-913
+
+[61]Y. Wang, S. H. Ho, C. L. Cheng, W. Q. Guo, D. Nagarajan, N. Q. Ren, et al. Perspectives on the feasibility of using microalgae for industrial wastewater treatment. Bioresource Technology, 2016, 222: 485-497
+
+[62]D. Hernández, B. Riaño, M. Coca, M. C. García-González. Treatment of agro-industrial wastewater using microalgae–bacteria consortium combined with anaerobic digestion of the produced biomass. Bioresource Technology, 2013, 135: 598-603
+
+[63]N. Chandel, V. Ahuja, R. Gurav, V. Kumar, V. K. Tyagi, A. Pugazhendhi, et al. Progress in microalgal mediated bioremediation systems for the removal of antibiotics and pharmaceuticals from wastewater. Science of The Total Environment, 2022, 825: 153895
+
+[64]P. Babatsouli, S. Fodelianakis, N. Paranychianakis, D. Venieri, M. Dialynas, N. Kalogerakis. Single stage treatment of saline wastewater with marine bacterial–microalgae consortia in a fixed-bed photobioreactor. Journal of Hazardous Materials, 2015, 292: 155-163
+
+[65]B. Ji, S. Fan, Y. Liu. A continuous-flow non-aerated microalgal-bacterial granular sludge process for aquaculture wastewater treatment under natural day-night conditions. Bioresource Technology, 2022, 350: 126914
+
+[66]B. Ji, L. Zhu, S. Wang, Y. Liu. Temperature-effect on the performance of non-aerated microalgal-bacterial granular sludge process in municipal wastewater treatment. Journal of Environmental Management, 2021, 282: 111955
+
+[67]S. Fan, L. Zhu, B. Ji. Deciphering the effect of light intensity on microalgal-bacterial granular sludge process for non-aerated municipal wastewater treatment. Algal Research, 2021, 58: 102437
+
+[68]M. Zhang, B. Ji, S. Wang, J. Gu, Y. Liu. Granule size informs the characteristics and performance of microalgal-bacterial granular sludge for wastewater treatment. Bioresource Technology, 2022, 346: 126649
+
+[69]J. S. M. Ahmad, Z. Zhao, Z. Zhang, K. Shimizu, M. Utsumi, Z. Lei, et al. Algal-bacterial aerobic granule based continuous-flow reactor with effluent recircu

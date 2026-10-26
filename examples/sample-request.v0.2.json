@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.2.0",
+  "source_file": {
+    "filename": "demo-protocol.docx",
+    "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "byte_size": 12345
+  },
+  "discipline": "environmental",
+  "language": "zh-CN",
+  "research_goal_level": "mechanism_causal",
+  "privacy": {
+    "allow_public_literature_search": false,
+    "retain_protocol": true
+  },
+  "confirm_design": true,
+  "design_override": {
+    "replication": {
+      "text": "三个平行（待用户确认独立性）",
+      "status": "stated"
+    },
+    "user_edits_summary": "确认对照组缺失；平行定义留待追问"
+  },
+  "parse_options": {
+    "pdf_mode": "text",
+    "keep_page_markers": true,
+    "prefer_tables": true
+  }
+}

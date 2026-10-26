@@ -1,0 +1,5 @@
+[2026-10-26T10:26:35+08:00] START trial3 version=0.1.3.3 prompt_match=True
+[2026-10-26T10:29:33+08:00] review_windows n=None comprehensive=True methods_detected=True truncated=False
+[2026-10-26T10:29:33+08:00] parse ok=True expand=False finish=stop hard_fail=False
+[2026-10-26T10:40:48+08:00] schema_errors=0 findings=5
+[2026-10-26T10:40:48+08:00] DONE trial3 Beta-spotcheck finished=2026-10-26T10:40:48+08:00 elapsed=853.4s | prompt_match=True schema_ok=True | findings=5 origins={'rule': 5} facade_risk=False | calls=3 expand=1 finish=['stop', 'stop', 'stop']

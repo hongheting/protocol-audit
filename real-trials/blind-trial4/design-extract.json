@@ -1,0 +1,451 @@
+{
+  "llm_meta": {
+    "provider": "glm",
+    "purpose": "design_extract",
+    "ok": true,
+    "schema_errors": [],
+    "fallback": false,
+    "hard_fail": false,
+    "truncation_detected": false,
+    "expanded_retry": false,
+    "max_tokens_initial": 8192,
+    "max_tokens_used": 8192,
+    "attempts": [
+      {
+        "max_tokens": 8192,
+        "expanded": false,
+        "ok": true,
+        "finish_reason": "stop",
+        "usage": {
+          "prompt_tokens": 15628,
+          "completion_tokens": 6410,
+          "reasoning_tokens": 3538,
+          "total_tokens": 22038
+        },
+        "latency_ms": 163802,
+        "error": null,
+        "length_truncated": false,
+        "json_truncated_looks": false,
+        "json_ok": true,
+        "truncated": false
+      }
+    ],
+    "model": "glm-4.6",
+    "usage": {
+      "prompt_tokens": 15628,
+      "completion_tokens": 6410,
+      "reasoning_tokens": 3538,
+      "total_tokens": 22038
+    },
+    "latency_ms": 163802,
+    "request_id": "202610252231152c32981731c04752",
+    "finish_reason": "stop",
+    "error": null
+  },
+  "design_extract": {
+    "parse_status": "partial",
+    "research_question": "藻菌颗粒污泥（MBGS）体系的构建及其脱氮效能，以及直接氨氧化菌强化脱氮机制与生物质回收利用",
+    "research_goal_level": "unspecified",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "不同初始条件（接种方式/藻种添加）构建的MBGS体系在脱氮效能、胞外聚合物特征及微生物菌群组成上存在差异，且能形成长期稳定运行的体系",
+        "expected_conclusion": "原生藻种和投加斜生四链藻形成的MBGS优于投加小球藻",
+        "status": "inferred",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过培养不同初始条件下MBGS，明确胞外聚合物特征、微生物菌群组成的变化及相互之间的内在联系，构建得到长期稳定运行的相对较优的脱氮MBGS体系。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-82"
+          }
+        ]
+      },
+      {
+        "id": "H2",
+        "text": "直接氨氧化菌能够强化MBGS体系脱氮效能",
+        "expected_conclusion": "直接氨氧化菌强化MBGS体系具有更高的脱氮能力并改变脱氮基因表达",
+        "status": "inferred",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过构建直接氨氧化菌强化MBGS脱氮体系，探究该体系的脱氮能力、微生物菌群组成的变化以及部分脱氮基因相对表达量变化，得到对城市污水高效脱氮的MBGS体系，并探究体系的藻菌互作机理",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-83"
+          }
+        ]
+      }
+    ],
+    "factors": [
+      {
+        "name": "接种方式/藻种添加",
+        "levels": [
+          "不投加任何藻种",
+          "投加小球藻",
+          "投加斜生四链藻"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R1为原始污泥，不投加任何藻种；R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "name": "R1",
+        "treatment": "原始污泥，不投加任何藻种",
+        "factor_levels": {
+          "接种方式/藻种添加": "不投加任何藻种"
+        },
+        "container_id": "R1",
+        "n_claimed": "1",
+        "role": "reference",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R1为原始污泥，不投加任何藻种",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      },
+      {
+        "name": "R2",
+        "treatment": "投加小球藻",
+        "factor_levels": {
+          "接种方式/藻种添加": "投加小球藻"
+        },
+        "container_id": "R2",
+        "n_claimed": "1",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      },
+      {
+        "name": "R3",
+        "treatment": "投加斜生四链藻",
+        "factor_levels": {
+          "接种方式/藻种添加": "投加斜生四链藻"
+        },
+        "container_id": "R3",
+        "n_claimed": "1",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "type": "reference",
+        "label": "R1",
+        "present": true,
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R1为原始污泥，不投加任何藻种",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      }
+    ],
+    "units": {
+      "allocation_unit": "SBR反应器",
+      "independent_experimental_unit": "SBR反应器",
+      "subsample_unit": "污泥混合液/颗粒污泥样品",
+      "technical_replicate_unit": "测定重复（如接触角测定至少6次）",
+      "nesting": "污泥颗粒样品嵌套于SBR反应器中",
+      "status": "inferred",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "MBGS培养在自制的SBR中进行",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-95"
+        },
+        {
+          "source_file": "trial4.docx",
+          "original_text": "每个样品至少测定6次取平均值",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-115"
+        }
+      ]
+    },
+    "timepoints": {
+      "points": [
+        "D0",
+        "D28",
+        "D42",
+        "D60",
+        "D77",
+        "D110",
+        "D112"
+      ],
+      "repeated_measures": true,
+      "destructive_assay": true,
+      "returned_after_assay": false,
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "第一阶段反应器运行时间为2023年11月15日至2024年3月6日，共计112天",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-104"
+        }
+      ]
+    },
+    "endpoints": [
+      {
+        "text": "MLSS与MLVSS浓度",
+        "supports_claims": [],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "图 32a为污泥颗粒化过程中MLSS和MLVSS浓度以及MLVSS/MLSS比值的变化",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-104"
+          }
+        ]
+      },
+      {
+        "text": "SVI5与颗粒平均粒径",
+        "supports_claims": [
+          "C2"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "污泥沉降性如图 32b所示",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-105"
+          }
+        ]
+      },
+      {
+        "text": "颗粒强度（OD600）",
+        "supports_claims": [
+          "C1",
+          "C2"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "取上清液在600 nm波长处测定吸光度OD600",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-110"
+          }
+        ]
+      },
+      {
+        "text": "表面热力学参数与XDLVO势垒",
+        "supports_claims": [
+          "C1",
+          "C2"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "选取了第110 d三个反应器中的污泥样品，从热力学表面特性的角度解析其颗粒化过程",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-114"
+          }
+        ]
+      },
+      {
+        "text": "藻菌比例（C/N比）",
+        "supports_claims": [
+          "C1"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "并用方程 （31）估计微藻与细菌的比例",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-121"
+          }
+        ]
+      },
+      {
+        "text": "污染物去除效能（COD, NH4+-N, PO43--P, TIN）",
+        "supports_claims": [
+          "C2"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "图 36(a-c)为各反应器COD、NH4+-N、PO43--P的去除效率变化趋势",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-129"
+          }
+        ]
+      },
+      {
+        "text": "EPS含量与蛋白质二级结构",
+        "supports_claims": [],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过分析EPS的组成和浓度，研究MBGS形成和脱氮过程中EPS的生成情况",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-137"
+          }
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "C1",
+        "text": "使用外源添加藻种的方式培养MBGS确实可以提高R2、R3中的藻菌比，但是其比例却不影响造粒过程中的势力壁垒大小和颗粒强度",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "使用外源添加藻种的方式培养MBGS确实可以提高R2、R3中的藻菌比，但是其比例却不影响造粒过程中的势力壁垒大小和颗粒强度",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-126"
+          }
+        ]
+      },
+      {
+        "id": "C2",
+        "text": "总体而言，R1和R3反应器所形成的MBGS要优于R2反应器所形成的MBGS",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "超声破碎实验和XDLVO理论分析都表明在三种反应器中形成的MBGS具有相似的结构强度和稳定性，但总体而言，R1和R3反应器所形成的MBGS要优于R2反应器所形成的MBGS",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-120"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "table_id": "t-1",
+        "table_kind": "metadata_table",
+        "caption": "学号、姓名等专业信息",
+        "locations": []
+      },
+      {
+        "table_id": "t-2",
+        "table_kind": "metadata_table",
+        "caption": "模拟废水水质",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "表 31模拟废水水质",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-100"
+          }
+        ]
+      },
+      {
+        "table_id": "t-3",
+        "table_kind": "metadata_table",
+        "caption": "微量元素液",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "表 32微量元素液",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-101"
+          }
+        ]
+      },
+      {
+        "table_id": "t-4",
+        "table_kind": "other",
+        "caption": "水、二碘甲烷、甲酰胺的表面热力学参数",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "表 33水、二碘甲烷、甲酰胺的表面热力学参数（mJ/m2）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-117"
+          }
+        ]
+      },
+      {
+        "table_id": "t-5",
+        "table_kind": "other",
+        "caption": "第110 d时污泥表面热力学参数及界面自由能",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "表 34第110 d时污泥表面热力学参数及界面自由能",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-118"
+          }
+        ]
+      },
+      {
+        "table_id": "t-6",
+        "table_kind": "other",
+        "caption": "第110 d时颗粒中C、H、O、N和S的元素含量",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "表 35第110 d时颗粒中C、H、O、N和S的元素含量",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-127"
+          }
+        ]
+      },
+      {
+        "table_id": "t-7",
+        "table_kind": "other",
+        "caption": "不同样本中EPS蛋白质二级结构的相对含量",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "表 36不同样本中EPS蛋白质二级结构的相对含量",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-145"
+          }
+        ]
+      }
+    ],
+    "statistical_plan": "unknown",
+    "unknowns": [
+      "实验各组的具体生物学重复数（文中每个处理仅提及1个反应器，似无重复）",
+      "使用的具体统计检验方法与显著性水平",
+      "直接氨氧化菌强化体系的具体实验设计细节与数据（文中仅在研究目标与内容中提及，尚未在结果中展示）"
+    ],
+    "notes": [
+      "原文研究目标分为三部分，但目前“研究进展”部分仅展示了第一部分（不同接种下MBGS构建及脱氮效能）的结果，其余部分未见实验数据。",
+      "R1原文描述为“原始污泥，不投加任何藻种”，但后续测定显示其藻菌比为0.28，暗示存在原生藻种。",
+      "model_suggested_mechanism_causal_downgraded_to_unspecified"
+    ]
+  }
+}

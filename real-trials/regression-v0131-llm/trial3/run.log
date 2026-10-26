@@ -1,0 +1,34 @@
+[2026-10-25T22:22:58+08:00] START trial3-v0131-llm version=0.1.3.1 prompt_match=True
+[2026-10-25T22:26:22+08:00] parse ok=True expand=False hard_fail=False
+[2026-10-25T22:30:05+08:00] source: /workspace/product/protocol-audit/real-trials/trial3.docx
+version: 0.1.3.1
+goal: unspecified default
+boundary: 学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：V0.1.3.1 结构规则/后处理（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 可靠性补丁；外推严重度与软去重收窄）+ LLM 解析+ LLM 科学审查。不得将模拟输出冒充实测。
+verdict: needs_redesign | 确认问题 9，待核实 3，建议 0；见 Plan A 最小修改。
+findings: 12 confirmed 9 needs_info 3 suggestion 0
+  - F01 [confirmed/high] rule= | 相关性/表征共变不足以支持主要机制主张
+  - F02 [confirmed/blocker] rule= | 由短周期/简化工况试验外推长期或工程依据过度
+  - F03 [needs_info/medium] rule= | 以代表单元指导整组补水/处理时，组内独立性待核实
+  - F04 [needs_info/medium] rule= | 材料/菌剂为单批次制备，跨批次推广边界待明确
+  - F05 [confirmed/blocker] rule= | 水分处理与温室空间位置（长台）完全混杂
+  - F06 [confirmed/high] rule= | 接种组含海藻糖保护剂而不接种组无，存在助溶剂/添加剂混杂
+  - F07 [confirmed/blocker] rule= | 三因素析因设计下对时间序列数据采用单因素方差分析，忽略交互效应
+  - F08 [confirmed/blocker] rule= | 中期破坏性取土后补入石英砂，导致终点土壤团聚体与保水指标失效
+  - F09 [confirmed/high] rule= | D14破坏性取株导致后续重复测量样本量减少且不均衡
+  - F10 [confirmed/high] rule= | 将相关性证据作为 EPS 介导促生机制的因果结论
+  - F11 [confirmed/blocker] rule= | 28 d 温室盆栽结果直接外推至退化旱地推广应用缺乏依据
+  - F12 [needs_info/high] rule= | 株高和 SPAD 统计分析可能将盆内子样本视为独立重复
+CE rows: 3
+  - CE01 supports=partial | H1：接种菌剂提高生物量，缓解干旱抑制
+  - CE02 supports=no | H2：EPS及团聚体稳定性提高，改善保水能力并促生
+  - CE03 supports=partial | H3：两类土壤中促生效果稳定，具应用潜力
+Plan A notes: 7
+  - C01: 增加助溶剂/载体/助剂对照，使目标处理效应可分
+  - C02: 解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应
+  - C03: 按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据
+  - C04: 停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定
+  - C05: 收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据
+  - C06: 显式定义实验单位（当前解析：盆）；统计仅对独立重复推断
+  - C07: 将 H3 及相关预期结论限定为“具有潜在应用潜力，需进一步通过长周期田间试验验证”，不应在当前设计下将盆栽结果直接作为推广应用依据。
+schema_errors: OK
+[2026-10-25T22:30:05+08:00] DONE wall=427.2s calls=2 expand=0

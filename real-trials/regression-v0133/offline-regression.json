@@ -1,0 +1,32 @@
+{
+  "version": "0.1.3.3",
+  "prompt_match": true,
+  "trials": {
+    "trial1": {
+      "type": "离线重放",
+      "container_level_independent_repeat_and_no_stats_only_fix": true,
+      "evidence": "C01: 在处理分配单位（容器）层面增加独立重复…不可仅更换统计模型",
+      "note": "措辞为「容器」而非「水槽」，科学要求仍满足；本轮未改科学 Prompt"
+    },
+    "trial2": {
+      "type": "离线重放",
+      "no_trial1_bleed": true,
+      "bleed_hits": []
+    },
+    "trial3": {
+      "type": "离线重放",
+      "path": "real-trials/regression-v0131-llm/trial3/audit-report.json",
+      "single_batch_needs_info": true,
+      "no_true_dup_hai_tai": true,
+      "blocker_coverage": true,
+      "n_blockers": 5
+    },
+    "trial4": {
+      "type": "离线重放",
+      "no_severe_cross_bleed": true,
+      "hits": []
+    }
+  },
+  "ce_scope_unit": "pass",
+  "checked_at": "2026-10-25T23:30:40+08:00"
+}

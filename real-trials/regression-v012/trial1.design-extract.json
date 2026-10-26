@@ -1,0 +1,176 @@
+{
+  "llm_meta": {
+    "provider": "glm",
+    "purpose": "design_extract",
+    "ok": true,
+    "schema_errors": [],
+    "fallback": true,
+    "model": "glm-4.6",
+    "usage": {
+      "prompt_tokens": 3047,
+      "completion_tokens": 8192,
+      "reasoning_tokens": 5952,
+      "total_tokens": 11239
+    },
+    "latency_ms": 213934,
+    "request_id": "2026102518084451d7de526fee4e9e",
+    "error": "JSON parse failed: Expecting ',' delimiter: line 293 column 6 (char 6362)"
+  },
+  "design_extract": null,
+  "hypotheses": [
+    "1  研究背景、目标与假设"
+  ],
+  "groups": [
+    {
+      "name": "研究方向",
+      "treatment": "淡水防污与功能涂层",
+      "n_claimed": "计划周期",
+      "status": "stated",
+      "quote": "研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "方案版本 | v0.4 | 拟定日期 | 2026-10-25\n研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-1"
+        }
+      ]
+    },
+    {
+      "name": "B0",
+      "treatment": "裸不锈钢",
+      "n_claimed": "—",
+      "status": "stated",
+      "quote": "B0 | 裸不锈钢 | — | 否 | A | 3 片",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-2"
+        }
+      ]
+    },
+    {
+      "name": "B1",
+      "treatment": "基础涂层",
+      "n_claimed": "—",
+      "status": "stated",
+      "quote": "B1 | 基础涂层 | — | 否 | A | 3 片",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-2"
+        }
+      ]
+    },
+    {
+      "name": "B2",
+      "treatment": "功能涂层",
+      "n_claimed": "1.5%",
+      "status": "stated",
+      "quote": "B2 | 功能涂层 | 1.5% | 否 | A | 3 片",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-2"
+        }
+      ]
+    },
+    {
+      "name": "B3",
+      "treatment": "基础涂层",
+      "n_claimed": "—",
+      "status": "stated",
+      "quote": "B3 | 基础涂层 | — | 是 | B | 3 片",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-2"
+        }
+      ]
+    },
+    {
+      "name": "B4",
+      "treatment": "功能涂层",
+      "n_claimed": "1.5%",
+      "status": "stated",
+      "quote": "B4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-2"
+        }
+      ]
+    },
+    {
+      "name": "D0",
+      "treatment": "接触角、干膜厚度、初始质量测定",
+      "n_claimed": "每组 3 片挂板",
+      "status": "stated",
+      "quote": "D0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-3"
+        }
+      ]
+    },
+    {
+      "name": "D7",
+      "treatment": "结晶紫染色法测定表面附着量；记录水质",
+      "n_claimed": "每组 3 片挂板",
+      "status": "stated",
+      "quote": "D7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-3"
+        }
+      ]
+    },
+    {
+      "name": "D14",
+      "treatment": "结晶紫染色、EPS 荧光分析；记录水质",
+      "n_claimed": "每组 3 片挂板",
+      "status": "stated",
+      "quote": "D14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-3"
+        }
+      ]
+    },
+    {
+      "name": "D21",
+      "treatment": "结晶紫染色、表面接触角及终点生物膜观察",
+      "n_claimed": "每组 3 片挂板",
+      "status": "stated",
+      "quote": "D21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "时间 | 主要实验内容 | 样品安排\nD0 | 接触角、干膜厚度、初始质量测定 | 每组 3 片挂板\nD7 | 结晶紫染色法测定表面附着量；记录水质 | 每组 3 片挂板\nD14 | 结晶紫染色、EPS 荧光分析；记录水质 | 每组 3 片挂板\nD21 | 结晶紫染色、表面接触角及终点生物膜观察 | 每组 3 片挂板",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "table_id": "t-3"
+        }
+      ]
+    }
+  ],
+  "endpoints": null
+}

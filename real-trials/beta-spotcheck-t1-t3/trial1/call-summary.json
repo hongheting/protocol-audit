@@ -1,0 +1,432 @@
+{
+  "trial": "trial1",
+  "mode": "Beta-spotcheck-real-LLM",
+  "code_version": "0.1.3.3",
+  "science_freeze": "V0.1.2",
+  "no_tuning": true,
+  "no_gold_injected": true,
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "source": "/workspace/product/protocol-audit/real-trials/trial1.docx",
+  "started_at": "2026-10-26T10:20:27+08:00",
+  "provider_requested": "glm",
+  "model_requested": "glm-4.6",
+  "finished_at": "2026-10-26T10:26:28+08:00",
+  "elapsed_s": 361.6,
+  "schema_ok": true,
+  "schema_errors": [],
+  "boundary_note": "学科边界：本次按 environmental 规则审查（环境/生物/化学）。findings 来源统计：llm_review=7，rule=10，partial_fallback=0。引擎：V0.1.3.3 结构规则/后处理 + 方法优先审查窗 + 审查截断扩容重试（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 解析可靠性与 0.1.3.3 审查可靠性；外推严重度与软去重收窄；CE 限制句 scope_note；提取/窗口策略为独立技术版本）+ LLM 解析+ LLM 科学审查（完整）。不得将模拟输出冒充实测。",
+  "coverage_note": "已解析块 43；手动补充 0；未解析资产 0。 review_coverage[0.1.3.2-review-windows]: 全文 2772 字，送审 2772 字/1 窗（单窗上限 14000）。未检出明确方法标题段（已用信号段落兜底）。可声称覆盖本次送审窗口（非未解析资产）。短文不截断。",
+  "summary": {
+    "verdict": "needs_redesign",
+    "blocker_count": 6,
+    "high_count": 8,
+    "confirmed_count": 17,
+    "needs_info_count": 0,
+    "suggestion_count": 0,
+    "one_liner": "确认问题 17，待核实 0，建议 0；见 Plan A 最小修改。",
+    "strongest_supported_claim": "在澄清与最小修改前，不宜把相关或短周期结果写成机制/工程定论。"
+  },
+  "findings_brief": [
+    {
+      "id": "F01",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "处理因素与实验容器完全混杂",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F02",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "伪重复：子样本被当作独立实验单位",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F03",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "助溶剂/载体与处理混杂且缺少匹配对照",
+      "duplicate_relation": "similar_different_mechanism"
+    },
+    {
+      "id": "F04",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "析因/协同判据不当（需交互项，而非仅 one-way 多重比较）",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F05",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "重复测量与破坏性检测冲突",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F06",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "相关性/表征共变不足以支持主要机制主张",
+      "duplicate_relation": "similar_different_mechanism"
+    },
+    {
+      "id": "F07",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "由短周期/简化工况试验外推长期或工程依据过度",
+      "duplicate_relation": "similar_different_mechanism"
+    },
+    {
+      "id": "F08",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "medium",
+      "title": "混样导致每组有效 n=1",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F09",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "medium",
+      "title": "挂板位置固定未随机，可能引入位置混杂",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F10",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "medium",
+      "title": "UV 剂量未在挂板处水下实测",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F11",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "UV-C处理与水槽容器完全混杂",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F12",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "水槽层面无重复导致UV-C效应统计检验无效",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F13",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "助溶剂与功能颗粒效应混杂",
+      "duplicate_relation": "similar_different_mechanism"
+    },
+    {
+      "id": "F14",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "单因素ANOVA无法检验双因素交互作用（协同效应）",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F15",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "结晶紫染色后放回破坏了重复测量的连续性",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F16",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "相关性不足以推断润湿性改变为主要机制（H3）",
+      "duplicate_relation": "similar_different_mechanism"
+    },
+    {
+      "id": "F17",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "21天微宇宙结果外推至工程长期防污要求缺乏依据",
+      "duplicate_relation": "similar_different_mechanism"
+    }
+  ],
+  "origin_counts": {
+    "rule": 10,
+    "llm_review": 7
+  },
+  "rules_only_count": 10,
+  "llm_incremental_titles": [
+    "21天微宇宙结果外推至工程长期防污要求缺乏依据",
+    "UV-C处理与水槽容器完全混杂",
+    "助溶剂与功能颗粒效应混杂",
+    "单因素ANOVA无法检验双因素交互作用（协同效应）",
+    "水槽层面无重复导致UV-C效应统计检验无效",
+    "相关性不足以推断润湿性改变为主要机制（H3）",
+    "结晶紫染色后放回破坏了重复测量的连续性"
+  ],
+  "facade_risk_flag": false,
+  "review_hint": "appears_complete_or_rules",
+  "ce_brief": [
+    {
+      "id": "CE01",
+      "hypothesis_id": "H1",
+      "row_kind": "claim",
+      "design_supports": "no",
+      "claim": "H1：附着生物量降低"
+    },
+    {
+      "id": "CE02",
+      "hypothesis_id": "H2",
+      "row_kind": "claim",
+      "design_supports": "no",
+      "claim": "H2：联用附着量下降幅度高于单独施加其中任一措施"
+    },
+    {
+      "id": "CE03",
+      "hypothesis_id": "H3",
+      "row_kind": "claim",
+      "design_supports": "no",
+      "claim": "H3：涂层表面润湿性改变导致初期微生物附着减少"
+    },
+    {
+      "id": "CE04",
+      "hypothesis_id": "EXTRAP",
+      "row_kind": "claim",
+      "design_supports": "no",
+      "claim": "该联用方式能够满足淡水取水口及水下监测设备的长期防污要求"
+    }
+  ],
+  "optimizer": {
+    "optimizer_incomplete": false,
+    "blocker_action_map": [
+      {
+        "finding_id": "F01",
+        "action": "在水槽（UV-C施加单位）层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽（UV-C施加单位）层面独立重复缺失",
+        "problem": "水槽（UV-C施加单位）与处理锁定或子样本当 n 导致效应不可分/伪重复",
+        "verification": "每处理具备≥2 独立水槽（UV-C施加单位）后，主效应/交互估计不再依赖单水槽（UV-C施加单位）内子样本",
+        "change_note_id": "C01",
+        "covered": true,
+        "uncovered_reason": null
+      },
+      {
+        "finding_id": "F02",
+        "action": "在水槽（UV-C施加单位）层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽（UV-C施加单位）层面独立重复缺失",
+        "problem": "水槽（UV-C施加单位）与处理锁定或子样本当 n 导致效应不可分/伪重复",
+        "verification": "每处理具备≥2 独立水槽（UV-C施加单位）后，主效应/交互估计不再依赖单水槽（UV-C施加单位）内子样本",
+        "change_note_id": "C01",
+        "covered": true,
+        "uncovered_reason": null
+      },
+      {
+        "finding_id": "F07",
+        "action": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+        "problem": "短周期、批式、盆栽或简化水质的实验室结果不能直接作为长期工程/田间推广/连续运行的主要依据。",
+        "verification": "复审该 blocker 是否仍阻断主要结论",
+        "change_note_id": "C07",
+        "covered": true,
+        "uncovered_reason": null
+      },
+      {
+        "finding_id": "F11",
+        "action": "为UV-C的'是/否'水平各设置至少2个独立水槽（共4个水槽），打破处理与容器的1:1映射，使水槽变异可作为误差项评估。",
+        "problem": "UV-C的施加完全依赖于水槽分配，'脉冲UV-C'效应与'A/B水槽'的系统环境差异（如微水流、曝气分布、遮光效应等）完全混杂。无法将B3/B4与B0/B1/B2之间的差异归因于UV-C本身，可能导致假阳性或假阴性结论。",
+        "verification": "修改后复审：该 blocker 对应的混杂/单位/终点问题不再阻断主要结论；或主张已显式降级且与证据匹配",
+        "change_note_id": "C08",
+        "covered": true,
+        "uncovered_reason": null
+      },
+      {
+        "finding_id": "F12",
+        "action": "必须设置水槽层面的重复（如每种UV-C条件2个水槽，共4个），统计检验应以水槽均值（或混合效应模型中水槽作为随机效应）为基础。",
+        "problem": "对于UV-C因素，真正的实验单元是水槽（n=1 per level）。将嵌套于水槽内的挂板视为独立样本（n=3）进行ANOVA，属于将系统变异当作随机误差的伪重复，严重膨胀I类错误率，使p值无效。",
+        "verification": "修改后复审：该 blocker 对应的混杂/单位/终点问题不再阻断主要结论；或主张已显式降级且与证据匹配",
+        "change_note_id": "C09",
+        "covered": true,
+        "uncovered_reason": null
+      },
+      {
+        "finding_id": "F17",
+        "action": "限定结论适用范围于'室内微宇宙短期防污潜力评估'，并明确指出需后续中试或现场测试验证其长期有效性，不宜直接作为工程应用的直接依据。",
+        "problem": "21天室内低流速微宇宙试验无法模拟真实水体中长期（数月/年）的复杂污损演替、高流速剪切及水质衰退。直接作为工程应用'长期防污要求'的技术依据属于过度外推，存在较高现场失效风险。",
+        "verification": "修改后复审：该 blocker 对应的混杂/单位/终点问题不再阻断主要结论；或主张已显式降级且与证据匹配",
+        "change_note_id": "C10",
+        "covered": true,
+        "uncovered_reason": null
+      }
+    ],
+    "change_notes": [
+      {
+        "id": "C01",
+        "addresses_finding_ids": [
+          "F01",
+          "F02"
+        ],
+        "summary": "在水槽（UV-C施加单位）层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽（UV-C施加单位）层面独立重复缺失"
+      },
+      {
+        "id": "C02",
+        "addresses_finding_ids": [
+          "F03"
+        ],
+        "summary": "增加助溶剂/载体/助剂对照，使目标处理效应可分"
+      },
+      {
+        "id": "C03",
+        "addresses_finding_ids": [
+          "F09"
+        ],
+        "summary": "解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应"
+      },
+      {
+        "id": "C04",
+        "addresses_finding_ids": [
+          "F15"
+        ],
+        "summary": "再生/循环各轮称量（或衡算）固体质量并校正投加量，避免把机械流失记成再生失效"
+      },
+      {
+        "id": "C05",
+        "addresses_finding_ids": [
+          "F04"
+        ],
+        "summary": "按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据"
+      },
+      {
+        "id": "C06",
+        "addresses_finding_ids": [
+          "F05"
+        ],
+        "summary": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定"
+      },
+      {
+        "id": "C07",
+        "addresses_finding_ids": [
+          "F06",
+          "F07"
+        ],
+        "summary": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据"
+      },
+      {
+        "id": "C08",
+        "addresses_finding_ids": [
+          "F11"
+        ],
+        "summary": "为UV-C的'是/否'水平各设置至少2个独立水槽（共4个水槽），打破处理与容器的1:1映射，使水槽变异可作为误差项评估。"
+      },
+      {
+        "id": "C09",
+        "addresses_finding_ids": [
+          "F12"
+        ],
+        "summary": "必须设置水槽层面的重复（如每种UV-C条件2个水槽，共4个），统计检验应以水槽均值（或混合效应模型中水槽作为随机效应）为基础。"
+      },
+      {
+        "id": "C10",
+        "addresses_finding_ids": [
+          "F17"
+        ],
+        "summary": "限定结论适用范围于'室内微宇宙短期防污潜力评估'，并明确指出需后续中试或现场测试验证其长期有效性，不宜直接作为工程应用的直接依据。"
+      }
+    ]
+  },
+  "clarifying_questions_n": 0,
+  "calls": {
+    "n_calls": 2,
+    "n_ok": 2,
+    "n_fail": 0,
+    "n_expand_retry": 0,
+    "fail_errors": [],
+    "latency_ms_sum": 361396,
+    "purposes": [
+      "design_extract",
+      "scientific_review"
+    ],
+    "models": [
+      "glm-4.6"
+    ],
+    "finish_reasons": [
+      "stop",
+      "stop"
+    ],
+    "tokens": {
+      "prompt": 7170,
+      "completion": 12348,
+      "reasoning": 7381,
+      "total": 19518
+    },
+    "calls": [
+      {
+        "ts": "2026-10-26T10:20:27+08:00",
+        "purpose": "design_extract",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 179949,
+        "prompt_tokens": 3047,
+        "completion_tokens": 6648,
+        "finish_reason": "stop",
+        "max_tokens": 8192,
+        "error": null
+      },
+      {
+        "ts": "2026-10-26T10:23:27+08:00",
+        "purpose": "scientific_review",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 181447,
+        "prompt_tokens": 4123,
+        "completion_tokens": 5700,
+        "finish_reason": "stop",
+        "max_tokens": 8192,
+        "error": null
+      }
+    ]
+  },
+  "review_coverage": {
+    "tech_version": "0.1.3.2-review-windows",
+    "total_chars": 2772,
+    "chars_sent": 2772,
+    "window_count": 1,
+    "window_budget_chars": 14000,
+    "max_windows": 3,
+    "methods_detected": false,
+    "methods_included": true,
+    "methods_spans": [],
+    "truncated": false,
+    "omitted_char_count": 0,
+    "omitted_ranges": [],
+    "comprehensive": true,
+    "notes": [
+      "短文不截断"
+    ],
+    "windows": [
+      {
+        "window_id": "W01",
+        "start": 0,
+        "end": 2772,
+        "char_len": 2772,
+        "priority": 0,
+        "reason": "短文全文入窗（未截断）",
+        "text_sha16": "380260bea3b4c8e7",
+        "preview": "研究计划  /  Research protocol\n\n介孔二氧化硅功能涂层与脉冲 UV-C 联用对淡水生物膜附着的影响\n\n室内低流速微宇宙试验方案（实验前讨论稿）\n\n方案版本 | v0.4 | 拟定日期 | 2026-10-25\n研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d\n\n1  研究背景、目标与假设\n\n天然淡水中的微生物可在浸没表面形成生物膜，进而促进后续污损。功能涂层与物理防污手段的联用，可能降低附着量并改善长时间运行稳定性。本方案拟在室内低流速水体中"
+      }
+    ]
+  }
+}

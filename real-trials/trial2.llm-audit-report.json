@@ -1,0 +1,719 @@
+{
+  "schema_version": "0.2.1",
+  "discipline_resolved": "environmental",
+  "boundary_note": "学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：V0.1.1 结构规则+ LLM 解析+ LLM 科学审查。不得将模拟输出冒充实测。",
+  "research_goal_level": "unspecified",
+  "research_goal_level_source": "default",
+  "ingest_manifest": {
+    "source_file": "trial2.docx",
+    "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "parse_warnings": [],
+    "blocks_count": 42,
+    "tables_count": 2,
+    "unparsed_assets": []
+  },
+  "design_confirmation": {
+    "status": "confirmed",
+    "confirmed_at": "2026-10-25T17:55:24+08:00",
+    "notes": ""
+  },
+  "summary": {
+    "verdict": "awaiting_clarification",
+    "blocker_count": 1,
+    "high_count": 3,
+    "confirmed_count": 5,
+    "needs_info_count": 1,
+    "suggestion_count": 0,
+    "one_liner": "确认问题 5，待核实 1，建议 0；请先回答关键追问。",
+    "strongest_supported_claim": "在澄清与最小修改前，不宜把相关或短周期结果写成机制/工程定论。"
+  },
+  "identification": {
+    "research_question": {
+      "text": "镧改性生物炭对低浓度磷的去除能力、不同水化学条件下的变化以及连续再生后的性能保持情况如何？",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "1.1 研究假设",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-7"
+        }
+      ]
+    },
+    "hypothesis": {
+      "text": "H1：镧改性可显著提高生物炭对正磷酸盐的去除能力，且提高主要来源于材料表面镧位点与磷酸根之间的特异性结合。；H2：La-BC 在不同 pH 和典型共存组分条件下仍能保持较高的磷去除能力，表明其对污水中磷具有较好的选择性与适应性。；H3：La-BC 经多轮碱洗再生后仍具有稳定除磷效果，可为市政污水深度处理单元的持续运行提供材料依据。",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "H1：镧改性可显著提高生物炭对正磷酸盐的去除能力，且提高主要来源于材料表面镧位点与磷酸根之间的特异性结合。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-8"
+        }
+      ]
+    },
+    "independent_vars": [],
+    "dependent_vars": [
+      {
+        "text": "除磷率",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "除磷率按 R = (C₀ − Cₑ) / C₀ × 100% 计算",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-34"
+          }
+        ]
+      },
+      {
+        "text": "吸附量(qe/qt)",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "吸附量按 qₑ = (C₀ − Cₑ) × V / m 计算",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-34"
+          }
+        ]
+      },
+      {
+        "text": "pH",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "吸附前后记录初始与终点 pH",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-16"
+          }
+        ]
+      },
+      {
+        "text": "表面元素结合能(P 2p, La 3d)",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "结合 P 2p、La 3d 等信号变化讨论磷的固定过程",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-14"
+          }
+        ]
+      }
+    ],
+    "experimental_unit": {
+      "text": "独立反应瓶/独立反应管",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "除磷率按 R = (C₀ − Cₑ) / C₀ × 100% 计算，吸附量按 qₑ = (C₀ − Cₑ) × V / m 计算。数据以均值 ± 标准差表示。对 BC 与 La-BC 的除磷率采用独立样本 t 检验，对不同 pH、剂量、共存组分和再生轮次分别开展单因素方差分析，必要时采用 Tukey 事后多重比较。显著性水平为 p < 0.05。动力学与等温模型以拟合优度和参数合理性综合选择。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-34"
+        }
+      ]
+    },
+    "groups": [
+      {
+        "name": "G0",
+        "treatment": "无材料空白",
+        "n_claimed": "3",
+        "status": "stated",
+        "quote": "无材料空白",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "G0 | 无材料空白 | 无 | 0 | 评价溶液与容器背景变化",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "G1",
+        "treatment": "原始生物炭",
+        "n_claimed": "3",
+        "status": "stated",
+        "quote": "原始生物炭",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "G1 | 原始生物炭 | BC | 0.50 g/L | 材料基准比较",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "G2",
+        "treatment": "镧改性生物炭",
+        "n_claimed": "3",
+        "status": "stated",
+        "quote": "镧改性生物炭",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "G2 | 镧改性生物炭 | La-BC | 0.50 g/L | 改性效果比较",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "name": "D1-D4",
+        "treatment": "La-BC 剂量组",
+        "n_claimed": "3",
+        "status": "stated",
+        "quote": "La-BC 剂量组",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "D1–D4 | La-BC 剂量组 | La-BC | 0.10–1.00 g/L | 筛选适宜投加量",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "",
+            "table_id": "t-1"
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "type": "blank",
+        "label": "G0",
+        "present": true,
+        "excludes_alternative": "",
+        "status": "stated",
+        "quote": "G0",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "G0 | 无材料空白 | 无 | 0 | 评价溶液与容器背景变化",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "type": "negative",
+        "label": "G1",
+        "present": true,
+        "excludes_alternative": "",
+        "status": "stated",
+        "quote": "G1",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "G1 | 原始生物炭 | BC | 0.50 g/L | 材料基准比较",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "",
+            "table_id": "t-1"
+          }
+        ]
+      }
+    ],
+    "endpoints": [
+      {
+        "text": "除磷率",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "除磷率按 R = (C₀ − Cₑ) / C₀ × 100% 计算",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-34"
+          }
+        ]
+      },
+      {
+        "text": "吸附量(qe/qt)",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "吸附量按 qₑ = (C₀ − Cₑ) × V / m 计算",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-34"
+          }
+        ]
+      },
+      {
+        "text": "pH",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "吸附前后记录初始与终点 pH",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-16"
+          }
+        ]
+      },
+      {
+        "text": "表面元素结合能(P 2p, La 3d)",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "结合 P 2p、La 3d 等信号变化讨论磷的固定过程",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-14"
+          }
+        ]
+      }
+    ],
+    "replication": {
+      "text": "分配单位=锥形瓶/离心管; 子样本=悬液取样(1.5 mL); 声称为独立单位=独立反应瓶/独立反应管",
+      "status": "contradictory",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "每个处理设置 3 个独立锥形瓶",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-19"
+        },
+        {
+          "source_file": "trial2.docx",
+          "original_text": "每个条件设置 3 个独立反应管，同一反应管用于各时间点连续取样",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-26"
+        },
+        {
+          "source_file": "trial2.docx",
+          "original_text": "技术检测复孔先取均值形成反应瓶数据，再进行统计分析",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-35"
+        }
+      ]
+    },
+    "statistics": {
+      "text": "除磷率按R=(C0-Ce)/C0×100%计算，吸附量按qe=(C0-Ce)×V/m计算。数据以均值±标准差表示。BC与La-BC的除磷率采用独立样本t检验；对不同pH、剂量、共存组分和再生轮次分别开展单因素方差分析，必要时采用Tukey事后多重比较；显著性水平为p<0.05。动力学与等温模型以拟合优度和参数合理性综合选择。技术检测复孔先取均值形成反应瓶数据，再进行统计分析。",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "4 数据处理与统计分析",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-33"
+        }
+      ]
+    },
+    "claims": [
+      {
+        "text": "La-BC相比BC在2.0 mg P/L条件下表现出更高的除磷率，镧—磷配位是提升吸附能力的主导机制",
+        "status": "stated",
+        "locations": []
+      },
+      {
+        "text": "材料具有较好的水质适应性及对磷的选择性",
+        "status": "stated",
+        "locations": []
+      },
+      {
+        "text": "若连续5轮再生后除磷率保持在初始水平的80%以上，则具有良好再生稳定性，适合用于城镇污水厂二级出水深度除磷连续运行单元",
+        "status": "stated",
+        "locations": []
+      }
+    ],
+    "gaps": [
+      "replication"
+    ]
+  },
+  "claim_evidence_map": {
+    "rows": [
+      {
+        "id": "CE01",
+        "claim": "H1：La-BC的除磷率显著高于BC，且XPS等表征证明La-P特异性结合是主导机制",
+        "evidence_from_design": "比较：润湿性指标与附着量的关联； ideally 分离润湿性 vs 活性释放；指标：除磷率；吸附量(qe/qt)；pH；表面元素结合能(P 2p, La 3d)",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "相关共变不能证明「主要机制」",
+        "aligned_goal_levels": [
+          "treatment_effect",
+          "exploratory"
+        ],
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "H1：镧改性可显著提高生物炭对正磷酸盐的去除能力，且提高主要来源于材料表面镧位点与磷酸根之间的特异性结合。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-8"
+          }
+        ],
+        "hypothesis_id": "H1",
+        "planned_comparison": "润湿性指标与附着量的关联； ideally 分离润湿性 vs 活性释放",
+        "endpoints": [
+          "除磷率",
+          "吸附量(qe/qt)",
+          "pH",
+          "表面元素结合能(P 2p, La 3d)"
+        ],
+        "evidence_needed": "能排除替代机制的操纵或对照，而非仅相关",
+        "design_supports": "no",
+        "fix_hint": "降为相关/伴随描述，或增加机制分离实验"
+      },
+      {
+        "id": "CE02",
+        "claim": "H2：不同pH及共存组分下La-BC仍保持高除磷率，具有选择性与适应性",
+        "evidence_from_design": "比较：2×2：颗粒×UV 交互（B1/B2/B3/B4）；指标：除磷率；吸附量(qe/qt)；pH；表面元素结合能(P 2p, La 3d)",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "UV 与水槽混杂且伪重复时，协同/交互不可检验；「B4 低于单因素」≠协同",
+        "aligned_goal_levels": [
+          "treatment_effect",
+          "exploratory"
+        ],
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "H2：La-BC 在不同 pH 和典型共存组分条件下仍能保持较高的磷去除能力，表明其对污水中磷具有较好的选择性与适应性。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-9"
+          }
+        ],
+        "hypothesis_id": "H2",
+        "planned_comparison": "2×2：颗粒×UV 交互（B1/B2/B3/B4）",
+        "endpoints": [
+          "除磷率",
+          "吸附量(qe/qt)",
+          "pH",
+          "表面元素结合能(P 2p, La 3d)"
+        ],
+        "evidence_needed": "容器层面可估计的交互；预定义交互检验；非伪重复 n",
+        "design_supports": "no",
+        "fix_hint": "水槽层面独立重复 + 交互分析；或删除协同主张"
+      },
+      {
+        "id": "CE03",
+        "claim": "H3：5轮再生后除磷率保持在初始水平的80%以上，具有再生稳定性",
+        "evidence_from_design": "比较：润湿性指标与附着量的关联； ideally 分离润湿性 vs 活性释放；指标：除磷率；吸附量(qe/qt)；pH；表面元素结合能(P 2p, La 3d)",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "相关共变不能证明「主要机制」",
+        "aligned_goal_levels": [
+          "treatment_effect",
+          "exploratory"
+        ],
+        "locations": [
+          {
+            "source_file": "trial2.docx",
+            "original_text": "H3：La-BC 经多轮碱洗再生后仍具有稳定除磷效果，可为市政污水深度处理单元的持续运行提供材料依据。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-10"
+          }
+        ],
+        "hypothesis_id": "H3",
+        "planned_comparison": "润湿性指标与附着量的关联； ideally 分离润湿性 vs 活性释放",
+        "endpoints": [
+          "除磷率",
+          "吸附量(qe/qt)",
+          "pH",
+          "表面元素结合能(P 2p, La 3d)"
+        ],
+        "evidence_needed": "能排除替代机制的操纵或对照，而非仅相关",
+        "design_supports": "no",
+        "fix_hint": "降为相关/伴随描述，或增加机制分离实验"
+      }
+    ],
+    "notes": [
+      "当前 research_goal_level=unspecified（未在证据不足时自动升为 mechanism_causal）。",
+      "Claim–Evidence 按假设分行；禁止用单行通用模板替代。"
+    ]
+  },
+  "clarifying_questions": [
+    {
+      "id": "Q01",
+      "question": "请确认：文中的「平行/重复」是独立实验批次（或独立生物重复），还是同一批样品的技术平行/复孔？",
+      "blocks_dimensions": [
+        "pseudoreplication",
+        "statistics"
+      ],
+      "priority": "critical",
+      "context_quote": "分配单位=锥形瓶/离心管; 子样本=悬液取样(1.5 mL); 声称为独立单位=独立反应瓶/独立反应管",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "每个处理设置 3 个独立锥形瓶",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-19"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "dimension": "pseudoreplication",
+      "severity": "high",
+      "category": "needs_info",
+      "title": "「平行/重复」独立性未写清",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "每个处理设置 3 个独立锥形瓶",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-19"
+        }
+      ],
+      "why_invalidates": "若平行为同一实验单位的技术重复，直接作独立样本会低估变异。",
+      "fix": "明确实验单位：独立批次/独立生物重复 vs 技术复孔；统计仅对独立单位推断。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "unknown",
+      "hard_error": false
+    },
+    {
+      "id": "F02",
+      "dimension": "confounding",
+      "severity": "blocker",
+      "category": "confirmed",
+      "title": "缓冲剂种类与pH水平完全锁定混杂，无法单独评价pH效应",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "分别使用 10 mmol/L 柠檬酸盐、HEPES 和硼酸盐缓冲体系，将反应体系初始 pH 调节至 5.0、7.0 和 9.0...实验不另外设置相同 pH 下的缓冲体系对照。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-23"
+        }
+      ],
+      "why_invalidates": "柠檬酸盐是强金属螯合剂，会强烈竞争材料表面的La位点；而HEPES和硼酸盐几乎无此螯合作用。三种缓冲体系与三个pH水平完全锁定（区组混杂），若pH 5.0下除磷率下降，完全无法区分是H+浓度增加导致，还是柠檬酸盐螯合La导致。这使pH主效应不可估计，直接破坏H2关于pH适应性的推论。",
+      "fix": "在所有pH水平下统一使用同一类不干扰吸附体系的调节方式（如微量NaOH/HCl调节并用极低浓度非螯合缓冲剂维持），或在每个pH下正交测试不同缓冲剂以解耦缓冲剂效应；否则必须承认pH效应受缓冲剂混杂。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [],
+      "estimated_burden": "unknown",
+      "hard_error": true
+    },
+    {
+      "id": "F03",
+      "dimension": "endpoints",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "动力学实验体积损耗未校正，吸附量计算存在系统性负偏差",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "分别在 5、15、30、60、120、240、360 min 取 1.5 mL 悬液...取样后不补加新液。按固定的初始体积 50 mL 计算各时刻表观吸附量 qₜ = (C₀ − Cₜ) × 0.050 / m",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-26"
+        }
+      ],
+      "why_invalidates": "连续取样7次每次1.5 mL，累计取出10.5 mL（占初始体积21%）。液相体积显著减少会使溶质被浓缩，且按固定50 mL计算吸附量会系统性地低估真实吸附量（因分母V偏大），导致动力学曲线变形，准一级/准二级动力学速率常数和平衡吸附量qe等核心参数失真。",
+      "fix": "修正计算公式，在t时刻使用实际剩余体积V_t进行计算：q_t = [C0*V0 - Ct*V_t - Σ(C_i * v_sample)] / m；或改用独立反应管在对应时间点全量破坏性取样测定，以彻底消除体积损耗影响。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [],
+      "estimated_burden": "unknown",
+      "hard_error": true
+    },
+    {
+      "id": "F04",
+      "dimension": "confounding",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "共存组分全量混合投加，无法单独归因于碳酸氢根的竞争作用",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "同时加入 Ca²⁺（40 mg/L）、Mg²⁺（15 mg/L）、HCO₃⁻（120 mg/L）和腐殖酸（5 mg/L）...重点讨论碳酸氢根与磷酸根对材料位点的竞争作用",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-24"
+        }
+      ],
+      "why_invalidates": "将四种干扰物同时加入，若除磷率下降，其效应被Ca²⁺沉淀/络合、Mg²⁺作用、HCO₃⁻竞争和腐殖酸孔隙阻塞完全混杂。实验设计无法提供任何证据证明“碳酸氢根与磷酸根的竞争”是主导因素，该归因属于主观推测而非实验证明。",
+      "fix": "采用析因设计，分别设置单因子添加组（仅加HCO₃⁻、仅加Ca²⁺/Mg²⁺、仅加HA）及必要组合组，以解耦各共存组分的主效应及交互作用，从而严格证明HCO₃⁻的竞争贡献。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [],
+      "estimated_burden": "unknown",
+      "hard_error": true
+    },
+    {
+      "id": "F05",
+      "dimension": "confounding",
+      "severity": "medium",
+      "category": "confirmed",
+      "title": "再生实验中间轮次未追踪材料质量，投加量衰减与再生效能混杂",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "材料只在首轮投加前和第 5 轮结束后称量干质量，中间各轮不重新调整投加量",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-29"
+        }
+      ],
+      "why_invalidates": "固液分离和洗涤不可避免造成固体机械流失。由于中间轮次不称量且不调整投加量，第2-4轮的实际固液比逐渐降低。若去除率下降，无法区分是La位点脱活（再生性差）还是材料机械流失（实际投加量不足）导致，削弱H3关于再生稳定性的证据效力。",
+      "fix": "每轮再生后称量残留干质量，并按首轮的初始投加量补足损失的La-BC，保持各轮固液比一致；或在计算时使用每轮实际质量校正去除率和吸附量。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [],
+      "estimated_burden": "unknown",
+      "hard_error": false
+    },
+    {
+      "id": "F06",
+      "dimension": "claim_evidence",
+      "severity": "medium",
+      "category": "confirmed",
+      "title": "表征证据不足以支撑“提高主要来源于特异性结合”的因果排他性论断",
+      "locations": [
+        {
+          "source_file": "trial2.docx",
+          "original_text": "H1：镧改性可显著提高生物炭对正磷酸盐的去除能力，且提高主要来源于材料表面镧位点与磷酸根之间的特异性结合。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-8"
+        }
+      ],
+      "why_invalidates": "XPS/FTIR仅能证明吸附后存在La-P结合（相关性），但无法量化该结合对“总吸附量提升”的贡献比例。吸附量提升可能部分源于改性引起的比表面积/孔容增加或表面电荷改变。缺乏定量分配数据，直接推断特异性结合是“主要”来源属于越级推断（research_goal_level不足时升为mechanism_causal）。",
+      "fix": "弱化结论表述为“镧位点特异性结合是提升除磷能力的重要机制之一”；或补充分级提取实验（如不同强度提取剂分别洗脱物理吸附和化学结合态磷），定量区分各机制对吸附量增量的绝对贡献。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [],
+      "estimated_burden": "unknown",
+      "hard_error": false
+    }
+  ],
+  "optimizer": {
+    "plan_id": "A",
+    "title": "最小必要修改",
+    "rationale": "只修改会直接影响主要结论可靠性的关键证据缺口（容器层面重复、助溶剂可分性、交互判据、破坏性测定、主张边界），最大程度保留原方案；不机械新增空白组或把时间点当组；不以换模型替代设计重复。",
+    "revised_group_table": {
+      "columns": [
+        "group_name",
+        "treatment",
+        "control_role",
+        "n_suggested",
+        "replicate_unit",
+        "notes"
+      ],
+      "rows": [
+        {
+          "row_id": "G01",
+          "group_name": "G0",
+          "treatment": "无材料空白",
+          "control_role": "blank",
+          "n_suggested": "每处理 ≥2–3 独立水槽/反应器（挂板为槽内子样本）",
+          "replicate_unit": "容器/水槽层面的独立实验单位（同槽挂板为子样本，不计独立 n）",
+          "notes": "无材料空白；Plan A：补容器层面重复或降级 UV/交互主张"
+        },
+        {
+          "row_id": "G02",
+          "group_name": "G1",
+          "treatment": "原始生物炭",
+          "control_role": "negative",
+          "n_suggested": "每处理 ≥2–3 独立水槽/反应器（挂板为槽内子样本）",
+          "replicate_unit": "容器/水槽层面的独立实验单位（同槽挂板为子样本，不计独立 n）",
+          "notes": "原始生物炭；Plan A：补容器层面重复或降级 UV/交互主张"
+        },
+        {
+          "row_id": "G03",
+          "group_name": "G2",
+          "treatment": "镧改性生物炭",
+          "control_role": "experimental",
+          "n_suggested": "每处理 ≥2–3 独立水槽/反应器（挂板为槽内子样本）",
+          "replicate_unit": "容器/水槽层面的独立实验单位（同槽挂板为子样本，不计独立 n）",
+          "notes": "镧改性生物炭；Plan A：补容器层面重复或降级 UV/交互主张"
+        },
+        {
+          "row_id": "G04",
+          "group_name": "D1-D4",
+          "treatment": "La-BC 剂量组",
+          "control_role": "experimental",
+          "n_suggested": "每处理 ≥2–3 独立水槽/反应器（挂板为槽内子样本）",
+          "replicate_unit": "容器/水槽层面的独立实验单位（同槽挂板为子样本，不计独立 n）",
+          "notes": "La-BC 剂量组；Plan A：补容器层面重复或降级 UV/交互主张"
+        }
+      ],
+      "notes": [
+        "水槽层面独立重复是证据缺口核心；换 ANOVA/混合模型不能替代。",
+        "Plan A 优先修改主张边界，不机械堆叠新实验组。"
+      ]
+    },
+    "change_notes": [
+      {
+        "id": "C01",
+        "summary": "在处理分配单位（水槽/反应器）层面增加独立重复，或明确降级无法分离的 UV/交互主张；不可仅更换统计模型掩盖容器层面独立重复缺失",
+        "addresses_finding_ids": [
+          "F02",
+          "F04",
+          "F05"
+        ],
+        "burden": "high"
+      },
+      {
+        "id": "C02",
+        "summary": "收紧主张：相关≠主要机制；短周期室内结果不作为长期工程主要依据",
+        "addresses_finding_ids": [
+          "F06"
+        ],
+        "burden": "none"
+      }
+    ]
+  },
+  "group_table": {
+    "columns": [
+      "group_name",
+      "treatment",
+      "control_role",
+      "n_suggested",
+      "replicate_unit",
+      "notes"
+    ],
+    "rows": [
+      {
+        "row_id": "G01",
+        "group_name": "G0",
+        "treatment": "无材料空白",
+        "control_role": "blank",
+        "n_suggested": "3",
+        "replicate_unit": "分配单位=锥形瓶/离心管；子样本=悬液取样(1.5 mL)",
+        "notes": "无材料空白"
+      },
+      {
+        "row_id": "G02",
+        "group_name": "G1",
+        "treatment": "原始生物炭",
+        "control_role": "negative",
+        "n_suggested": "3",
+        "replicate_unit": "分配单位=锥形瓶/离心管；子样本=悬液取样(1.5 mL)",
+        "notes": "原始生物炭"
+      },
+      {
+        "row_id": "G03",
+        "group_name": "G2",
+        "treatment": "镧改性生物炭",
+        "control_role": "experimental",
+        "n_suggested": "3",
+        "replicate_unit": "分配单位=锥形瓶/离心管；子样本=悬液取样(1.5 mL)",
+        "notes": "镧改性生物炭"
+      },
+      {
+        "row_id": "G04",
+        "group_name": "D1-D4",
+        "treatment": "La-BC 剂量组",
+        "control_role": "experimental",
+        "n_suggested": "3",
+        "replicate_unit": "分配单位=锥形瓶/离心管；子样本=悬液取样(1.5 mL)",
+        "notes": "La-BC 剂量组"
+      }
+    ],
+    "notes": []
+  },
+  "literature_hints": [],
+  "reverse_review": {
+    "enabled": false,
+    "status": "deferred_v0_2",
+    "preview_strongest_claim": "在澄清与最小修改前，不宜把相关或短周期结果写成机制/工程定论。",
+    "note": "完整逆向审查延后到 V0.2；此处仅提供 strongest_supported_claim 预览。"
+  },
+  "privacy_applied": {
+    "public_literature_search_used": false,
+    "note": "V0.1 骨架默认不触发公开文献检索"
+  },
+  "limited_audit": false,
+  "coverage_note": "已解析块 42；手动补充 0；未解析资产 0。"
+}

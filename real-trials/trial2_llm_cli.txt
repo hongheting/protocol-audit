@@ -1,0 +1,20 @@
+source: real-trials/trial2.docx
+goal: unspecified default
+boundary: 学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：V0.1.1 结构规则+ LLM 解析+ LLM 科学审查。不得将模拟输出冒充实测。
+verdict: awaiting_clarification | 确认问题 5，待核实 1，建议 0；请先回答关键追问。
+findings: 6 confirmed 5 needs_info 1 suggestion 0
+  - F01 [needs_info/high] 「平行/重复」独立性未写清
+  - F02 [confirmed/blocker] 缓冲剂种类与pH水平完全锁定混杂，无法单独评价pH效应
+  - F03 [confirmed/high] 动力学实验体积损耗未校正，吸附量计算存在系统性负偏差
+  - F04 [confirmed/high] 共存组分全量混合投加，无法单独归因于碳酸氢根的竞争作用
+  - F05 [confirmed/medium] 再生实验中间轮次未追踪材料质量，投加量衰减与再生效能混杂
+  - F06 [confirmed/medium] 表征证据不足以支撑“提高主要来源于特异性结合”的因果排他性论断
+CE rows: 3
+  - CE01 supports=no | H1：La-BC的除磷率显著高于BC，且XPS等表征证明La-P特异性结合是主导机制
+  - CE02 supports=no | H2：不同pH及共存组分下La-BC仍保持高除磷率，具有选择性与适应性
+  - CE03 supports=no | H3：5轮再生后除磷率保持在初始水平的80%以上，具有再生稳定性
+Plan A notes: 2
+  - C01: 在处理分配单位（水槽/反应器）层面增加独立重复，或明确降级无法分离的 UV/交互主张；不可仅更换统计模型掩盖容器层面独立重复缺失
+  - C02: 收紧主张：相关≠主要机制；短周期室内结果不作为长期工程主要依据
+wrote: real-trials/trial2.llm-audit-report.json
+schema: OK

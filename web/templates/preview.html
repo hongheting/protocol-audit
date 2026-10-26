@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}解析预览 · ProtocolAudit{% endblock %}
+{% block body %}
+<p><a href="{{ url_for('index') }}">← 重新上传</a></p>
+<h2>ParsePreview 确认闸门</h2>
+<p class="muted">来源：{{ preview.source_file }} · 表 {{ preview.tables_parsed_count or 0 }} · job {{ job_id }}</p>
+
+{% if preview.parse_warnings %}
+<div class="card warn">
+  <h3>解析警告</h3>
+  <ul>{% for w in preview.parse_warnings %}<li>{{ w }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+
+{% if preview.unparsed_assets %}
+<div class="card warn">
+  <h3>未解析内容（不假装已审）</h3>
+  <ul>
+    {% for u in preview.unparsed_assets %}
+    <li><code>{{ u.id }}</code> · {{ u.asset_type }} — {{ u.reason }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if preview.limited_audit_recommended %}
+<div class="card err"><strong>将进行有限审查</strong>：关键信息仍缺。请补表或编辑设计后再确认。</div>
+{% endif %}
+
+<div class="card">
+  <h3>手动补充表格（扫描 PDF / 抽取失败时）</h3>
+  <form action="{{ url_for('supplement', job_id=job_id) }}" method="post">
+    <textarea name="manual_table" placeholder="粘贴 Markdown 表或「组别 | 处理 | n」文本…"></textarea>
+    <p style="margin-top:0.5rem"><button type="submit" class="secondary">合并为 manual_input</button></p>
+  </form>
+</div>
+
+<div class="card">
+  <h3>提取的实验设计（可编辑 JSON，确认后作为 design_override）</h3>
+  <form action="{{ url_for('audit', job_id=job_id) }}" method="post">
+    <textarea name="design_override_json" rows="18">{{ design_json }}</textarea>
+    <p><label>确认时的目标层级
+      <select name="research_goal_level">
+        {% set g = preview.extracted_design.research_goal_level if preview.extracted_design else 'unspecified' %}
+        {% for opt in ['unspecified','exploratory','treatment_effect','mechanism_causal','generalizability'] %}
+        <option value="{{ opt }}" {% if g==opt %}selected{% endif %}>{{ opt }}</option>
+        {% endfor %}
+      </select>
+    </label></p>
+    <p><label>确认备注<br><input type="text" name="confirmation_notes" placeholder="例如：已核对分组与重复"></label></p>
+    <button type="submit">确认解析并运行审查</button>
+  </form>
+</div>
+
+<div class="card">
+  <h3>已摄取块（摘要）</h3>
+  <table>
+    <tr><th>id</th><th>类型</th><th>来源</th><th>文本</th></tr>
+    {% for b in preview.ingested_blocks[:40] %}
+    <tr>
+      <td>{{ b.block_id }}</td>
+      <td>{{ b.block_type }}</td>
+      <td>{{ b.source or 'extracted' }}</td>
+      <td>{{ (b.text or '')[:160] }}{% if (b.text or '')|length > 160 %}…{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+{% if schema_errors %}
+<div class="card err"><h3>ParsePreview schema 告警</h3><pre>{{ schema_errors|join('\n') }}</pre></div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+source: real-trials/trial1.docx
+goal: unspecified default
+boundary: 学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：V0.1.1 结构规则+ LLM 科学审查；LLM 解析回退至启发式。不得将模拟输出冒充实测。
+verdict: needs_redesign | 确认问题 11，待核实 0，建议 0；见 Plan A 最小修改。
+findings: 11 confirmed 11 needs_info 0 suggestion 0
+  - F01 [confirmed/blocker] 处理因素与实验容器完全混杂
+  - F02 [confirmed/blocker] 伪重复：子样本被当作独立实验单位
+  - F03 [confirmed/high] 助溶剂/载体与处理混杂且缺少匹配对照
+  - F04 [confirmed/high] 析因/协同判据不当（需交互项，而非仅 one-way 多重比较）
+  - F05 [confirmed/high] 重复测量与破坏性检测冲突
+  - F06 [confirmed/high] 相关性不足以支持主要机制主张
+  - F07 [confirmed/high] 由短周期室内试验外推长期工程依据过度
+  - F08 [confirmed/medium] 混样导致每组有效 n=1
+  - F09 [confirmed/medium] 挂板位置固定未随机，可能引入位置混杂
+  - F10 [confirmed/medium] UV 剂量未在挂板处水下实测
+  - F11 [confirmed/high] D14 的 EPS 样品混合破坏了独立性且刮取与连续培养矛盾
+questions: 0
+CE rows: 4
+  - CE01 supports=no | H1：功能颗粒掺入涂层后，可降低附着生物量。
+  - CE02 supports=no | H2：功能涂层与 UV-C 联用时，附着量下降幅度高于单独施加其中任一措施，表明二者存在协同抑制。
+  - CE03 supports=no | H3：功能颗粒主要通过改变涂层表面润湿性，减少初期微生物附着。
+  - CE04 supports=no | 联用方式可作为取水口等场景长期防污的工程主要依据
+Plan A notes: 5
+  - C01: 在处理分配单位（水槽/反应器）层面增加独立重复，或明确降级无法分离的 UV/交互主张；不可仅更换统计模型掩盖容器层面独立重复缺失
+  - C02: 增加助溶剂/载体对照，使 H1 颗粒效应可分
+  - C03: 按 2×2 析因预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组低于两单因素」或 one-way+Tukey 作为协同判据
+  - C04: 停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定
+  - C05: 收紧主张：相关≠主要机制；短周期室内结果不作为长期工程主要依据
+wrote: real-trials/trial1.llm-audit-report.json
+schema: OK

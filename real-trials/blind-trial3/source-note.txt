@@ -1,0 +1,4 @@
+Trial 3 blind-test source
+attachment: 01M5SM8391BAC2BJ50QM4DEM45.docx
+copied_at_asia_shanghai: 2026-10-25T21:36:20+08:00
+note: Independent blind test under frozen V0.1.2 scientific prompts + V0.1.2.1 reliability patch. No gold/answers injected into production prompts or rules.

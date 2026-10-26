@@ -1,0 +1,26 @@
+[2026-10-25T23:10:34+08:00] START trial5-blind-v0132 version=0.1.3.2 prompt_match=True
+[2026-10-25T23:13:03+08:00] review_windows n=None comprehensive=True methods_detected=True truncated=False
+[2026-10-25T23:13:03+08:00] parse ok=True expand=False hard_fail=False
+[2026-10-25T23:16:45+08:00] source: /workspace/product/protocol-audit/real-trials/trial5.docx
+version: 0.1.3.2
+goal: unspecified default
+boundary: 学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：V0.1.3.2 结构规则/后处理 + 方法优先审查窗（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 可靠性补丁；外推严重度与软去重收窄；提取/窗口策略为独立技术版本）+ LLM 解析（解析用 LLM，审查以规则为主）。不得将模拟输出冒充实测。
+coverage_note: 已解析块 44；手动补充 0；未解析资产 0。 review_coverage[0.1.3.2-review-windows]: 全文 2752 字，送审 2752 字/1 窗（单窗上限 14000）。方法段已检出且已入窗。可声称覆盖本次送审窗口（非未解析资产）。短文不截断。
+verdict: awaiting_clarification | 确认问题 1，待核实 1，建议 0；请先回答关键追问。
+findings: 2 confirmed 1 needs_info 1 suggestion 0
+blockers: 0 covered=0 missing=[]
+optimizer_incomplete: False
+review_coverage_precomputed: comprehensive=True truncated=False
+  - F01 [confirmed/high] dup=- | 相关性/表征共变不足以支持主要机制主张
+  - F02 [needs_info/high] dup=- | 「平行/重复」独立性未写清
+CE rows: 4
+  - CE01 supports=partial | H1：CA@MSiO₂涂层处理组的生物附着量显著低于对照组，且不同掺量组间存在差异。
+  - CE02 supports=partial | H2：接触角变化与附着生物量之间存在显著相关关系。
+  - CE03 supports=partial | H3：筛选出至少一种适宜配方用于后续试验。
+  - CE04 supports=no | 结论主要适用于本次水源、涂层配方和试验条件；关于长期现场性能及普遍作用机制的判断，需要结合后续独立验证。
+Plan A notes: 2
+  - C01: 收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据
+  - C02: 显式定义实验单位（当前解析：微宇宙容器）；统计仅对独立重复推断
+blocker_action_map: []
+schema_errors: OK
+[2026-10-25T23:16:45+08:00] DONE wall=371.3s calls=2 expand=0

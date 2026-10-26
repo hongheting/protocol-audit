@@ -1,0 +1,6 @@
+trial3 Beta-spotcheck finished=2026-10-26T10:40:48+08:00 elapsed=853.4s
+prompt_match=True schema_ok=True
+findings=5 origins={'rule': 5} facade_risk=False
+calls=3 expand=1 finish=['stop', 'stop', 'stop']
+PlanA incomplete=False
+boundary=学科边界：本次按 environmental 规则审查（环境/生物/化学）。科学审查 LLM 调用失败或截断后仍无法解析：本报告 findings 以规则为主，禁止伪装为完整 LLM 审查。findings 来源统计：llm_review=0，rule=5，partial_fallback=0。引擎：V0.1.3.3 结构规则/后处理 + 方法优先审查窗 + 审查截断扩容重试（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 解析可靠性与 0.1.3.3 审查可靠性；外推严重度与软去重收窄；CE 限制句 scope_note；提取/窗口策略

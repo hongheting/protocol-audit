@@ -1,0 +1,241 @@
+{
+  "schema_version": "0.2.1",
+  "discipline_resolved": "environmental",
+  "boundary_note": "设计文档样例，非真实审查。含 1 个未解析流程图，审查未声称覆盖该图。",
+  "research_goal_level": "mechanism_causal",
+  "research_goal_level_source": "user",
+  "ingest_manifest": {
+    "source_file": "demo-protocol.docx",
+    "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "parse_warnings": [],
+    "blocks_count": 42,
+    "tables_count": 2,
+    "unparsed_assets": [
+      {
+        "id": "U01",
+        "asset_type": "flowchart",
+        "reason": "嵌入式流程图，V0.1 不解析位图/绘图对象",
+        "page_number": null,
+        "section_path": "2.1",
+        "caption_hint": "实验流程图"
+      }
+    ]
+  },
+  "design_confirmation": {
+    "status": "confirmed",
+    "confirmed_at": "2026-10-25T10:30:00+08:00",
+    "notes": "用户确认分组与重复字段；流程图标为未解析"
+  },
+  "summary": {
+    "verdict": "awaiting_clarification",
+    "blocker_count": 0,
+    "high_count": 1,
+    "confirmed_count": 0,
+    "needs_info_count": 1,
+    "suggestion_count": 0,
+    "one_liner": "需先确认平行含义后再判断伪重复。",
+    "strongest_supported_claim": "在澄清前最多可讨论处理相关变化，不能主张介导。"
+  },
+  "identification": {
+    "research_question": {
+      "text": "污染物是否通过 ROS 影响过程",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "demo-protocol.docx",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "page_number": null,
+          "paragraph_id": "p-12",
+          "table_id": null,
+          "section_path": "1",
+          "original_text": "探究污染物是否通过 ROS 影响目标过程"
+        }
+      ]
+    },
+    "hypothesis": {
+      "text": "ROS 介导",
+      "status": "inferred"
+    },
+    "groups": [
+      {
+        "name": "处理",
+        "treatment": "污染物",
+        "status": "stated"
+      }
+    ],
+    "controls": [
+      {
+        "type": "blank",
+        "present": false,
+        "status": "missing"
+      }
+    ],
+    "endpoints": [
+      {
+        "text": "ROS",
+        "status": "stated"
+      },
+      {
+        "text": "终点",
+        "status": "stated"
+      }
+    ],
+    "replication": {
+      "text": "三个平行",
+      "status": "contradictory",
+      "locations": [
+        {
+          "source_file": "demo-protocol.docx",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "page_number": null,
+          "paragraph_id": "p-28",
+          "table_id": null,
+          "section_path": "2.3",
+          "original_text": "每组设置三个平行样品"
+        }
+      ]
+    },
+    "statistics": {
+      "text": "",
+      "status": "missing"
+    },
+    "gaps": [
+      "statistics",
+      "experimental_unit"
+    ]
+  },
+  "claim_evidence_map": {
+    "rows": [
+      {
+        "id": "CE01",
+        "claim": "ROS 介导效应",
+        "evidence_from_design": "ROS 与终点同步测量",
+        "judgment": "不能单独证明介导",
+        "gap": "缺阻断/挽救",
+        "aligned_goal_levels": [
+          "mechanism_causal"
+        ],
+        "locations": [
+          {
+            "source_file": "demo-protocol.docx",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "page_number": null,
+            "paragraph_id": "p-12",
+            "table_id": null,
+            "section_path": "1",
+            "original_text": "探究污染物是否通过 ROS 影响目标过程"
+          }
+        ]
+      }
+    ],
+    "notes": []
+  },
+  "clarifying_questions": [
+    {
+      "id": "Q01",
+      "question": "三个平行是独立批次还是技术平行？",
+      "blocks_dimensions": [
+        "pseudoreplication",
+        "statistics"
+      ],
+      "priority": "critical",
+      "context_quote": "每组三个平行",
+      "locations": [
+        {
+          "source_file": "demo-protocol.docx",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "page_number": null,
+          "paragraph_id": "p-28",
+          "table_id": null,
+          "section_path": "2.3",
+          "original_text": "每组设置三个平行样品"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "dimension": "pseudoreplication",
+      "severity": "high",
+      "category": "needs_info",
+      "title": "平行的独立性未写清",
+      "locations": [
+        {
+          "source_file": "demo-protocol.docx",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "page_number": null,
+          "paragraph_id": "p-28",
+          "table_id": null,
+          "section_path": "2.3",
+          "original_text": "每组设置三个平行样品",
+          "char_start": 1200,
+          "char_end": 1212
+        }
+      ],
+      "why_invalidates": "若为技术重复则不能当独立样本推断",
+      "fix": "先定义实验单位与批次，再定统计",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "unknown",
+      "hard_error": false
+    }
+  ],
+  "optimizer": {
+    "plan_id": "A",
+    "title": "最小必要修改",
+    "rationale": "待澄清平行定义后再定是否增独立批次",
+    "revised_group_table": {
+      "columns": [
+        "group_name",
+        "treatment",
+        "control_role",
+        "n_suggested",
+        "replicate_unit",
+        "notes"
+      ],
+      "rows": [],
+      "notes": []
+    },
+    "change_notes": [
+      {
+        "id": "C01",
+        "summary": "在方案中显式定义实验单位；暂不扩组学",
+        "addresses_finding_ids": [
+          "F01"
+        ],
+        "burden": "low"
+      }
+    ]
+  },
+  "group_table": {
+    "columns": [
+      "group_name",
+      "treatment",
+      "control_role",
+      "n_suggested",
+      "replicate_unit",
+      "notes"
+    ],
+    "rows": [],
+    "notes": []
+  },
+  "reverse_review": {
+    "enabled": false,
+    "status": "deferred_v0_2",
+    "note": "完整逆向审查延后"
+  },
+  "privacy_applied": {
+    "public_literature_search_used": false,
+    "note": "未用方案文本做公开检索"
+  },
+  "limited_audit": false,
+  "coverage_note": "全部块来自自动抽取；无未解析资产。"
+}

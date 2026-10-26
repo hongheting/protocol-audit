@@ -1,0 +1,32 @@
+=== START trial2 @ 2026-10-25T18:15:02+08:00 ===
+source: /workspace/product/protocol-audit/real-trials/trial2.docx
+goal: unspecified default
+boundary: 学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：V0.1.1 结构规则+ LLM 解析+ LLM 科学审查。不得将模拟输出冒充实测。
+verdict: awaiting_clarification | 确认问题 9，待核实 1，建议 0；请先回答关键追问。
+findings: 10 confirmed 9 needs_info 1 suggestion 0
+  - F01 [confirmed/high] 相关性/表征共变不足以支持主要机制主张
+  - F02 [confirmed/high] 由短周期/简化工况试验外推长期或工程依据过度
+  - F03 [confirmed/blocker] 因素水平完全锁定混杂，目标因子主效应不可单独估计
+  - F04 [confirmed/high] 重复取样导致体积/质量变化未校正
+  - F05 [confirmed/high] 混合暴露（多组分同时加入）却声称单一组分归因
+  - F06 [confirmed/medium] 再生/循环缺少中间质量衡算，投加量衰减与性能变化混杂
+  - F07 [confirmed/high] 改性/处理相对基线缺少匹配工艺空白
+  - F08 [needs_info/high] 「平行/重复」独立性未写清
+  - F09 [confirmed/high] 动力学连续取样未补液但仍按初始体积计算吸附量，导致系统性高估
+  - F10 [confirmed/medium] 共存组分实验中多组分同时添加导致无法拆分单一组分的竞争效应
+questions: 1
+CE rows: 4
+  - CE01 supports=no | H1：La-BC 相比 BC 在 2.0 mg P/L 条件下表现出更高的除磷率，镧—磷配位是提升吸附能力的主导机制。
+  - CE02 supports=no | H2：材料具有较好的水质适应性及对磷的选择性。
+  - CE03 supports=partial | H3：连续 5 轮再生后除磷率保持在初始水平的 80% 以上，具有良好的再生稳定性。
+  - CE04 supports=no | 适合用于城镇污水厂二级出水深度除磷的连续运行单元
+Plan A notes: 7
+  - C01: 解耦锁定因素：在目标因子各水平使用同一调节方式，或做正交对照以分离伴随因子；否则降级无法分离的主效应主张
+  - C02: 将混合暴露改为单因子（及必要组合）设计，使声称的主导组分效应可估计；不可在鸡尾酒设计上归因单一组分
+  - C03: 校正重复取样造成的体积/质量变化（按剩余体积或累计取样质量衡算），或改为各时间点独立反应管/破坏性取样
+  - C04: 再生/循环各轮称量（或衡算）固体质量并校正投加量，避免把机械流失记成再生失效
+  - C05: 为改性/处理流程增加工艺空白（同步骤但不加功能组分，或匹配热处理/浸渍），使功能组分效应与工艺效应可分
+  - C06: 收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据
+  - C07: 显式定义实验单位（当前解析：锥形瓶/离心管）；统计仅对独立重复推断
+schema_errors: OK
+=== DONE trial2 wall=372.7s calls=2 ok=2 fail=0 ===

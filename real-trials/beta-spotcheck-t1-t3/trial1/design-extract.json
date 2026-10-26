@@ -1,0 +1,477 @@
+{
+  "llm_meta": {
+    "provider": "glm",
+    "purpose": "design_extract",
+    "ok": true,
+    "schema_errors": [],
+    "fallback": false,
+    "hard_fail": false,
+    "truncation_detected": false,
+    "expanded_retry": false,
+    "max_tokens_initial": 8192,
+    "max_tokens_used": 8192,
+    "attempts": [
+      {
+        "max_tokens": 8192,
+        "expanded": false,
+        "ok": true,
+        "finish_reason": "stop",
+        "usage": {
+          "prompt_tokens": 3047,
+          "completion_tokens": 6648,
+          "reasoning_tokens": 3367,
+          "total_tokens": 9695
+        },
+        "latency_ms": 179949,
+        "error": null,
+        "length_truncated": false,
+        "json_truncated_looks": false,
+        "json_ok": true,
+        "truncated": false
+      }
+    ],
+    "model": "glm-4.6",
+    "usage": {
+      "prompt_tokens": 3047,
+      "completion_tokens": 6648,
+      "reasoning_tokens": 3367,
+      "total_tokens": 9695
+    },
+    "latency_ms": 179949,
+    "request_id": "202610261020271f8e38c28a174566",
+    "finish_reason": "stop",
+    "error": null
+  },
+  "design_extract": {
+    "parse_status": "ok",
+    "research_question": "评价介孔二氧化硅负载植物源活性组分对涂层防污性能的影响，分析其与脉冲 UV-C 之间是否存在协同效应，并讨论涂层润湿性变化在附着抑制中的作用。",
+    "research_goal_level": "unspecified",
+    "hypotheses": [
+      {
+        "id": "H1",
+        "text": "功能颗粒掺入涂层后，可降低附着生物量。",
+        "expected_conclusion": "附着生物量降低",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "拟验证假设 H1：功能颗粒掺入涂层后，可降低附着生物量。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-7"
+          }
+        ]
+      },
+      {
+        "id": "H2",
+        "text": "功能涂层与 UV-C 联用时，附着量下降幅度高于单独施加其中任一措施，表明二者存在协同抑制。",
+        "expected_conclusion": "联用附着量下降幅度高于单独施加其中任一措施",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "拟验证假设 H2：功能涂层与 UV-C 联用时，附着量下降幅度高于单独施加其中任一措施，表明二者存在协同抑制。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-8"
+          }
+        ]
+      },
+      {
+        "id": "H3",
+        "text": "功能颗粒主要通过改变涂层表面润湿性，减少初期微生物附着。",
+        "expected_conclusion": "涂层表面润湿性改变导致初期微生物附着减少",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "拟验证假设 H3：功能颗粒主要通过改变涂层表面润湿性，减少初期微生物附着。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-9"
+          }
+        ]
+      }
+    ],
+    "factors": [
+      {
+        "name": "涂层类型",
+        "levels": [
+          "裸不锈钢",
+          "基础涂层",
+          "功能涂层(1.5%)"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "脉冲UV-C",
+        "levels": [
+          "否",
+          "是"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "编号 | 基材 / 涂层 | 功能颗粒 | 脉冲 UV-C | 所在水槽 | 平行数\nB0 | 裸不锈钢 | — | 否 | A | 3 片\nB1 | 基础涂层 | — | 否 | A | 3 片\nB2 | 功能涂层 | 1.5% | 否 | A | 3 片\nB3 | 基础涂层 | — | 是 | B | 3 片\nB4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "name": "B0",
+        "treatment": "裸不锈钢",
+        "factor_levels": {
+          "涂层类型": "裸不锈钢",
+          "脉冲UV-C": "否"
+        },
+        "container_id": "A",
+        "n_claimed": "3",
+        "role": "reference",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "B0 | 裸不锈钢 | — | 否 | A | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          },
+          {
+            "source_file": "trial1.docx",
+            "original_text": "B0 作为裸基材参照组，不参与功能颗粒与 UV-C 的交互分析。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-20"
+          }
+        ]
+      },
+      {
+        "name": "B1",
+        "treatment": "基础涂层",
+        "factor_levels": {
+          "涂层类型": "基础涂层",
+          "脉冲UV-C": "否"
+        },
+        "container_id": "A",
+        "n_claimed": "3",
+        "role": "control",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "B1 | 基础涂层 | — | 否 | A | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          },
+          {
+            "source_file": "trial1.docx",
+            "original_text": "B1 与 B2 用于比较功能颗粒的涂层效应，B1 与 B3 用于比较 UV-C 效应",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-20"
+          }
+        ]
+      },
+      {
+        "name": "B2",
+        "treatment": "功能涂层",
+        "factor_levels": {
+          "涂层类型": "功能涂层(1.5%)",
+          "脉冲UV-C": "否"
+        },
+        "container_id": "A",
+        "n_claimed": "3",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "B2 | 功能涂层 | 1.5% | 否 | A | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B3",
+        "treatment": "基础涂层 + UV-C",
+        "factor_levels": {
+          "涂层类型": "基础涂层",
+          "脉冲UV-C": "是"
+        },
+        "container_id": "B",
+        "n_claimed": "3",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "B3 | 基础涂层 | — | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "B4",
+        "treatment": "功能涂层 + UV-C",
+        "factor_levels": {
+          "涂层类型": "功能涂层(1.5%)",
+          "脉冲UV-C": "是"
+        },
+        "container_id": "B",
+        "n_claimed": "3",
+        "role": "experimental",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "B4 | 功能涂层 | 1.5% | 是 | B | 3 片",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "type": "reference",
+        "label": "B0",
+        "present": true,
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "B0 作为裸基材参照组，不参与功能颗粒与 UV-C 的交互分析。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-20"
+          }
+        ]
+      },
+      {
+        "type": "negative",
+        "label": "B1",
+        "present": true,
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "B1 与 B2 用于比较功能颗粒的涂层效应，B1 与 B3 用于比较 UV-C 效应",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-20"
+          }
+        ]
+      }
+    ],
+    "units": {
+      "allocation_unit": "水槽（UV-C施加单位）",
+      "independent_experimental_unit": "挂板",
+      "subsample_unit": "96孔板复孔；接触角测定位置",
+      "technical_replicate_unit": "同一洗脱液的3个测定孔",
+      "nesting": "挂板(3片/组)嵌套于水槽中：B0,B1,B2共享A槽；B3,B4共享B槽。未设置水槽层面的平行。",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "设置两套独立的 20 L 玻璃水槽，分别标记为 A 和 B。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-15"
+        },
+        {
+          "source_file": "trial1.docx",
+          "original_text": "暂不另外设置水槽层面的平行。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-21"
+        },
+        {
+          "source_file": "trial1.docx",
+          "original_text": "挂板作为独立样本，取 n = 3。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-32"
+        }
+      ]
+    },
+    "timepoints": {
+      "points": [
+        "D0",
+        "D7",
+        "D14",
+        "D21"
+      ],
+      "repeated_measures": true,
+      "destructive_assay": true,
+      "returned_after_assay": true,
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial1.docx",
+          "original_text": "以浸没首日为 D0，连续运行至 D21。计划在 D7、D14、D21 各取出每组 3 片挂板进行生物膜附着量测定。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-24"
+        },
+        {
+          "source_file": "trial1.docx",
+          "original_text": "测定结束后以去离子水轻轻冲洗挂板表面，再放回原水槽继续培养。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-24"
+        },
+        {
+          "source_file": "trial1.docx",
+          "original_text": "在 D14 收集挂板表面刮取液，用三维荧光光谱分析 EPS 信号变化",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-29"
+        }
+      ]
+    },
+    "endpoints": [
+      {
+        "text": "OD590（结晶紫染色表征附着生物量）",
+        "supports_claims": [
+          "H1",
+          "H2",
+          "C1"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "主要终点：以结晶紫染色后的 OD590 表征附着生物量。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-27"
+          }
+        ]
+      },
+      {
+        "text": "静态水接触角（涂层润湿性）",
+        "supports_claims": [
+          "H3",
+          "C2"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "采用静态水接触角评价 D0 和 D21 的涂层润湿性",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-28"
+          }
+        ]
+      },
+      {
+        "text": "EPS 三维荧光光谱",
+        "supports_claims": [],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "用三维荧光光谱分析 EPS 信号变化",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-29"
+          }
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "id": "C1",
+        "text": "功能涂层与 UV-C 形成显著协同效应",
+        "kind": "synergy",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "若 B4 的平均附着量显著低于 B2 与 B3，同时 B4 的降低幅度最大，即判定功能涂层与 UV-C 形成显著协同效应。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-33"
+          }
+        ]
+      },
+      {
+        "id": "C2",
+        "text": "表面润湿性变化为主要防污机制",
+        "kind": "mechanism",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "若功能涂层组的接触角与附着生物量呈显著相关，则进一步将表面润湿性变化认定为主要防污机制。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-33"
+          }
+        ]
+      },
+      {
+        "id": "C3",
+        "text": "该联用方式能够满足淡水取水口及水下监测设备的长期防污要求",
+        "kind": "extrapolation",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "如 21 d 内 B4 组持续维持最低附着量，拟据此提出该联用方式能够满足淡水取水口及水下监测设备的长期防污要求",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-37"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "table_id": "t-1",
+        "table_kind": "metadata_table",
+        "caption": "方案版本及研究方向元信息",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "方案版本 | v0.4 | 拟定日期 | 2026-10-25\n研究方向 | 淡水防污与功能涂层 | 计划周期 | 21 d",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-1"
+          }
+        ]
+      },
+      {
+        "table_id": "t-2",
+        "table_kind": "treatment_group_table",
+        "caption": "处理分组与布置",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "表 1  处理分组与布置",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-19"
+          }
+        ]
+      },
+      {
+        "table_id": "t-3",
+        "table_kind": "sampling_schedule_table",
+        "caption": "采样与测试计划",
+        "locations": [
+          {
+            "source_file": "trial1.docx",
+            "original_text": "表 2  采样与测试计划",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-25"
+          }
+        ]
+      }
+    ],
+    "statistical_plan": "所有定量指标按均值±标准差整理，挂板作为独立样本(n=3)。采用单因素方差分析比较B0-B4差异，组间多重比较使用Tukey检验(p<0.05)。D7、D14、D21按独立时间点分别分析。",
+    "unknowns": [
+      "UV-C在挂板表面的水下实际辐照剂量未测定(p-16)",
+      "助溶剂是否存在单独效应未设置对照组验证(p-13)",
+      "D14 EPS测定因混合3片挂板刮取液，无法评估该指标组内变异(p-29)"
+    ],
+    "notes": [
+      "统计模型将挂板视为独立样本(n=3)，但UV-C处理施加于水槽且未设水槽平行，可能存在伪重复问题(p-21, p-32)",
+      "主终点测定为非破坏性且挂板放回继续培养，但D14的EPS取样为破坏性测定(p-24, p-29)",
+      "model_suggested_mechanism_causal_downgraded_to_unspecified"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}ProtocolAudit V0.1{% endblock %}</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #1a1a1a; }
+    body { max-width: 1100px; margin: 1.5rem auto; padding: 0 1rem; background: #f7f7f5; }
+    h1,h2,h3 { line-height: 1.25; }
+    .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem 1.25rem; margin: 1rem 0; }
+    .warn { background: #fff8e6; border-color: #e6c35c; }
+    .err { background: #ffecec; border-color: #e08888; }
+    .ok { background: #eef8ee; border-color: #8bc48b; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+    th, td { border: 1px solid #ccc; padding: 0.35rem 0.5rem; vertical-align: top; }
+    th { background: #f0f0ec; }
+    .tag { display: inline-block; padding: 0.1rem 0.45rem; border-radius: 4px; font-size: 0.8rem; background: #eee; }
+    .tag.confirmed { background: #f8d7da; }
+    .tag.needs_info { background: #fff3cd; }
+    .tag.suggestion { background: #d1e7dd; }
+    .tag.blocker, .tag.high { background: #f5c2c7; }
+    .tag.medium { background: #ffe69c; }
+    .tag.low { background: #cfe2ff; }
+    textarea, input, select { width: 100%; max-width: 100%; box-sizing: border-box; }
+    textarea { min-height: 120px; font-family: ui-monospace, monospace; font-size: 0.85rem; }
+    button, .btn { background: #1f4b99; color: #fff; border: 0; border-radius: 6px; padding: 0.5rem 1rem; cursor: pointer; text-decoration: none; display: inline-block; }
+    button.secondary { background: #555; }
+    .flash { background: #e8f0fe; border: 1px solid #a0c0f0; padding: 0.6rem 0.8rem; border-radius: 6px; margin-bottom: 1rem; }
+    pre { white-space: pre-wrap; word-break: break-word; background: #f4f4f0; padding: 0.75rem; border-radius: 6px; font-size: 0.8rem; }
+    .muted { color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="/" style="color:inherit;text-decoration:none">ProtocolAudit</a> <span class="muted">V0.1 skeleton A</span></h1>
+    <p class="muted">判断：按此方案做完，数据能否回答科学问题（非「看起来完不完整」）。引擎：确定性规则，非伪装 LLM。</p>
+  </header>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for m in messages %}<div class="flash">{{ m }}</div>{% endfor %}
+    {% endif %}
+  {% endwith %}
+  {% block body %}{% endblock %}
+</body>
+</html>

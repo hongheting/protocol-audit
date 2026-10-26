@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}审查报告 · ProtocolAudit{% endblock %}
+{% block body %}
+<p>
+  <a href="{{ url_for('preview', job_id=job_id) }}">← 返回预览</a> ·
+  <a href="{{ url_for('index') }}">新任务</a>
+</p>
+
+<div class="card {% if report.limited_audit %}err{% else %}ok{% endif %}">
+  <h2>摘要</h2>
+  <p><span class="tag">{{ report.summary.verdict }}</span>
+     {% if report.limited_audit %}<span class="tag confirmed">limited_audit</span>{% endif %}
+  </p>
+  <p>{{ report.summary.one_liner }}</p>
+  <p class="muted">最强可支持主张：{{ report.summary.strongest_supported_claim }}</p>
+  <p class="muted">goal={{ report.research_goal_level }} ({{ report.research_goal_level_source }}) · {{ report.boundary_note }}</p>
+  {% if report.coverage_note %}<p class="muted">覆盖：{{ report.coverage_note }}</p>{% endif %}
+  {% if report.privacy_applied %}<p class="muted">隐私：公开文献检索={{ report.privacy_applied.public_literature_search_used }} · {{ report.privacy_applied.note }}</p>{% endif %}
+</div>
+
+<div class="card">
+  <h2>Claim–Evidence Mapping</h2>
+  <table>
+    <tr><th>ID</th><th>主张</th><th>当前证据</th><th>判断</th><th>缺口</th></tr>
+    {% for r in report.claim_evidence_map.rows %}
+    <tr>
+      <td>{{ r.id }}</td>
+      <td>{{ r.claim }}</td>
+      <td>{{ r.evidence_from_design }}</td>
+      <td>{{ r.judgment }}</td>
+      <td>{{ r.gap }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% if report.claim_evidence_map.notes %}
+  <ul class="muted">{% for n in report.claim_evidence_map.notes %}<li>{{ n }}</li>{% endfor %}</ul>
+  {% endif %}
+</div>
+
+<div class="card">
+  <h2>审查意见 findings</h2>
+  <p class="muted">confirmed {{ report.summary.confirmed_count }} · needs_info {{ report.summary.needs_info_count }} · suggestion {{ report.summary.suggestion_count }}</p>
+  {% for f in report.findings %}
+  <div style="border-top:1px solid #eee;padding:0.6rem 0">
+    <div>
+      <strong>{{ f.id }} · {{ f.title }}</strong>
+      <span class="tag {{ f.category }}">{{ f.category }}</span>
+      <span class="tag {{ f.severity }}">{{ f.severity }}</span>
+      <span class="tag">{{ f.dimension }}</span>
+      {% if f.origin %}<span class="tag">origin={{ f.origin }}</span>{% endif %}
+    </div>
+    <p>{{ f.why_invalidates }}</p>
+    <p><strong>建议：</strong>{{ f.fix }}</p>
+    <p class="muted">定位：
+      {% for loc in f.locations %}
+        [{{ loc.paragraph_id or loc.table_id or ('p.' ~ loc.page_number if loc.page_number else '—') }}]
+        「{{ loc.original_text[:100] }}{% if loc.original_text|length>100 %}…{% endif %}」
+      {% endfor %}
+    </p>
+  </div>
+  {% else %}
+  <p>无 findings（少见）。</p>
+  {% endfor %}
+</div>
+
+{% if report.clarifying_questions %}
+<div class="card warn">
+  <h2>关键追问</h2>
+  <ol>
+    {% for q in report.clarifying_questions %}
+    <li><strong>{{ q.id }}</strong>（{{ q.priority }}）{{ q.question }}
+      <div class="muted">{{ q.context_quote }}</div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+{% endif %}
+
+<div class="card">
+  <h2>Design Optimizer · 方案 A（最小必要修改）</h2>
+  <p>{{ report.optimizer.rationale }}</p>
+  <h3>修订分组表</h3>
+  <table>
+    <tr>
+      {% for c in report.optimizer.revised_group_table.columns %}<th>{{ c }}</th>{% endfor %}
+    </tr>
+    {% for r in report.optimizer.revised_group_table.rows %}
+    <tr>
+      <td>{{ r.group_name }}</td>
+      <td>{{ r.treatment }}</td>
+      <td>{{ r.control_role }}</td>
+      <td>{{ r.n_suggested }}</td>
+      <td>{{ r.replicate_unit }}</td>
+      <td>{{ r.notes }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <h3>修改说明</h3>
+  <ul>
+    {% for c in report.optimizer.change_notes %}
+    <li><strong>{{ c.id }}</strong> {{ c.summary }} <span class="muted">→ {{ c.addresses_finding_ids|join(', ') }} · burden={{ c.burden }}</span></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="card muted">
+  <p>{{ report.coverage_note }}</p>
+  <p>原始 JSON：<code>web/jobs/{{ job_id }}/report.json</code></p>
+</div>
+
+{% if schema_errors %}
+<div class="card err"><h3>AuditReport schema 告警</h3><pre>{{ schema_errors|join('\n') }}</pre></div>
+{% else %}
+<div class="card ok">AuditReport 通过 schema 0.2.1 校验</div>
+{% endif %}
+{% endblock %}

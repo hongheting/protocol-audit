@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.2.0",
+  "source_file": "demo-protocol.docx",
+  "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "ingested_blocks": [
+    {
+      "block_id": "b-12",
+      "block_type": "paragraph",
+      "text": "探究污染物是否通过 ROS 影响目标过程",
+      "page_number": null,
+      "paragraph_id": "p-12",
+      "table_id": null,
+      "section_path": "1",
+      "source": "extracted"
+    },
+    {
+      "block_id": "b-t1",
+      "block_type": "table",
+      "text": "组名 | 处理 | n\n对照 | 无 | 3\n处理 | 污染物 | 3",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "tbl-1",
+      "section_path": "2.2",
+      "source": "extracted"
+    }
+  ],
+  "extracted_design": {
+    "research_question": "污染物是否通过 ROS 影响过程",
+    "groups": [
+      {
+        "name": "处理",
+        "treatment": "污染物"
+      }
+    ],
+    "replication": "三个平行"
+  },
+  "unparsed_assets": [
+    {
+      "id": "U01",
+      "asset_type": "flowchart",
+      "reason": "嵌入式流程图未解析",
+      "section_path": "2.1",
+      "caption_hint": "实验流程图"
+    }
+  ],
+  "parse_warnings": [],
+  "tables_parsed_count": 2,
+  "user_confirmed": true,
+  "user_edits_summary": "确认表格分组正确",
+  "confirmed_at": "2026-10-25T10:30:00+08:00",
+  "manual_supplements": [],
+  "limited_audit_recommended": false
+}

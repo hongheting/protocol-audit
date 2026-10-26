@@ -1,0 +1,991 @@
+{
+  "schema_version": "0.2.1",
+  "discipline_resolved": "environmental",
+  "boundary_note": "学科边界：本次按 environmental 规则审查（环境/生物/化学）。科学审查 LLM 调用失败或截断后仍无法解析：本报告 findings 以规则为主，禁止伪装为完整 LLM 审查。findings 来源统计：llm_review=0，rule=5，partial_fallback=0。引擎：V0.1.3.3 结构规则/后处理 + 方法优先审查窗 + 审查截断扩容重试（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 解析可靠性与 0.1.3.3 审查可靠性；外推严重度与软去重收窄；CE 限制句 scope_note；提取/窗口策略为独立技术版本）+ LLM 解析（解析可用 LLM，科学审查未完整成功）。不得将模拟输出冒充实测。",
+  "research_goal_level": "unspecified",
+  "research_goal_level_source": "default",
+  "ingest_manifest": {
+    "source_file": "trial3.docx",
+    "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "parse_warnings": [],
+    "blocks_count": 42,
+    "tables_count": 3,
+    "unparsed_assets": []
+  },
+  "design_confirmation": {
+    "status": "confirmed",
+    "confirmed_at": "2026-10-26T10:29:34+08:00",
+    "notes": ""
+  },
+  "summary": {
+    "verdict": "needs_redesign",
+    "blocker_count": 1,
+    "high_count": 2,
+    "confirmed_count": 3,
+    "needs_info_count": 2,
+    "suggestion_count": 0,
+    "one_liner": "确认问题 3，待核实 2，建议 0；见 Plan A 最小修改。",
+    "strongest_supported_claim": "在澄清与最小修改前，不宜把相关或短周期结果写成机制/工程定论。"
+  },
+  "identification": {
+    "research_question": {
+      "text": "评价植物促生菌剂在不同水分条件和土壤背景下对玉米幼苗生长的影响，并探索根际EPS、土壤团聚体稳定性与植物响应之间的关系",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "2 研究假设",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-7"
+        }
+      ]
+    },
+    "hypothesis": {
+      "text": "H1：接种植物促生菌剂能够提高玉米幼苗生物量，并减轻干旱处理对生长的抑制作用；H2：菌剂通过提高根际EPS水平和土壤团聚体稳定性改善土壤水分保持能力，进而促进玉米生长；EPS是该效应的主要作用机制；H3：菌剂在退化黄土和参考农田土壤中均能产生稳定的促生效果，28 d盆栽结果可为退化旱地的推广应用提供依据",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "H1：接种植物促生菌剂能够提高玉米幼苗生物量，并减轻干旱处理对生长的抑制作用。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-8"
+        }
+      ]
+    },
+    "independent_vars": [],
+    "dependent_vars": [
+      {
+        "text": "株高、叶片数、SPAD",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D0 | 株高、叶片数、SPAD",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "株高、SPAD",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D7、D14、D21、D28 | 株高、SPAD",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "根际土壤EPS",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D7、D14、D21 | 根际土壤 EPS",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "根系形态、根系活力",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D14 | 根系形态、根系活力",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "地上部/根系生物量、根系水力指标",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D28 | 地上部/根系生物量、根系水力指标",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "水稳性团聚体(MWD)、土壤含水特征",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D28 | 水稳性团聚体、土壤含水特征",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      }
+    ],
+    "experimental_unit": {
+      "text": "盆",
+      "status": "missing",
+      "locations": []
+    },
+    "groups": [
+      {
+        "name": "L-W-I-",
+        "treatment": "退化黄土 + 正常供水 + 不接种",
+        "n_claimed": "4",
+        "status": "stated",
+        "quote": "退化黄土 + 正常供水 + 不接种",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "L-W-I− | 退化黄土 | 正常供水 | 不接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "L-W-I+",
+        "treatment": "退化黄土 + 正常供水 + 接种",
+        "n_claimed": "4",
+        "status": "stated",
+        "quote": "退化黄土 + 正常供水 + 接种",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "L-W-I+ | 退化黄土 | 正常供水 | 接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "L-D-I-",
+        "treatment": "退化黄土 + 干旱胁迫 + 不接种",
+        "n_claimed": "4",
+        "status": "stated",
+        "quote": "退化黄土 + 干旱胁迫 + 不接种",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "L-D-I− | 退化黄土 | 干旱胁迫 | 不接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "L-D-I+",
+        "treatment": "退化黄土 + 干旱胁迫 + 接种",
+        "n_claimed": "4",
+        "status": "stated",
+        "quote": "退化黄土 + 干旱胁迫 + 接种",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "L-D-I+ | 退化黄土 | 干旱胁迫 | 接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "R-W-I-",
+        "treatment": "参考农田土壤 + 正常供水 + 不接种",
+        "n_claimed": "4",
+        "status": "stated",
+        "quote": "参考农田土壤 + 正常供水 + 不接种",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "R-W-I− | 参考农田土壤 | 正常供水 | 不接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "R-W-I+",
+        "treatment": "参考农田土壤 + 正常供水 + 接种",
+        "n_claimed": "4",
+        "status": "stated",
+        "quote": "参考农田土壤 + 正常供水 + 接种",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "R-W-I+ | 参考农田土壤 | 正常供水 | 接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "R-D-I-",
+        "treatment": "参考农田土壤 + 干旱胁迫 + 不接种",
+        "n_claimed": "4",
+        "status": "stated",
+        "quote": "参考农田土壤 + 干旱胁迫 + 不接种",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "R-D-I− | 参考农田土壤 | 干旱胁迫 | 不接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      },
+      {
+        "name": "R-D-I+",
+        "treatment": "参考农田土壤 + 干旱胁迫 + 接种",
+        "n_claimed": "4",
+        "status": "stated",
+        "quote": "参考农田土壤 + 干旱胁迫 + 接种",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "R-D-I+ | 参考农田土壤 | 干旱胁迫 | 接种 | 4",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-2"
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "type": "solvent",
+        "label": "I- (不接种)",
+        "present": true,
+        "excludes_alternative": "",
+        "status": "stated",
+        "quote": "I- (不接种)",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "不接种组每盆加入 10 mL 无菌生理盐水。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-22"
+          }
+        ]
+      },
+      {
+        "type": "negative",
+        "label": "D (干旱胁迫)",
+        "present": true,
+        "excludes_alternative": "",
+        "status": "stated",
+        "quote": "D (干旱胁迫)",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "干旱组逐步降水并维持在约 40% 田间持水量。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-24"
+          }
+        ]
+      },
+      {
+        "type": "negative",
+        "label": "B0/B1 参照或基础对照",
+        "present": true,
+        "excludes_alternative": "提供无处理/基础涂层基线",
+        "status": "inferred",
+        "quote": "L-W-I- 退化黄土 + 正常供水 + 不接种 L-W-I+ 退化黄土 + 正常供水 + 接种 L-D-I- 退化黄土 + 干旱胁迫 + 不接种 L-D-I+ 退化黄土 + 干旱胁迫 + 接种 R-W-I- 参考农田土壤 + 正常供水 +",
+        "locations": []
+      }
+    ],
+    "endpoints": [
+      {
+        "text": "株高、叶片数、SPAD",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D0 | 株高、叶片数、SPAD",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "株高、SPAD",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D7、D14、D21、D28 | 株高、SPAD",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "根际土壤EPS",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D7、D14、D21 | 根际土壤 EPS",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "根系形态、根系活力",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D14 | 根系形态、根系活力",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "地上部/根系生物量、根系水力指标",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D28 | 地上部/根系生物量、根系水力指标",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      },
+      {
+        "text": "水稳性团聚体(MWD)、土壤含水特征",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "D28 | 水稳性团聚体、土壤含水特征",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "table_id": "t-3"
+          }
+        ]
+      }
+    ],
+    "replication": {
+      "text": "分配单位=盆; 子样本=盆内植株; 声称为独立单位=盆",
+      "status": "contradictory",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "每个处理组合设置 4 盆，共 32 盆。每盆保留 3 株玉米。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-18"
+        },
+        {
+          "source_file": "trial3.docx",
+          "original_text": "所有比色和酶标类测定均设置 3 个技术复孔",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-29"
+        }
+      ]
+    },
+    "statistics": {
+      "text": "对D28终点指标（地上部生物量、根系生物量、MWD和EPS等）采用三因素方差分析（因素为土壤类型、水分处理和菌剂处理），显著时采用Tukey法进行多重比较；对株高和SPAD，在每个采样日分别进行单因素方差分析和Tukey多重比较；采用Pearson相关分析评估EPS、MWD、SPAD和生物量之间的相关性；显著性水平设为p<0.05。",
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "采用 Pearson 相关分析评估 EPS、MWD、SPAD 和生物量之间的相关性。若接种组同时表现为 EPS 增加、MWD 提高和生物量增加，则将其作为 EPS 介导促生机制的证据。显著性水平设为 p<0.05。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-33"
+        }
+      ]
+    },
+    "claims": [
+      {
+        "text": "接种菌剂能够提高玉米生物量，并减轻干旱处理的负面影响",
+        "status": "stated",
+        "locations": []
+      },
+      {
+        "text": "接种处理可能提高根际EPS和水稳性团聚体比例",
+        "status": "stated",
+        "locations": []
+      },
+      {
+        "text": "以EPS促进团聚体形成、改善水分条件为核心的作用解释",
+        "status": "stated",
+        "locations": []
+      },
+      {
+        "text": "该菌剂可用于退化旱地土壤改良的推广应用",
+        "status": "stated",
+        "locations": []
+      }
+    ],
+    "gaps": [
+      "replication",
+      "experimental_unit"
+    ]
+  },
+  "claim_evidence_map": {
+    "rows": [
+      {
+        "id": "CE01",
+        "claim": "H1：接种菌剂后玉米生物量提高，干旱对生长的抑制减轻",
+        "evidence_from_design": "比较：组间比较（L-W-I-:退化黄土 + 正常供水 + 不接种；L-W-I+:退化黄土 + 正常供水 + 接种；L-D-I-:退化黄土 + 干旱胁迫 + 不接种；L-D-I+:退化黄土 + 干旱胁迫 + 接种；R-W-I-:参考农田土壤 + 正常供水 + 不接种；R-W-I+:参考农田土壤 + 正常供水 + 接种；R-D-I-:参考农田土壤 + 干旱胁迫 + 不接种；R-D-I+:参考农田土壤 + 干旱胁迫 + 接种）；相关因素：土壤类型[退化黄土(L)/参考农田土壤(R)]；水分处理[正常供水(W)/干旱胁迫(D)]；菌剂处理[不接种(I-)/接种(I+)]；指标：株高、叶片数、SPAD；株高、SPAD；根系形态、根系活力；地上部/根系生物量、根系水力指标",
+        "judgment": "当前设计仅部分支持该主张",
+        "gap": "以代表单元指导整组补水/处理时，组内独立性待核实；材料/菌剂为单批次制备，跨批次推广边界待明确",
+        "aligned_goal_levels": [
+          "treatment_effect",
+          "exploratory"
+        ],
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "H1：接种植物促生菌剂能够提高玉米幼苗生物量，并减轻干旱处理对生长的抑制作用。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-8"
+          }
+        ],
+        "hypothesis_id": "H1",
+        "planned_comparison": "组间比较（L-W-I-:退化黄土 + 正常供水 + 不接种；L-W-I+:退化黄土 + 正常供水 + 接种；L-D-I-:退化黄土 + 干旱胁迫 + 不接种；L-D-I+:退化黄土 + 干旱胁迫 + 接种；R-W-I-:参考农田土壤 + 正常供水 + 不接种；R-W-I+:参考农田土壤 + 正常供水 + 接种；R-D-I-:参考农田土壤 + 干旱胁迫 + 不接种；R-D-I+:参考农田土壤 + 干旱胁迫 + 接种）；相关因素：土壤类型[退化黄土(L)/参考农田土壤(R)]；水分处理[正常供水(W)/干旱胁迫(D)]；菌剂处理[不接种(I-)/接种(I+)]",
+        "endpoints": [
+          "株高、叶片数、SPAD",
+          "株高、SPAD",
+          "根系形态、根系活力",
+          "地上部/根系生物量、根系水力指标"
+        ],
+        "evidence_needed": "与假设对齐的对照、独立实验单位与终点",
+        "design_supports": "partial",
+        "fix_hint": "补充：①是否逐盆/逐单元监测与校准；②代表单元如何外推到整组；③组内处理暴露是否一致。若无法保证独立暴露，改为逐单元决策或在模型中显式处理组内相关；在信息补齐前不将此条升为 confirmed 伪重复",
+        "row_kind": "claim"
+      },
+      {
+        "id": "CE02",
+        "claim": "H2：接种处理下根际EPS增加、土壤团聚体稳定性提高，进而促进玉米生长",
+        "evidence_from_design": "比较：处理效应比较（L-W-I-:退化黄土 + 正常供水 + 不接种；L-W-I+:退化黄土 + 正常供水 + 接种；L-D-I-:退化黄土 + 干旱胁迫 + 不接种；L-D-I+:退化黄土 + 干旱胁迫 + 接种；R-W-I-:参考农田土壤 + 正常供水 + 不接种；R-W-I+:参考农田土壤 + 正常供水 + 接种；R-D-I-:参考农田土壤 + 干旱胁迫 + 不接种；R-D-I+:参考农田土壤 + 干旱胁迫 + 接种）+ 机制相关表征/操纵；机制主张需能排除替代解释，而非仅共变；指标：根际土壤EPS；根系形态、根系活力；地上部/根系生物量、根系水力指标；水稳性团聚体(MWD)、土壤含水特征",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "相关或表征共变不能证明「主要/主导机制」",
+        "aligned_goal_levels": [
+          "mechanism_causal"
+        ],
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "H2：菌剂通过提高根际 EPS 水平和土壤团聚体稳定性改善土壤水分保持能力，进而促进玉米生长；EPS 是该效应的主要作用机制。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-9"
+          }
+        ],
+        "hypothesis_id": "H2",
+        "planned_comparison": "处理效应比较（L-W-I-:退化黄土 + 正常供水 + 不接种；L-W-I+:退化黄土 + 正常供水 + 接种；L-D-I-:退化黄土 + 干旱胁迫 + 不接种；L-D-I+:退化黄土 + 干旱胁迫 + 接种；R-W-I-:参考农田土壤 + 正常供水 + 不接种；R-W-I+:参考农田土壤 + 正常供水 + 接种；R-D-I-:参考农田土壤 + 干旱胁迫 + 不接种；R-D-I+:参考农田土壤 + 干旱胁迫 + 接种）+ 机制相关表征/操纵；机制主张需能排除替代解释，而非仅共变",
+        "endpoints": [
+          "根际土壤EPS",
+          "根系形态、根系活力",
+          "地上部/根系生物量、根系水力指标",
+          "水稳性团聚体(MWD)、土壤含水特征"
+        ],
+        "evidence_needed": "能排除替代机制的操纵或对照，而非仅相关/表征共变",
+        "design_supports": "no",
+        "fix_hint": "降为相关/伴随描述，或增加机制分离实验（如工艺空白、位点阻断、定量分配）",
+        "row_kind": "claim"
+      },
+      {
+        "id": "CE03",
+        "claim": "H3：菌剂在两类土壤中均表现促生效果",
+        "evidence_from_design": "比较：组间比较（L-W-I-:退化黄土 + 正常供水 + 不接种；L-W-I+:退化黄土 + 正常供水 + 接种；L-D-I-:退化黄土 + 干旱胁迫 + 不接种；L-D-I+:退化黄土 + 干旱胁迫 + 接种；R-W-I-:参考农田土壤 + 正常供水 + 不接种；R-W-I+:参考农田土壤 + 正常供水 + 接种；R-D-I-:参考农田土壤 + 干旱胁迫 + 不接种；R-D-I+:参考农田土壤 + 干旱胁迫 + 接种）；相关因素：土壤类型[退化黄土(L)/参考农田土壤(R)]；水分处理[正常供水(W)/干旱胁迫(D)]；菌剂处理[不接种(I-)/接种(I+)]；指标：株高、叶片数、SPAD；株高、SPAD；根际土壤EPS；根系形态、根系活力；地上部/根系生物量、根系水力指标；水稳性团聚体(MWD)、土壤含水特征",
+        "judgment": "当前设计仅部分支持该主张",
+        "gap": "以代表单元指导整组补水/处理时，组内独立性待核实；材料/菌剂为单批次制备，跨批次推广边界待明确",
+        "aligned_goal_levels": [
+          "treatment_effect",
+          "exploratory"
+        ],
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "H3：菌剂在退化黄土和参考农田土壤中均能产生稳定的促生效果，28 d 盆栽结果可为退化旱地的推广应用提供依据。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-10"
+          }
+        ],
+        "hypothesis_id": "H3",
+        "planned_comparison": "组间比较（L-W-I-:退化黄土 + 正常供水 + 不接种；L-W-I+:退化黄土 + 正常供水 + 接种；L-D-I-:退化黄土 + 干旱胁迫 + 不接种；L-D-I+:退化黄土 + 干旱胁迫 + 接种；R-W-I-:参考农田土壤 + 正常供水 + 不接种；R-W-I+:参考农田土壤 + 正常供水 + 接种；R-D-I-:参考农田土壤 + 干旱胁迫 + 不接种；R-D-I+:参考农田土壤 + 干旱胁迫 + 接种）；相关因素：土壤类型[退化黄土(L)/参考农田土壤(R)]；水分处理[正常供水(W)/干旱胁迫(D)]；菌剂处理[不接种(I-)/接种(I+)]",
+        "endpoints": [
+          "株高、叶片数、SPAD",
+          "株高、SPAD",
+          "根际土壤EPS",
+          "根系形态、根系活力",
+          "地上部/根系生物量、根系水力指标",
+          "水稳性团聚体(MWD)、土壤含水特征"
+        ],
+        "evidence_needed": "与假设对齐的对照、独立实验单位与终点",
+        "design_supports": "partial",
+        "fix_hint": "补充：①是否逐盆/逐单元监测与校准；②代表单元如何外推到整组；③组内处理暴露是否一致。若无法保证独立暴露，改为逐单元决策或在模型中显式处理组内相关；在信息补齐前不将此条升为 confirmed 伪重复",
+        "row_kind": "claim"
+      },
+      {
+        "id": "CE04",
+        "claim": "该菌剂可用于退化旱地土壤改良的推广应用",
+        "evidence_from_design": "比较：实验室短期/简化体系 → 工程或连续运行主张；指标：株高、叶片数、SPAD；株高、SPAD；根际土壤EPS；根系形态、根系活力；地上部/根系生物量、根系水力指标；水稳性团聚体(MWD)、土壤含水特征",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "短周期/简化工况的实验室结果不足以直接支撑长期或工程运行主张",
+        "aligned_goal_levels": [
+          "generalizability"
+        ],
+        "locations": [
+          {
+            "source_file": "trial3.docx",
+            "original_text": "（全文未定位到精确段落，见方案原文）",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+          }
+        ],
+        "hypothesis_id": "EXTRAP",
+        "planned_comparison": "实验室短期结果 → 工程/连续运行性能",
+        "endpoints": [
+          "株高、叶片数、SPAD",
+          "株高、SPAD",
+          "根际土壤EPS",
+          "根系形态、根系活力",
+          "地上部/根系生物量、根系水力指标",
+          "水稳性团聚体(MWD)、土壤含水特征"
+        ],
+        "evidence_needed": "更长周期、相关工况或现场/中试验证",
+        "design_supports": "no",
+        "fix_hint": "将应用表述降为初步实验室证据；补相关工况、更长周期或现场/中试验证后再谈工程依据",
+        "row_kind": "claim"
+      }
+    ],
+    "notes": [
+      "当前 research_goal_level=unspecified（未在证据不足时自动升为 mechanism_causal）。",
+      "Claim–Evidence 按假设分行；比较句由分组/因素/主张类型生成，禁止按 H 编号套领域模板。",
+      "实验单位重复 ≠ 独立制备批次；单批次不自动升为 confirmed blocker，跨批次推广须单独论证。",
+      "适用范围/限制声明记为 scope_note，不作为 EXTRAP 主张的支持或反对证据。"
+    ]
+  },
+  "clarifying_questions": [
+    {
+      "id": "Q01",
+      "question": "「代表单元」指导整组补水/处理时：是否逐盆（或逐实验单元）监测与校准？代表读数如何映射到同组其他单元？如何保证组内处理暴露一致？",
+      "blocks_dimensions": [
+        "pseudoreplication",
+        "confounding"
+      ],
+      "priority": "high",
+      "context_quote": "",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "；干旱组逐步降水并维持在约 40% 田间持水量。每天记录各组代表盆的质量变化，并据此调整同组盆栽的补水量。\n\n5.3 试验周期\n\n从开始水分处理之日记为 D0，连续培养 28 d。D0、D7、D14、D21 和 D28 ",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "char_start": 1768,
+          "char_end": 1771
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "question": "关键材料/菌剂是否仅同一制备批次？当前设计拟支持的主张范围是批次内处理比较，还是跨批次/生产放大？若为后者，是否有独立制备批次或批间变异估计？",
+      "blocks_dimensions": [
+        "reproducibility",
+        "claim_evidence"
+      ],
+      "priority": "high",
+      "context_quote": "",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "浓度调整为约 1×10^8 CFU/mL。所有接种处理均使用同一批培养所得菌液。\n\n供试土壤包括退化黄土（L）和参考农田土壤（R），分别采集后风干、过 2 mm 筛并混匀。每盆装土 3.0 kg。试验前测定土壤 pH、有",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "char_start": 739,
+          "char_end": 742
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "dimension": "endpoints",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "重复测量与破坏性检测冲突",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "（全文未定位到精确段落，见方案原文）",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+      ],
+      "why_invalidates": "破坏性测定（如结晶紫染色）后冲洗放回，改变生物膜状态；后续时间点不是同一过程的独立观测。",
+      "fix": "改为各时间点独立牺牲样品，或仅在终点做破坏性测定；勿将污染后的重复测量当作独立时间点分析。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "medium",
+      "hard_error": true,
+      "origin": "rule",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F02",
+      "dimension": "claim_evidence",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "相关性/表征共变不足以支持主要机制主张",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "壤水分保持能力，进而促进玉米生长；EPS 是该效应的主要作用机制。\n\nH3：菌剂在退化黄土和参考农田土壤中均能产生稳定的促生效果，28 d 盆栽结果可为退化旱地的推广应用提供依据。\n\n3 材料与试验条件\n\n3.1 供试材",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "char_start": 506,
+          "char_end": 508
+        }
+      ],
+      "why_invalidates": "相关分析或吸附前后表征共变只说明伴随变化，不能单独认定「主要/主导机制」。",
+      "fix": "下调为伴随/相关描述；若要机制结论，需能排除替代解释的操纵或对照（而非仅增加拟合优度）。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "medium",
+      "hard_error": true,
+      "origin": "rule",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F03",
+      "dimension": "claim_evidence",
+      "severity": "blocker",
+      "category": "confirmed",
+      "title": "由短周期/简化工况试验外推长期或工程依据过度",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "壤中均能产生稳定的促生效果，28 d 盆栽结果可为退化旱地的推广应用提供依据。\n\n3 材料与试验条件\n\n3.1 供试材料\n\n植物材料为玉米（Zea mays L.）同一商品批次种子。菌株为实验室保存的 EPS 产生菌 B",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "char_start": 557,
+          "char_end": 559
+        }
+      ],
+      "why_invalidates": "短周期、批式、盆栽或简化水质的实验室结果不能直接作为长期工程/田间推广/连续运行的主要依据。",
+      "fix": "收紧应用表述为「初步实验室证据」；长期或工程主张需更长周期、相关工况或现场/中试验证。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "none",
+      "hard_error": true,
+      "origin": "rule",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F04",
+      "dimension": "pseudoreplication",
+      "severity": "medium",
+      "category": "needs_info",
+      "title": "以代表单元指导整组补水/处理时，组内独立性待核实",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "；干旱组逐步降水并维持在约 40% 田间持水量。每天记录各组代表盆的质量变化，并据此调整同组盆栽的补水量。\n\n5.3 试验周期\n\n从开始水分处理之日记为 D0，连续培养 28 d。D0、D7、D14、D21 和 D28 ",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "char_start": 1768,
+          "char_end": 1771
+        }
+      ],
+      "why_invalidates": "若整组补水/处理量由少数代表单元的含水量或质量变化决定，组内单元可能共享同一操作决策，独立性与处理暴露一致性需补充说明后才能判断是否构成伪独立。（未写明代表单元校准；未写明组内处理暴露一致性如何保证）",
+      "fix": "补充：①是否逐盆/逐单元监测与校准；②代表单元如何外推到整组；③组内处理暴露是否一致。若无法保证独立暴露，改为逐单元决策或在模型中显式处理组内相关；在信息补齐前不将此条升为 confirmed 伪重复。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "low",
+      "hard_error": false,
+      "origin": "rule",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F05",
+      "dimension": "reproducibility",
+      "severity": "medium",
+      "category": "needs_info",
+      "title": "材料/菌剂为单批次制备，跨批次推广边界待明确",
+      "locations": [
+        {
+          "source_file": "trial3.docx",
+          "original_text": "浓度调整为约 1×10^8 CFU/mL。所有接种处理均使用同一批培养所得菌液。\n\n供试土壤包括退化黄土（L）和参考农田土壤（R），分别采集后风干、过 2 mm 筛并混匀。每盆装土 3.0 kg。试验前测定土壤 pH、有",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "char_start": 739,
+          "char_end": 742
+        }
+      ],
+      "why_invalidates": "实验单位重复（多盆/多管）不等于独立制备批次重复。单批次设计可支持该批次内的处理比较，但不能自动支持跨批次或生产放大主张。",
+      "fix": "在主张中区分「本批次内效应」与「跨批次可推广性」；若结论涉及跨批次/生产放大，补充独立制备批次或明确限制外推范围。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "medium",
+      "hard_error": false,
+      "origin": "rule",
+      "duplicate_relation": "none"
+    }
+  ],
+  "optimizer": {
+    "plan_id": "A",
+    "title": "最小必要修改",
+    "rationale": "只修改会直接影响主要结论可靠性的关键证据缺口（分配单位重复、对照可分性、因素解耦、空间位置、取样衡算、主张边界等），最大程度保留原方案；表述跟随本方案的分配单位与 findings，不套用无关领域模具；不以换模型替代设计重复。每个 confirmed blocker 必须有对应动作，否则标记 optimizer_incomplete。",
+    "revised_group_table": {
+      "columns": [
+        "group_name",
+        "treatment",
+        "control_role",
+        "n_suggested",
+        "replicate_unit",
+        "notes"
+      ],
+      "rows": [
+        {
+          "row_id": "G01",
+          "group_name": "L-W-I-",
+          "treatment": "退化黄土 + 正常供水 + 不接种",
+          "control_role": "negative",
+          "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+          "replicate_unit": "盆（技术复孔另计）",
+          "notes": "退化黄土 + 正常供水 + 不接种"
+        },
+        {
+          "row_id": "G02",
+          "group_name": "L-W-I+",
+          "treatment": "退化黄土 + 正常供水 + 接种",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+          "replicate_unit": "盆（技术复孔另计）",
+          "notes": "退化黄土 + 正常供水 + 接种"
+        },
+        {
+          "row_id": "G03",
+          "group_name": "L-D-I-",
+          "treatment": "退化黄土 + 干旱胁迫 + 不接种",
+          "control_role": "negative",
+          "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+          "replicate_unit": "盆（技术复孔另计）",
+          "notes": "退化黄土 + 干旱胁迫 + 不接种"
+        },
+        {
+          "row_id": "G04",
+          "group_name": "L-D-I+",
+          "treatment": "退化黄土 + 干旱胁迫 + 接种",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+          "replicate_unit": "盆（技术复孔另计）",
+          "notes": "退化黄土 + 干旱胁迫 + 接种"
+        },
+        {
+          "row_id": "G05",
+          "group_name": "R-W-I-",
+          "treatment": "参考农田土壤 + 正常供水 + 不接种",
+          "control_role": "negative",
+          "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+          "replicate_unit": "盆（技术复孔另计）",
+          "notes": "参考农田土壤 + 正常供水 + 不接种"
+        },
+        {
+          "row_id": "G06",
+          "group_name": "R-W-I+",
+          "treatment": "参考农田土壤 + 正常供水 + 接种",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+          "replicate_unit": "盆（技术复孔另计）",
+          "notes": "参考农田土壤 + 正常供水 + 接种"
+        },
+        {
+          "row_id": "G07",
+          "group_name": "R-D-I-",
+          "treatment": "参考农田土壤 + 干旱胁迫 + 不接种",
+          "control_role": "negative",
+          "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+          "replicate_unit": "盆（技术复孔另计）",
+          "notes": "参考农田土壤 + 干旱胁迫 + 不接种"
+        },
+        {
+          "row_id": "G08",
+          "group_name": "R-D-I+",
+          "treatment": "参考农田土壤 + 干旱胁迫 + 接种",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+          "replicate_unit": "盆（技术复孔另计）",
+          "notes": "参考农田土壤 + 干旱胁迫 + 接种"
+        }
+      ],
+      "notes": [
+        "Plan A 优先修改主张边界，不机械堆叠新实验组。"
+      ]
+    },
+    "change_notes": [
+      {
+        "id": "C01",
+        "summary": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定",
+        "addresses_finding_ids": [
+          "F01"
+        ],
+        "burden": "medium"
+      },
+      {
+        "id": "C02",
+        "summary": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+        "addresses_finding_ids": [
+          "F02",
+          "F03"
+        ],
+        "burden": "none"
+      },
+      {
+        "id": "C03",
+        "summary": "显式定义实验单位（当前解析：盆）；统计仅对独立重复推断",
+        "addresses_finding_ids": [
+          "F04"
+        ],
+        "burden": "low"
+      }
+    ],
+    "blocker_action_map": [
+      {
+        "finding_id": "F03",
+        "action": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+        "problem": "短周期、批式、盆栽或简化水质的实验室结果不能直接作为长期工程/田间推广/连续运行的主要依据。",
+        "verification": "复审该 blocker 是否仍阻断主要结论",
+        "change_note_id": "C02",
+        "covered": true,
+        "uncovered_reason": null
+      }
+    ],
+    "optimizer_incomplete": false,
+    "completeness_note": "全部 confirmed blocker 已建立 finding→action 映射。"
+  },
+  "group_table": {
+    "columns": [
+      "group_name",
+      "treatment",
+      "control_role",
+      "n_suggested",
+      "replicate_unit",
+      "notes"
+    ],
+    "rows": [
+      {
+        "row_id": "G01",
+        "group_name": "L-W-I-",
+        "treatment": "退化黄土 + 正常供水 + 不接种",
+        "control_role": "negative",
+        "n_suggested": "4",
+        "replicate_unit": "分配单位=盆；子样本=盆内植株",
+        "notes": "退化黄土 + 正常供水 + 不接种"
+      },
+      {
+        "row_id": "G02",
+        "group_name": "L-W-I+",
+        "treatment": "退化黄土 + 正常供水 + 接种",
+        "control_role": "experimental",
+        "n_suggested": "4",
+        "replicate_unit": "分配单位=盆；子样本=盆内植株",
+        "notes": "退化黄土 + 正常供水 + 接种"
+      },
+      {
+        "row_id": "G03",
+        "group_name": "L-D-I-",
+        "treatment": "退化黄土 + 干旱胁迫 + 不接种",
+        "control_role": "negative",
+        "n_suggested": "4",
+        "replicate_unit": "分配单位=盆；子样本=盆内植株",
+        "notes": "退化黄土 + 干旱胁迫 + 不接种"
+      },
+      {
+        "row_id": "G04",
+        "group_name": "L-D-I+",
+        "treatment": "退化黄土 + 干旱胁迫 + 接种",
+        "control_role": "experimental",
+        "n_suggested": "4",
+        "replicate_unit": "分配单位=盆；子样本=盆内植株",
+        "notes": "退化黄土 + 干旱胁迫 + 接种"
+      },
+      {
+        "row_id": "G05",
+        "group_name": "R-W-I-",
+        "treatment": "参考农田土壤 + 正常供水 + 不接种",
+        "control_role": "negative",
+        "n_suggested": "4",
+        "replicate_unit": "分配单位=盆；子样本=盆内植株",
+        "notes": "参考农田土壤 + 正常供水 + 不接种"
+      },
+      {
+        "row_id": "G06",
+        "group_name": "R-W-I+",
+        "treatment": "参考农田土壤 + 正常供水 + 接种",
+        "control_role": "experimental",
+        "n_suggested": "4",
+        "replicate_unit": "分配单位=盆；子样本=盆内植株",
+        "notes": "参考农田土壤 + 正常供水 + 接种"
+      },
+      {
+        "row_id": "G07",
+        "group_name": "R-D-I-",
+        "treatment": "参考农田土壤 + 干旱胁迫 + 不接种",
+        "control_role": "negative",
+        "n_suggested": "4",
+        "replicate_unit": "分配单位=盆；子样本=盆内植株",
+        "notes": "参考农田土壤 + 干旱胁迫 + 不接种"
+      },
+      {
+        "row_id": "G08",
+        "group_name": "R-D-I+",
+        "treatment": "参考农田土壤 + 干旱胁迫 + 接种",
+        "control_role": "experimental",
+        "n_suggested": "4",
+        "replicate_unit": "分配单位=盆；子样本=盆内植株",
+        "notes": "参考农田土壤 + 干旱胁迫 + 接种"
+      }
+    ],
+    "notes": []
+  },
+  "literature_hints": [],
+  "reverse_review": {
+    "enabled": false,
+    "status": "deferred_v0_2",
+    "preview_strongest_claim": "在澄清与最小修改前，不宜把相关或短周期结果写成机制/工程定论。",
+    "note": "完整逆向审查延后到 V0.2；此处仅提供 strongest_supported_claim 预览。"
+  },
+  "privacy_applied": {
+    "public_literature_search_used": false,
+    "note": "V0.1 骨架默认不触发公开文献检索"
+  },
+  "limited_audit": false,
+  "coverage_note": "已解析块 42；手动补充 0；未解析资产 0。 review_coverage[0.1.3.2-review-windows]: 全文 2994 字，送审 2994 字/1 窗（单窗上限 14000）。方法段已检出且已入窗。可声称覆盖本次送审窗口（非未解析资产）。短文不截断。"
+}

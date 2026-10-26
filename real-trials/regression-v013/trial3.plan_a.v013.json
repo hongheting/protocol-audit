@@ -1,0 +1,178 @@
+{
+  "plan_id": "A",
+  "title": "最小必要修改",
+  "rationale": "只修改会直接影响主要结论可靠性的关键证据缺口（分配单位重复、对照可分性、因素解耦、空间位置、取样衡算、主张边界等），最大程度保留原方案；表述跟随本方案的分配单位与 findings，不套用无关领域模具；不以换模型替代设计重复。每个 confirmed blocker 必须有对应动作，否则标记 optimizer_incomplete。",
+  "revised_group_table": {
+    "columns": [
+      "group_name",
+      "treatment",
+      "control_role",
+      "n_suggested",
+      "replicate_unit",
+      "notes"
+    ],
+    "rows": [
+      {
+        "row_id": "G01",
+        "group_name": "L-W-I−",
+        "treatment": "退化黄土+正常供水+不接种",
+        "control_role": "negative",
+        "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+        "replicate_unit": "盆（技术复孔另计）",
+        "notes": "退化黄土+正常供水+不接种"
+      },
+      {
+        "row_id": "G02",
+        "group_name": "L-W-I+",
+        "treatment": "退化黄土+正常供水+接种",
+        "control_role": "experimental",
+        "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+        "replicate_unit": "盆（技术复孔另计）",
+        "notes": "退化黄土+正常供水+接种"
+      },
+      {
+        "row_id": "G03",
+        "group_name": "L-D-I−",
+        "treatment": "退化黄土+干旱胁迫+不接种",
+        "control_role": "negative",
+        "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+        "replicate_unit": "盆（技术复孔另计）",
+        "notes": "退化黄土+干旱胁迫+不接种"
+      },
+      {
+        "row_id": "G04",
+        "group_name": "L-D-I+",
+        "treatment": "退化黄土+干旱胁迫+接种",
+        "control_role": "experimental",
+        "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+        "replicate_unit": "盆（技术复孔另计）",
+        "notes": "退化黄土+干旱胁迫+接种"
+      },
+      {
+        "row_id": "G05",
+        "group_name": "R-W-I−",
+        "treatment": "参考农田土壤+正常供水+不接种",
+        "control_role": "negative",
+        "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+        "replicate_unit": "盆（技术复孔另计）",
+        "notes": "参考农田土壤+正常供水+不接种"
+      },
+      {
+        "row_id": "G06",
+        "group_name": "R-W-I+",
+        "treatment": "参考农田土壤+正常供水+接种",
+        "control_role": "experimental",
+        "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+        "replicate_unit": "盆（技术复孔另计）",
+        "notes": "参考农田土壤+正常供水+接种"
+      },
+      {
+        "row_id": "G07",
+        "group_name": "R-D-I−",
+        "treatment": "参考农田土壤+干旱胁迫+不接种",
+        "control_role": "negative",
+        "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+        "replicate_unit": "盆（技术复孔另计）",
+        "notes": "参考农田土壤+干旱胁迫+不接种"
+      },
+      {
+        "row_id": "G08",
+        "group_name": "R-D-I+",
+        "treatment": "参考农田土壤+干旱胁迫+接种",
+        "control_role": "experimental",
+        "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+        "replicate_unit": "盆（技术复孔另计）",
+        "notes": "参考农田土壤+干旱胁迫+接种"
+      },
+      {
+        "row_id": "G09",
+        "group_name": "助溶剂/载体对照",
+        "treatment": "匹配载体/助溶剂处理（无目标功能组分）",
+        "control_role": "solvent",
+        "n_suggested": "≥3 独立盆（技术复孔不计入 n）",
+        "replicate_unit": "盆（技术复孔另计）",
+        "notes": "Plan A：剥离功能组分效应与助溶剂/载体效应"
+      }
+    ],
+    "notes": [
+      "Plan A 优先修改主张边界，不机械堆叠新实验组。"
+    ]
+  },
+  "change_notes": [
+    {
+      "id": "C01",
+      "summary": "增加助溶剂/载体/助剂对照，使目标处理效应可分",
+      "addresses_finding_ids": [
+        "F04"
+      ],
+      "burden": "low",
+      "solves": "目标处理与助剂/载体/保护剂效应混杂",
+      "verification": "对照暴露与处理组匹配后，组间差异可归因于目标组分"
+    },
+    {
+      "id": "C02",
+      "summary": "解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应",
+      "addresses_finding_ids": [
+        "F03"
+      ],
+      "burden": "high",
+      "solves": "处理因素与空间位置/微气候完全混杂",
+      "verification": "位置与处理正交或区组后，处理效应估计不再依赖固定台面层"
+    },
+    {
+      "id": "C03",
+      "summary": "按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据",
+      "addresses_finding_ids": [
+        "F06"
+      ],
+      "burden": "none"
+    },
+    {
+      "id": "C04",
+      "summary": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定",
+      "addresses_finding_ids": [
+        "F05"
+      ],
+      "burden": "medium"
+    },
+    {
+      "id": "C05",
+      "summary": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+      "addresses_finding_ids": [
+        "F01",
+        "F07"
+      ],
+      "burden": "none"
+    },
+    {
+      "id": "C06",
+      "summary": "显式定义实验单位（当前解析：盆）；统计仅对独立重复推断",
+      "addresses_finding_ids": [
+        "F02"
+      ],
+      "burden": "low"
+    }
+  ],
+  "blocker_action_map": [
+    {
+      "finding_id": "F03",
+      "action": "解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应",
+      "problem": "处理因素与空间位置/微气候完全混杂",
+      "verification": "位置与处理正交或区组后，处理效应估计不再依赖固定台面层",
+      "change_note_id": "C02",
+      "covered": true,
+      "uncovered_reason": null
+    },
+    {
+      "finding_id": "F05",
+      "action": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定",
+      "problem": "在D7-D21多次取土并补入石英砂，导致土壤基质被严重稀释和物理结构破坏，D28测定水稳性团聚体(MWD)已不能代表原土壤的真实结构响应；D14拔除1株改变了盆内剩余植株的根际空间与资源竞争状态，D28生物量与根系指标受密度骤降的干扰，处理间失去可比性。",
+      "verification": "复审该 blocker 是否仍阻断主要结论",
+      "change_note_id": "C04",
+      "covered": true,
+      "uncovered_reason": null
+    }
+  ],
+  "optimizer_incomplete": false,
+  "completeness_note": "全部 confirmed blocker 已建立 finding→action 映射。"
+}

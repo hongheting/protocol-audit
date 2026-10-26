@@ -1,0 +1,7 @@
+# Production web deps (optional pin set). Jassy Dockerfile currently installs
+# from repo-root requirements.txt + gunicorn; this file is the slim alternative.
+flask>=3.0
+gunicorn>=22.0
+python-docx>=1.1
+pypdf>=4.0
+jsonschema>=4.20

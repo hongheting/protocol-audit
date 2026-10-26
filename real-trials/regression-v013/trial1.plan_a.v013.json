@@ -1,0 +1,155 @@
+{
+  "plan_id": "A",
+  "title": "最小必要修改",
+  "rationale": "只修改会直接影响主要结论可靠性的关键证据缺口（分配单位重复、对照可分性、因素解耦、空间位置、取样衡算、主张边界等），最大程度保留原方案；表述跟随本方案的分配单位与 findings，不套用无关领域模具；不以换模型替代设计重复。每个 confirmed blocker 必须有对应动作，否则标记 optimizer_incomplete。",
+  "revised_group_table": {
+    "columns": [
+      "group_name",
+      "treatment",
+      "control_role",
+      "n_suggested",
+      "replicate_unit",
+      "notes"
+    ],
+    "rows": [
+      {
+        "row_id": "G01",
+        "group_name": "B0",
+        "treatment": "裸不锈钢",
+        "control_role": "blank",
+        "n_suggested": "每处理 ≥2–3 独立水槽",
+        "replicate_unit": "水槽层面的独立实验单位（挂板不计独立 n）",
+        "notes": "裸不锈钢；Plan A：补水槽层面重复或降级无法分离的因素主张"
+      },
+      {
+        "row_id": "G02",
+        "group_name": "B1",
+        "treatment": "基础涂层",
+        "control_role": "negative",
+        "n_suggested": "每处理 ≥2–3 独立水槽",
+        "replicate_unit": "水槽层面的独立实验单位（挂板不计独立 n）",
+        "notes": "基础涂层；Plan A：补水槽层面重复或降级无法分离的因素主张"
+      },
+      {
+        "row_id": "G03",
+        "group_name": "B2",
+        "treatment": "功能涂层",
+        "control_role": "experimental",
+        "n_suggested": "每处理 ≥2–3 独立水槽",
+        "replicate_unit": "水槽层面的独立实验单位（挂板不计独立 n）",
+        "notes": "功能涂层；Plan A：补水槽层面重复或降级无法分离的因素主张"
+      },
+      {
+        "row_id": "G04",
+        "group_name": "B3",
+        "treatment": "基础涂层",
+        "control_role": "negative",
+        "n_suggested": "每处理 ≥2–3 独立水槽",
+        "replicate_unit": "水槽层面的独立实验单位（挂板不计独立 n）",
+        "notes": "基础涂层；Plan A：补水槽层面重复或降级无法分离的因素主张"
+      },
+      {
+        "row_id": "G05",
+        "group_name": "B4",
+        "treatment": "功能涂层",
+        "control_role": "experimental",
+        "n_suggested": "每处理 ≥2–3 独立水槽",
+        "replicate_unit": "水槽层面的独立实验单位（挂板不计独立 n）",
+        "notes": "功能涂层；Plan A：补水槽层面重复或降级无法分离的因素主张"
+      },
+      {
+        "row_id": "G06",
+        "group_name": "助溶剂/载体对照",
+        "treatment": "基础基质 + 匹配助溶剂（无功能组分）",
+        "control_role": "solvent",
+        "n_suggested": "每处理 ≥2–3 独立水槽",
+        "replicate_unit": "水槽层面的独立实验单位（挂板不计独立 n）",
+        "notes": "Plan A：剥离功能组分效应与助溶剂/载体效应"
+      }
+    ],
+    "notes": [
+      "水槽层面独立重复是证据缺口核心；换 ANOVA/混合模型不能替代。",
+      "Plan A 优先修改主张边界，不机械堆叠新实验组。"
+    ]
+  },
+  "change_notes": [
+    {
+      "id": "C01",
+      "summary": "在水槽层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽层面独立重复缺失",
+      "addresses_finding_ids": [
+        "F01",
+        "F02"
+      ],
+      "burden": "high",
+      "solves": "水槽与处理锁定或子样本当 n 导致效应不可分/伪重复",
+      "verification": "每处理具备≥2 独立水槽后，主效应/交互估计不再依赖单水槽内子样本"
+    },
+    {
+      "id": "C02",
+      "summary": "增加助溶剂/载体/助剂对照，使目标处理效应可分",
+      "addresses_finding_ids": [
+        "F03"
+      ],
+      "burden": "low",
+      "solves": "目标处理与助剂/载体/保护剂效应混杂",
+      "verification": "对照暴露与处理组匹配后，组间差异可归因于目标组分"
+    },
+    {
+      "id": "C03",
+      "summary": "解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应",
+      "addresses_finding_ids": [
+        "F09"
+      ],
+      "burden": "high",
+      "solves": "处理因素与空间位置/微气候完全混杂",
+      "verification": "位置与处理正交或区组后，处理效应估计不再依赖固定台面层"
+    },
+    {
+      "id": "C04",
+      "summary": "按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据",
+      "addresses_finding_ids": [
+        "F01"
+      ],
+      "burden": "none"
+    },
+    {
+      "id": "C05",
+      "summary": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定",
+      "addresses_finding_ids": [
+        "F05"
+      ],
+      "burden": "medium"
+    },
+    {
+      "id": "C06",
+      "summary": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+      "addresses_finding_ids": [
+        "F06",
+        "F07"
+      ],
+      "burden": "none"
+    }
+  ],
+  "blocker_action_map": [
+    {
+      "finding_id": "F01",
+      "action": "在水槽层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽层面独立重复缺失",
+      "problem": "水槽与处理锁定或子样本当 n 导致效应不可分/伪重复",
+      "verification": "每处理具备≥2 独立水槽后，主效应/交互估计不再依赖单水槽内子样本",
+      "change_note_id": "C01",
+      "covered": true,
+      "uncovered_reason": null
+    },
+    {
+      "finding_id": "F02",
+      "action": "在水槽层面增加独立重复，或明确降级UV/联用交互、协同/交互主张；不可仅更换统计模型掩盖水槽层面独立重复缺失",
+      "problem": "水槽与处理锁定或子样本当 n 导致效应不可分/伪重复",
+      "verification": "每处理具备≥2 独立水槽后，主效应/交互估计不再依赖单水槽内子样本",
+      "change_note_id": "C01",
+      "covered": true,
+      "uncovered_reason": null
+    }
+  ],
+  "optimizer_incomplete": false,
+  "completeness_note": "全部 confirmed blocker 已建立 finding→action 映射。"
+}

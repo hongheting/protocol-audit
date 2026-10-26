@@ -1,0 +1,5 @@
+[2026-10-26T10:20:27+08:00] START trial1 version=0.1.3.3 prompt_match=True
+[2026-10-26T10:23:27+08:00] review_windows n=None comprehensive=True methods_detected=False truncated=False
+[2026-10-26T10:23:27+08:00] parse ok=True expand=False finish=stop hard_fail=False
+[2026-10-26T10:26:28+08:00] schema_errors=0 findings=17
+[2026-10-26T10:26:28+08:00] DONE trial1 Beta-spotcheck finished=2026-10-26T10:26:28+08:00 elapsed=361.6s | prompt_match=True schema_ok=True | findings=17 origins={'rule': 10, 'llm_review': 7} facade_risk=False | calls=2 expand=0 finish=['stop', 'stop']

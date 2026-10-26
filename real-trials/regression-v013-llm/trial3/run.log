@@ -1,0 +1,35 @@
+[2026-10-25T22:01:55+08:00] START trial3-v013-llm version=0.1.3 prompt_match=True
+[2026-10-25T22:04:42+08:00] parse ok=True expand=False hard_fail=False
+[2026-10-25T22:08:15+08:00] source: /workspace/product/protocol-audit/real-trials/trial3.docx
+version: 0.1.3
+goal: unspecified default
+boundary: 学科边界：本次按 environmental 规则审查（环境/生物/化学）。引擎：V0.1.3 结构规则/后处理（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 可靠性补丁）+ LLM 解析+ LLM 科学审查。不得将模拟输出冒充实测。
+verdict: needs_redesign | 确认问题 9，待核实 2，建议 1；见 Plan A 最小修改。
+findings: 12 confirmed 9 needs_info 2 suggestion 1
+  - F01 [confirmed/high] rule= | 相关性/表征共变不足以支持主要机制主张
+  - F02 [confirmed/blocker] rule= | 由短周期/简化工况试验外推长期或工程依据过度
+  - F03 [needs_info/medium] rule= | 以代表单元指导整组补水/处理时，组内独立性待核实
+  - F04 [confirmed/blocker] rule= | 材料/菌剂为单批次制备，跨批次推广边界待明确
+  - F05 [confirmed/blocker] rule= | 水分处理与温室空间位置（长台层级）完全混杂
+  - F06 [confirmed/blocker] rule= | 根际土壤取样后补入石英砂破坏土壤结构连续性，严重干扰团聚体与水分指标测定
+  - F07 [confirmed/high] rule= | 使用相关性分析结果作为因果机制结论的证据不足
+  - F08 [confirmed/high] rule= | 接种液与对照液组成不匹配，海藻糖保护剂引入混杂因素
+  - F09 [confirmed/high] rule= | 对重复测量的多因素析因设计进行单因素方差分析，忽略交互效应与时间自相关
+  - F10 [needs_info/medium] rule= | 重复测量指标（株高、SPAD）的统计分析可能存在以单株为独立单位的伪重复风险
+  - F11 [confirmed/blocker] rule= | 将短期温室盆栽结果直接外推至退化旱地应用缺乏充分依据
+  - F12 [suggestion/medium] rule= | 依据代表盆质量调整同组补水量削弱了实验单元独立性并引入水分误差
+CE rows: 3
+  - CE01 supports=partial | H1：菌剂提高生物量，并减轻干旱抑制
+  - CE02 supports=no | H2：EPS介导促生机制，提高团聚体稳定性与水分保持
+  - CE03 supports=no | H3：两种土壤均有效，具应用潜力
+Plan A notes: 8
+  - C01: 增加助溶剂/载体/助剂对照，使目标处理效应可分
+  - C02: 解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应
+  - C03: 按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据
+  - C04: 收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据
+  - C05: 显式定义实验单位（当前解析：盆）；统计仅对独立重复推断
+  - C06: 在主张中区分「本批次内效应」与「跨批次可推广性」；若结论涉及跨批次/生产放大，补充独立制备批次或明确限制外推范围。
+  - C07: 若需动态测定EPS，建议设置独立的破坏性采样盆（sacrificial pots），专用于该时间点的取样，而不在后续仍需测定土壤结构和水分特征的盆中补入异质材料。
+  - C08: 应在结论中明确限制外推范围，声明盆栽结果仅表明菌剂具有应用潜力，需进一步通过大田长期定位试验验证其实际效果和生态安全性。
+schema_errors: OK
+[2026-10-25T22:08:15+08:00] DONE wall=380.2s calls=2 expand=0

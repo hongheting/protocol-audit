@@ -1,0 +1,4303 @@
+{
+  "schema_version": "0.2.0",
+  "source_file": "trial4.docx",
+  "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "ingested_blocks": [
+    {
+      "block_id": "p-1",
+      "block_type": "paragraph",
+      "text": "研究生论文中期进展报告",
+      "page_number": null,
+      "paragraph_id": "p-1",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-2",
+      "block_type": "paragraph",
+      "text": "题 目：藻菌颗粒污泥体系脱氮及生物质回收利用研究",
+      "page_number": null,
+      "paragraph_id": "p-2",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-1",
+      "block_type": "table",
+      "text": "学号 | D202281419\n姓名 | 骆成毅\n专业 | 环境科学与工程\n指导教师 | 胡智泉\n院（系、所） | 环境科学与工程学院",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-1",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-3",
+      "block_type": "paragraph",
+      "text": "华中科技大学研究生院制",
+      "page_number": null,
+      "paragraph_id": "p-3",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-4",
+      "block_type": "paragraph",
+      "text": "填表注意事项",
+      "page_number": null,
+      "paragraph_id": "p-4",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-5",
+      "block_type": "paragraph",
+      "text": "一、本表适用于攻读硕士学位研究生选题报告、学术报告，攻读博士学位研究生文献综述、选题报告、论文中期进展报告、学术报告等。",
+      "page_number": null,
+      "paragraph_id": "p-5",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-6",
+      "block_type": "paragraph",
+      "text": "二、以上各报告均须存入研究生个人学籍档案。",
+      "page_number": null,
+      "paragraph_id": "p-6",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-7",
+      "block_type": "paragraph",
+      "text": "三、本表填写要求文句通顺、内容明确、格式规范。",
+      "page_number": null,
+      "paragraph_id": "p-7",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-8",
+      "block_type": "paragraph",
+      "text": "四、A4双面打印。",
+      "page_number": null,
+      "paragraph_id": "p-8",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-9",
+      "block_type": "paragraph",
+      "text": "目  录",
+      "page_number": null,
+      "paragraph_id": "p-9",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-10",
+      "block_type": "paragraph",
+      "text": "1 背景介绍",
+      "page_number": null,
+      "paragraph_id": "p-10",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-11",
+      "block_type": "paragraph",
+      "text": "1.1. 研究背景1",
+      "page_number": null,
+      "paragraph_id": "p-11",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-12",
+      "block_type": "paragraph",
+      "text": "1.2. 国内外本学科领域的发展现状3",
+      "page_number": null,
+      "paragraph_id": "p-12",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-13",
+      "block_type": "paragraph",
+      "text": "1.3. 存在的问题13",
+      "page_number": null,
+      "paragraph_id": "p-13",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-14",
+      "block_type": "paragraph",
+      "text": "2 研究目标、研究内容与技术路线",
+      "page_number": null,
+      "paragraph_id": "p-14",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-15",
+      "block_type": "paragraph",
+      "text": "2.1. 研究目标15",
+      "page_number": null,
+      "paragraph_id": "p-15",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-16",
+      "block_type": "paragraph",
+      "text": "2.2. 研究内容15",
+      "page_number": null,
+      "paragraph_id": "p-16",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-17",
+      "block_type": "paragraph",
+      "text": "2.3. 技术路线16",
+      "page_number": null,
+      "paragraph_id": "p-17",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-18",
+      "block_type": "paragraph",
+      "text": "3 研究进展",
+      "page_number": null,
+      "paragraph_id": "p-18",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-19",
+      "block_type": "paragraph",
+      "text": "3.1. 藻-菌颗粒污泥体系的构建及其脱氮效能研究17",
+      "page_number": null,
+      "paragraph_id": "p-19",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-20",
+      "block_type": "paragraph",
+      "text": "3.2. 直接氨氧化菌强化藻-菌颗粒污泥体系的脱氮效能研究37",
+      "page_number": null,
+      "paragraph_id": "p-20",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-21",
+      "block_type": "paragraph",
+      "text": "4 阶段性研究结论45",
+      "page_number": null,
+      "paragraph_id": "p-21",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-22",
+      "block_type": "paragraph",
+      "text": "5 下一步研究计划和课题进度安排46",
+      "page_number": null,
+      "paragraph_id": "p-22",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-23",
+      "block_type": "paragraph",
+      "text": "6 预计成果47",
+      "page_number": null,
+      "paragraph_id": "p-23",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-24",
+      "block_type": "paragraph",
+      "text": "7 学位论文框架48",
+      "page_number": null,
+      "paragraph_id": "p-24",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-25",
+      "block_type": "paragraph",
+      "text": "8 参考文献50",
+      "page_number": null,
+      "paragraph_id": "p-25",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-26",
+      "block_type": "paragraph",
+      "text": "背景介绍",
+      "page_number": null,
+      "paragraph_id": "p-26",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-27",
+      "block_type": "paragraph",
+      "text": "研究背景",
+      "page_number": null,
+      "paragraph_id": "p-27",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-28",
+      "block_type": "paragraph",
+      "text": "随着国民经济的持续发展和城镇化进程不断加快，水环境污染问题日益凸显，城镇生活污水若不能妥善处置将对生态环境造成不可逆污染，直接影响居民的日常生活和工业企业的正常生产活动。因此，污水处理行业是我国国民经济中不可忽视的重要领域之一。污水生物处理技术相比于物理化学法，具有成本低、操作简单、无污染转移等优点而在污水处理领域发挥着巨大作用。活性污泥法是现阶段我国应用最广泛的污水生物处理技术。据估算，约有85％以上的城市污水处理厂采用活性污泥法。活性污泥法具有生物活性高、运营费用低等优势，规模越大，这些优势越明显。然而，传统的活性污泥法在污水处理过程发挥重要作用的同时也存在诸多弊端。其一，活性污泥工艺主要由曝气池、二次沉淀池和污泥回流系统组成，工艺的处理单元多，对土地面积需求大，操作管理复杂；其二，絮状污泥沉降性能差，泥水分离效果不佳，并且容易发生污泥膨胀；其三，对冲击负荷敏感，难以适应水质多元化的变化趋势；其四，剩余污泥量大，对后续的污泥处置造成负担[1]。",
+      "page_number": null,
+      "paragraph_id": "p-28",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-29",
+      "block_type": "paragraph",
+      "text": "与活性污泥（Activated sludge, AS）相比，好氧颗粒污泥（Aerobic granular sludge, AGS）的结构紧凑，沉降速率快，泥水分离简单，无需增设二次沉淀池，因此为污水处理领域提供了一个工艺更加集成的发展方向。另外，AGS还具有微生物种类丰富、生物量大、同步脱氮除磷和抗冲击负荷能力强等活性污泥法不可比拟的优势特征。经过20余年的发展，以AGS为技术核心的Nereda®工艺已经在世界范围内的三十多个污水处理厂实现了商业化推广，显著改善了污水处理技术经济性能。以荷兰Epe污水处理厂（规模1500 m3/h）为例，基于活性污泥法的原工艺日能耗为3500 kW/h，引入Nereda®工艺后，基建和运行费用降低了约25%，日能耗降低为2000~2500 kW/h，在短期碱度升高（pH>10）条件下，AGS工艺出水仍能满足TN<5 mg/L和TP<0.3 mg/L的排放标准。鉴于此，AGS技术被誉为“21世纪最具发展潜力的污水生物处理技术”。",
+      "page_number": null,
+      "paragraph_id": "p-29",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-30",
+      "block_type": "paragraph",
+      "text": "好氧颗粒污泥是活性污泥微生物通过自凝聚形成的生物聚集体，因其结构致密、生物量高、沉降性能好和占地面积小等优势，被认为是一种颇具发展潜力的新型污水生物处理技术，但在系统运行过程中却存在高曝气能耗、系统启动期长和长期运行颗粒结构不稳定的问题[2]。",
+      "page_number": null,
+      "paragraph_id": "p-30",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-31",
+      "block_type": "paragraph",
+      "text": "AGS技术优势明显，但弊端也较为突出。一方面，AGS的培养条件严苛，需要较高的机械曝气强度来提供足够的水力剪切力以形成外表光滑、结构圆整的颗粒污泥和保持高浓度溶解氧以保证有机物的有效降解。事实上，高强度机械曝气是造成AGS系统运行过程中能耗过大的主要原因；另一方面，反应器启动期较长，而系统长时间运行又会出现颗粒结构解体的现象，导致出水水质不能达标甚至系统崩溃，这极大地制约了AGS技术的发展。因此，亟待开发一种高效低耗、快速启动、稳定运行的新型AGS处理技术，以解决现有工艺存在的弊端和难题。",
+      "page_number": null,
+      "paragraph_id": "p-31",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-32",
+      "block_type": "paragraph",
+      "text": "藻菌共生法是一门新兴的污水处理技术，藻细胞在光照条件下通过光合作用利用污水中氮、磷等营养元素合成自身细胞物质，并释放出O2供给细菌利用，细菌降解有机物的同时合成藻类光合作用所需的营养物质和碳源。因此，藻菌共生污水处理技术可以实现氮、磷的高效去除与曝气能耗的同步降低。近几十年来，人们对微藻生产生物能源再次产生了兴趣，包括沼气、生物柴油、生物乙醇和生物氢[3]。部分微藻所合成的细胞脂质能够提取出脂肪酸甲酯（Fatty acid methylesters，FAMEs），又称生物柴油，它是一种新型的清洁可再生能源。此外，微藻还含有丰富的磷，含磷量高于活性污泥，从微藻中提取磷，相较于活性污泥中提取磷是一种更加经济方便的选择，这为利用微藻处理污水并进行能源回收提供了条件。但是，微藻在环境中主要以悬浮生长为主，导致出水悬浮物含量高，微藻采收困难；同时微藻代谢效率低于活性污泥，这些限制了微藻在污水处理中的大规模应用。",
+      "page_number": null,
+      "paragraph_id": "p-32",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-33",
+      "block_type": "paragraph",
+      "text": "综上，如果将AGS技术与藻菌共生系统有机结合起来，建立一种新型的藻菌共生好氧颗粒污泥（Microalgal-bacterial granular sludge, MBGS）系统，既可以充分发挥AGS工艺占地面积小、污泥沉降速度快等技术优势，又可以充分利用藻菌之间紧密的生态学关系和脱氮除磷、节能降耗等特点，且微藻的生长状态由悬浮态变为附着态，方便了微藻的生物质采收[4]。这些在城镇污水处理领域都极具有探索价值。",
+      "page_number": null,
+      "paragraph_id": "p-33",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-34",
+      "block_type": "paragraph",
+      "text": "国内外本学科领域的发展现状",
+      "page_number": null,
+      "paragraph_id": "p-34",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-35",
+      "block_type": "paragraph",
+      "text": "将微藻培养与废水处理结合起来，以高效去除营养物质、可持续资源循环利用和多种生物能源转换为目标，已引起了越来越多的关注[5]。此外，在微藻和细菌之间建立共生关系将提高废水处理性能。目前，已确定参与微藻与细菌相互作用的机制主要包括养分交换[6]、细胞间交流[7,8]、化学物质刺激[10]。在处理过程中，基于二氧化碳/氧气（CO2/O2）的气体交换建立了具有代表性的互惠联合体，占机械处理成本的50 %以上[11]。同时，微藻还能感知细菌分泌的化学信号分子，如法定量传感信号分子、维生素和嗜苷酸盐，从而在促进生物活性、增强去除能力和提高耐受性方面发展共生相互作用[10]。总之，彻底利用微藻-细菌联合体的合作关系将为可视化先进废水处理工艺提供一个深远的视角，并使其具有实用性和经济性[12]。",
+      "page_number": null,
+      "paragraph_id": "p-35",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-36",
+      "block_type": "paragraph",
+      "text": "AGS",
+      "page_number": null,
+      "paragraph_id": "p-36",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-37",
+      "block_type": "paragraph",
+      "text": "1. AGS的特性及形成机制",
+      "page_number": null,
+      "paragraph_id": "p-37",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-38",
+      "block_type": "paragraph",
+      "text": "（1）物理特性",
+      "page_number": null,
+      "paragraph_id": "p-38",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-39",
+      "block_type": "paragraph",
+      "text": "AGS与城市污水处理厂中的活性污泥相比，AGS具有的最明显特征就是其形态呈现颗粒状而非絮状，一般粒径大于0.2 mm的就可以称为AGS。好氧颗粒污泥在物理特性上具有沉降速度快、结构密实、机械强度高、孔隙率发达等优点。其与传统活性污泥相比，优势主要体现在沉降特性上，而较优的沉降性能又离不开其光滑表面及规则接近球状的外观形态、密实抗水力冲击的结构、大小适宜的粒径等物理特性。污泥的沉降速率反映了泥水的分离效果，是废水处理系统中极为重要的参数，好氧颗粒污泥的沉降速率一般是传统活性污泥的3倍甚至更高[13]，这对有效提高污泥截留能力和污泥浓度非常有利，进而能够保证颗粒污泥系统具有更好的除污降解能力。颗粒的沉降速率与粒径大小密切相关，在一定粒径范围内，沉降速率随粒径的增大而加快，但当粒径大于4.0 mm时，沉降性能反而会变差，相应颗粒污泥的密实度和强度也随之减小。究其原因，可能是由于当粒径较大时，水中的营养基质很难通过逐层传质到达颗粒污泥内部，此时颗粒内部微生物因难以获取生长基质而逐渐死亡，进而使得颗粒变得中心空洞，沉降性、密实度、机械强度随之变差，甚至最终导致颗粒的解体和系统的失稳[14]。因此，优良的物理特性是好氧颗粒污泥系统保持稳定的首要条件。",
+      "page_number": null,
+      "paragraph_id": "p-39",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-40",
+      "block_type": "paragraph",
+      "text": "（2）化学特性",
+      "page_number": null,
+      "paragraph_id": "p-40",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-41",
+      "block_type": "paragraph",
+      "text": "污泥好氧颗粒化过程会伴随着化学性质的变化，大量研究表明，颗粒形成前后污泥的表面疏水性、电负性及微生物分泌的胞外聚合物含量等均会发生显著变化，且变化的趋势均有利于颗粒的形成与稳定。通过对污泥表面疏水性变化的研究发现，在颗粒化进程中污泥表面的疏水性增加，导致吉布斯自由能降低，从而促使微生物细胞间的聚集能力增强，待颗粒形成后污泥表面的疏水性较接种时约提高了2倍[15]。与此同时，微生物细胞表面大多呈电负性（常用Zeta 电位表示），有研究对污泥表面的Zeta 电位进行测定发现，成熟好氧颗粒污泥表面的Zeta 电位稳定维持在-10 mV 左右，较接种时的絮状污泥有了显著提升[16]。EPS是微生物新陈代谢过程分泌于细胞外的高分子聚合物，结构组分较为复杂，其在颗粒污泥空间上的不均匀分布构成了菌胶团的骨架，并通过疏水反应、正负离子中和反应、离子反应、静电反应、架桥作用等协同效应，改变污泥的表面疏水性和电负性等理化性质，进而促进颗粒污泥的形成。另有文献研究表明，EPS的主要成分包括胞外蛋白和多糖，其在颗粒污泥中的含量高于絮状污泥，被认为可促进污泥的颗粒化及结构稳定[17]，但究竟胞外多糖和蛋白质谁才是主导污泥颗粒化的关键因素，在不同的研究中存在认知差异，相关内容仍需进一步深入探究。",
+      "page_number": null,
+      "paragraph_id": "p-41",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-42",
+      "block_type": "paragraph",
+      "text": "（3）生物特性",
+      "page_number": null,
+      "paragraph_id": "p-42",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-43",
+      "block_type": "paragraph",
+      "text": "鉴于好氧颗粒污泥的特殊结构以及对DO的传质限制，在三维轴向空间上由表及里可同时形成好氧、缺氧及厌氧3个区域，从而促成了好氧颗粒污泥菌群的多样性和不同类型菌群的空间分布规律性。随着分子生物学前沿技术的发展及其在环境微生物中的拓展应用，好氧颗粒污泥各功能菌群的组成、演替分布及功能特性方面的研究也不断得到充实和发展。",
+      "page_number": null,
+      "paragraph_id": "p-43",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-44",
+      "block_type": "paragraph",
+      "text": "有学者采用荧光原位杂交技术对好氧颗粒污泥中各功能菌群空间分布进行研究，结果显示在颗粒表层主要生长着好氧微生物，如亚硝化单胞菌属大多分布在表层70~100 µm范围内，厌氧菌主要分布在中间层800~900 µm范围。高景峰等采用Illumina MiSeq PE300高通量测序技术研究了好氧颗粒污泥培养过程中微生物群落的变化，结果表明颗粒培养过程中细菌群落多样性呈现先升后降的趋势，群落结构发生了显著的变化，在培养条件的诱导下各功能菌的丰度也发生了不同的变化[18]。此外，有研究显示好氧颗粒污泥菌群的组成与水质条件密切相关，且各菌群间存在的竞争共生等作用关系更有助于颗粒污泥结构的动态稳定。各微生物菌群通过对营养物质、DO等的竞争，最终呈现出生长较快的细菌分布于颗粒污泥外层，而生长缓慢的细菌分布于颗粒内层的空间分布特征[19]。",
+      "page_number": null,
+      "paragraph_id": "p-44",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-45",
+      "block_type": "paragraph",
+      "text": "2. 好氧污泥颗粒化途径及机制",
+      "page_number": null,
+      "paragraph_id": "p-45",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-46",
+      "block_type": "paragraph",
+      "text": "（1）好氧污泥颗粒化假说",
+      "page_number": null,
+      "paragraph_id": "p-46",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-47",
+      "block_type": "paragraph",
+      "text": "好氧污泥颗粒化过程就是微生物群体在流体动力条件下相互固定聚集成团的一个漫长而又复杂的过程。好氧颗粒污泥技术发展至今，国内外研究者对其形成机制开展了大量研究，得到了多种颗粒污泥形成假说和特定实验条件下污泥颗粒化途径。由于颗粒污泥形成过程受反应器类型、进水水质、工艺参数等诸多因素的影响，因此目前仍未得到可全面解释各种类型好氧污泥颗粒化的通用机制，相关研究还需进一步展开。根据颗粒污泥形成过程所考虑的主导因素可将这些形成假说分为物理因素（自凝聚假说、选择压驱动假说）、化学因素（晶核假说、细胞表面疏水假说）和生物因素（丝状菌假说、胞外聚合物假说）3种类型6个假说。",
+      "page_number": null,
+      "paragraph_id": "p-47",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-48",
+      "block_type": "paragraph",
+      "text": "自凝聚假说能够很好的解释好氧颗粒污泥沉降性好、密度高、体积大、传质条件好等现象。Tay等认为AGS是由大量微生物细胞团聚形成的聚集体，并于2001年提出了“微生物自凝聚假说”，具体是指，微生物在应对外界环境条件变化的过程中，通过调节自身的生理机能和改变表面特性（如疏水性和带电性），自发地聚集和粘附在一起，形成较大的微生物共生体，最后形成规则的三维立体结构[20]。此过程虽然是一种自发现象，但对操作运行条件要求严苛。",
+      "page_number": null,
+      "paragraph_id": "p-48",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-49",
+      "block_type": "paragraph",
+      "text": "选择压驱动假说认为通过对反应器控制参数的调节，可以实现反应器中微生物的自然选择过程。大量研究发现，颗粒污泥的形成过程可通过沉降时间、水力负荷、曝气强度等物理作用对微生物进行筛选，通过选择压驱动反应器中密度大、沉降性好、强度高的颗粒得以保留，而体积小、沉降性差、强度弱的颗粒被洗脱出反应器而淘汰，同时随着选择压的加强，所培养得到的颗粒污泥的稳定性也会随之增强[21]。但该假说只涉及了物理手段和作用对微生物的自然选择过程，用于解释好氧污泥颗粒化的机制还有待进一步完善。",
+      "page_number": null,
+      "paragraph_id": "p-49",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-50",
+      "block_type": "paragraph",
+      "text": "晶核假说认为好氧污泥颗粒化是基于微生物吸附在晶核上的生长模式，随着微生物的生长繁殖，颗粒逐渐变大，在流体动力的长期作用下最终形成成熟的颗粒污泥。有研究表明，在培养过程向接种污泥中投加一定的惰性物质或无机离子，可作为颗粒污泥形成的晶核促进污泥的颗粒化进程[22]。但也有学者研究发现，在反应器中未投加晶核同样可以培养出颗粒污泥，由此表明晶核并非是好氧污泥颗粒化过程不可或缺的条件。",
+      "page_number": null,
+      "paragraph_id": "p-50",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-51",
+      "block_type": "paragraph",
+      "text": "细胞表面疏水性的提高，有利于增强细菌之间的粘附能力。该假说的提出是基于热力学中吉布斯自由能原理，表面自由能降低导致的疏水性增加是微生物细胞相互聚集的驱动力，但并没有证据证明表面疏水性提高是污泥颗粒化的决定性因素，有报道显示低疏水性条件下也能形成好氧颗粒污泥[23]。",
+      "page_number": null,
+      "paragraph_id": "p-51",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-52",
+      "block_type": "paragraph",
+      "text": "丝状菌假说认为丝状菌为好氧颗粒污泥形成提供了骨架结构，并起到了关键的作用。在适宜的培养条件下，反应器中丝状菌逐渐成为优势菌，在沉降时间的选择下丝状菌优势度得到控制；随后留存丝状菌在水力剪切力作用下相互缠绕结合成团，球菌、杆菌等细菌附着在丝状菌上生长并大量繁殖，颗粒逐渐变大；随着颗粒粒径的逐步增大，由于受传质阻力的限制颗粒污泥无法获取足够基质，颗粒解体；之后菌丝在自凝聚的作用下再次成核，细菌依附于内核表面，最终形成结构密实、沉降速度快、抗冲击能力强的颗粒污泥[24]。",
+      "page_number": null,
+      "paragraph_id": "p-52",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-53",
+      "block_type": "paragraph",
+      "text": "胞外聚合物假说是目前关注度较高的假说，众多研究表明污泥颗粒化进程中胞外聚合物（Extracellular polymeric substances，EPS）起到了关键作用。EPS是微生物在细胞外分泌的一种粘性高分子聚合物，主要由多糖、蛋白质、核酸、腐殖酸及磷脂等物质组成，在颗粒污泥形成过程主要起到粘合剂的作用，同时可促进细胞之间的聚集。此外，EPS在促进细菌相互聚集生长、维持微生物外形结构、强化生物体内部结构等方面均起到重要作用。Deng等研究了EPS在颗粒污泥培养中的作用，结果显示外源基质富足条件下会促进EPS的快速分泌，同时发现EPS含量与污泥的沉降性呈正相关，并能促进颗粒的沉降性和密实度，从而加快污泥颗粒化进程[25]。由于EPS成分复杂，EPS中不同组分对颗粒化过程所起作用影响不一，因此胞外多聚物假说还有待进一步深入探究。",
+      "page_number": null,
+      "paragraph_id": "p-53",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-54",
+      "block_type": "paragraph",
+      "text": "（2）好氧污泥颗粒化过程及途径",
+      "page_number": null,
+      "paragraph_id": "p-54",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-55",
+      "block_type": "paragraph",
+      "text": "AGS的形成可以看作在特定的生物选择压和水力选择压条件下，微生物细胞跨越水力剪切力和静电排斥力的阻碍，自发地相互聚集、粘结而形成的一种特殊的生物膜结构。Tay等提出将AGS的形成过程分为以下四个阶段：（1）微生物细胞表面受体间相互吸引和粘附，形成细小的微生物聚集体，此过程是水力剪切力、细菌运动（通过纤毛或伪足运动）、质子转移、表面电荷中和以及热动力（例如布朗运动）等多种因素共同作用的结果；（2）在物理作用力（例如静电斥力、表面自由能和表面张力形成的热动力）、化学作用力（例如离子键和氢键等）和生化作用力（例如细胞膜溶解）的吸引力作用下，新的细菌不断地粘附于微生物聚集体上，随着细菌数量的增加，逐渐形成多种微生物共存互生的颗粒状态；（3）微生物细胞生长过程中分泌的胞外聚合物将微生物细胞包裹在内，加强微生物细胞间的相互作用和紧密聚集，聚集体体积增大，颗粒形貌逐渐清晰；形成稳定的三维空间结构，颗粒的最终形态受多种因素的影响，包括水力剪切力、微生物种群结构、DO浓度、传质阻力和基质负荷的强度和形式等。",
+      "page_number": null,
+      "paragraph_id": "p-55",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-56",
+      "block_type": "paragraph",
+      "text": "图 11好氧污泥颗粒化过程及途径[26]",
+      "page_number": null,
+      "paragraph_id": "p-56",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-57",
+      "block_type": "paragraph",
+      "text": "3. AGS对生活污水中氮和磷的去除",
+      "page_number": null,
+      "paragraph_id": "p-57",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-58",
+      "block_type": "paragraph",
+      "text": "AGS由于具有较大的粒径和氧气传质的限制，在颗粒污泥内部沿着传质方向存在着明显的好氧区和缺氧/厌氧区。异养细菌和氨氧化细菌主要分布在颗粒污泥的外表面（表面延伸到内部300 µm区域内），在该区域主要完成有机物降解和硝化反应；反硝化细菌位于颗粒中间的缺氧层和核心的厌氧区，在该区域主要完成反硝化反应。由于AGS具有多层结构，即使处于好氧阶段，也可以实现同步硝化和反硝化作用。此外，AGS工艺中N的去除途径还可能包括短程硝化-反硝化作用和厌氧氨氧化作用。与常规的同步硝化和反硝化作用相比，短程硝化-反硝化作用对于O2和有机物的需求量可分别减少25%和40%，并且反硝化速率快（可以提高1.5~2倍），剩余污泥量少。厌氧氨氧化是指在缺氧/厌氧条件下，厌氧氨氧化细菌以NO2--N作为电子受体将进水中的NH4+-N被氧化成N2的过程。此过程可以大幅度降低因曝气和添加外源有机物带来的运行成本，减少CO2和N2O的排放量。AGS对于污水中磷的去除途径包括化学除磷和生物除磷。化学除磷主要有两种方式：（1）当系统的pH>8.5时，溶液中的磷与金属离子发生共沉淀形成磷酸盐；（2）磷元素被微生物产生的EPS所吸附。生物除磷是指聚磷菌或以硝酸盐和/或亚硝酸盐作为电子受体的反硝化聚磷菌（例如Accumulibacter phosphatis）通过自身的生长代谢，超量吸磷，从而实现污水中磷的去除。Zhang等[27]在考察C/N比对AGS的理化性质及稳定性的影响时发现，采用逐渐增加模拟生活污水中氯化铵浓度的方式将C/N比由15降低至5，不会对颗粒结构的稳定性造成影响，系统仍然具有高效的污染物降解能力，COD和TN的去除率稳定在99.6%和79.5%。Lemaire等[28]以模拟生活污水作为进水，采用交替厌氧-好氧的运行方式成功培养出具有同步硝化反硝化和除磷效能的AGS。进一步分析发现该系统内富集了两类反硝化细菌，分别是位于颗粒内层的聚糖菌Competibacter sp.和位于颗粒外层的聚磷菌Accumulibacter sp.，二者的相对丰度达到74%。Pronk等[29]使用连续流SBR反应器（有效容积9600 m3）处理实际生活污水，当循环时间和体积交换比设定为6.5 h和30~40%（旱季）、3 h和65%（雨季）时，经过5个月的启动期，污泥的平均粒径达到0.2 mm以上，SVI5低至45 mL/g，COD、NH4+-N、TN和TP的去除率分别为88%、97%、86%和87%，并揭示TN去除效率高是系统同步硝化和反硝化作用的结果，保持厌氧进水有利于提高TN和TP的去除率。与传统的活性污泥法相比，该工艺可节约58~63%的运行成本。",
+      "page_number": null,
+      "paragraph_id": "p-58",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-59",
+      "block_type": "paragraph",
+      "text": "以往的研究主要集中于在实验室规模的光生物反应器中，从含有或不含藻类的絮状活性污泥中培养MBGS，该反应器暴露在自然阳光或人工照明条件下（12 h/12 h的光/暗循环），以触发藻类的生长[30,31]。最近，Cao等人使用成熟的AGS作为种子污泥，在低营养水平（COD 0 mg/L、NH4+-N 10 mg/L、PO43--P 0.5 mg/L）下培养MBGS，以处理含盐废水[32]。此外，Liu等人将AGS与目标藻类（Chlorella和Scenedesmus）共培养，探讨曝气强度对MBGS的影响[33]。显然，在以往的研究中，建立MBGS系统的接种方法并不一致，有的接种AS，有的接种AGS，有的接种目标藻类，有的不接种目标藻类，最佳的接种方案尚待确定[34]。",
+      "page_number": null,
+      "paragraph_id": "p-59",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-60",
+      "block_type": "paragraph",
+      "text": "生物脱氮",
+      "page_number": null,
+      "paragraph_id": "p-60",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-61",
+      "block_type": "paragraph",
+      "text": "从富营养化的水生环境或富含氮的废水中生物脱氮取决于微生物的氨氧化和反硝化作用[35]。传统的生物脱氮过程包括两个连续步骤：首先将氨氧化为亚硝酸盐/硝酸盐，然后将硝酸盐或亚硝酸盐反硝化为N2[36]。这种传统的硝化-反硝化过程已广泛用于废水处理[37]。在传统反硝化脱氮过程中，反硝化菌需要以有机物为电子供体，实现NO3-还原为N2。具有反硝化能力的聚糖菌可在厌氧段吸收污水中有机物合成胞内碳源聚--羟基脂肪酸酯（PHAs），随后在缺氧段以PHAs为电子供体还原NO3-或NO2-为N2，实现胞内碳源驱动的反硝化脱氮。传统生物脱氮工艺中，硝化过程和反硝化过程需要在空间或时间上存在好氧和缺氧交替的条件下进行。但有研究表明，硝化和反硝化也可在同一空间中同时发生，即为SND现象，其发生机制包括宏观环境（好氧池曝气不均匀）、微观环境（菌胶团内部存在缺氧状态）和微生物学（异养硝化/好氧反硝化微生物的存在）等方面。与传统生物脱氮过程相比，SND可降低碳源消耗22%～40%,减少剩余污泥产量30%，是一种短流程生物脱氮且可实现节能降耗的新型工艺。",
+      "page_number": null,
+      "paragraph_id": "p-61",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-62",
+      "block_type": "paragraph",
+      "text": "厌氧氨氧化的发现彻底改变了我们对微生物氧化氨的概念，并创新了生物脱氮过程[38,39]。自养和异养微生物都能在好氧或厌氧条件下氧化氨。在氧气存在的情况下，自养氧化剂通过羟胺/NO催化氨氧化为亚硝酸盐/硝酸盐[40]。氨单氧酶（AMO）和羟胺脱氢酶（HAO）分别负责将氨氧化成羟胺以及随后将羟胺转化成一氧化氮（NO）[40,41]。NO氧化成亚硝酸盐是由一种尚不清楚的酶催化的。有氧和自养亚硝酸盐氧化酶通过亚硝酸盐氧化还原酶的活性将亚硝酸盐转化为硝酸盐[42]。在没有氧气的情况下，氨会被平面真菌中的一个支系利用亚硝酸盐或NO作为电子受体氧化成N2，这一过程被称为厌氧氨氧化（anammox）[43]。Anammox脱氮途径在理念和技术上完全突破传统生物脱氮工艺。经过20多年发展，Anammox技术的研究热点已经从侧流污水（高氨氮污泥消化液；NH4+浓度=500～1 500 mgN/L）处理转向主流污水(低氨氮市政污水；NH4+浓度 = 20～45 mgN/L)处理，并相继提出了短程硝化/厌氧氨氧化（Partial Nitritation/Anammox, PN/A）和短程反硝化/厌氧氨氧化（Partial Denitrification/Anammox, PD/A）等技术路径。与传统硝化/反硝化工艺相比，PN/A工艺无需碳源并可节省57%曝气能耗，PD/A工艺可节省43%的曝气能耗和78%的有机碳源。因Anammox技术的节能优势显著，目前已成为当前生物脱氮领域的研究前沿[44]。",
+      "page_number": null,
+      "paragraph_id": "p-62",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-63",
+      "block_type": "paragraph",
+      "text": "虽然人们对需氧自养氨氧化的途径有了合理但不全面的了解，但对异养硝化的生理和生物化学的了解却少得令人吃惊[45]。产碱杆菌HO-1能在有氧条件下直接将消耗的约一半氨转化为N2气体，几乎不产生亚硝酸盐和N2O。这一优势不仅体现在较高的总氮（TN）去除能力上，还体现在控制被称为温室气体的N2O的释放上。虽然亚硝酸盐反硝化途径在好氧和厌氧条件下都能发挥作用，但最终产物却不同：亚硝酸盐在厌氧条件下被还原成N2，而在好氧条件下则被还原成N2O。这可能是由于氧气抑制了亚硝基氧化还原酶（NosZ），因为这种酶对氧气的敏感性远高于参与反硝化作用的其他酶[46]。对氧气敏感的一氧化二氮还原酶可能也是菌株HO-1在有氧培养条件下产生N2O的原因。这一现象也推断出HO-1在氨氧化过程中的N2气体有氧排放并非来自亚硝酸盐反硝化，反硝化活性的抑制也进一步证实了这一点。此外，该菌株没有编码任何负责通过anammox过程产生N2气体的基因。基于这些结果，在新分离的异养氨氧化菌株HO-1中，存在一种以前未知的途径，即\"Dirammox\"的氨氧化产生N2气体的过程。我们认为这种Dirammox可能通过羟胺进行，并最终产生N2[47]（见图 12）。",
+      "page_number": null,
+      "paragraph_id": "p-63",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-64",
+      "block_type": "paragraph",
+      "text": "图 12生物脱氮途径示意图",
+      "page_number": null,
+      "paragraph_id": "p-64",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-65",
+      "block_type": "paragraph",
+      "text": "MBGS",
+      "page_number": null,
+      "paragraph_id": "p-65",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-66",
+      "block_type": "paragraph",
+      "text": "在水生环境中，藻类和细菌通过生物合成和生物代谢过程在营养循环和污染物清除方面发挥着至关重要的作用。由藻类和细菌组成的联合系统在废水处理中的应用已得到广泛研究[6,48]。先前的研究表明，与单一细菌或藻类系统相比，藻类-细菌联合系统在废水处理中可获得更好的营养物去除效率，并可降低生物量采集成本[49,50]。同时，藻类-细菌组合系统的过剩生物量也被认为是生物燃料或肥料生产的潜在来源[6]。一些研究报告称，将藻类固定在几种材料（如海藻酸盐和壳聚糖）中显示出更好的沉降能力，但材料操作成本和资源回收过程中的残留聚合物材料限制了该技术的大规模应用[51]。因此，在广泛实施废水处理和生物质资源回收的组合系统之前，还需要对细菌与藻类之间的相互作用进行更多研究。",
+      "page_number": null,
+      "paragraph_id": "p-66",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-67",
+      "block_type": "paragraph",
+      "text": "污水处理厂被认为是温室气体（GHGs）排放的重要来源，主要是电力消耗和生物处理过程产生的二氧化碳[52,53]。因此，减少污水处理厂的二氧化碳排放和能源消耗已成为人们日益关注的问题。与AGS系统相比，MBGS具有更高的营养物质吸收率、二氧化碳捕集率、更紧凑的颗粒结构、更好的生物量沉降性和更低的能耗，因而具有更大的实用潜力[54]。MBGS不仅具有能耗低、温室气体释放量少的优点，还保留了AGS的一些优良特性，如水力停留时间短、污泥沉降性能优异等。剩余的MBGS生物质主要含有微藻，具有生产生物肥料、饲料和生物燃料等宝贵资源的潜力[55–57]。此外，MBGS不仅能从有机物的内源生物氧化中固定二氧化碳，还能从额外的烟道气中固定二氧化碳，从而实现负碳目标[58,59]。",
+      "page_number": null,
+      "paragraph_id": "p-67",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-68",
+      "block_type": "paragraph",
+      "text": "1. 研究现状",
+      "page_number": null,
+      "paragraph_id": "p-68",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-69",
+      "block_type": "paragraph",
+      "text": "以往的研究主要集中于在实验室规模的光生物反应器中，从含有或不含藻类的絮状活性污泥中培养MBGS，该反应器暴露在自然阳光或人工照明条件下（12 h/12 h的光/暗循环），以触发藻类的生长[30,31]。最近，Cao等人使用成熟的AGS作为种子污泥，在低营养水平（COD 0 mg/L、NH4+-N 10 mg/L、PO43--P 0.5 mg/L）下培养MBGS，以处理含盐废水[32]。此外，Liu等人将AGS与目标藻类（Chlorella和Scenedesmus）共培养，探讨曝气强度对MBGS的影响[33]。显然，在以往的研究中，建立MBGS系统的接种方法并不一致，有的接种AS，有的接种AGS，有的接种目标藻类，有的不接种目标藻类，最佳的接种方案尚待确定[34]。",
+      "page_number": null,
+      "paragraph_id": "p-69",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-70",
+      "block_type": "paragraph",
+      "text": "在MBGS的当前研究中，已广泛应用于各种污水处理，如普通的生活污水[60]、含金属污水[61]、农业污水[62]、制药污水[63]、含盐污水[64]和养殖污水[65]等等，经过多种类别污水的考验已证明MBGS的可行性，MBGS已经展示出明显的优势。另外，对于MBGS应用面临的环境可持续发展的压力，在MBGS工艺应用于城市污水方面进行了不断地完善，比如温度[66]、光强[67]、颗粒粒径[68]、水力停留时间[69]等对MBGS系统的影响都有了相关研究。例如，探讨了光照强度（0-225 µ mol m-2 s-1）对MBGS的影响，发现在光照强度≥180 µ mol m-2 s-1时，脂质含量大大增加，而亚硝酸盐氧化菌的活性受到抑制[70]。Cai等人更关注高氨对藻菌颗粒稳定性的影响[71]。此外，还研究了水力停留时间（HRT）对光粒组装的影响[72]。这些操作条件对MBGS的造粒至关重要。除此之外，已经研究表明，MBGS系统可在无需曝气的情况下进行污水处理[73,74]，这相比传统工艺大大降低了能源消耗。随着全球气候变化形式严峻，温室气体的排放大量增加，全球气温持续上升。MBGS工艺在之前的研究中表明可以大大减少温室气体的排放[73]，符合环境可持续发展要求。但是，MBGS工艺应用于城市污水处理中的全面应用信息还很少，虽然有很大的应用前途，但仍面临着各种各样的挑战，还需要做更多的工作来完善MBGS工艺，提高其工程应用可行性[75]。",
+      "page_number": null,
+      "paragraph_id": "p-70",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-71",
+      "block_type": "paragraph",
+      "text": "2. 生物质生产及回收",
+      "page_number": null,
+      "paragraph_id": "p-71",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-72",
+      "block_type": "paragraph",
+      "text": "从废水处理厂收获的微藻中提取的生化物质可应用于对纯度要求不高或不含有害化合物的各种工业领域。这包括生产生物燃料和生物塑料等结构聚合物。例如，微藻目前被用于在污水处理厂生产沼气和生物甲烷，这些沼气和生物甲烷被用作设施内的汽车生物燃料[76]。此外，微藻还具有生产生物柴油的潜力，因为它们的生物质中能够积累脂质，这些脂质可以通过酯交换过程提取并转化为生物柴油[77,78]。此外，它们的生物质还可作为生物塑料等可生物降解聚合物的可持续来源。某些蓝藻可产生大量的聚羟基烷酸酯（PHA）[79]，这种生物聚合物可替代石油基塑料。利用废水中培养的微藻类生产PHA可替代传统塑料，对环境无害。此外，这些光合微生物产生的色素（叶绿素、类胡萝卜素和藻蓝蛋白）具有多种潜在用途[80]。",
+      "page_number": null,
+      "paragraph_id": "p-72",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-73",
+      "block_type": "paragraph",
+      "text": "藻酸盐类外聚合物（alginate-like exopolymers，ALE）是微生物大量分泌的胞外高分子物质（EPS）的重要组成部分，在颗粒形成、结构维持和提高沉降性方面起着至关重要的作用[81]。根据之前的一份报告，80千克Nereda颗粒污泥可产生18千克ALE[82]；预计从2030年起，荷兰每年将生产85,000吨ALE[83]。AGS中的ALE含量通常是传统活性污泥（CAS）的两倍以上[84]。具有低能耗和高二氧化碳捕获能力的MBGS是一种新型且前景广阔的微藻与细菌颗粒共生系统，可部分缓解AGS过程中的瓶颈问题，如机械曝气导致的高能耗和细菌分解有机物产生的大量二氧化碳排放[85]。生物废水处理技术的重点正逐渐从单纯消除污染物转向从废水和多余污泥中回收资源和能源[86]。以AGS为基础的废水处理系统可提取和回收多种高附加值资源，如清洁水、生物塑料、纤维素、磷酸盐和藻酸盐类外聚合物（ALE），具有可观的生产和经济价值[83]。",
+      "page_number": null,
+      "paragraph_id": "p-73",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-74",
+      "block_type": "paragraph",
+      "text": "许多研究表明，与AGS相比，MBGS合成ALE的潜力更大。Meng等人报告称，从MBGS中回收的ALE含量分别为每克挥发性悬浮固体17.3和28.5（mg/g-VSS）[87]。作者最近的一项研究还表明，与AGS相比，MBGS的ALE含量高出1.6倍[88]。到目前为止，尽管可以从MBGS中回收ALE，并对其资源回收潜力进行了量化和表征，但微藻类和细菌对共生系统中ALE生产的贡献仍然未知[82]。",
+      "page_number": null,
+      "paragraph_id": "p-74",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-75",
+      "block_type": "paragraph",
+      "text": "存在的问题",
+      "page_number": null,
+      "paragraph_id": "p-75",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-76",
+      "block_type": "paragraph",
+      "text": "（1）在以往的研究中，建立MBGS系统的接种方法并不一致，有的接种AS，有的接种AGS，有的接种目标藻类，有的不接种目标藻类，最佳的接种方案尚待确定。",
+      "page_number": null,
+      "paragraph_id": "p-76",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-77",
+      "block_type": "paragraph",
+      "text": "（2）近日，有研究发现了氮循环的新途径：直接氨氧化（Dirammox）——即氨被氧化成羟胺再直接转化为氮气，该氮转化途径能否作为MBGS对氮去除的强化方式暂未得到明确的结论。",
+      "page_number": null,
+      "paragraph_id": "p-77",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-78",
+      "block_type": "paragraph",
+      "text": "（3）与AGS系统相比，MBGS具有更高的营养物质吸收率、二氧化碳捕集率、更紧凑的颗粒结构、更好的生物量沉降性和更低的能耗，因而具有更大的实用潜力，但MBGS中的藻菌互作机制尚未明晰。",
+      "page_number": null,
+      "paragraph_id": "p-78",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-79",
+      "block_type": "paragraph",
+      "text": "（4）藻-菌体系具有强大的资源化潜力，如：某些蓝藻可产生大量的聚羟基烷酸酯（PHA），这种生物聚合物可替代石油基塑料。利用废水中培养的微藻类生产PHA可替代传统塑料，对环境无害；藻酸盐类外聚合物（alginate-like exopolymers，ALE）是微生物大量分泌的胞外高分子物质（EPS）的重要组成部分，在颗粒形成、结构维持和提高沉降性方面起着至关重要的作用。而关于藻菌颗粒资源化的研究亟待进一步深入。",
+      "page_number": null,
+      "paragraph_id": "p-79",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-80",
+      "block_type": "paragraph",
+      "text": "研究目标、研究内容与技术路线",
+      "page_number": null,
+      "paragraph_id": "p-80",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-81",
+      "block_type": "paragraph",
+      "text": "研究目标",
+      "page_number": null,
+      "paragraph_id": "p-81",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-82",
+      "block_type": "paragraph",
+      "text": "（1）通过培养不同初始条件下MBGS，明确胞外聚合物特征、微生物菌群组成的变化及相互之间的内在联系，构建得到长期稳定运行的相对较优的脱氮MBGS体系。",
+      "page_number": null,
+      "paragraph_id": "p-82",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-83",
+      "block_type": "paragraph",
+      "text": "（2）通过构建直接氨氧化菌强化MBGS脱氮体系，探究该体系的脱氮能力、微生物菌群组成的变化以及部分脱氮基因相对表达量变化，得到对城市污水高效脱氮的MBGS体系，并探究体系的藻菌互作机理；",
+      "page_number": null,
+      "paragraph_id": "p-83",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-84",
+      "block_type": "paragraph",
+      "text": "（3）通过对MBGS体系产生的生物质进行鉴定及提取回收，提供生产和经济价值，实现“减污”、“降碳”和“节能”的多重目标。",
+      "page_number": null,
+      "paragraph_id": "p-84",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-85",
+      "block_type": "paragraph",
+      "text": "研究内容",
+      "page_number": null,
+      "paragraph_id": "p-85",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-86",
+      "block_type": "paragraph",
+      "text": "本研究围绕藻-菌颗粒污泥（MBGS）培养和运行过程中对城市污水的氮磷去除情况进行探究，根据对之前研究的调研总结，试图构建一个稳定的MBGS系统，并在此基础上进行脱氮机制、脱氮强化以及生物质回收利用研究，具体内容如下：",
+      "page_number": null,
+      "paragraph_id": "p-86",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-87",
+      "block_type": "paragraph",
+      "text": "（1）不同MBGS系统的构建。本研究采用AS与微藻共培养来构建MBGS系统，对比AS原生藻种、人为添加小球藻以及人为添加斜生四链藻所构成体系的脱氮效能，同时考察污泥颗粒化过程的形态特征、污泥粒径及活性、沉降特性、胞外聚合物特征、微生物菌群组成的变化及相互之间的内在联系，为未来直接采用城市污水培养MBGS提供参考和借鉴。",
+      "page_number": null,
+      "paragraph_id": "p-87",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-88",
+      "block_type": "paragraph",
+      "text": "（2）直接氨氧化菌强化MBGS体系脱氮机制探究。考察直接氨氧化菌强化MBGS体系的氮去除效果，同时考察污泥颗粒化过程的形态特征、污泥粒径及活性、沉降特性、胞外聚合物特征、微生物菌群组成的变化及相互之间的内在联系为体系可行性进行验证。因直接氨氧化菌具有一步脱氮的功能，可以对MBGS体系脱氮途径进行补足，所以这部分重点研究氮转化机制，包括脱氮性能研究、微生物菌群组成的变化、部分脱氮基因相对表达量变化以及氮转化路径探究，旨在揭示直接氨氧化菌强化MBGS体系脱氮的机理。",
+      "page_number": null,
+      "paragraph_id": "p-88",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-89",
+      "block_type": "paragraph",
+      "text": "（3）MBGS藻-菌相互作用探究。结合宏基因组、转录组及代谢组等组学结果，研究MBGS中微藻与细菌的相互作用。",
+      "page_number": null,
+      "paragraph_id": "p-89",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-90",
+      "block_type": "paragraph",
+      "text": "（4）MBGS系统生物质鉴定及提取。首先对体系中的PHA与ALE进行定性定量测定，之后对其主要成分进行后续的提取回收，以达到生产利益最大化，这部分主要研究生物质的鉴定、提取及回收，旨在提出MBGS生物质的提取回收方法。",
+      "page_number": null,
+      "paragraph_id": "p-90",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-91",
+      "block_type": "paragraph",
+      "text": "技术路线",
+      "page_number": null,
+      "paragraph_id": "p-91",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-92",
+      "block_type": "paragraph",
+      "text": "研究进展",
+      "page_number": null,
+      "paragraph_id": "p-92",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-93",
+      "block_type": "paragraph",
+      "text": "藻-菌颗粒污泥体系的构建及其脱氮效能研究",
+      "page_number": null,
+      "paragraph_id": "p-93",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-94",
+      "block_type": "paragraph",
+      "text": "实验装置与运行方式",
+      "page_number": null,
+      "paragraph_id": "p-94",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-95",
+      "block_type": "paragraph",
+      "text": "MBGS培养在自制的SBR中进行，材质为有机玻璃，其实物和示意图如图 31所示：SBR直径8 cm，有效高度40 cm，有效体积2 L，进水由液位计控制，内设搅拌器，开启时搅拌速率100 rpm，在厌氧阶段开启，底部装有曝气盘，造粒阶段通过空气泵和流量计控制流量为3 L/min，造粒成功后减小为1.5 L/min，在距装置10 cm处由4根LED灯管提供光源，在SBR反应器处测得光强大概为7000 lux，照明时间为12/12 h，出水由电磁阀控制，反应器进水、搅拌、曝气、沉降、光照及出水由定时器连接的自动控制系统启动及关闭。",
+      "page_number": null,
+      "paragraph_id": "p-95",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-96",
+      "block_type": "paragraph",
+      "text": "R1为原始污泥，不投加任何藻种；R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻，根据吸光度-藻个数曲线计算保证每次投加量大致相同。",
+      "page_number": null,
+      "paragraph_id": "p-96",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-97",
+      "block_type": "paragraph",
+      "text": "每个反应周期4 h，反应器体积交换比为50%，每周期进水1 L，HRT为8 h，进水运行各阶段的详细时间如下：进水3 min，厌氧搅拌57 min，曝气158~176 min，沉降20~2 min，出水2 min；反应器运行110天，三个反应器沉降时间设置相同，为了排出絮状污泥，通过逐步缩短沉降时间的方式以促进MBGS的形成，反应器的沉降时间逐步由20 min缩短至2 min，减少的沉降时间补偿到曝气阶段。",
+      "page_number": null,
+      "paragraph_id": "p-97",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-98",
+      "block_type": "paragraph",
+      "text": "图 31实验装置示意图与实物图",
+      "page_number": null,
+      "paragraph_id": "p-98",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-99",
+      "block_type": "paragraph",
+      "text": "本实验采用模拟中等强度城市生活污水，碳、氮、磷源分别采用CH3COONa、NH4Cl、KH2PO4配置，并通过MgSO4·7H2O和CaCl2补充Mg2+和Ca2+，进水由HCl或NaOH调节pH约为7.2，进入反应器后不再控制，具体的进水水质和微量元素组成如表 31和表 32所示。本研究采用接种污泥来自于武汉某WWTPs曝气池，为了提高污泥浓度，取自曝气池的污泥经沉降倒去上清液后加入反应器。",
+      "page_number": null,
+      "paragraph_id": "p-99",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-100",
+      "block_type": "paragraph",
+      "text": "表 31模拟废水水质",
+      "page_number": null,
+      "paragraph_id": "p-100",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-2",
+      "block_type": "table",
+      "text": "主要成分 | 浓度（mg/L） | 主要成分 | 浓度（mg/L）\nCOD（CH3COONa） | 571.5 | Fe2+（FeSO4∙7H2O） | 10\nNH4+-N（NH4Cl） | 114.6 | Ca2+（CaCl2） | 10\nTP（KH2PO4） | 22 | Mg2+（MgSO4∙7H2O） | 50\nNaHCO3 | 20 | 微量元素液（表4-1） | 1",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-2",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-101",
+      "block_type": "paragraph",
+      "text": "表 32微量元素液",
+      "page_number": null,
+      "paragraph_id": "p-101",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-3",
+      "block_type": "table",
+      "text": "主要成分 | 浓度（mg/L） | 主要成分 | 浓度（mg/L）\nEDTA | 10 | H3BO3 | 150\nMnSO4∙H2O | 100 | CuSO4∙5H2O | 30\nZnSO4∙7H2O | 120 | Na2MoO4∙2H2O | 60\nKI | 180 | CoCl2∙6H2O | 150",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-3",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-102",
+      "block_type": "paragraph",
+      "text": "藻-菌颗粒污泥的特性研究",
+      "page_number": null,
+      "paragraph_id": "p-102",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-103",
+      "block_type": "paragraph",
+      "text": "（1）MBGS的形成",
+      "page_number": null,
+      "paragraph_id": "p-103",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-104",
+      "block_type": "paragraph",
+      "text": "第一阶段反应器运行时间为2023年11月15日至2024年3月6日，共计112天。图 32a为污泥颗粒化过程中MLSS和MLVSS浓度以及MLVSS/MLSS比值的变化。接种污泥的MLSS和MLVSS分别为6.1和3.17 g/L，在沉降时间逐渐缩短的条件下，R1反应器中MLSS在第28天迅速下降至1.74 g/L，MLSS和MLVSS在70天起开始趋于稳定，分别为3.17±0.53和2.73±0.45 g/L；R2反应器中MLSS在第42天迅速下降至1.69 g/L，MLSS和MLVSS在77天起开始趋于稳定，分别为3.25±0.51和2.81±0.51 g/L；R3反应器中MLSS在第42天迅速下降至1.73 g/L，MLSS和MLVSS在63天起开始趋于稳定，分别为3.23±1.379和2.83±1.306 g/L。期间，在第70天到第84天期间，受冻雨天气影响，反应器内MLSS和MLVSS有较大波动。在颗粒化过程中，沉降时间从20 min逐渐减少到2 min，由于沉降时间短，大量絮凝污泥随出水排出。",
+      "page_number": null,
+      "paragraph_id": "p-104",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-105",
+      "block_type": "paragraph",
+      "text": "污泥沉降性如图 32b所示，接种污泥的SVI5为150.92 mL/g，R1反应器中SVI5在21天内上升到363.16 mL/g；R2反应器中SVI5在21天内上升到458.33 mL/g；R3反应器中SVI5在21天内上升到418.39 mL/g，这可能是污泥需要适应新的反应器运行条件；在运行第28~56天，R1反应器内污泥SVI5 持续下降至94.65 mL/g，在反应器运行的最后阶段(105~112天)，SVI5稳定在71.93±4.47 mL/g。在运行第28~77天，R2反应器内污泥SVI5 持续下降至52.48 mL/g，在反应器运行的最后阶段(105~112天)，SVI5稳定在80.71±5.08 mL/g。在运行第28~84天，R3反应器内污泥SVI5持续下降至99.87 mL/g，在反应器运行的最后阶段(105~112天)，SVI5稳定在81.13±0.43 mL/g。颗粒平均粒径和SVI5/SVI30的比值是反映污泥颗粒化程度的有效指标，当SVI30/SVI5比值大于80%，且颗粒平均直径超过200 µm时，可认为形成了颗粒污泥。在第60天时，三个反应器均成功形成了颗粒。",
+      "page_number": null,
+      "paragraph_id": "p-105",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-106",
+      "block_type": "paragraph",
+      "text": "MBGS在显微镜下的形貌和SEM图像如图 33(a-i)所示，可以看出已形成稳定的藻菌颗粒污泥，且表面能明显看到藻的存在。",
+      "page_number": null,
+      "paragraph_id": "p-106",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-107",
+      "block_type": "paragraph",
+      "text": "图 32颗粒化过程污泥特性变化：（a）MLSS与MLVSS；（b）SVI5与SVI30/SVI5；（c）颗粒平均粒径",
+      "page_number": null,
+      "paragraph_id": "p-107",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-108",
+      "block_type": "paragraph",
+      "text": "图 33 MBGS形貌：（a、d和g）R1反应器中形成的颗粒；（b、e和h）R2反应器中形成的颗粒；（c、f和i）R3反应器中形成的颗粒",
+      "page_number": null,
+      "paragraph_id": "p-108",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-109",
+      "block_type": "paragraph",
+      "text": "（2）MBGS的强度",
+      "page_number": null,
+      "paragraph_id": "p-109",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-110",
+      "block_type": "paragraph",
+      "text": "MBGS的颗粒强度采用超声破碎-分光光度法测定。取污泥混合液10 mL，用磷酸盐缓冲液洗涤三次后稀释至100 mL，随后在超声细胞破碎仪上进行超声破碎处理，超声功率60 W，每轮超声持续5 min（超声1 s，间隔1 s），然后沉淀30 s。取上清液在600 nm波长处测定吸光度OD600，测定完成将上清液倒入样品中进行下一轮超声，共进行12次超声，最后根据OD600随时间的变化趋势对颗粒强度进行定性分析。",
+      "page_number": null,
+      "paragraph_id": "p-110",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-111",
+      "block_type": "paragraph",
+      "text": "MBGS的结构稳定性对其应用推广和长期稳定运行至关重要，为了评价不同接种方式形成MBGS的结构稳定性，采用超声破碎实验对MBGS进行破碎处理，OD600的最大值与污泥浓度有关，而其达到最大值所需的时间代表了颗粒在超声下完全破碎的时间，可以用来表示颗粒的强度[89]。如图 34所示，R1、R2和R3中污泥颗粒OD600达到最大值所需时间均大约为40、35和40 min，说明R2反应器中形成的颗粒结构强度略低于R1和R3，前人研究的AGS在6 min内OD600就达到稳定值[90]，侧面说明本研究所得MBGS强度要优于AGS，三个反应器均能够形成颗粒结构强度高且稳定的MBGS。",
+      "page_number": null,
+      "paragraph_id": "p-111",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-112",
+      "block_type": "paragraph",
+      "text": "图 34超声破碎实验中OD600随时间的变化",
+      "page_number": null,
+      "paragraph_id": "p-112",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-113",
+      "block_type": "paragraph",
+      "text": "（3）MBGS的热力学特性",
+      "page_number": null,
+      "paragraph_id": "p-113",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-114",
+      "block_type": "paragraph",
+      "text": "选取了第110 d三个反应器中的污泥样品，从热力学表面特性的角度解析其颗粒化过程，探究不同接种方式下污泥颗粒化过程出现显著差异的内在原因。参考之前的研究进行相关热力学计算[90]。",
+      "page_number": null,
+      "paragraph_id": "p-114",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-115",
+      "block_type": "paragraph",
+      "text": "取污泥样品研磨后将其抽滤到0.45 µm的醋酸纤维滤膜上，用超纯水洗涤2次，放置于1%的琼脂板上保持水分，测定前，取出自然干燥10 min，采用静滴法在接触角测定仪（OCA20，Dataphysics，德国）上进行测定，测量液体为超纯水、二碘甲烷和甲酰胺，每个样品至少测定6次取平均值。三种液体的表面热力学参数如表 33所示；",
+      "page_number": null,
+      "paragraph_id": "p-115",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-116",
+      "block_type": "paragraph",
+      "text": "三个反应器中第110 d时污泥表面热力学参数及界面自由能结果如表 34所示。污泥总表面张力（γBL）由细菌表面张力（γB）和液体表面张力（γL）组成，而表面张力又由非极性范德华表面张力（γLW）和极性/酸碱表面张力（γAB）组成。三个反应器中污泥样本的Lewis酸碱相互作用能（）的绝对值远大于范德华相互作用能（）的绝对值，并且和界面吸附自由能（）的数值接近，并且R1、R2和R3反应器中污泥样品的和均大于原始污泥样本，说明在污泥颗粒化过程中起作用主要是Lewis酸碱水合作用力，而范德华力所起的贡献较小。另外，界面吸附自由能的大小指示着污泥表面亲疏水性特性，在＞0时，污泥表面表现出亲水性，而当＜0时，污泥表面则是疏水的[91]。四个污泥样本的界面吸附自由能都为负，并且其绝对值大小依次为R3、R1、R2和Raw反应器中的样本，说明不同接种方式具有不同的污泥表面热力学特性，相比于接种小球藻，原生藻种和接种斜生四链藻可以增强污泥表面的疏水性，促进颗粒化的进行。",
+      "page_number": null,
+      "paragraph_id": "p-116",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-117",
+      "block_type": "paragraph",
+      "text": "表 33水、二碘甲烷、甲酰胺的表面热力学参数（mJ/m2）",
+      "page_number": null,
+      "paragraph_id": "p-117",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-4",
+      "block_type": "table",
+      "text": "液体 | γLW | γ+ | γ- | γAB | γTOT\n水 | 21.8 | 25.5 | 25.5 | 51.0 | 72.8\n二碘甲烷 | 50.8 | 0 | 0 | 0 | 50.8\n甲酰胺 | 39.0 | 2.3 | 39.6 | 19.0 | 58.0",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-4",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-118",
+      "block_type": "paragraph",
+      "text": "表 34第110 d时污泥表面热力学参数及界面自由能",
+      "page_number": null,
+      "paragraph_id": "p-118",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-5",
+      "block_type": "table",
+      "text": "反应器 | 表面热力学参数（mJ/m2） | 界面自由能（mJ/m2）\n |  |  |  |  |  | \nRaw | 0.24 | 3.24 | 3.48 | -0.48 | -6.49 | -6.97\nR1 | 2.08 | 30.32 | 32.40 | -4.16 | -60.63 | -64.80\nR2 | 0.76 | 29.41 | 30.17 | -1.51 | -58.82 | -60.34\nR3 | 1.66 | 43.95 | 45.61 | -3.32 | -87.90 | -91.22",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-5",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-119",
+      "block_type": "paragraph",
+      "text": "图 35 110天时不同反应器中样品的XDLVO曲线：（a）Zeta电位；（b）WTOT；（c）Raw；（d）R1；（e）R2；（f）R3",
+      "page_number": null,
+      "paragraph_id": "p-119",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-120",
+      "block_type": "paragraph",
+      "text": "XDLVO理论中的三种相互作用能（范德华作用能（WA）、静电斥能（WR）和酸碱作用能（WAB））及总的相互作用能（WTOT）如图 35所示，WA和WAB一直为负值，表现为吸引作用，而WR一直为正值，表现为排斥作用，在R1、R2和R3反应器中，WAB在三种作用能中起主要作用，其变化趋势和WTOT一致，而在Raw中，决定WAB值大小的较小，这表明在MBGS培养过程中，不同接种方式下WAB对污泥的聚集和粒径增长影响较大，这与前人对污泥颗粒化过程的研究一致[92]。原始污泥样品位能曲线的最大值为势垒，这是影响污泥沉降性能的关键参数，颗粒或细胞之间需要有超过势垒的能量才能发生絮凝沉降。XDLVO曲线势垒越高，颗粒絮凝沉降越困难，在0～1 nm距离内，原始污泥的势垒为9051.15 KT，表明其相对较差的沉降性能。其它反应器中污泥样品相似XDLVO曲线表明其形成的MBGS稳定性相当，R2>R1>R3的势垒也表明R1和R3其具有较高的絮凝、沉降和细胞自聚集能力，这些发现与图 32b中SVI5结果一致。超声破碎实验和XDLVO理论分析都表明在三种反应器中形成的MBGS具有相似的结构强度和稳定性，但总体而言，R1和R3反应器所形成的MBGS要优于R2反应器所形成的MBGS。",
+      "page_number": null,
+      "paragraph_id": "p-120",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-121",
+      "block_type": "paragraph",
+      "text": "（4）藻菌比例计算",
+      "page_number": null,
+      "paragraph_id": "p-121",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-122",
+      "block_type": "paragraph",
+      "text": "通过元素分析（Thermo Fisher Scientific Flash 2000，美国）量化颗粒中C、H、N和S的元素含量，O的含量为减去CHNS含量和灰分含量后的余数[74]，并用方程 （31）估计微藻与细菌的比例[93]。",
+      "page_number": null,
+      "paragraph_id": "p-122",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-123",
+      "block_type": "paragraph",
+      "text": "（31）",
+      "page_number": null,
+      "paragraph_id": "p-123",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-124",
+      "block_type": "paragraph",
+      "text": "其中C/Nm和C/Nb分别是微藻和细菌的C/N比，经验公式为C5H8.9O1.8N0.6和C5H7O2N，而C/Nmbgs代表MBGS的C/N比率。",
+      "page_number": null,
+      "paragraph_id": "p-124",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-125",
+      "block_type": "paragraph",
+      "text": "经过计算，Raw、R1、R2和R3的经验分子式分别为：C11.4H15.2O15.5N、C5.7H10.8O5.6N、C6.3H11.8O6.4N和C6.3H11.6O6.1N，其藻菌比分别为：0、0.28、0.61和0.66。",
+      "page_number": null,
+      "paragraph_id": "p-125",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-126",
+      "block_type": "paragraph",
+      "text": "综上所述，使用外源添加藻种的方式培养MBGS确实可以提高R2、R3中的藻菌比，但是其比例却不影响造粒过程中的势力壁垒大小和颗粒强度。",
+      "page_number": null,
+      "paragraph_id": "p-126",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-127",
+      "block_type": "paragraph",
+      "text": "表 35第110 d时颗粒中C、H、O、N和S的元素含量",
+      "page_number": null,
+      "paragraph_id": "p-127",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-6",
+      "block_type": "table",
+      "text": "样品 | C（%） | H（%） | O（%） | N（%） | S（%）\nRaw | 32.515 | 3.618 | 58.894 | 3.327 | 1.646\nR1 | 36.972 | 5.804 | 48.604 | 7.535 | 1.085\nR2 | 36.673 | 5.777 | 49.717 | 6.832 | 1.001\nR3 | 37.770 | 5.780 | 48.425 | 6.970 | 1.055",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-6",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-128",
+      "block_type": "paragraph",
+      "text": "反应器性能",
+      "page_number": null,
+      "paragraph_id": "p-128",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-129",
+      "block_type": "paragraph",
+      "text": "图 36(a-c)为各反应器COD、NH4+-N、PO43--P的去除效率变化趋势。结果表明，从反应器运行开始，COD和NH4+-N的去除率稳定且较高，进水COD、NH4+-N和PO43--P平均浓度分别为396.17 mg/L、27.58 mg/L和5.95 mg/L。三个反应器在77天后的出水浓度分别为R1：19.29 mg/L、0.5 mg/L和0.9 mg/L，去除率分别为95.38±4.62%、98.1±1.43%和84.45±6.69%。R2出水浓度：18.98 mg/L、1.5 mg/L和0.84 mg/L，去除率分别为95.31±4.48%、94.12±4.1%和85.52±7.58%。R3出水浓度：17.28 mg/L、0.47 mg/L和1.06 mg/L，去除率分别为95.8±4.2%、98.13±1.22%和81.45±7.96%。综合来看，R1和R3对三种指标的去除都处于较好的水平；R2对COD和PO43--P的去除效果较好，但对NH4+-N的去除效果最差。",
+      "page_number": null,
+      "paragraph_id": "p-129",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-130",
+      "block_type": "paragraph",
+      "text": "图 37(a-d)为各反应器的NO3--N、NO2--N和NH4+-N去除情况及TIN去除对比，结果表明，TIN的去除性能与反硝化性能一致，NO2--N在整个运行过程中没有积累，并且在出水氮化合物中NO3--N占主导地位。出水NO3--N浓度基本等于TIN浓度，在13~113 d期间，TIN的浓度相对稳定，出水浓度和去除率分别为R1：7.32 mg/L和73.36±10.04%；R2：7.44 mg/L和72.93±11.66%；R3：7.17 mg/L和74.42±8.93%。",
+      "page_number": null,
+      "paragraph_id": "p-130",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-131",
+      "block_type": "paragraph",
+      "text": "图 38(a-f)为各反应器在运行130天时的光/暗周期内COD、N和P的去除情况，在第60 min时达到释磷最大值，大量释磷有助于聚磷菌（PAOs）消耗更多的内源碳源，从而产生良好的TP去除效果，这展现了典型的EBPR特征：磷在厌氧阶段吸收碳源的同时被释放，而在好氧阶段被吸收[94]。COD浓度在厌氧阶段持续下降，此时为厌氧COD去除途径。在此过程中，COD被转化为聚-聚羟基烷酸盐(PHA)，用于好氧条件下的磷吸收或作为异养反硝化的电子供体[95]。反硝化和磷的释放主要发生在厌氧阶段，在反应最后NO3--N浓度达到峰值，曝气阶段COD浓度进一步下降，异养菌代谢作用导致COD浓度下降，出水氨氮浓度几乎为零，说明该硝化过程是优良的。TIN浓度在厌氧阶段结束时初步下降，在曝气阶段结束前达到稳定。",
+      "page_number": null,
+      "paragraph_id": "p-131",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-132",
+      "block_type": "paragraph",
+      "text": "图 36水质变化：（a）COD；（b）NH4+-N；（c）PO43--P",
+      "page_number": null,
+      "paragraph_id": "p-132",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-133",
+      "block_type": "paragraph",
+      "text": "图 37各反应器氮去除情况：（a）R1；（b）R2；（c）R3；（d）TIN",
+      "page_number": null,
+      "paragraph_id": "p-133",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-134",
+      "block_type": "paragraph",
+      "text": "图 38 各反应器光/暗周期污染物去除情况：（a）R1光；（b）R2光；（c）R3光；（d）R1暗；（e）R2暗；（f）R3暗",
+      "page_number": null,
+      "paragraph_id": "p-134",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-135",
+      "block_type": "paragraph",
+      "text": "EPS组分和功能变化",
+      "page_number": null,
+      "paragraph_id": "p-135",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-136",
+      "block_type": "paragraph",
+      "text": "（1）EPS含量",
+      "page_number": null,
+      "paragraph_id": "p-136",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-137",
+      "block_type": "paragraph",
+      "text": "EPS主要含有胞外多糖(PS)和蛋白质(PN)，它们是颗粒化过程中细菌粘附载体表面和维持MBGS稳定性的重要介质，在细菌之间的粘附和保持颗粒完整性方面发挥着关键作用，通过分析EPS的组成和浓度，研究MBGS形成和脱氮过程中EPS的生成情况。",
+      "page_number": null,
+      "paragraph_id": "p-137",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-138",
+      "block_type": "paragraph",
+      "text": "图 39(a-c)为各反应器颗粒化过程中松散结合型胞外多糖（LB-EPS）和紧密结合型胞外多糖（TB-EPS）浓度的变化情况，可以看出总体而言，TB-EPS的含量要远高于LB-EPS的含量，且随着时间的变化，TB-PS的含量逐渐增加，TB-PN的含量逐渐下降。有文章报道，TB-EPS在细胞聚集和污泥颗粒化方面发挥着更关键的作用，且TB-EPS含量与颗粒大小呈正相关[96]。具有黏性和亲水性的PS可以促进细胞聚集，对于MBGS的形成和稳定性维持至关重要[97]；大多数研究支持PN对于维持细菌聚集体的核心结构和确保颗粒的长期稳定性至关重要的观点[98]，PN对于维持颗粒的骨架强度并提供保护有重大的意义。",
+      "page_number": null,
+      "paragraph_id": "p-138",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-139",
+      "block_type": "paragraph",
+      "text": "图 39颗粒化过程中LB-EPS和TB-EPS浓度的变化：（a）R1；（b）R2；（c）R3",
+      "page_number": null,
+      "paragraph_id": "p-139",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-140",
+      "block_type": "paragraph",
+      "text": "（2）EPS的结构",
+      "page_number": null,
+      "paragraph_id": "p-140",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-141",
+      "block_type": "paragraph",
+      "text": "为了探究不同接种方式下不同反应器中EPS的官能团和蛋白质二级结构的差异，采用FTIR分析了EPS的红外光谱特征，如图 310所示，3个反应器中MBGS的EPS组分的吸收带位置分布相似，主要条带分别为3440 cm-1（PN和PS中OH-和NH-的伸缩振动）、1638 cm-1（PN中C=O和C=C伸缩振动）、1408 cm-1（C=O伸缩振动）和1085 cm-1（PS中的C-O伸缩振动）[99]。1408 cm-1处的条带与COO−中C=O的伸缩振动有关，",
+      "page_number": null,
+      "paragraph_id": "p-141",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-142",
+      "block_type": "paragraph",
+      "text": "图 310原污泥及三个反应器中的EPS红外光谱图",
+      "page_number": null,
+      "paragraph_id": "p-142",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-143",
+      "block_type": "paragraph",
+      "text": "此外，本研究利用曲线拟合和二阶导数分析了酰胺I（1700～1600 cm-1）区域的光谱变化，以此对EPS中蛋白质二级结构进行解析（图 311和表 36）。在拟合过程中，共解析了6种蛋白质二级结构，包括：聚合链（Aggregated strands，1625～1610 cm-1）、β折叠（β-sheet，1640～1630 cm-1）、无规卷曲（random coil，1650～1640 cm-1）、α螺旋（α-helix，1660～1650 cm-1）、β转角（β-turn，1680～1660 cm-1）和反平行β折叠（Antiparallel β-sheet，1695～1680 cm-1）。用α螺旋/（β折叠+无规卷曲）的比值表示蛋白质结构的紧密度，数值越高，表明蛋白质结构越紧密，污泥沉降性能越好[100]。从结果可以看出，α螺旋/（β折叠+无规卷曲）的比值R3>R1>R2>Raw。有研究表明β转角、α螺旋、β折叠和聚合链被认为有助于细菌的吸附、聚集和生物膜的形成，而其他二级结构，如反平行β折叠和无规卷曲，被认为具有负面影响[101]。",
+      "page_number": null,
+      "paragraph_id": "p-143",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-144",
+      "block_type": "paragraph",
+      "text": "图 311原污泥及三个反应器中的蛋白质二级结构变化：（a）Raw；（b）R1；（c）R2；（d）R3",
+      "page_number": null,
+      "paragraph_id": "p-144",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-145",
+      "block_type": "paragraph",
+      "text": "表 36不同样本中EPS蛋白质二级结构的相对含量",
+      "page_number": null,
+      "paragraph_id": "p-145",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-7",
+      "block_type": "table",
+      "text": "样本 | 二级结构比例（%） | α螺旋/（β折叠+无规卷曲）\n | 聚合链（1625～1610 cm-1） | β折叠（1640～1630 cm-1） | 无规卷曲（1650～1640 cm-1） | α螺旋（1660～1650 cm-1） | β转角（1680～1660 cm-1） | 反平行β折叠（1695～1680 cm-1） | \nRaw | 22.83 | 34.81 | 12.48 | 10.02 | 15.71 | 4.15 | 0.21\nR1 | 16.54 | 14.43 | 30.48 | 13.24 | 20.30 | 5.01 | 0.29\nR2 | 17.96 | 14.92 | 31.71 | 13.09 | 18.17 | 4.15 | 0.28\nR3 | 14.77 | 13.79 | 29.91 | 13.61 | 22.23 | 5.69 | 0.31",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-7",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-146",
+      "block_type": "paragraph",
+      "text": "（3）平行因子分析（PARAFAC）",
+      "page_number": null,
+      "paragraph_id": "p-146",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-147",
+      "block_type": "paragraph",
+      "text": "利用3D-EEM结合PARAFAC进一步表征EPS的荧光组分变化，模型组分解析之间的激发/发射波长的误差平方和（Sum of squared error，SSE）相差越小证明模型越准确，可满足用于PARAFAC分析需求。荷载曲线能够反映每个组分在不同激发和发射波长下的荧光特征。通过观察这些荷载图，可以了解每个荧光组分的特征荧光峰，并判断其来源和种类。拆半分析（Split half analysis）是验证平行因子分析模型稳定性的强大算法技术，当分半后不同组分运行得出的组分结果越相似，说明建立的模型越稳定。",
+      "page_number": null,
+      "paragraph_id": "p-147",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-148",
+      "block_type": "paragraph",
+      "text": "为了探究三个反应器中不同多糖的组分，分别对每个反应器中的LB-EPS和TB-EPS进行了分析，每个反应器中LB-EPS和TB-EPS的平行因子分析及三维荧光光谱图如图 312、图 313、图 314、图 315、图 316和图 317所示：",
+      "page_number": null,
+      "paragraph_id": "p-148",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-149",
+      "block_type": "paragraph",
+      "text": ".",
+      "page_number": null,
+      "paragraph_id": "p-149",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-150",
+      "block_type": "paragraph",
+      "text": "图 312 R1-LB的相关分析：（a）SSE；（b）组分C1的荷载图；（c）组分C2的荷载图；（d）组分C3的荷载图；（e）拆半分析；（f）C1的三维荧光光谱；（g）C2的三维荧光光谱；（h）C3的三维荧光光谱",
+      "page_number": null,
+      "paragraph_id": "p-150",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-151",
+      "block_type": "paragraph",
+      "text": "图 313 R1-TB的相关分析：（a）SSE；（b）组分C1的荷载图；（c）组分C2的荷载图；（d）拆半分析；（e）C1的三维荧光光谱；（f）C2的三维荧光光谱",
+      "page_number": null,
+      "paragraph_id": "p-151",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-152",
+      "block_type": "paragraph",
+      "text": "图 314 R2-LB的相关分析：（a）SSE；（b）组分C1的荷载图；（c）组分C2的荷载图；（d）组分C3的荷载图；（e）组分C4的荷载图；（f）拆半分析；（g）C1的三维荧光光谱；（h）C2的三维荧光光谱；（i）C3的三维荧光光谱；（j）C4的三维荧光光谱",
+      "page_number": null,
+      "paragraph_id": "p-152",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-153",
+      "block_type": "paragraph",
+      "text": "图 315 R2-TB的相关分析：（a）SSE；（b）组分C1的荷载图；（c）组分C2的荷载图；（d）拆半分析；（e）C1的三维荧光光谱；（f）C2的三维荧光光谱",
+      "page_number": null,
+      "paragraph_id": "p-153",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-154",
+      "block_type": "paragraph",
+      "text": "图 316 R3-LB的相关分析：（a）SSE；（b）组分C1的荷载图；（c）组分C2的荷载图；（d）组分C3的荷载图；（e）拆半分析；（f）C1的三维荧光光谱；（g）C2的三维荧光光谱；（h）C3的三维荧光光谱",
+      "page_number": null,
+      "paragraph_id": "p-154",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-155",
+      "block_type": "paragraph",
+      "text": "图 317 R3-TB的相关分析：（a）SSE；（b）组分C1的荷载图；（c）组分C2的荷载图；（d）拆半分析；（e）C1的三维荧光光谱；（f）C2的三维荧光光谱",
+      "page_number": null,
+      "paragraph_id": "p-155",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-156",
+      "block_type": "paragraph",
+      "text": "将6组不同的LB-EPS和TB-EPS的数据分别上传至OpenFluor数据库（www.openfluor.org）进行比对，比对结果如下：R1-LB-EPS主要由3个组分构成，组分C1位于Ex/Em = 220(280)/345 nm，是色氨酸类物质；组分C2位于Ex/Em = 220(275)/305 nm，是酪氨酸类物质；组分C3位于Ex/Em = 270/440 nm，是腐殖酸类物质。R1-TB-EPS主要由2个组分构成，组分C1位于Ex/Em = 220(275)/350 nm，是色氨酸类物质；组分C2位于Ex/Em = 225(275)/305 nm，是酪氨酸类物质。R2-LB-EPS主要由4个组分构成，组分C1位于Ex/Em = 220(275)/350 nm，是色氨酸类物质；组分C2位于Ex/Em = 220(275)/310 nm，是酪氨酸类物质；组分C3位于Ex/Em = 225(280)/330 nm，是色氨酸类物质；组分C4位于Ex/Em = 270/435 nm，是腐殖酸类物质。R2-TB-EPS主要由2个组分构成，组分C1位于Ex/Em = 220(275)/350 nm，是色氨酸类物质；组分C2位于Ex/Em = 225(275)/305 nm，是酪氨酸类物质。R3-LB-EPS主要由3个组分构成，组分C1位于Ex/Em = 220(275)/345 nm，是色氨酸类物质；组分C2位于Ex/Em = 225(275)/305 nm，是酪氨酸类物质。组分C3位于Ex/Em = 270/435 nm，是腐殖酸类物质。R3-TB-EPS主要由2个组分构成，组分C1位于Ex/Em = 220(275)/345 nm，是色氨酸类物质；组分C2位于Ex/Em = 225(275)/305 nm，是酪氨酸类物质。综上所述，腐殖酸类物质只在LB-EPS中观察到，虽然部分研究指出腐殖酸类物质有助于污泥颗粒化过程[102]，但也有研究指出颗粒污泥EPS中的腐殖酸类物质显著低于絮状污泥，说明其不利于污泥颗粒化的进行[103]。TB-EPS主要由色氨酸和酪氨酸构成，不同的接种方式不会显著改变MBGS的TB-EPS主要成分。",
+      "page_number": null,
+      "paragraph_id": "p-156",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-157",
+      "block_type": "paragraph",
+      "text": "微生物群落差异",
+      "page_number": null,
+      "paragraph_id": "p-157",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-158",
+      "block_type": "paragraph",
+      "text": "根据测序结果，构建了系统发育树如图 318所示，其中热图由内到外分别代表R1、R2、R3三个反应器中对应物种属水平的丰度。图 319（a）展示了门水平前三十位物种，可以看出，三个反应器的优势菌门均为变形菌门（Proteobacteria，>75%）、拟杆菌门（Bacteroidetes）、疣微菌门（Verrucomicrobia）和硝化螺旋菌门（Nitrospirae）。变形菌门（Proteobacteria）广泛存在于颗粒污泥中[104]，拟杆菌门（Bacteroidetes）对NH4+-N的去除有很大的影响[105]。",
+      "page_number": null,
+      "paragraph_id": "p-158",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-159",
+      "block_type": "paragraph",
+      "text": "为了进一步确定不同接种模式下颗粒化进程和污染物去除效率差异的的功能菌属，对前30个属的相对丰度变化进行了分析，如图 319（b）所示，优势菌属为硫发菌属（Thiothrix）、索氏菌属（Thauera）和动胶菌属（Zoogloea）。硫发菌属（Thiothrix）属于化能自养菌，其丝状体通常固着于固体基质上，能将H2S氧化为元素硫。索氏菌属（Thauera）广泛存在于各种类型的废水生物处理系统之中，能够广泛降解污染物。具有可降解芳香烃类有机物、反硝化以及降解COD等方面的能力，在生物处理装置中很为常见，并起到重要的作用。动胶菌属（Zoogloea）被认为是菌胶团形成的代表微生物，而其分泌的EPS是菌胶团形成的基础。",
+      "page_number": null,
+      "paragraph_id": "p-159",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-160",
+      "block_type": "paragraph",
+      "text": "图 318系统发育树",
+      "page_number": null,
+      "paragraph_id": "p-160",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-161",
+      "block_type": "paragraph",
+      "text": "图 319（a）门水平前三十位物种丰度；（b）属水平前三十位物种丰度",
+      "page_number": null,
+      "paragraph_id": "p-161",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-162",
+      "block_type": "paragraph",
+      "text": "基于KEGG数据库和已发表的文献资料信息，构建了氮循环（32个KOs）标记基因集。通过从数据库功能注释结果中提取上述信息，基于TPM丰度计算方法，进行功能组成分析，差异分析和相关性分析。图 320（a）是KEGG氮循环途径示意图；图 320（b）展示了脱氮功能基因丰度。其中，亚硝酸盐氨化、硝酸盐还原、一氧化氮还原及亚硝酸盐还原的相关基因丰度为主要占比，这也解释了体系中没有NO2--N累积的原因。",
+      "page_number": null,
+      "paragraph_id": "p-162",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-163",
+      "block_type": "paragraph",
+      "text": "图 321展示了不同实验组在脱氮过程中属水平物种对基因的贡献。在step1（固氮作用）中，R1和R2反应器中草螺菌属（Herbaspirillum）起主要作用，而R3反应器中则是脱氯单胞菌属（Dechloromonas）起主要作用。在step2（氨氧化）中，三个反应器均是亚硝化单胞菌属（Nitrosomonas）起主要作用。在step4（硝酸盐还原）中，三个反应器均是硫发菌属（Thiothrix）起主要作用。在step5（亚硝酸盐还原）中，三个反应器均是硝化螺菌属（Nitrospira）起主要作用。在step6（一氧化氮还原）中，三个反应器均是动胶菌属（Zoogloea）起主要作用。在step7（一氧化二氮还原）中，三个反应器均是索氏菌属（Thauera）起主要作用。在step8（亚硝酸盐氨化）中，R1和R3反应器中主要是动胶菌属（Zoogloea）起主要作用，而R2反应器中则是硫发菌属（Thiothrix）起主要作用。",
+      "page_number": null,
+      "paragraph_id": "p-163",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-164",
+      "block_type": "paragraph",
+      "text": "图 320（a）氮循环途径示意图；（b）功能基因丰度柱形图",
+      "page_number": null,
+      "paragraph_id": "p-164",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-165",
+      "block_type": "paragraph",
+      "text": "图 321属水平物种对基因的贡献",
+      "page_number": null,
+      "paragraph_id": "p-165",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-166",
+      "block_type": "paragraph",
+      "text": "直接氨氧化菌强化藻-菌颗粒污泥体系的脱氮效能研究",
+      "page_number": null,
+      "paragraph_id": "p-166",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-167",
+      "block_type": "paragraph",
+      "text": "从上一节的结果可以看出，MBGS对COD、NH4+-N和PO43--P均有良好的去除率，但MBGS对TIN的去除性能与反硝化性能一致，NO2--N在整个运行过程中没有积累，并且在出水氮化合物中NO3--N占主导地位。出水NO3--N浓度基本等于TIN浓度。近期，有研究提出了一种新的脱氮途径——\"Dirammox\"，这种Dirammox可能通过羟胺进行，并最终产生N2[47]。如果能引入该途径，便有可能使得MBGS脱氮体系中的NO3--N累积量减少，而引入新的微生物在强化对NO3--N去除的同时会对其他污染物去除造成怎样的影响依旧需要进行实验探究。",
+      "page_number": null,
+      "paragraph_id": "p-167",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-168",
+      "block_type": "paragraph",
+      "text": "本节中引入了两株直接氨氧化细菌：不动杆菌ACI-9和产碱杆菌HO-1（MN636701），培养条件同4.1.1，由于第一阶段发现进水桶中会有大量细菌繁殖，本阶段在进水桶中放置了潜水紫外灯用于灭菌。R1反应器为上节中培养的MBGS，R2反应器与R3反应器分别在第一个月每3天投加一次ACI-9/HO-1，通过调整离心水洗三次后的OD值一致保证每次投加量相同。",
+      "page_number": null,
+      "paragraph_id": "p-168",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-169",
+      "block_type": "paragraph",
+      "text": "藻-菌颗粒污泥的特性研究",
+      "page_number": null,
+      "paragraph_id": "p-169",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-170",
+      "block_type": "paragraph",
+      "text": "本阶段反应器运行时间为2024年7月22日至2024年9月30日，共计72天。图 322a为污泥颗粒化过程中MLSS和MLVSS浓度以及MLVSS/MLSS比值的变化。R1反应器中MLSS和MLVSS平均值分别为13.92和11.08 g/L；R2反应器中MLSS和MLVSS平均值分别为15.22和12.25 g/L；R3反应器中MLSS和MLVSS平均值分别为13.86和10.18 g/L。R2的MLSS和MLVSS平均值是三个反应器中最高的。",
+      "page_number": null,
+      "paragraph_id": "p-170",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-171",
+      "block_type": "paragraph",
+      "text": "污泥沉降性如图 322b所示，R1反应器中SVI5平均值为26.6 mL/g；R2反应器中SVI5平均值为26.9 mL/g；R3反应器中SVI5平均值为29.5 mL/g。三个反应器的SVI5/SVI30的比值均接近1，说明颗粒沉降性能没有受到影响。",
+      "page_number": null,
+      "paragraph_id": "p-171",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-172",
+      "block_type": "paragraph",
+      "text": "不同反应器中的MBGS在显微镜下的形貌和SEM图像如图 323所示，可以看出藻-菌共存状态未受到明显改变。",
+      "page_number": null,
+      "paragraph_id": "p-172",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-173",
+      "block_type": "paragraph",
+      "text": "图 322污泥特性变化：（a）MLSS与MLVSS；（b）SVI5与SVI30/SVI5",
+      "page_number": null,
+      "paragraph_id": "p-173",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-174",
+      "block_type": "paragraph",
+      "text": "图 323 MBGS形貌：（a、d）R1；（b、e）R2；（c、f）R3",
+      "page_number": null,
+      "paragraph_id": "p-174",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-175",
+      "block_type": "paragraph",
+      "text": "使用FITC（λEx=494 nm，λEm=518 nm；绿色）及ConA（λEx=555 nm，λEm=580 nm；橙色）染料将颗粒染色后进行激光共聚焦显微镜（CLSM）观测。颗粒污泥样品先用磷酸盐缓冲盐水（PBS，pH 7.2）冲洗3次并使用4%多聚甲醛固定（2~24 h即可）。测试时，离心并用PBS清洗后加入FITC溶液50 µL，再加入ConA溶液50 µL，以铝箔包裹避光，在室温下反应20 min后用PBS缓冲液清洗染色样品两次，以去除多余的染料，然后上机测样。Chl-a自发荧光的检测带宽设置在 630-750 nm之间（红色）。染色结果如图 324所示，可以看出在颗粒中蛋白质与多糖均匀分布，藻类不仅仅是包裹在颗粒外围作为骨架，而是均匀分布在整个颗粒之中。",
+      "page_number": null,
+      "paragraph_id": "p-175",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-176",
+      "block_type": "paragraph",
+      "text": "图 324 MBGS的激光共聚焦显微镜图像：（a-e）R1反应器中颗粒的蛋白质、多糖、叶绿素自发荧光、叠加照片及3D重构图；（f-j）R2反应器中颗粒的蛋白质、多糖、叶绿素自发荧光、叠加 照片及3D重构图；（k-o）R3反应器中颗粒的蛋白质、多糖、叶绿素自发荧光、叠加照片及3D重构图",
+      "page_number": null,
+      "paragraph_id": "p-176",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-177",
+      "block_type": "paragraph",
+      "text": "反应器性能",
+      "page_number": null,
+      "paragraph_id": "p-177",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-178",
+      "block_type": "paragraph",
+      "text": "图 325(a-c)为各反应器COD、NH4+-N、PO43--P的去除效率变化趋势。由于本次实验进水桶中放置了潜水紫外灯，进水的COD、NH4+-N和PO43--P相较上节实验均波动较小，进水COD、NH4+-N和PO43--P平均浓度分别为446.4 mg/L、23.9 mg/L和6.38 mg/L。三个反应器对于COD的去除率均大于95%，对NH4+-N的去除率均大于99%，对PO43--P的去除率均大于95%。结果表明，投加不同的直接氨氧化细菌不会影响MBGS对COD、NH4+-N和PO43--P的去除。",
+      "page_number": null,
+      "paragraph_id": "p-178",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-179",
+      "block_type": "paragraph",
+      "text": "图 325水质变化：（a）COD；（b）NH4+-N；（c）PO43--P",
+      "page_number": null,
+      "paragraph_id": "p-179",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-180",
+      "block_type": "paragraph",
+      "text": "脱氮功能基因相对表达量",
+      "page_number": null,
+      "paragraph_id": "p-180",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-181",
+      "block_type": "paragraph",
+      "text": "在三个反应器运行的第0，40，72天分别取曝气阶段结束前的污泥样品进行后续的DNA提取、qPCR实验及高通量测序，样本名标记为R1-时间、R2-时间和R3-时间。DNA提取按照FastDNA Spin Kit for Soil试剂盒（MP Biomedicals，美国）的操作手册进行，所提取的DNA使用Invitrogen Qubit 4.0仪器（Thermo Fisher，美国）进行浓度测定和质控。",
+      "page_number": null,
+      "paragraph_id": "p-181",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-182",
+      "block_type": "paragraph",
+      "text": "采用qPCR法在实时荧光定量分析系统（QuantStudio 3，Thermo Fisher，美国）对脱氮功能基因进行相对定量，所选基因涉及不同脱氮途径涉如图 326所示，所用引物如表 37所示。qPCR反应体系10 μL，包括1×SYBR Abstart PCR Mix（生工，中国），每个引物浓度200 nM，DNA模板浓度2 ng/μL，其余体积用无菌无酶水补齐。qPCR程序为95℃预变性5 min，95℃变性10 s，特定退火温度下退火30 s，72℃延伸30 s共进行40个循环，扩增后进行测定溶解曲线仪验证引物特异性，所有样本进行三个平行，基因的相对拷贝数使用2-ΔΔCt法计算。",
+      "page_number": null,
+      "paragraph_id": "p-182",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-183",
+      "block_type": "paragraph",
+      "text": "图 326不同脱氮途径涉及到的相关功能基因",
+      "page_number": null,
+      "paragraph_id": "p-183",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-184",
+      "block_type": "paragraph",
+      "text": "表 37 qPCR所用的引物",
+      "page_number": null,
+      "paragraph_id": "p-184",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-8",
+      "block_type": "table",
+      "text": "基因 | 引物序列（5’-3’） | 退火温度\namoB | F：TGGTAYGAYACNGAATGGGR：CCCGTGATRTCCATCCA | 50\nhao | F：TAGGCATCGTTACACTGAR：CGTAACTACTTCACCGATTT | 50\nnarG | F：ACICAYGGIGTIAACTGYACR：TCGSMRTACCAGTCRTARAA | 50\nnrfA | F：CARTGYCAYGTBGARTAR：TWNGGCATRTGRCARTC | 50\nnasA | F：CARCCNAAYGCNATGGGR：ATNGTRTGCCAYTGRTC | 50\nAOAamoA | F：ATGGTCTGGCTIAGACGR：GCCATCCATCTGTATGTCCA | 50\nnasC | F：CGGCGAAATCAAACACGAR：TAATCCGCGATCCCTCCT | 50\nnarH | F：ATGAAAATTCGCTCACAAATCGGCR：TCATTCCTCCCACAACTGCAC | 50\nCOMamoA | F：TGCGGIGACTGGGAYTTCR：AGATCATAGTGCTRTGICC | 55\nnirD | F：GGATCCAGCCAGTGGAAAGACATCTGCAAR：CTCGAGTTAACCGCGCAGCTGTACCACGCC | 55\nnirK | F：ATCATGGTSCTGCCGCGR：TTGGTGTTRGACTAGCTCCG | 55\nnifH | F：AAAGGYGGWATCGGYAARTCCACCACR：TGSGCYTTGTCYTCRCGGATBGGCAT | 55\nnxrB | F：TACATGTGGTGGAACAR：CGGTTCTGGTCRATCA | 55",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-8",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-9",
+      "block_type": "table",
+      "text": "基因 | 引物序列（5’-3’） | 退火温度\nnxrA | F：CAGACCGACGTGTGCGAAAGR：TCCACAAGGAACGGAAGGTC | 55\nhzs | F：ARGGHTGGGGHAGYTGGAAGR：GTYCCHACRTCATGVGTCTG | 55\nnorC | F：GTTCTTGGGGTGGAAGTGGTR：CAGGCGTCCCTTTGATGAGT | 55\nnirS | F：AACGYSAAGGARACSGGR：GASTTCGGRTGSGTCTTSAYGAA | 55\nAOBhao | F：TGCCAYACCAACCAGAACAAR：ATCTTGGTGTTYTCGTCCATG | 55\nnarI | F：ATGTCTAAATGGGATCTGTTGATGTTCR：TTAGAACTTCTGCCGCACGATTTG | 60\nnapA | F：ATGAGCATGACCCGCCGTR：TCAGGCCACGCTGACCAAC | 60\nnapB | F：ATGCTGCCCTTGTTTCTGCTTGR：TCAAGGTTTCTTCGTGGCGTTG | 60\nnorB | F：ATGAGCATGGCTAATCCGCATCR：TCAAGACGGCACCACCGC | 60\nnasB | F：TAGAATTCCTTCATGGAGAAGR：CTTCTGCATGCGGCTTTCC | 60\nV4 | F：GTGCCAGCMGCCGCGGTAAR：GGACTACHVGGGTWTCTAAT | 60\nnosZ | F：CGCRACGGCAASAAGGTSMSSGTR：CAKRTGCAKSGCRTGGCAGAA | 60\ndnfABC | F：TGGGKBATYTAYAACCTSAARACCATR：CTKGARTGGCTCCAYTCRTCCA | 60",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-9",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-10",
+      "block_type": "table",
+      "text": "基因 | 引物序列（5’-3’） | 退火温度\nnifB | F：GCATCCGCCATGTCACTATCACCR：CGCACACCTTCGTCGAACACC | 65\nnifD | F：CACTGCCACCGCTCCATGAACR：CACGCAGGCTCTCATAAGTCTTGG | 65",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-10",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-185",
+      "block_type": "paragraph",
+      "text": "图 327脱氮功能基因相对表达量变化",
+      "page_number": null,
+      "paragraph_id": "p-185",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-186",
+      "block_type": "paragraph",
+      "text": "脱氮功能基因相对表达量以第0天为对照组，表明随着时间的变化，群落内相关基因的相对表达量对比初始时上调或者下调情况。",
+      "page_number": null,
+      "paragraph_id": "p-186",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-187",
+      "block_type": "paragraph",
+      "text": "从图 327可以看出，随着时间的变化，在R1反应器中nirD、nifB、nosZ、norB和hzs呈现明显上调趋势，这些基因大多涉及到厌氧氨氧化途径中由NO2--N转化到N2H4的过程，以及传统硝化反硝化途径中由NO转化为N2固定为NH4+-N的过程。在R2反应器中hao、nasB、AOAamoA、norC、nirK、nirS、narI、dnfABC、nirD、nifB、nosZ和norB呈现明显上调趋势，这些基因大多涉及到传统硝化反硝化途径、直接氨氧化过程以及固氮过程，这说明ACI-9的加入刺激了这三种氮转化途径。值得注意的是nosZ的上调有助于减少体系温室气体的产生，让N2O更多的转化为N2。在R3反应器中amoB、AOBhao、hao、nasB、AOAamoA、norC、nirK、nirS、narI和dnfABC呈现上调趋势，这些基因大多涉及到传统硝化反硝化途径截止到生成N2O的过程以及直接氨氧化过程，这说明HO-1的加入刺激了这两种脱氮途径。值得注意的是，随着时间的推移，narG、nxrA、napB、nrfA、nxrB、napA、nifD和COMamoA呈现下调趋势，这些基因大多涉及到NO2--N向NO3--N或者NH4+-N转化的过程，这可能是由于在脱氮过程中没有NO2--N积累导致相关功能基因下调。",
+      "page_number": null,
+      "paragraph_id": "p-187",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-188",
+      "block_type": "paragraph",
+      "text": "阶段性研究结论",
+      "page_number": null,
+      "paragraph_id": "p-188",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-189",
+      "block_type": "paragraph",
+      "text": "3.1节比较了R1、R2和R3三种不同的接种方式对MBGS形成、稳定性和性能的影响，明确了胞外聚合物特征、微生物菌群组成的变化及相互之间的内在联系，构建得到长期稳定运行的相对较优的脱氮MBGS体系。主要结论如下：",
+      "page_number": null,
+      "paragraph_id": "p-189",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-190",
+      "block_type": "paragraph",
+      "text": "（1）在第60天时，三个反应器均成功形成了颗粒，R2反应器中形成的颗粒结构强度略低于R1和R3。",
+      "page_number": null,
+      "paragraph_id": "p-190",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-191",
+      "block_type": "paragraph",
+      "text": "（2）三个反应器对COD的平均去除率均大于95%，对PO43--P的去除率均大于80%，R1和R3对NH4+-N的去除率大于98%。R1的势力壁垒略高于R3，但R1对PO43-P的去除率要略优于R3，从污染物治理的角度出发，推荐使用原生藻种培养MBGS。",
+      "page_number": null,
+      "paragraph_id": "p-191",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-192",
+      "block_type": "paragraph",
+      "text": "（3）腐殖酸类物质只在LB-EPS中观察到，虽然部分研究指出腐殖酸类物质有助于污泥颗粒化过程，但也有研究指出颗粒污泥EPS中的腐殖酸类物质显著低于絮状污泥，说明其不利于污泥颗粒化的进行。TB-EPS主要由色氨酸和酪氨酸构成，不同的接种方式不会显著改变MBGS的TB-EPS主要成分。",
+      "page_number": null,
+      "paragraph_id": "p-192",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-193",
+      "block_type": "paragraph",
+      "text": "3.2节比较了未强化反应器R1与投加直接氨氧化菌株R2（ACI-9）和R3（HO-1）三种不同方式对MBGS稳定性和脱氮性能的影响，对微生物菌群组成的变化及脱氮功能基因相对表达量变化进行了探究，构建得到长期稳定运行的强化脱氮MBGS体系。主要结论如下：",
+      "page_number": null,
+      "paragraph_id": "p-193",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-194",
+      "block_type": "paragraph",
+      "text": "（1）直接氨氧化细菌的投加不会影响颗粒的沉降性能及藻-菌共存状态。",
+      "page_number": null,
+      "paragraph_id": "p-194",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-195",
+      "block_type": "paragraph",
+      "text": "（2）投加直接氨氧化细菌不会影响体系对COD、NH4+-N和PO43--P的去除，三个反应器对于COD的去除率均大于95%，对NH4+-N的去除率均大于99%，对PO43--P的去除率均大于95%。",
+      "page_number": null,
+      "paragraph_id": "p-195",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-196",
+      "block_type": "paragraph",
+      "text": "（3）投加直接氨氧化细菌会改变体系中不同脱氮功能基因的相对表达量，R2和R3中有关传统硝化反硝化及直接氨氧化途径的部分基因明显上调，而三个反应器中由于在脱氮过程中没有NO2--N积累，导致相关功能基因的相对表达量下调。",
+      "page_number": null,
+      "paragraph_id": "p-196",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-197",
+      "block_type": "paragraph",
+      "text": "下一步研究计划和课题进度安排",
+      "page_number": null,
+      "paragraph_id": "p-197",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-11",
+      "block_type": "table",
+      "text": "研究周期 | 进度安排 | 完成进度\n2022.9-2023.6 | 完成文献综述、实验方案设计 | 100%\n2023.7-2023.12 | 搭建实验装置，进行预实验 | 100%\n2024.1-2024.6 | 不同初始条件的MBGS体系构建 | 100%\n2024.7-2025.3 | 产碱杆菌强化MBGS体系脱氮研究 | 50%\n2025.4-2025.8 | 藻-菌相互作用研究 | 未开始\n2025.8-2025.12 | MBGS体系生物质鉴定及提取回收 | 未开始\n2026.1-2026.6 | 毕业论文撰写及答辩 | 未开始",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-11",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-198",
+      "block_type": "paragraph",
+      "text": "预计成果",
+      "page_number": null,
+      "paragraph_id": "p-198",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-199",
+      "block_type": "paragraph",
+      "text": "（1）城市污水脱氮一直是难题，现阶段广泛采用的AGS系统存在造粒时间长、稳定化运行条件相对苛刻和抗冲击能力差等问题，本课题拟构建一种稳定高效脱氮的直接氨氧化强化MBGS体系，对该体系脱氮能力进行探究，包括微生物菌群组成的变化、部分脱氮基因相对表达量变化以及氮转化路径探究，对其机制进行分析，揭示该体系的脱氮机理，藉此为实际应用提供参考。",
+      "page_number": null,
+      "paragraph_id": "p-199",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-200",
+      "block_type": "paragraph",
+      "text": "（2）生物质能源是当前研究的热点，微藻与废水处理相结合以提取ALE的研究现在尚未深入，本课题拟对MBGS产生的生物质进行鉴定及提取回收，提出关于MBGS生物质回收的新方法，使生产利益达到最大化，实现“减污”、“降碳”和“节能”的多重目标并弥补相关领域研究的不足。",
+      "page_number": null,
+      "paragraph_id": "p-200",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-201",
+      "block_type": "paragraph",
+      "text": "预计成果：对应的实验章节1.不同接种方式培养MBGS；2.直接氨氧化细菌强化MBGS生物脱氮研究；3.MBGS生物质回收利用研究，分别以SCI论文的形式呈现成果。",
+      "page_number": null,
+      "paragraph_id": "p-201",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-202",
+      "block_type": "paragraph",
+      "text": "学位论文框架",
+      "page_number": null,
+      "paragraph_id": "p-202",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-203",
+      "block_type": "paragraph",
+      "text": "摘要",
+      "page_number": null,
+      "paragraph_id": "p-203",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-204",
+      "block_type": "paragraph",
+      "text": "ABSTRACT",
+      "page_number": null,
+      "paragraph_id": "p-204",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-205",
+      "block_type": "paragraph",
+      "text": "目录",
+      "page_number": null,
+      "paragraph_id": "p-205",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-206",
+      "block_type": "paragraph",
+      "text": "1 绪论",
+      "page_number": null,
+      "paragraph_id": "p-206",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-207",
+      "block_type": "paragraph",
+      "text": "1.1 研究背景",
+      "page_number": null,
+      "paragraph_id": "p-207",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-208",
+      "block_type": "paragraph",
+      "text": "1.2 国内外本学科领域的发展现状",
+      "page_number": null,
+      "paragraph_id": "p-208",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-209",
+      "block_type": "paragraph",
+      "text": "1.3 存在的问题",
+      "page_number": null,
+      "paragraph_id": "p-209",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-210",
+      "block_type": "paragraph",
+      "text": "1.4 研究目标和研究内容",
+      "page_number": null,
+      "paragraph_id": "p-210",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-211",
+      "block_type": "paragraph",
+      "text": "2 藻-菌颗粒污泥体系的构建及其脱氮效能研究",
+      "page_number": null,
+      "paragraph_id": "p-211",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-212",
+      "block_type": "paragraph",
+      "text": "2.1 引言",
+      "page_number": null,
+      "paragraph_id": "p-212",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-213",
+      "block_type": "paragraph",
+      "text": "2.2 材料与方法",
+      "page_number": null,
+      "paragraph_id": "p-213",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-214",
+      "block_type": "paragraph",
+      "text": "2.3. 藻-菌颗粒污泥的特性研究",
+      "page_number": null,
+      "paragraph_id": "p-214",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-215",
+      "block_type": "paragraph",
+      "text": "2.4 污染物去除性能",
+      "page_number": null,
+      "paragraph_id": "p-215",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-216",
+      "block_type": "paragraph",
+      "text": "2.5 EPS组分和功能变化",
+      "page_number": null,
+      "paragraph_id": "p-216",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-217",
+      "block_type": "paragraph",
+      "text": "2.6 微生物群落变化",
+      "page_number": null,
+      "paragraph_id": "p-217",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-218",
+      "block_type": "paragraph",
+      "text": "2.7 本章小结",
+      "page_number": null,
+      "paragraph_id": "p-218",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-219",
+      "block_type": "paragraph",
+      "text": "3 直接氨氧化菌强化藻-菌颗粒污泥体系的脱氮效能研究",
+      "page_number": null,
+      "paragraph_id": "p-219",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-220",
+      "block_type": "paragraph",
+      "text": "3.1 引言",
+      "page_number": null,
+      "paragraph_id": "p-220",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-221",
+      "block_type": "paragraph",
+      "text": "3.2 材料与方法",
+      "page_number": null,
+      "paragraph_id": "p-221",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-222",
+      "block_type": "paragraph",
+      "text": "3.3 藻-菌颗粒强化脱氮体系效能研究",
+      "page_number": null,
+      "paragraph_id": "p-222",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-223",
+      "block_type": "paragraph",
+      "text": "3.4 EPS特性研究",
+      "page_number": null,
+      "paragraph_id": "p-223",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-224",
+      "block_type": "paragraph",
+      "text": "3.5 微生物群落变化",
+      "page_number": null,
+      "paragraph_id": "p-224",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-225",
+      "block_type": "paragraph",
+      "text": "3.6 脱氮功能基因相对表达量变化",
+      "page_number": null,
+      "paragraph_id": "p-225",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-226",
+      "block_type": "paragraph",
+      "text": "3.7 本章小结",
+      "page_number": null,
+      "paragraph_id": "p-226",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-227",
+      "block_type": "paragraph",
+      "text": "4 MBGS中藻菌相互作用研究",
+      "page_number": null,
+      "paragraph_id": "p-227",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-228",
+      "block_type": "paragraph",
+      "text": "4.1 引言",
+      "page_number": null,
+      "paragraph_id": "p-228",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-229",
+      "block_type": "paragraph",
+      "text": "4.2 材料与方法",
+      "page_number": null,
+      "paragraph_id": "p-229",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-230",
+      "block_type": "paragraph",
+      "text": "4.3 宏基因组数据分析",
+      "page_number": null,
+      "paragraph_id": "p-230",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-231",
+      "block_type": "paragraph",
+      "text": "4.4 代谢组数据分析",
+      "page_number": null,
+      "paragraph_id": "p-231",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-232",
+      "block_type": "paragraph",
+      "text": "4.5 藻-菌互作模型探究",
+      "page_number": null,
+      "paragraph_id": "p-232",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-233",
+      "block_type": "paragraph",
+      "text": "4.6 本章小结",
+      "page_number": null,
+      "paragraph_id": "p-233",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-234",
+      "block_type": "paragraph",
+      "text": "5 MBGS生物质提取及回收利用",
+      "page_number": null,
+      "paragraph_id": "p-234",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-235",
+      "block_type": "paragraph",
+      "text": "5.1 引言",
+      "page_number": null,
+      "paragraph_id": "p-235",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-236",
+      "block_type": "paragraph",
+      "text": "5.2 材料与方法",
+      "page_number": null,
+      "paragraph_id": "p-236",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-237",
+      "block_type": "paragraph",
+      "text": "5.3 脂肪酸甲酯的提取及分析",
+      "page_number": null,
+      "paragraph_id": "p-237",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-238",
+      "block_type": "paragraph",
+      "text": "5.4 藻酸盐类外聚合物的提取及分析",
+      "page_number": null,
+      "paragraph_id": "p-238",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-239",
+      "block_type": "paragraph",
+      "text": "5.5 聚羟基烷酸酯的提取及分析",
+      "page_number": null,
+      "paragraph_id": "p-239",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-240",
+      "block_type": "paragraph",
+      "text": "5.6 胞外多糖的提取及分析",
+      "page_number": null,
+      "paragraph_id": "p-240",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-241",
+      "block_type": "paragraph",
+      "text": "5.7本章小结",
+      "page_number": null,
+      "paragraph_id": "p-241",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-242",
+      "block_type": "paragraph",
+      "text": "6 总结与展望",
+      "page_number": null,
+      "paragraph_id": "p-242",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-243",
+      "block_type": "paragraph",
+      "text": "致谢",
+      "page_number": null,
+      "paragraph_id": "p-243",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-244",
+      "block_type": "paragraph",
+      "text": "参考文献",
+      "page_number": null,
+      "paragraph_id": "p-244",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-245",
+      "block_type": "paragraph",
+      "text": "附录",
+      "page_number": null,
+      "paragraph_id": "p-245",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-246",
+      "block_type": "paragraph",
+      "text": "参考文献",
+      "page_number": null,
+      "paragraph_id": "p-246",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-247",
+      "block_type": "paragraph",
+      "text": "[1]Y. Xia, X. Wen, B. Zhang, Y. Yang. Diversity and assembly patterns of activated sludge microbial communities: A review. Biotechnology Advances, 2018, 36(4): 1038-1047",
+      "page_number": null,
+      "paragraph_id": "p-247",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-248",
+      "block_type": "paragraph",
+      "text": "[2]张冰. 菌藻共生好氧颗粒污泥的形成机理及基于QS的强化机制: [博士]. 哈尔滨工业大学, 2020",
+      "page_number": null,
+      "paragraph_id": "p-248",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-249",
+      "block_type": "paragraph",
+      "text": "[3]C. Arutselvan, H. K. Seenivasan, F. Lewis Oscar, G. Ramya, N. Thuy Lan Chi, A. Pugazhendhi, et al. Review on wastewater treatment by microalgae in different cultivation systems and its importance in biodiesel production. Fuel, 2022, 324: 124623",
+      "page_number": null,
+      "paragraph_id": "p-249",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-250",
+      "block_type": "paragraph",
+      "text": "[4]李伟. 菌藻共生好氧颗粒污泥的形成机理及其资源化利用研究: [硕士]. 哈尔滨工业大学, 2020",
+      "page_number": null,
+      "paragraph_id": "p-250",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-251",
+      "block_type": "paragraph",
+      "text": "[5]A. L. Gonçalves, J. C. M. Pires, M. Simões. A review on the use of microalgal consortia for wastewater treatment. Algal Research, 2017, 24: 403-415",
+      "page_number": null,
+      "paragraph_id": "p-251",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-252",
+      "block_type": "paragraph",
+      "text": "[6]R. Ramanan, B. H. Kim, D. H. Cho, H. M. Oh, H. S. Kim. Algae–bacteria interactions: Evolution, ecology and emerging applications. Biotechnology Advances, 2016, 34(1): 14-29",
+      "page_number": null,
+      "paragraph_id": "p-252",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-253",
+      "block_type": "paragraph",
+      "text": "[7]C. Zhang, Q. Li, L. Fu, D. Zhou, J. C. Crittenden. Quorum sensing molecules in activated sludge could trigger microalgae lipid synthesis. Bioresource Technology, 2018, 263: 576-582",
+      "page_number": null,
+      "paragraph_id": "p-253",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-254",
+      "block_type": "paragraph",
+      "text": "[8]X. Lu, Y. Wang, C. Chen, Z. Feng, Y. Huo, D. Zhou. C12-HSL is an across-boundary signal molecule that could alleviate fungi Galactomyces’s filamentation: A new mechanism on activated sludge bulking. Environmental Research, 2022, 204: 111823",
+      "page_number": null,
+      "paragraph_id": "p-254",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-255",
+      "block_type": "paragraph",
+      "text": "[9]C. Zhang, S. H. Ho, A. Li, L. Fu, D. Zhou. Co-culture of Chlorella and Scenedesmus could enhance total lipid production under bacteria quorum sensing molecule stress. Journal of Water Process Engineering, 2021, 39: 101739",
+      "page_number": null,
+      "paragraph_id": "p-255",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-256",
+      "block_type": "paragraph",
+      "text": "[10]B. Zhang, W. Li, Y. Guo, Z. Zhang, W. Shi, F. Cui, et al. Microalgal-bacterial consortia: From interspecies interactions to biotechnological applications. Renewable and Sustainable Energy Reviews, 2020, 118: 109563",
+      "page_number": null,
+      "paragraph_id": "p-256",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-257",
+      "block_type": "paragraph",
+      "text": "[11]P. Praveen, K. C. Loh. Photosynthetic aeration in biological wastewater treatment using immobilized microalgae-bacteria symbiosis. Applied Microbiology and Biotechnology, 2015, 99(23): 10345-10354",
+      "page_number": null,
+      "paragraph_id": "p-257",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-258",
+      "block_type": "paragraph",
+      "text": "[12]C. Zhang, S. Li, S. H. Ho. Converting nitrogen and phosphorus wastewater into bioenergy using microalgae-bacteria consortia: A critical review. Bioresource Technology, 2021, 342: 126056",
+      "page_number": null,
+      "paragraph_id": "p-258",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-259",
+      "block_type": "paragraph",
+      "text": "[13]E. J. H. Van Dijk, M. Pronk, M. C. M. Van Loosdrecht. A settling model for full-scale aerobic granular sludge. Water Research, 2020, 186: 116135",
+      "page_number": null,
+      "paragraph_id": "p-259",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-260",
+      "block_type": "paragraph",
+      "text": "[14]B. Nguyen Quoc, S. Wei, M. Armenta, R. Bucher, P. Sukapanpotharam, D. A. Stahl, et al. Aerobic granular sludge: Impact of size distribution on nitrification capacity. Water Research, 2021, 188: 116445",
+      "page_number": null,
+      "paragraph_id": "p-260",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-261",
+      "block_type": "paragraph",
+      "text": "[15]V. R. A. Ferreira, C. L. Amorim, S. M. Cravo, M. E. Tiritan, P. M. L. Castro, C. M. M. Afonso. Fluoroquinolones biosorption onto microbial biomass: activated sludge and aerobic granular sludge. International Biodeterioration & Biodegradation, 2016, 110: 53-60",
+      "page_number": null,
+      "paragraph_id": "p-261",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-262",
+      "block_type": "paragraph",
+      "text": "[16]Y. Wang, J. Wang, Z. Liu, X. Huang, F. Fang, J. Guo, et al. Effect of EPS and its forms of aerobic granular sludge on sludge aggregation performance during granulation process based on XDLVO theory. Science of The Total Environment, 2021, 795: 148682",
+      "page_number": null,
+      "paragraph_id": "p-262",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-263",
+      "block_type": "paragraph",
+      "text": "[17]A. M. S. Paulo, C. L. Amorim, J. Costa, D. P. Mesquita, E. C. Ferreira, P. M. L. Castro. Long-term stability of a non-adapted aerobic granular sludge process treating fish canning wastewater associated to EPS producers in the core microbiome. Science of The Total Environment, 2021, 756: 144007",
+      "page_number": null,
+      "paragraph_id": "p-263",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-264",
+      "block_type": "paragraph",
+      "text": "[18]高景峰, 王时杰, 樊晓燕, 潘凯玲, 张丽芳, 张树军, 等. 同步脱氮除磷好氧颗粒污泥培养过程微生物群落变化. 环境科学, 2017, 38(11): 4696-4705",
+      "page_number": null,
+      "paragraph_id": "p-264",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-265",
+      "block_type": "paragraph",
+      "text": "[19]J. Xia, L. Ye, H. Ren, X. X. Zhang. Microbial community structure and function in aerobic granular sludge. Applied Microbiology and Biotechnology, 2018, 102(9): 3967-3979",
+      "page_number": null,
+      "paragraph_id": "p-265",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-266",
+      "block_type": "paragraph",
+      "text": "[20]J. H. Tay, Q. S. Liu, Y. Liu. Microscopic observation of aerobic granulation in sequential aerobic sludge blanket reactor. Journal of Applied Microbiology, 2001, 91(1): 168-175",
+      "page_number": null,
+      "paragraph_id": "p-266",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-267",
+      "block_type": "paragraph",
+      "text": "[21]N. A. Hamiruddin, N. A. Awang, S. N. Mohd Shahpudin, N. S. Zaidi, M. A. M. Said, B. Chaplot, et al. Effects of wastewater type on stability and operating conditions control strategy in relation to the formation of aerobic granular sludge – a review. Water Science and Technology, 2021, 84(9): 2113-2130",
+      "page_number": null,
+      "paragraph_id": "p-267",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-268",
+      "block_type": "paragraph",
+      "text": "[22]J. Ming, Q. Wang, B. A. Yoza, J. Liang, H. Guo, J. Li, et al. Bioreactor performance using biochar and its effect on aerobic granulation. Bioresource Technology, 2020, 300: 122620",
+      "page_number": null,
+      "paragraph_id": "p-268",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-269",
+      "block_type": "paragraph",
+      "text": "[23]Y. Liu, Z. Liu, F. Wang, Y. Chen, P. Kuschk, X. Wang. Regulation of aerobic granular sludge reformulation after granular sludge broken: Effect of poly aluminum chloride (PAC). Bioresource Technology, 2014, 158: 201-208",
+      "page_number": null,
+      "paragraph_id": "p-269",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-270",
+      "block_type": "paragraph",
+      "text": "[24]D. R. De Graaff, M. C. M. Van Loosdrecht, M. Pronk. Stable granulation of seawater-adapted aerobic granular sludge with filamentous Thiothrix bacteria. Water Research, 2020, 175: 115683",
+      "page_number": null,
+      "paragraph_id": "p-270",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-271",
+      "block_type": "paragraph",
+      "text": "[25]S. Deng, L. Wang, H. Su. Role and influence of extracellular polymeric substances on the preparation of aerobic granular sludge. Journal of Environmental Management, 2016, 173: 49-54",
+      "page_number": null,
+      "paragraph_id": "p-271",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-272",
+      "block_type": "paragraph",
+      "text": "[26]S. J. Sarma, J. H. Tay, A. Chu. Finding Knowledge Gaps in Aerobic Granulation Technology. Trends in Biotechnology, 2017, 35(1): 66-78",
+      "page_number": null,
+      "paragraph_id": "p-272",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-273",
+      "block_type": "paragraph",
+      "text": "[27]Z. Zhang, Z. Yu, J. Dong, Z. Wang, K. Ma, X. Xu, et al. Stability of aerobic granular sludge under condition of low influent C/N ratio: Correlation of sludge property and functional microorganism. Bioresource Technology, 2018, 270: 391-399",
+      "page_number": null,
+      "paragraph_id": "p-273",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-274",
+      "block_type": "paragraph",
+      "text": "[28]R. Lemaire, Z. Yuan, L. L. Blackall, G. R. Crocetti. Microbial distribution of Accumulibacter spp. and Competibacter spp. in aerobic granules from a lab‐scale biological nutrient removal system. Environmental Microbiology, 2008, 10(2): 354-363",
+      "page_number": null,
+      "paragraph_id": "p-274",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-275",
+      "block_type": "paragraph",
+      "text": "[29]M. Pronk, M. K. De Kreuk, B. De Bruin, P. Kamminga, R. Kleerebezem, M. C. M. Van Loosdrecht. Full scale performance of the aerobic granular sludge process for sewage treatment. Water Research, 2015, 84: 207-217",
+      "page_number": null,
+      "paragraph_id": "p-275",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-276",
+      "block_type": "paragraph",
+      "text": "[30]B. Zhang, P. N. L. Lens, W. Shi, R. Zhang, Z. Zhang, Y. Guo, et al. Enhancement of aerobic granulation and nutrient removal by an algal–bacterial consortium in a lab-scale photobioreactor. Chemical Engineering Journal, 2018, 334: 2373-2382",
+      "page_number": null,
+      "paragraph_id": "p-276",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-277",
+      "block_type": "paragraph",
+      "text": "[31]M. Sales, T. Marinho, I. C. Marinho, S. Gavazza, M. T. Kato, B. S. Magnus, et al. Start-up strategies to develop aerobic granular sludge and photogranules in sequential batch reactors. Science of The Total Environment, 2022, 828: 154402",
+      "page_number": null,
+      "paragraph_id": "p-277",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-278",
+      "block_type": "paragraph",
+      "text": "[32]J. Cao, F. Chen, Z. Fang, Y. Gu, H. Wang, J. Lu, et al. Effect of filamentous algae in a microalgal-bacterial granular sludge system treating saline wastewater: Assessing stability, lipid production and nutrients removal. Bioresource Technology, 2022, 354: 127182",
+      "page_number": null,
+      "paragraph_id": "p-278",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-279",
+      "block_type": "paragraph",
+      "text": "[33]L. Liu, H. Fan, Y. Liu, C. Liu, X. Huang. Development of algae-bacteria granular consortia in photo-sequencing batch reactor. Bioresource Technology, 2017, 232: 64-71",
+      "page_number": null,
+      "paragraph_id": "p-279",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-280",
+      "block_type": "paragraph",
+      "text": "[34]B. Zhang, J. Shi, W. Shi, Y. Guo, P. N. L. Lens, B. Zhang. Effect of different inocula on the granulation process, reactor performance and biodiesel production of algal-bacterial granular sludge (ABGS) under low aeration conditions. Chemosphere, 2023, 345: 140391",
+      "page_number": null,
+      "paragraph_id": "p-280",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-281",
+      "block_type": "paragraph",
+      "text": "[35]S. Rahimi, O. Modin, I. Mijakovic. Technologies for biological removal and recovery of nitrogen from wastewater. Biotechnology Advances, 2020, 43: 107570",
+      "page_number": null,
+      "paragraph_id": "p-281",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-282",
+      "block_type": "paragraph",
+      "text": "[36]E. Walters, A. Hille, M. He, C. Ochmann, H. Horn. Simultaneous nitrification/denitrification in a biofilm airlift suspension (BAS) reactor with biodegradable carrier material. Water Research, 2009, 43(18): 4461-4468",
+      "page_number": null,
+      "paragraph_id": "p-282",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-283",
+      "block_type": "paragraph",
+      "text": "[37]F. Jaramillo, M. Orchard, C. Muñoz, M. Zamorano, C. Antileo. Advanced strategies to improve nitrification process in sequencing batch reactors - A review. Journal of Environmental Management, 2018, 218: 154-164",
+      "page_number": null,
+      "paragraph_id": "p-283",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-284",
+      "block_type": "paragraph",
+      "text": "[38]B. Kartal, J. G. Kuenen, M. C. M. Van Loosdrecht. Sewage Treatment with Anammox. Science, 2010, 328(5979): 702-703",
+      "page_number": null,
+      "paragraph_id": "p-284",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-285",
+      "block_type": "paragraph",
+      "text": "[39]B. Kartal, N. M. De Almeida, W. J. Maalcke, H. J. M. Op Den Camp, M. S. M. Jetten, J. T. Keltjens. How to make a living from anaerobic ammonium oxidation. FEMS Microbiology Reviews, 2013, 37(3): 428-461",
+      "page_number": null,
+      "paragraph_id": "p-285",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-286",
+      "block_type": "paragraph",
+      "text": "[40]M. A. H. J. Van Kessel, D. R. Speth, M. Albertsen, P. H. Nielsen, H. J. M. Op Den Camp, B. Kartal, et al. Complete nitrification by a single microorganism. Nature, 2015, 528(7583): 555-559",
+      "page_number": null,
+      "paragraph_id": "p-286",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-287",
+      "block_type": "paragraph",
+      "text": "[41]J. D. Caranto, K. M. Lancaster. Nitric oxide is an obligate bacterial nitrification intermediate produced by hydroxylamine oxidoreductase. Proceedings of the National Academy of Sciences, 2017, 114(31): 8217-8222",
+      "page_number": null,
+      "paragraph_id": "p-287",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-288",
+      "block_type": "paragraph",
+      "text": "[42]H. Daims, S. Lücker, M. Wagner. A New Perspective on Microbes Formerly Known as Nitrite-Oxidizing Bacteria. Trends in Microbiology, 2016, 24(9): 699-712",
+      "page_number": null,
+      "paragraph_id": "p-288",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-289",
+      "block_type": "paragraph",
+      "text": "[43]B. Kartal, W. J. Maalcke, N. M. De Almeida, I. Cirpus, J. Gloerich, W. Geerts, et al. Molecular mechanism of anaerobic ammonium oxidation. Nature, 2011, 479(7371): 127-130",
+      "page_number": null,
+      "paragraph_id": "p-289",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-290",
+      "block_type": "paragraph",
+      "text": "[44]李佳, 汪涵, 王亚宜. 城市污水生物脱氮提质增效技术现状与展望. 能源环境保护, 2023, 37(2): 48-61",
+      "page_number": null,
+      "paragraph_id": "p-290",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-291",
+      "block_type": "paragraph",
+      "text": "[45]L. A. Robertson, J. G. Kuenen, R. Kleijntjens. Aerobic denitrification and heterotrophic nitrification byThiosphaera pantotropha. Antonie van Leeuwenhoek, 1985, 51(4): 445-445",
+      "page_number": null,
+      "paragraph_id": "p-291",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-292",
+      "block_type": "paragraph",
+      "text": "[46]M. M. M. Kuypers, H. K. Marchant, B. Kartal. The microbial nitrogen-cycling network. Nature Reviews Microbiology, 2018, 16(5): 263-276",
+      "page_number": null,
+      "paragraph_id": "p-292",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-293",
+      "block_type": "paragraph",
+      "text": "[47]M. Wu, T. Hou, Y. Liu, L. Miao, G. Ai, L. Ma, et al. Novel Alcaligenes ammonioxydans sp. nov. from wastewater treatment sludge oxidizes ammonia to  N 2  with a previously unknown pathway. Environmental Microbiology, 2021, 23(11): 6965-6980",
+      "page_number": null,
+      "paragraph_id": "p-293",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-294",
+      "block_type": "paragraph",
+      "text": "[48]R. Muñoz, B. Guieysse. Algal–bacterial processes for the treatment of hazardous contaminants: A review. Water Research, 2006, 40(15): 2799-2815",
+      "page_number": null,
+      "paragraph_id": "p-294",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-295",
+      "block_type": "paragraph",
+      "text": "[49]R. Muñoz, M. Jacinto, B. Guieysse, B. Mattiasson. Combined carbon and nitrogen removal from acetonitrile using algal–bacterial bioreactors. Applied Microbiology and Biotechnology, 2005, 67(5): 699-707",
+      "page_number": null,
+      "paragraph_id": "p-295",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-296",
+      "block_type": "paragraph",
+      "text": "[50]Y. Su, A. Mennerich, B. Urban. Municipal wastewater treatment and biomass accumulation with a wastewater-born and settleable algal-bacterial culture. Water Research, 2011, 45(11): 3351-3358",
+      "page_number": null,
+      "paragraph_id": "p-296",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-297",
+      "block_type": "paragraph",
+      "text": "[51]L. E. de-Bashan, Y. Bashan. Immobilized microalgae for removing pollutants: Review of practical aspects. Bioresource Technology, 2010, 101(6): 1611-1627",
+      "page_number": null,
+      "paragraph_id": "p-297",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-298",
+      "block_type": "paragraph",
+      "text": "[52]J. Ma, X. Ni, C. Cai, Y. Da, K. Hu, R. Guo, et al. Insights into greenhouse gas emissions from a wastewater treatment plant in vulnerable water areas of China. Science of The Total Environment, 2023, 902: 166017",
+      "page_number": null,
+      "paragraph_id": "p-298",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-299",
+      "block_type": "paragraph",
+      "text": "[53]X. Chen, Y. J. Lee, T. Yuan, Z. Lei, Y. Adachi, Z. Zhang, et al. A review on recovery of extracellular biopolymers from flocculent and granular activated sludges: Cognition, key influencing factors, applications, and challenges. Bioresource Technology, 2022, 363: 127854",
+      "page_number": null,
+      "paragraph_id": "p-299",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-300",
+      "block_type": "paragraph",
+      "text": "[54]Z. Zhao, S. Liu, X. Yang, Z. Lei, K. Shimizu, Z. Zhang, et al. Stability and performance of algal-bacterial granular sludge in shaking photo-sequencing batch reactors with special focus on phosphorus accumulation. Bioresource Technology, 2019, 280: 497-501",
+      "page_number": null,
+      "paragraph_id": "p-300",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-301",
+      "block_type": "paragraph",
+      "text": "[55]H. Chang, H. Feng, R. Wang, X. Zhang, J. Wang, C. Li, et al. Enhanced energy recovery from landfill leachate by linking light and dark bio-reactions: Underlying synergistic effects of dual microalgal interaction. Water Research, 2023, 231: 119578",
+      "page_number": null,
+      "paragraph_id": "p-301",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-302",
+      "block_type": "paragraph",
+      "text": "[56]X. Song, F. Kong, B. F. Liu, Q. Song, N. Q. Ren, H. Y. Ren. Thallium-mediated NO signaling induced lipid accumulation in microalgae and its role in heavy metal bioremediation. Water Research, 2023, 239: 120027",
+      "page_number": null,
+      "paragraph_id": "p-302",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-303",
+      "block_type": "paragraph",
+      "text": "[57]B. Ji. Towards environment-sustainable wastewater treatment and reclamation by the non-aerated microalgal-bacterial granular sludge process: Recent advances and future directions. Science of The Total Environment, 2022, 806: 150707",
+      "page_number": null,
+      "paragraph_id": "p-303",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-304",
+      "block_type": "paragraph",
+      "text": "[58]B. Ji, C. Liu. CO2 improves the microalgal-bacterial granular sludge towards carbon-negative wastewater treatment. Water Research, 2022, 208: 117865",
+      "page_number": null,
+      "paragraph_id": "p-304",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-305",
+      "block_type": "paragraph",
+      "text": "[59]X. Liu, B. Ji, A. Li. Enhancing biolipid production and self-flocculation of Chlorella vulgaris by extracellular polymeric substances from granular sludge with CO2 addition: Microscopic mechanism of microalgae-bacteria symbiosis. Water Research, 2023, 236: 119960",
+      "page_number": null,
+      "paragraph_id": "p-305",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-306",
+      "block_type": "paragraph",
+      "text": "[60]Y. Shen, J. Gao, L. Li. Municipal wastewater treatment via co-immobilized microalgal-bacterial symbiosis: Microorganism growth and nutrients removal. Bioresource Technology, 2017, 243: 905-913",
+      "page_number": null,
+      "paragraph_id": "p-306",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-307",
+      "block_type": "paragraph",
+      "text": "[61]Y. Wang, S. H. Ho, C. L. Cheng, W. Q. Guo, D. Nagarajan, N. Q. Ren, et al. Perspectives on the feasibility of using microalgae for industrial wastewater treatment. Bioresource Technology, 2016, 222: 485-497",
+      "page_number": null,
+      "paragraph_id": "p-307",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-308",
+      "block_type": "paragraph",
+      "text": "[62]D. Hernández, B. Riaño, M. Coca, M. C. García-González. Treatment of agro-industrial wastewater using microalgae–bacteria consortium combined with anaerobic digestion of the produced biomass. Bioresource Technology, 2013, 135: 598-603",
+      "page_number": null,
+      "paragraph_id": "p-308",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-309",
+      "block_type": "paragraph",
+      "text": "[63]N. Chandel, V. Ahuja, R. Gurav, V. Kumar, V. K. Tyagi, A. Pugazhendhi, et al. Progress in microalgal mediated bioremediation systems for the removal of antibiotics and pharmaceuticals from wastewater. Science of The Total Environment, 2022, 825: 153895",
+      "page_number": null,
+      "paragraph_id": "p-309",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-310",
+      "block_type": "paragraph",
+      "text": "[64]P. Babatsouli, S. Fodelianakis, N. Paranychianakis, D. Venieri, M. Dialynas, N. Kalogerakis. Single stage treatment of saline wastewater with marine bacterial–microalgae consortia in a fixed-bed photobioreactor. Journal of Hazardous Materials, 2015, 292: 155-163",
+      "page_number": null,
+      "paragraph_id": "p-310",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-311",
+      "block_type": "paragraph",
+      "text": "[65]B. Ji, S. Fan, Y. Liu. A continuous-flow non-aerated microalgal-bacterial granular sludge process for aquaculture wastewater treatment under natural day-night conditions. Bioresource Technology, 2022, 350: 126914",
+      "page_number": null,
+      "paragraph_id": "p-311",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-312",
+      "block_type": "paragraph",
+      "text": "[66]B. Ji, L. Zhu, S. Wang, Y. Liu. Temperature-effect on the performance of non-aerated microalgal-bacterial granular sludge process in municipal wastewater treatment. Journal of Environmental Management, 2021, 282: 111955",
+      "page_number": null,
+      "paragraph_id": "p-312",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-313",
+      "block_type": "paragraph",
+      "text": "[67]S. Fan, L. Zhu, B. Ji. Deciphering the effect of light intensity on microalgal-bacterial granular sludge process for non-aerated municipal wastewater treatment. Algal Research, 2021, 58: 102437",
+      "page_number": null,
+      "paragraph_id": "p-313",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-314",
+      "block_type": "paragraph",
+      "text": "[68]M. Zhang, B. Ji, S. Wang, J. Gu, Y. Liu. Granule size informs the characteristics and performance of microalgal-bacterial granular sludge for wastewater treatment. Bioresource Technology, 2022, 346: 126649",
+      "page_number": null,
+      "paragraph_id": "p-314",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-315",
+      "block_type": "paragraph",
+      "text": "[69]J. S. M. Ahmad, Z. Zhao, Z. Zhang, K. Shimizu, M. Utsumi, Z. Lei, et al. Algal-bacterial aerobic granule based continuous-flow reactor with effluent recirculation instead of air bubbling: Stability and energy consumption analysis. Bioresource Technology Reports, 2019, 7: 100215",
+      "page_number": null,
+      "paragraph_id": "p-315",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-316",
+      "block_type": "paragraph",
+      "text": "[70]F. Meng, L. Xi, D. Liu, W. Huang, Z. Lei, Z. Zhang, et al. Effects of light intensity on oxygen distribution, lipid production and biological community of algal-bacterial granules in photo-sequencing batch reactors. Bioresource Technology, 2019, 272: 473-481",
+      "page_number": null,
+      "paragraph_id": "p-316",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-317",
+      "block_type": "paragraph",
+      "text": "[71]W. Cai, P. Hu, Z. Li, Q. Kang, H. Chen, J. Zhang, et al. Effect of high ammonia on granular stability and phosphorus recovery of algal-bacterial granules in treatment of synthetic biogas slurry. Heliyon, 2022, 8(7): e09844",
+      "page_number": null,
+      "paragraph_id": "p-317",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-318",
+      "block_type": "paragraph",
+      "text": "[72]L. M. Trebuch, B. O. Oyserman, M. Janssen, R. H. Wijffels, L. E. M. Vet, T. V. Fernandes. Impact of hydraulic retention time on community assembly and function of photogranules for wastewater treatment. Water Research, 2020, 173: 115506",
+      "page_number": null,
+      "paragraph_id": "p-318",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-319",
+      "block_type": "paragraph",
+      "text": "[73]G. Quijano, J. S. Arcila, G. Buitrón. Microalgal-bacterial aggregates: Applications and perspectives for wastewater treatment. Biotechnology Advances, 2017, 35(6): 772-781",
+      "page_number": null,
+      "paragraph_id": "p-319",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-320",
+      "block_type": "paragraph",
+      "text": "[74]B. Ji, M. Zhang, J. Gu, Y. Ma, Y. Liu. A self-sustaining synergetic microalgal-bacterial granular sludge process towards energy-efficient and environmentally sustainable municipal wastewater treatment. Water Research, 2020, 179: 115884",
+      "page_number": null,
+      "paragraph_id": "p-320",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-321",
+      "block_type": "paragraph",
+      "text": "[75]肖亚兵. 藻-菌颗粒污泥的恢复与培养研究: [硕士]. 武汉科技大学, 2022",
+      "page_number": null,
+      "paragraph_id": "p-321",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-322",
+      "block_type": "paragraph",
+      "text": "[76]Z. Arbib, J. Ruiz, P. Álvarez-Díaz, C. Garrido-Pérez, J. A. Perales. Capability of different microalgae species for phytoremediation processes: Wastewater tertiary treatment, CO2 bio-fixation and low cost biofuels production. Water Research, 2014, 49: 465-474",
+      "page_number": null,
+      "paragraph_id": "p-322",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-323",
+      "block_type": "paragraph",
+      "text": "[77]W. Han, W. Jin, Z. Li, Y. Wei, Z. He, C. Chen, et al. Cultivation of microalgae for lipid production using municipal wastewater. Process Safety and Environmental Protection, 2021, 155: 155-165",
+      "page_number": null,
+      "paragraph_id": "p-323",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-324",
+      "block_type": "paragraph",
+      "text": "[78]A. Udayan, A. K. Pandey, R. Sirohi, N. Sreekumar, B. I. Sang, S. J. Sim, et al. Production of microalgae with high lipid content and their potential as sources of nutraceuticals. Phytochemistry Reviews, 2023, 22(4): 833-860",
+      "page_number": null,
+      "paragraph_id": "p-324",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-325",
+      "block_type": "paragraph",
+      "text": "[79]V. Senatore, E. Rueda, M. Bellver, R. Díez-Montero, I. Ferrer, T. Zarra, et al. Production of phycobiliproteins, bioplastics and lipids by the cyanobacteria Synechocystis sp. treating secondary effluent in a biorefinery approach. Science of The Total Environment, 2023, 857: 159343",
+      "page_number": null,
+      "paragraph_id": "p-325",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-326",
+      "block_type": "paragraph",
+      "text": "[80]C. Chen, T. Tang, Q. Shi, Z. Zhou, J. Fan. The potential and challenge of microalgae as promising future food sources. Trends in Food Science & Technology, 2022, 126: 99-112",
+      "page_number": null,
+      "paragraph_id": "p-326",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-327",
+      "block_type": "paragraph",
+      "text": "[81]Y. Lin, M. De Kreuk, M. C. M. Van Loosdrecht, A. Adin. Characterization of alginate-like exopolysaccharides isolated from aerobic granular sludge in pilot-plant. Water Research, 2010, 44(11): 3355-3364",
+      "page_number": null,
+      "paragraph_id": "p-327",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-328",
+      "block_type": "paragraph",
+      "text": "[82]X. Chen, J. Mai, X. Dong, Q. Wang, Z. Li, T. Yuan, et al. Enhanced alginate-like exopolymers recovery from algal-bacterial aerobic granular sludge: Optimal cultivation condition and contribution of bacteria and microalgae during the transport/storage period. Bioresource Technology, 2023, 382: 129155",
+      "page_number": null,
+      "paragraph_id": "p-328",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-329",
+      "block_type": "paragraph",
+      "text": "[83]K. Van Leeuwen, E. De Vries, S. Koop, K. Roest. The Energy & Raw Materials Factory: Role and Potential Contribution to the Circular Economy of the Netherlands. Environmental Management, 2018, 61(5): 786-795",
+      "page_number": null,
+      "paragraph_id": "p-329",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-330",
+      "block_type": "paragraph",
+      "text": "[84]M. Pronk, A. Giesen, A. Thompson, S. Robertson, M. van Loosdrecht. Aerobic granular biomass technology: advancements in design, applications and further developments. Water Practice and Technology, 2017, 12(4): 987-996",
+      "page_number": null,
+      "paragraph_id": "p-330",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-331",
+      "block_type": "paragraph",
+      "text": "[85]Y. J. Lee, Z. Lei. Microalgal-bacterial aggregates for wastewater treatment: A mini-review. Bioresource Technology Reports, 2019, 8: 100199",
+      "page_number": null,
+      "paragraph_id": "p-331",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-332",
+      "block_type": "paragraph",
+      "text": "[86]P. Kehrein, M. Van Loosdrecht, P. Osseweijer, M. Garfí, J. Dewulf, J. Posada. A critical review of resource recovery from municipal wastewater treatment plants – market supply potentials, technologies and bottlenecks. Environmental Science: Water Research & Technology, 2020, 6(4): 877-910",
+      "page_number": null,
+      "paragraph_id": "p-332",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-333",
+      "block_type": "paragraph",
+      "text": "[87]F. Meng, W. Huang, D. Liu, Y. Zhao, W. Huang, Z. Lei, et al. Application of aerobic granules-continuous flow reactor for saline wastewater treatment: Granular stability, lipid production and symbiotic relationship between bacteria and algae. Bioresource Technology, 2020, 295: 122291",
+      "page_number": null,
+      "paragraph_id": "p-333",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-334",
+      "block_type": "paragraph",
+      "text": "[88]X. Chen, J. Wang, Q. Wang, Z. Li, T. Yuan, Z. Lei, et al. A comparative study on simultaneous recovery of phosphorus and alginate-like exopolymers from bacterial and algal-bacterial aerobic granular sludges: Effects of organic loading rate. Bioresource Technology, 2022, 357: 127343",
+      "page_number": null,
+      "paragraph_id": "p-334",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-335",
+      "block_type": "paragraph",
+      "text": "[89]J. Xu, H. Pang, J. He, M. Wang, J. Nan, L. Li. Enhanced aerobic sludge granulation by applying carbon fibers as nucleating skeletons. Chemical Engineering Journal, 2019, 373: 946-954",
+      "page_number": null,
+      "paragraph_id": "p-335",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-336",
+      "block_type": "paragraph",
+      "text": "[90]L. Cheng, M. Wei, G. Guo, Q. Hu, B. Li, Y. Jiang, et al. Effects of feeding mode on the formation and stability of aerobic granular sludge under combined antibiotic stress. Chemical Engineering Journal, 2023, 475: 145996",
+      "page_number": null,
+      "paragraph_id": "p-336",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-337",
+      "block_type": "paragraph",
+      "text": "[91]J. Brant. Assessing short-range membrane–colloid interactions using surface energetics. Journal of Membrane Science, 2002, 203(1-2): 257-273",
+      "page_number": null,
+      "paragraph_id": "p-337",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-338",
+      "block_type": "paragraph",
+      "text": "[92]Y. Wang, J. Wang, Z. Liu, X. Huang, F. Fang, J. Guo, et al. Effect of EPS and its forms of aerobic granular sludge on sludge aggregation performance during granulation process based on XDLVO theory. Science of The Total Environment, 2021, 795: 148682",
+      "page_number": null,
+      "paragraph_id": "p-338",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-339",
+      "block_type": "paragraph",
+      "text": "[93]Y. Shen, B. Chen, S. Wang, A. Li, B. Ji. Necessity of stirring for outdoor microalgal-bacterial granular sludge process. Journal of Environmental Management, 2023, 345: 118816",
+      "page_number": null,
+      "paragraph_id": "p-339",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-340",
+      "block_type": "paragraph",
+      "text": "[94]S. Wang, Z. Li, D. Wang, Y. Li, L. Sun. Performance and population structure of two carbon sources granular enhanced biological phosphorus removal systems at low temperature. Bioresource Technology, 2020, 300: 122683",
+      "page_number": null,
+      "paragraph_id": "p-340",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-341",
+      "block_type": "paragraph",
+      "text": "[95]Q. He, Q. Song, S. Zhang, W. Zhang, H. Wang. Simultaneous nitrification, denitrification and phosphorus removal in an aerobic granular sequencing batch reactor with mixed carbon sources: reactor performance, extracellular polymeric substances and microbial successions. Chemical Engineering Journal, 2018, 331: 841-849",
+      "page_number": null,
+      "paragraph_id": "p-341",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-342",
+      "block_type": "paragraph",
+      "text": "[96]X. Zhang, D. Chen, N. Jiang, X. Hou, Y. Li, Y. Wang, et al. New insights into algal-bacterial sludge granulation based on the tightly-bound extracellular polymeric substances regulation in response to N-Methylpyrrolidone. Water Research, 2024, 257: 121754",
+      "page_number": null,
+      "paragraph_id": "p-342",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-343",
+      "block_type": "paragraph",
+      "text": "[97]C. Zhang, H. Zhang, F. Yang. Diameter control and stability maintenance of aerobic granular sludge in an A/O/A SBR. Separation and Purification Technology, 2015, 149: 362-369",
+      "page_number": null,
+      "paragraph_id": "p-343",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-344",
+      "block_type": "paragraph",
+      "text": "[98]R. D. G. Franca, H. M. Pinheiro, M. C. M. Van Loosdrecht, N. D. Lourenço. Stability of aerobic granules during long-term bioreactor operation. Biotechnology Advances, 2018, 36(1): 228-246",
+      "page_number": null,
+      "paragraph_id": "p-344",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-345",
+      "block_type": "paragraph",
+      "text": "[99]X. Liu, J. Liu, D. Deng, R. Li, C. Guo, J. Ma, et al. Investigation of extracellular polymeric substances (EPS) in four types of sludge: factors influencing EPS properties and sludge granulation. Journal of Water Process Engineering, 2021, 40: 101924",
+      "page_number": null,
+      "paragraph_id": "p-345",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-346",
+      "block_type": "paragraph",
+      "text": "[100]E. Li, Y. Wang, D. Zhang, X. Fan, Z. Han, F. Yu. Siderite/PMS conditioning-pressurized vertical electro-osmotic dewatering process for activated sludge volume reduction: evolution of protein secondary structure and typical amino acid in EPS. Water Research, 2021, 201: 117352",
+      "page_number": null,
+      "paragraph_id": "p-346",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-347",
+      "block_type": "paragraph",
+      "text": "[101]Y. Shi, Y. Liu. Evolution of extracellular polymeric substances (EPS) in aerobic sludge granulation: composition, adherence and viscoelastic properties. Chemosphere, 2021, 262: 128033",
+      "page_number": null,
+      "paragraph_id": "p-347",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-348",
+      "block_type": "paragraph",
+      "text": "[102]J. Zhu, H. You, Z. Li, B. Xie, W. Li, S. Qi, et al. Formation mechanism and metabolic pathways of photogranule in batch and continuous-flow mode under high salinity stress. Chemical Engineering Journal, 2023, 452: 139306",
+      "page_number": null,
+      "paragraph_id": "p-348",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-349",
+      "block_type": "paragraph",
+      "text": "[103]H. Xu, Y. Liu, Y. Gao, F. Li, B. Yang, M. Wang, et al. Granulation process in an expanded granular sludge blanket (EGSB) reactor for domestic sewage treatment: impact of extracellular polymeric substances compositions and evolution of microbial population. Bioresource Technology, 2018, 269: 153-161",
+      "page_number": null,
+      "paragraph_id": "p-349",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-350",
+      "block_type": "paragraph",
+      "text": "[104]X. Wang, Z. Chen, J. Shen, J. Kang, X. Zhang, J. Li, et al. Effect of carbon source on pollutant removal and microbial community dynamics in treatment of swine wastewater containing antibiotics by aerobic granular sludge. Chemosphere, 2020, 260: 127544",
+      "page_number": null,
+      "paragraph_id": "p-350",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-351",
+      "block_type": "paragraph",
+      "text": "[105]D. Wu, Z. Zhang, Z. Yu, L. Zhu. Optimization of F/M ratio for stability of aerobic granular process via quantitative sludge discharge. Bioresource Technology, 2018, 252: 150-156",
+      "page_number": null,
+      "paragraph_id": "p-351",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "t-12",
+      "block_type": "table",
+      "text": "研究生签字指导教师签字院(系、所)领导签字 |  | ",
+      "page_number": null,
+      "paragraph_id": null,
+      "table_id": "t-12",
+      "section_path": null,
+      "source": "extracted"
+    },
+    {
+      "block_id": "p-352",
+      "block_type": "paragraph",
+      "text": "年        月        日",
+      "page_number": null,
+      "paragraph_id": "p-352",
+      "table_id": null,
+      "section_path": null,
+      "source": "extracted"
+    }
+  ],
+  "extracted_design": {
+    "research_question": "藻菌颗粒污泥（MBGS）体系的构建及其脱氮效能，以及直接氨氧化菌强化脱氮机制与生物质回收利用",
+    "hypotheses": [
+      "H1：不同初始条件（接种方式/藻种添加）构建的MBGS体系在脱氮效能、胞外聚合物特征及微生物菌群组成上存在差异，且能形成长期稳定运行的体系",
+      "H2：直接氨氧化菌能够强化MBGS体系脱氮效能"
+    ],
+    "research_goal_level": "unspecified",
+    "research_goal_level_source": "default",
+    "experimental_unit": "SBR反应器",
+    "groups": [
+      {
+        "name": "R1",
+        "treatment": "原始污泥，不投加任何藻种",
+        "n_claimed": "1",
+        "status": "stated",
+        "quote": "原始污泥，不投加任何藻种",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R1为原始污泥，不投加任何藻种",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ],
+        "control_role_hint": "reference",
+        "container_id": "R1",
+        "factor_levels": {
+          "接种方式/藻种添加": "不投加任何藻种"
+        }
+      },
+      {
+        "name": "R2",
+        "treatment": "投加小球藻",
+        "n_claimed": "1",
+        "status": "stated",
+        "quote": "投加小球藻",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ],
+        "control_role_hint": "experimental",
+        "container_id": "R2",
+        "factor_levels": {
+          "接种方式/藻种添加": "投加小球藻"
+        }
+      },
+      {
+        "name": "R3",
+        "treatment": "投加斜生四链藻",
+        "n_claimed": "1",
+        "status": "stated",
+        "quote": "投加斜生四链藻",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ],
+        "control_role_hint": "experimental",
+        "container_id": "R3",
+        "factor_levels": {
+          "接种方式/藻种添加": "投加斜生四链藻"
+        }
+      }
+    ],
+    "controls": [
+      {
+        "type": "reference",
+        "label": "R1",
+        "present": true,
+        "excludes_alternative": "",
+        "status": "stated",
+        "quote": "R1",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R1为原始污泥，不投加任何藻种",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      }
+    ],
+    "outcomes": [
+      {
+        "text": "MLSS与MLVSS浓度",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "图 32a为污泥颗粒化过程中MLSS和MLVSS浓度以及MLVSS/MLSS比值的变化",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-104"
+          }
+        ],
+        "supports_claims": []
+      },
+      {
+        "text": "SVI5与颗粒平均粒径",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "污泥沉降性如图 32b所示",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-105"
+          }
+        ],
+        "supports_claims": [
+          "C2"
+        ]
+      },
+      {
+        "text": "颗粒强度（OD600）",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "取上清液在600 nm波长处测定吸光度OD600",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-110"
+          }
+        ],
+        "supports_claims": [
+          "C1",
+          "C2"
+        ]
+      },
+      {
+        "text": "表面热力学参数与XDLVO势垒",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "选取了第110 d三个反应器中的污泥样品，从热力学表面特性的角度解析其颗粒化过程",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-114"
+          }
+        ],
+        "supports_claims": [
+          "C1",
+          "C2"
+        ]
+      },
+      {
+        "text": "藻菌比例（C/N比）",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "并用方程 （31）估计微藻与细菌的比例",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-121"
+          }
+        ],
+        "supports_claims": [
+          "C1"
+        ]
+      },
+      {
+        "text": "污染物去除效能（COD, NH4+-N, PO43--P, TIN）",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "图 36(a-c)为各反应器COD、NH4+-N、PO43--P的去除效率变化趋势",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-129"
+          }
+        ],
+        "supports_claims": [
+          "C2"
+        ]
+      },
+      {
+        "text": "EPS含量与蛋白质二级结构",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过分析EPS的组成和浓度，研究MBGS形成和脱氮过程中EPS的生成情况",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-137"
+          }
+        ],
+        "supports_claims": []
+      }
+    ],
+    "replication": {
+      "text": "分配单位=SBR反应器; 子样本=污泥混合液/颗粒污泥样品; 声称为独立单位=SBR反应器",
+      "status": "contradictory",
+      "ambiguous_parallel": true,
+      "has_biological": false,
+      "has_technical": true,
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "MBGS培养在自制的SBR中进行",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-95"
+        },
+        {
+          "source_file": "trial4.docx",
+          "original_text": "每个样品至少测定6次取平均值",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-115"
+        }
+      ]
+    },
+    "statistical_plan": "unknown",
+    "statistics_status": "stated",
+    "statistics_locations": [],
+    "claims": [
+      "使用外源添加藻种的方式培养MBGS确实可以提高R2、R3中的藻菌比，但是其比例却不影响造粒过程中的势力壁垒大小和颗粒强度",
+      "总体而言，R1和R3反应器所形成的MBGS要优于R2反应器所形成的MBGS"
+    ],
+    "field_meta": {
+      "research_question_status": "missing",
+      "research_question_locations": [],
+      "hypothesis_status": "inferred",
+      "hypothesis_locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "通过培养不同初始条件下MBGS，明确胞外聚合物特征、微生物菌群组成的变化及相互之间的内在联系，构建得到长期稳定运行的相对较优的脱氮MBGS体系。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-82"
+        }
+      ],
+      "experimental_unit_status": "missing",
+      "experimental_unit_locations": []
+    },
+    "hypotheses_structured": [
+      {
+        "id": "H1",
+        "text": "不同初始条件（接种方式/藻种添加）构建的MBGS体系在脱氮效能、胞外聚合物特征及微生物菌群组成上存在差异，且能形成长期稳定运行的体系",
+        "expected_conclusion": "原生藻种和投加斜生四链藻形成的MBGS优于投加小球藻",
+        "status": "inferred",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过培养不同初始条件下MBGS，明确胞外聚合物特征、微生物菌群组成的变化及相互之间的内在联系，构建得到长期稳定运行的相对较优的脱氮MBGS体系。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-82"
+          }
+        ]
+      },
+      {
+        "id": "H2",
+        "text": "直接氨氧化菌能够强化MBGS体系脱氮效能",
+        "expected_conclusion": "直接氨氧化菌强化MBGS体系具有更高的脱氮能力并改变脱氮基因表达",
+        "status": "inferred",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过构建直接氨氧化菌强化MBGS脱氮体系，探究该体系的脱氮能力、微生物菌群组成的变化以及部分脱氮基因相对表达量变化，得到对城市污水高效脱氮的MBGS体系，并探究体系的藻菌互作机理",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-83"
+          }
+        ]
+      }
+    ],
+    "table_classifications": [
+      {
+        "table_id": "t-1",
+        "table_kind": "metadata_table",
+        "caption": "学号、姓名等专业信息"
+      },
+      {
+        "table_id": "t-2",
+        "table_kind": "metadata_table",
+        "caption": "模拟废水水质"
+      },
+      {
+        "table_id": "t-3",
+        "table_kind": "metadata_table",
+        "caption": "微量元素液"
+      },
+      {
+        "table_id": "t-4",
+        "table_kind": "other",
+        "caption": "水、二碘甲烷、甲酰胺的表面热力学参数"
+      },
+      {
+        "table_id": "t-5",
+        "table_kind": "other",
+        "caption": "第110 d时污泥表面热力学参数及界面自由能"
+      },
+      {
+        "table_id": "t-6",
+        "table_kind": "other",
+        "caption": "第110 d时颗粒中C、H、O、N和S的元素含量"
+      },
+      {
+        "table_id": "t-7",
+        "table_kind": "other",
+        "caption": "不同样本中EPS蛋白质二级结构的相对含量"
+      }
+    ],
+    "units": {
+      "allocation_unit": "SBR反应器",
+      "independent_experimental_unit": "SBR反应器",
+      "subsample_unit": "污泥混合液/颗粒污泥样品",
+      "technical_replicate_unit": "测定重复（如接触角测定至少6次）",
+      "nesting": "污泥颗粒样品嵌套于SBR反应器中",
+      "status": "inferred",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "MBGS培养在自制的SBR中进行",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-95"
+        },
+        {
+          "source_file": "trial4.docx",
+          "original_text": "每个样品至少测定6次取平均值",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-115"
+        }
+      ]
+    },
+    "timepoints": {
+      "points": [
+        "D0",
+        "D28",
+        "D42",
+        "D60",
+        "D77",
+        "D110",
+        "D112"
+      ],
+      "repeated_measures": true,
+      "destructive_assay": true,
+      "returned_after_assay": false,
+      "status": "stated",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "第一阶段反应器运行时间为2023年11月15日至2024年3月6日，共计112天",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-104"
+        }
+      ]
+    },
+    "claims_structured": [
+      {
+        "id": "C1",
+        "text": "使用外源添加藻种的方式培养MBGS确实可以提高R2、R3中的藻菌比，但是其比例却不影响造粒过程中的势力壁垒大小和颗粒强度",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "使用外源添加藻种的方式培养MBGS确实可以提高R2、R3中的藻菌比，但是其比例却不影响造粒过程中的势力壁垒大小和颗粒强度",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-126"
+          }
+        ]
+      },
+      {
+        "id": "C2",
+        "text": "总体而言，R1和R3反应器所形成的MBGS要优于R2反应器所形成的MBGS",
+        "kind": "treatment_effect",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "超声破碎实验和XDLVO理论分析都表明在三种反应器中形成的MBGS具有相似的结构强度和稳定性，但总体而言，R1和R3反应器所形成的MBGS要优于R2反应器所形成的MBGS",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-120"
+          }
+        ]
+      }
+    ],
+    "factors": [
+      {
+        "name": "接种方式/藻种添加",
+        "levels": [
+          "不投加任何藻种",
+          "投加小球藻",
+          "投加斜生四链藻"
+        ],
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R1为原始污泥，不投加任何藻种；R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      }
+    ]
+  },
+  "unparsed_assets": [
+    {
+      "id": "U-img-1",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-2",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-3",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-4",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-5",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-6",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-7",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-8",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-9",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-10",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-11",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-12",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-13",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-14",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-15",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-16",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": "."
+    },
+    {
+      "id": "U-img-17",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-18",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-19",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-20",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-21",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-22",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-23",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-24",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-25",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": "图 321属水平物种对基因的贡献"
+    },
+    {
+      "id": "U-img-26",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-27",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-28",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-29",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-30",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    },
+    {
+      "id": "U-img-31",
+      "asset_type": "image",
+      "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+      "page_number": null,
+      "section_path": null,
+      "caption_hint": null
+    }
+  ],
+  "parse_warnings": [],
+  "tables_parsed_count": 12,
+  "user_confirmed": false,
+  "user_edits_summary": "",
+  "confirmed_at": null,
+  "manual_supplements": [],
+  "limited_audit_recommended": false
+}

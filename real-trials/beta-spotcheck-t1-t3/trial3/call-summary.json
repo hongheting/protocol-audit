@@ -1,0 +1,348 @@
+{
+  "trial": "trial3",
+  "mode": "Beta-spotcheck-real-LLM",
+  "code_version": "0.1.3.3",
+  "science_freeze": "V0.1.2",
+  "no_tuning": true,
+  "no_gold_injected": true,
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "source": "/workspace/product/protocol-audit/real-trials/trial3.docx",
+  "started_at": "2026-10-26T10:42:09+08:00",
+  "provider_requested": "glm",
+  "model_requested": "glm-4.6",
+  "finished_at": "2026-10-26T10:53:27+08:00",
+  "elapsed_s": 677.6,
+  "schema_ok": true,
+  "schema_errors": [],
+  "boundary_note": "学科边界：本次按 environmental 规则审查（环境/生物/化学）。findings 来源统计：llm_review=6，rule=4，partial_fallback=0。引擎：V0.1.3.3 结构规则/后处理 + 方法优先审查窗 + 审查截断扩容重试（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 解析可靠性与 0.1.3.3 审查可靠性；外推严重度与软去重收窄；CE 限制句 scope_note；提取/窗口策略为独立技术版本）+ LLM 解析+ LLM 科学审查（完整）。不得将模拟输出冒充实测。",
+  "coverage_note": "已解析块 42；手动补充 0；未解析资产 0。 review_coverage[0.1.3.2-review-windows]: 全文 2994 字，送审 2994 字/1 窗（单窗上限 14000）。方法段已检出且已入窗。可声称覆盖本次送审窗口（非未解析资产）。短文不截断。",
+  "summary": {
+    "verdict": "needs_redesign",
+    "blocker_count": 4,
+    "high_count": 4,
+    "confirmed_count": 8,
+    "needs_info_count": 2,
+    "suggestion_count": 0,
+    "one_liner": "确认问题 8，待核实 2，建议 0；见 Plan A 最小修改。",
+    "strongest_supported_claim": "在澄清与最小修改前，不宜把相关或短周期结果写成机制/工程定论。"
+  },
+  "findings_brief": [
+    {
+      "id": "F01",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "相关性/表征共变不足以支持主要机制主张",
+      "duplicate_relation": "similar_different_mechanism"
+    },
+    {
+      "id": "F02",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "由短周期/简化工况试验外推长期或工程依据过度",
+      "duplicate_relation": "true_duplicate"
+    },
+    {
+      "id": "F03",
+      "origin": "rule",
+      "category": "needs_info",
+      "severity": "medium",
+      "title": "以代表单元指导整组补水/处理时，组内独立性待核实",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F04",
+      "origin": "rule",
+      "category": "needs_info",
+      "severity": "medium",
+      "title": "材料/菌剂为单批次制备，跨批次推广边界待明确",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F05",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "水分处理与温室长台位置完全混杂",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F06",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "接种液助溶剂（海藻糖）未在对照中平衡",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F07",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "重复破坏性采土并回填石英砂破坏了盆栽土壤的物理完整性",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F08",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "对多时间点指标采用单因素方差分析忽略了析因交互效应",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F09",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "将相关与协同变化作为EPS介导促生机制的因果证据（相关≠机制）",
+      "duplicate_relation": "similar_different_mechanism"
+    },
+    {
+      "id": "F10",
+      "origin": "llm_review",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "温室短期盆栽结果难以直接外推为大田应用依据",
+      "duplicate_relation": "true_duplicate"
+    }
+  ],
+  "origin_counts": {
+    "rule": 4,
+    "llm_review": 6
+  },
+  "rules_only_count": 4,
+  "llm_incremental_titles": [
+    "对多时间点指标采用单因素方差分析忽略了析因交互效应",
+    "将相关与协同变化作为EPS介导促生机制的因果证据（相关≠机制）",
+    "接种液助溶剂（海藻糖）未在对照中平衡",
+    "水分处理与温室长台位置完全混杂",
+    "温室短期盆栽结果难以直接外推为大田应用依据",
+    "重复破坏性采土并回填石英砂破坏了盆栽土壤的物理完整性"
+  ],
+  "facade_risk_flag": false,
+  "review_hint": "appears_complete_or_rules",
+  "ce_brief": [
+    {
+      "id": "CE01",
+      "hypothesis_id": "H1",
+      "row_kind": "claim",
+      "design_supports": "no",
+      "claim": "H1：接种提高生物量并减轻干旱抑制"
+    },
+    {
+      "id": "CE02",
+      "hypothesis_id": "H2",
+      "row_kind": "claim",
+      "design_supports": "no",
+      "claim": "H2：EPS与团聚体改善水分促进生长，EPS为主要机制"
+    },
+    {
+      "id": "CE03",
+      "hypothesis_id": "H3",
+      "row_kind": "claim",
+      "design_supports": "partial",
+      "claim": "H3：两种土壤中均有效，可为应用提供依据"
+    }
+  ],
+  "optimizer": {
+    "optimizer_incomplete": false,
+    "blocker_action_map": [
+      {
+        "finding_id": "F02",
+        "action": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+        "problem": "短周期、批式、盆栽或简化水质的实验室结果不能直接作为长期工程/田间推广/连续运行的主要依据。",
+        "verification": "复审该 blocker 是否仍阻断主要结论",
+        "change_note_id": "C05",
+        "covered": true,
+        "uncovered_reason": null
+      },
+      {
+        "finding_id": "F05",
+        "action": "解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应",
+        "problem": "处理因素与空间位置/微气候完全混杂",
+        "verification": "位置与处理正交或区组后，处理效应估计不再依赖固定台面层",
+        "change_note_id": "C02",
+        "covered": true,
+        "uncovered_reason": null
+      },
+      {
+        "finding_id": "F07",
+        "action": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定",
+        "problem": "在D7、D14、D21连续从同一盆中取出根际土壤并回填惰性石英砂，导致盆中土壤基质逐渐被不可团聚的石英砂取代。至D28采收时，土壤的物理结构已发生不可逆的人为破坏，终点土壤团聚体稳定性（MWD）和含水特征的测定被严重干扰，无法代表自然状态下的真实响应。",
+        "verification": "复审该 blocker 是否仍阻断主要结论",
+        "change_note_id": "C04",
+        "covered": true,
+        "uncovered_reason": null
+      },
+      {
+        "finding_id": "F10",
+        "action": "将H3预期结论修改为“可为后续田间中试提供前期依据”，并在讨论中明确盆栽的局限性和尺度外推的不确定性。",
+        "problem": "温室盆栽条件（受控温光水、无自然淋溶与降水、根系空间受限、边界效应显著）与大田退化旱地的异质性及复合逆境差异极大，由28 d盆栽结果直接为“推广应用”提供依据缺乏生态与工程外推效力。",
+        "verification": "修改后复审：该 blocker 对应的混杂/单位/终点问题不再阻断主要结论；或主张已显式降级且与证据匹配",
+        "change_note_id": "C07",
+        "covered": true,
+        "uncovered_reason": null
+      }
+    ],
+    "change_notes": [
+      {
+        "id": "C01",
+        "addresses_finding_ids": [
+          "F06"
+        ],
+        "summary": "增加助溶剂/载体/助剂对照，使目标处理效应可分"
+      },
+      {
+        "id": "C02",
+        "addresses_finding_ids": [
+          "F05"
+        ],
+        "summary": "解耦处理与空间位置：随机化或区组化台面/层架位置，使目标处理在各微气候位置上交叉；否则不得宣称可分离的处理主效应"
+      },
+      {
+        "id": "C03",
+        "addresses_finding_ids": [
+          "F08"
+        ],
+        "summary": "按析因结构预定义并报告交互效应（声明加性/乘性尺度）；停止用「联用组优于两单因素」或 one-way+事后比较作为协同判据"
+      },
+      {
+        "id": "C04",
+        "addresses_finding_ids": [
+          "F07"
+        ],
+        "summary": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定"
+      },
+      {
+        "id": "C05",
+        "addresses_finding_ids": [
+          "F01",
+          "F02"
+        ],
+        "summary": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据"
+      },
+      {
+        "id": "C06",
+        "addresses_finding_ids": [
+          "F03"
+        ],
+        "summary": "显式定义实验单位（当前解析：盆）；统计仅对独立重复推断"
+      },
+      {
+        "id": "C07",
+        "addresses_finding_ids": [
+          "F10"
+        ],
+        "summary": "将H3预期结论修改为“可为后续田间中试提供前期依据”，并在讨论中明确盆栽的局限性和尺度外推的不确定性。"
+      }
+    ]
+  },
+  "clarifying_questions_n": 2,
+  "calls": {
+    "n_calls": 3,
+    "n_ok": 3,
+    "n_fail": 0,
+    "n_expand_retry": 1,
+    "fail_errors": [],
+    "latency_ms_sum": 677507,
+    "purposes": [
+      "design_extract",
+      "design_extract_expand_retry",
+      "scientific_review"
+    ],
+    "models": [
+      "glm-4.6"
+    ],
+    "finish_reasons": [
+      "stop",
+      "stop",
+      "stop"
+    ],
+    "tokens": {
+      "prompt": 10688,
+      "completion": 23804,
+      "reasoning": 15482,
+      "total": 34492
+    },
+    "calls": [
+      {
+        "ts": "2026-10-26T10:42:09+08:00",
+        "purpose": "design_extract",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 212791,
+        "prompt_tokens": 3149,
+        "completion_tokens": 7693,
+        "finish_reason": "stop",
+        "max_tokens": 8192,
+        "error": null
+      },
+      {
+        "ts": "2026-10-26T10:45:42+08:00",
+        "purpose": "design_extract_expand_retry",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 234363,
+        "prompt_tokens": 3149,
+        "completion_tokens": 8209,
+        "finish_reason": "stop",
+        "max_tokens": 16384,
+        "error": null
+      },
+      {
+        "ts": "2026-10-26T10:49:37+08:00",
+        "purpose": "scientific_review",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 230353,
+        "prompt_tokens": 4390,
+        "completion_tokens": 7902,
+        "finish_reason": "stop",
+        "max_tokens": 8192,
+        "error": null
+      }
+    ]
+  },
+  "review_coverage": {
+    "tech_version": "0.1.3.2-review-windows",
+    "total_chars": 2994,
+    "chars_sent": 2994,
+    "window_count": 1,
+    "window_budget_chars": 14000,
+    "max_windows": 3,
+    "methods_detected": true,
+    "methods_included": true,
+    "methods_spans": [
+      {
+        "start": 939,
+        "end": 2994,
+        "label": "4 实验设计与分组"
+      }
+    ],
+    "truncated": false,
+    "omitted_char_count": 0,
+    "omitted_ranges": [],
+    "comprehensive": true,
+    "notes": [
+      "短文不截断"
+    ],
+    "windows": [
+      {
+        "window_id": "W01",
+        "start": 0,
+        "end": 2994,
+        "char_len": 2994,
+        "priority": 0,
+        "reason": "短文全文入窗（未截断）",
+        "text_sha16": "ea51722b386e1060",
+        "preview": "植物促生菌剂对干旱胁迫下玉米生长及土壤团聚体稳定性的影响\n\n盆栽试验方案（ProtocolAudit Trial 3 测试稿）\n\n研究类型：温室盆栽控制实验；研究对象：玉米幼苗、植物促生细菌及两类土壤；试验周期：28 d；方案版本：1.0。\n\n1 研究背景与目标\n\n干旱胁迫会降低玉米幼苗的生长和养分吸收能力。植物促生细菌可能通过改善根系生长、改变根际微环境及促进土壤团聚体形成，增强植物对水分胁迫的耐受性。本研究采用一株具有胞外聚合物（EPS）产生能力的 Bacillus ve"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://protocolaudit.local/schemas/audit-report.v0.2.1.json",
+  "title": "AuditReport",
+  "description": "ProtocolAudit audit report schema 0.2.1. Breaking: quote_location → locations[SourceLocator]. Adds ingest_manifest, design_confirmation. No fabricated DOIs.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "discipline_resolved",
+    "boundary_note",
+    "research_goal_level",
+    "research_goal_level_source",
+    "ingest_manifest",
+    "design_confirmation",
+    "identification",
+    "claim_evidence_map",
+    "findings",
+    "clarifying_questions",
+    "optimizer",
+    "group_table",
+    "summary"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.2.1"
+    },
+    "discipline_resolved": {
+      "type": "string",
+      "enum": [
+        "environmental",
+        "biology",
+        "chemistry",
+        "out_of_scope"
+      ]
+    },
+    "boundary_note": {
+      "type": "string",
+      "description": "跨学科、信息不足、或存在未解析图片/流程图时的边界声明；有 unparsed_assets 时必须声明本次审查未声称覆盖这些资产"
+    },
+    "research_goal_level": {
+      "type": "string",
+      "enum": [
+        "unspecified",
+        "exploratory",
+        "treatment_effect",
+        "mechanism_causal",
+        "generalizability"
+      ],
+      "default": "unspecified",
+      "description": "默认 unspecified；证据不足时不得自动升为 mechanism_causal。仅当用户明确选择或方案明确声明时才用更强层级。"
+    },
+    "research_goal_level_source": {
+      "type": "string",
+      "enum": [
+        "user",
+        "inferred",
+        "default"
+      ]
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "verdict",
+        "blocker_count",
+        "high_count",
+        "confirmed_count",
+        "needs_info_count",
+        "suggestion_count",
+        "one_liner"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "ready_with_fixes",
+            "needs_redesign",
+            "insufficient_info",
+            "awaiting_clarification"
+          ]
+        },
+        "blocker_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "high_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "confirmed_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "needs_info_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "suggestion_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "one_liner": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "strongest_supported_claim": {
+          "type": "string",
+          "description": "在当前设计下逻辑上最多能立住的主张（轻量 Reverse Review 预览，可空）"
+        }
+      }
+    },
+    "identification": {
+      "type": "object",
+      "required": [
+        "research_question",
+        "hypothesis",
+        "groups",
+        "controls",
+        "endpoints",
+        "replication",
+        "statistics",
+        "gaps"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "research_question": {
+          "$ref": "#/$defs/ExtractedField"
+        },
+        "hypothesis": {
+          "$ref": "#/$defs/ExtractedField"
+        },
+        "independent_vars": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ExtractedField"
+          }
+        },
+        "dependent_vars": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ExtractedField"
+          }
+        },
+        "experimental_unit": {
+          "$ref": "#/$defs/ExtractedField"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ExtractedGroup"
+          }
+        },
+        "controls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ExtractedControl"
+          }
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ExtractedField"
+          }
+        },
+        "replication": {
+          "$ref": "#/$defs/ExtractedField"
+        },
+        "statistics": {
+          "$ref": "#/$defs/ExtractedField"
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ExtractedField"
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "原文未写清、识别卡标红的字段名"
+        }
+      }
+    },
+    "claim_evidence_map": {
+      "type": "object",
+      "required": [
+        "rows"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "rows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ClaimEvidenceRow"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "clarifying_questions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ClarifyingQuestion"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "description": "取代/包装原 risks；三分法 confirmed|needs_info|suggestion",
+      "items": {
+        "$ref": "#/$defs/Finding"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "description": "Deprecated alias: prefer findings. If both present, findings wins.",
+      "items": {
+        "$ref": "#/$defs/Finding"
+      }
+    },
+    "optimizer": {
+      "type": "object",
+      "required": [
+        "plan_id",
+        "revised_group_table",
+        "change_notes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "plan_id": {
+          "type": "string",
+          "const": "A",
+          "description": "V0.1 only Plan A 最小必要修改; B/C = P1"
+        },
+        "title": {
+          "type": "string",
+          "default": "最小必要修改"
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "revised_group_table": {
+          "$ref": "#/$defs/GroupTable"
+        },
+        "change_notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ChangeNote"
+          }
+        },
+        "optimizer_incomplete": {
+          "type": "boolean",
+          "default": false,
+          "description": "若为 true，表示存在未覆盖的 confirmed blocker 或无法提供动作"
+        },
+        "completeness_note": {
+          "type": "string",
+          "description": "Plan A 完整性说明；incomplete 时必填原因"
+        },
+        "blocker_action_map": {
+          "type": "array",
+          "description": "confirmed blocker → action 映射",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "finding_id",
+              "action",
+              "problem",
+              "verification"
+            ],
+            "properties": {
+              "finding_id": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string",
+                "description": "修改动作"
+              },
+              "problem": {
+                "type": "string",
+                "description": "解决的问题"
+              },
+              "verification": {
+                "type": "string",
+                "description": "预期验证方式"
+              },
+              "change_note_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "covered": {
+                "type": "boolean"
+              },
+              "uncovered_reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "group_table": {
+      "$ref": "#/$defs/GroupTable",
+      "description": "基于原文识别的建议分组表（Optimizer 前）；Plan A 修订版在 optimizer.revised_group_table"
+    },
+    "literature_hints": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/LitHint"
+      },
+      "description": "未核实不得填 DOI；verified=false 时 doi/citation 应为 null"
+    },
+    "reverse_review": {
+      "description": "Optional stub for V0.2 signature mode; null/omitted in V0.1 OK",
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/ReverseReviewStub"
+        }
+      ]
+    },
+    "privacy_applied": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "public_literature_search_used": {
+          "type": "boolean"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "ingest_manifest": {
+      "type": "object",
+      "required": [
+        "source_file",
+        "parse_warnings",
+        "blocks_count",
+        "tables_count",
+        "unparsed_assets"
+      ],
+      "additionalProperties": false,
+      "description": "摄取清单；未解析图片/流程图列入 unparsed_assets，不得假装已审",
+      "properties": {
+        "source_file": {
+          "type": "string",
+          "minLength": 1
+        },
+        "media_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "application/pdf",
+            "text/plain",
+            "text/markdown",
+            null
+          ]
+        },
+        "parse_warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "blocks_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tables_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "成功解析的 Word 表 / 文本层 PDF 表数量"
+        },
+        "unparsed_assets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/UnparsedAsset"
+          }
+        }
+      }
+    },
+    "design_confirmation": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false,
+      "description": "用户确认解析结构的闸门状态；pending 时不得视为已完成完整审查闭环",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "confirmed"
+          ]
+        },
+        "confirmed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "ISO-8601；pending 时 null"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "limited_audit": {
+      "type": "boolean",
+      "default": false,
+      "description": "关键信息缺失或存在未补扫描表时为 true；此时禁止「全面审查」表述"
+    },
+    "coverage_note": {
+      "type": "string",
+      "description": "覆盖范围说明：已解析块、manual_input、unparsed_assets 摘要"
+    }
+  },
+  "$defs": {
+    "FieldStatus": {
+      "type": "string",
+      "enum": [
+        "stated",
+        "inferred",
+        "missing",
+        "contradictory"
+      ],
+      "description": "已明确 / 可合理提取 / 信息缺失 / 存在矛盾"
+    },
+    "ExtractedField": {
+      "type": "object",
+      "required": [
+        "text",
+        "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/FieldStatus"
+        },
+        "quote": {
+          "type": "string",
+          "description": "原文短摘；inferred/missing 可空"
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceLocator"
+          },
+          "description": "可选；尽量为 stated/inferred 字段附定位"
+        }
+      }
+    },
+    "ExtractedGroup": {
+      "type": "object",
+      "required": [
+        "name",
+        "treatment",
+        "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "treatment": {
+          "type": "string"
+        },
+        "n_claimed": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/FieldStatus"
+        },
+        "quote": {
+          "type": "string"
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceLocator"
+          }
+        }
+      }
+    },
+    "ExtractedControl": {
+      "type": "object",
+      "required": [
+        "type",
+        "present",
+        "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "blank",
+            "solvent",
+            "vehicle",
+            "positive",
+            "negative",
+            "co_exposure",
+            "recipient_preexposure",
+            "plasmid_preexposure",
+            "heat_inactivated",
+            "other"
+          ]
+        },
+        "label": {
+          "type": "string"
+        },
+        "present": {
+          "type": "boolean"
+        },
+        "excludes_alternative": {
+          "type": "string",
+          "description": "该对照旨在排除的替代解释"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "stated",
+            "inferred",
+            "missing",
+            "contradictory",
+            "recommended"
+          ]
+        },
+        "quote": {
+          "type": "string"
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceLocator"
+          }
+        }
+      }
+    },
+    "ClaimEvidenceRow": {
+      "type": "object",
+      "required": [
+        "claim",
+        "evidence_from_design",
+        "judgment",
+        "gap"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^CE[0-9]{2,}$"
+        },
+        "claim": {
+          "type": "string",
+          "description": "预期科学主张"
+        },
+        "evidence_from_design": {
+          "type": "string",
+          "description": "当前实验能提供的证据"
+        },
+        "judgment": {
+          "type": "string",
+          "description": "审查判断：可支持 / 部分支持 / 不能证明 …"
+        },
+        "gap": {
+          "type": "string",
+          "description": "证据缺口；无缺口可空字符串"
+        },
+        "aligned_goal_levels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "exploratory",
+              "treatment_effect",
+              "mechanism_causal",
+              "generalizability"
+            ]
+          },
+          "description": "该主张大致对应的证据强度层级"
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceLocator"
+          },
+          "description": "可选；主张/证据在原文中的锚点"
+        },
+        "hypothesis_id": {
+          "type": "string"
+        },
+        "planned_comparison": {
+          "type": "string"
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_needed": {
+          "type": "string"
+        },
+        "design_supports": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "partial",
+            "no"
+          ]
+        },
+        "fix_hint": {
+          "type": "string"
+        },
+        "row_kind": {
+          "type": "string",
+          "enum": [
+            "claim",
+            "scope_note"
+          ],
+          "default": "claim",
+          "description": "V0.1.3.3: claim=待检验主张；scope_note=研究限制/适用范围声明（不得当作支持或反对主张的证据）"
+        }
+      }
+    },
+    "ClarifyingQuestion": {
+      "type": "object",
+      "required": [
+        "id",
+        "question",
+        "blocks_dimensions",
+        "priority"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^Q[0-9]{2,}$"
+        },
+        "question": {
+          "type": "string"
+        },
+        "blocks_dimensions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "hypothesis",
+              "claim_evidence",
+              "controls",
+              "confounding",
+              "pseudoreplication",
+              "sample_size",
+              "endpoints",
+              "statistics",
+              "reproducibility"
+            ]
+          }
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "critical",
+            "high",
+            "normal"
+          ]
+        },
+        "context_quote": {
+          "type": "string"
+        },
+        "locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceLocator"
+          }
+        }
+      }
+    },
+    "EvidenceRef": {
+      "type": "object",
+      "required": [
+        "url",
+        "title",
+        "verified"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean",
+          "description": "必须为 true 才可作为「依据」展示；禁止未核实冒充"
+        },
+        "doi": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "仅核实后填写；禁止编造"
+        }
+      }
+    },
+    "Finding": {
+      "type": "object",
+      "required": [
+        "id",
+        "dimension",
+        "severity",
+        "category",
+        "title",
+        "locations",
+        "why_invalidates",
+        "fix",
+        "hard_error"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^F[0-9]{2,}$"
+        },
+        "dimension": {
+          "type": "string",
+          "enum": [
+            "hypothesis",
+            "claim_evidence",
+            "controls",
+            "confounding",
+            "pseudoreplication",
+            "sample_size",
+            "endpoints",
+            "statistics",
+            "reproducibility"
+          ]
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "blocker",
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "confirmed",
+            "needs_info",
+            "suggestion"
+          ],
+          "description": "已确认问题 / 待核实风险 / 建议性优化"
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "why_invalidates": {
+          "type": "string",
+          "description": "为何导致主张/结论站不住或需降级"
+        },
+        "fix": {
+          "type": "string"
+        },
+        "evidence_class": {
+          "type": "string",
+          "description": "如 实验设计方法学原则 / 领域惯例 / 用户方案内矛盾"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EvidenceRef"
+          }
+        },
+        "estimated_burden": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "unknown"
+          ],
+          "description": "预计增加的实验负担"
+        },
+        "hard_error": {
+          "type": "boolean",
+          "description": "是否属于硬性设计错误（相对 needs_info）"
+        },
+        "search_keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "related_group_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "related_claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "locations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/SourceLocator"
+          },
+          "description": "结构化原文定位（必填至少 1）；禁止仅用自由字符串"
+        },
+        "duplicate_of": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "若与另一 finding 疑似重复，指向其 id；保留本条原文证据"
+        },
+        "duplicate_group": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "重复归组 id，展示层可折叠"
+        },
+        "duplicate_reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "判定重复或相似的理由"
+        },
+        "duplicate_relation": {
+          "type": "string",
+          "enum": [
+            "none",
+            "true_duplicate",
+            "similar_different_mechanism"
+          ],
+          "default": "none",
+          "description": "none=无关系; true_duplicate=真重复; similar_different_mechanism=不同机制的相似问题"
+        },
+        "origin": {
+          "type": "string",
+          "enum": [
+            "llm_review",
+            "rule",
+            "partial_fallback"
+          ],
+          "description": "V0.1.3.3: finding 来源。llm_review=真实 LLM 审查；rule=确定性规则；partial_fallback=截断/失败后的回退或残缺结果（不得伪装为完整 LLM 审查）"
+        }
+      }
+    },
+    "GroupTableRow": {
+      "type": "object",
+      "required": [
+        "row_id",
+        "group_name",
+        "treatment",
+        "control_role",
+        "n_suggested",
+        "replicate_unit",
+        "notes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "row_id": {
+          "type": "string"
+        },
+        "group_name": {
+          "type": "string"
+        },
+        "treatment": {
+          "type": "string"
+        },
+        "control_role": {
+          "type": "string",
+          "enum": [
+            "experimental",
+            "blank",
+            "solvent",
+            "vehicle",
+            "positive",
+            "negative",
+            "co_exposure",
+            "recipient_preexposure",
+            "plasmid_preexposure",
+            "heat_inactivated",
+            "other"
+          ]
+        },
+        "n_suggested": {
+          "type": "string",
+          "description": "如 3 biological × 3 technical；不明则写待定+理由"
+        },
+        "replicate_unit": {
+          "type": "string",
+          "description": "统计单元：独立制备批次 / 独立生物个体 / 孔 …"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "GroupTable": {
+      "type": "object",
+      "required": [
+        "columns",
+        "rows",
+        "notes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/GroupTableRow"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ChangeNote": {
+      "type": "object",
+      "required": [
+        "id",
+        "summary",
+        "addresses_finding_ids"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^C[0-9]{2,}$"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "addresses_finding_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "burden": {
+          "type": "string",
+          "enum": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "unknown"
+          ]
+        },
+        "solves": {
+          "type": "string",
+          "description": "该动作解决的问题（对应 finding）"
+        },
+        "verification": {
+          "type": "string",
+          "description": "预期验证方式"
+        }
+      }
+    },
+    "LitHint": {
+      "type": "object",
+      "required": [
+        "query",
+        "purpose",
+        "verified"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "citation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "ReverseReviewStub": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "const": false
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_implemented",
+            "deferred_v0_2"
+          ]
+        },
+        "preview_strongest_claim": {
+          "type": "string",
+          "description": "可选预览句；完整逆向审查在 V0.2"
+        },
+        "note": {
+          "type": "string",
+          "description": "说明：假设结果符合预期时逻辑上最多可立的主张"
+        }
+      }
+    },
+    "SourceLocator": {
+      "type": "object",
+      "required": [
+        "source_file",
+        "original_text"
+      ],
+      "additionalProperties": false,
+      "description": "结构化原文定位。Word 以 paragraph_id/table_id/original_text 为主，page_number 通常 null；PDF 优先 page_number + original_text。",
+      "properties": {
+        "source_file": {
+          "type": "string",
+          "minLength": 1,
+          "description": "文件名或 storage_ref"
+        },
+        "media_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "application/pdf",
+            "text/plain",
+            "text/markdown",
+            null
+          ]
+        },
+        "page_number": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "description": "PDF 页码；Word 页码不稳定，通常 null"
+        },
+        "paragraph_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Word/规范化文本段落锚点"
+        },
+        "table_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "表格锚点（Word 表或可恢复文本层 PDF 表）"
+        },
+        "section_path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "如 2.3"
+        },
+        "original_text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "必填短摘"
+        },
+        "char_start": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "char_end": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "extracted",
+            "manual_input",
+            "ocr_best_effort"
+          ],
+          "default": "extracted"
+        }
+      }
+    },
+    "UnparsedAsset": {
+      "type": "object",
+      "required": [
+        "id",
+        "asset_type",
+        "reason"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "asset_type": {
+          "type": "string",
+          "enum": [
+            "image",
+            "flowchart",
+            "other",
+            "scanned_table"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "page_number": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "section_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "caption_hint": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

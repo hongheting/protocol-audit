@@ -1,0 +1,17 @@
+{
+  "trial": "trial3",
+  "mode": "Beta-spotcheck-real-LLM",
+  "code_version": "0.1.3.3",
+  "science_freeze": "V0.1.2",
+  "no_tuning": true,
+  "no_gold_injected": true,
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "source": "/workspace/product/protocol-audit/real-trials/trial3.docx",
+  "started_at": "2026-10-26T10:26:35+08:00",
+  "provider_requested": "glm",
+  "model_requested": "glm-4.6"
+}

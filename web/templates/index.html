@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}上传方案 · ProtocolAudit{% endblock %}
+{% block body %}
+<div class="card">
+  <h2>上传实验方案</h2>
+  <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+    <p><label>文件（.docx / .pdf / .md / .txt）<br>
+      <input type="file" name="file" accept=".docx,.pdf,.md,.txt,.markdown">
+    </label></p>
+    <p><label>或粘贴文本<br>
+      <textarea name="protocol_text" placeholder="粘贴 Markdown / 纯文本方案…"></textarea>
+    </label></p>
+    <p><label>研究目标层级 research_goal_level（默认 unspecified，不会自动升为机制因果）
+      <select name="research_goal_level">
+        <option value="unspecified" selected>unspecified（默认）</option>
+        <option value="exploratory">exploratory 探索</option>
+        <option value="treatment_effect">treatment_effect 处理效应</option>
+        <option value="mechanism_causal">mechanism_causal 机制因果（仅当你明确需要）</option>
+        <option value="generalizability">generalizability 外推</option>
+      </select>
+    </label></p>
+    <p><label>学科
+      <select name="discipline">
+        <option value="auto" selected>auto</option>
+        <option value="environmental">environmental</option>
+        <option value="biology">biology</option>
+        <option value="chemistry">chemistry</option>
+      </select>
+    </label></p>
+    <button type="submit">解析 → ParsePreview</button>
+  </form>
+</div>
+<div class="card muted">
+  <p>闭环：上传 → 确认解析 → Claim–Evidence + 核心审查 → 追问 → Plan A 报告。</p>
+  <p>扫描 PDF 表失败时会警告并允许手动粘贴表格（manual_input）。</p>
+</div>
+{% endblock %}

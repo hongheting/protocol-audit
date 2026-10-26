@@ -1,0 +1,18 @@
+{
+  "version": "0.1.3.3",
+  "beta_frozen_at": "2026-10-26T10:54:29+08:00",
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "file_sha256": {
+    "protocol_audit/llm_review.py": "57d249ecd2622bcaf3b1c1f78c00fc21d732a07cda948f7e486c6d07af710f7e",
+    "protocol_audit/llm_client.py": "5b30e7724348c43c76a23cebd97c034234bf24e8c620a9ad3115d00594005d05",
+    "protocol_audit/claim_evidence.py": "f6e8cb199518f4c74bb9ca2ae80085b19b514f12f1345cea3100cefcae1edba2",
+    "protocol_audit/report.py": "286eb209ecfc4bd0efbf118cf25864fd6978a6911a91897fe7a7601b0792ea33",
+    "web/app.py": "77235aa930c7bc67f1800c3d76b33a420b97d92f99e9f1dc93ac9553a6244369",
+    "audit-report.v0.2.schema.json": "a32653beb2f3f5287492dfbd829f0ef4a01ab835aa89da001f6b663cbcd3428d"
+  },
+  "reliability_hotfix": "expand-fallback + extract_json preamble; web beta hardening"
+}

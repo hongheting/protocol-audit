@@ -1,0 +1,926 @@
+{
+  "schema_version": "0.2.1",
+  "discipline_resolved": "environmental",
+  "boundary_note": "学科边界：本次按 environmental 规则审查（环境/生物/化学）。存在未解析资产（image），审查未声称覆盖这些资产。引擎：V0.1.3.1 结构规则/后处理（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 可靠性补丁；外推严重度与软去重收窄）+ LLM 解析+ LLM 科学审查。不得将模拟输出冒充实测。",
+  "research_goal_level": "unspecified",
+  "research_goal_level_source": "default",
+  "ingest_manifest": {
+    "source_file": "trial4.docx",
+    "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "parse_warnings": [],
+    "blocks_count": 364,
+    "tables_count": 12,
+    "unparsed_assets": [
+      {
+        "id": "U-img-1",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-2",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-3",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-4",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-5",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-6",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-7",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-8",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-9",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-10",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-11",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-12",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-13",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-14",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-15",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-16",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": "."
+      },
+      {
+        "id": "U-img-17",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-18",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-19",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-20",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-21",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-22",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-23",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-24",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-25",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": "图 321属水平物种对基因的贡献"
+      },
+      {
+        "id": "U-img-26",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-27",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-28",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-29",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-30",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      },
+      {
+        "id": "U-img-31",
+        "asset_type": "image",
+        "reason": "嵌入图片/绘图对象，V0.1 不解析位图内容",
+        "page_number": null,
+        "section_path": null,
+        "caption_hint": null
+      }
+    ]
+  },
+  "design_confirmation": {
+    "status": "confirmed",
+    "confirmed_at": "2026-10-25T22:33:59+08:00",
+    "notes": ""
+  },
+  "summary": {
+    "verdict": "awaiting_clarification",
+    "blocker_count": 1,
+    "high_count": 4,
+    "confirmed_count": 3,
+    "needs_info_count": 2,
+    "suggestion_count": 0,
+    "one_liner": "确认问题 3，待核实 2，建议 0；请先回答关键追问。",
+    "strongest_supported_claim": "在澄清与最小修改前，不宜把相关或短周期结果写成机制/工程定论。"
+  },
+  "identification": {
+    "research_question": {
+      "text": "藻菌颗粒污泥（MBGS）体系的构建及其脱氮效能，以及直接氨氧化菌强化脱氮机制与生物质回收利用",
+      "status": "missing",
+      "locations": []
+    },
+    "hypothesis": {
+      "text": "H1：不同初始条件（接种方式/藻种添加）构建的MBGS体系在脱氮效能、胞外聚合物特征及微生物菌群组成上存在差异，且能形成长期稳定运行的体系；H2：直接氨氧化菌能够强化MBGS体系脱氮效能",
+      "status": "inferred",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "通过培养不同初始条件下MBGS，明确胞外聚合物特征、微生物菌群组成的变化及相互之间的内在联系，构建得到长期稳定运行的相对较优的脱氮MBGS体系。",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-82"
+        }
+      ]
+    },
+    "independent_vars": [],
+    "dependent_vars": [
+      {
+        "text": "MLSS与MLVSS浓度",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "图 32a为污泥颗粒化过程中MLSS和MLVSS浓度以及MLVSS/MLSS比值的变化",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-104"
+          }
+        ]
+      },
+      {
+        "text": "SVI5与颗粒平均粒径",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "污泥沉降性如图 32b所示",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-105"
+          }
+        ]
+      },
+      {
+        "text": "颗粒强度（OD600）",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "取上清液在600 nm波长处测定吸光度OD600",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-110"
+          }
+        ]
+      },
+      {
+        "text": "表面热力学参数与XDLVO势垒",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "选取了第110 d三个反应器中的污泥样品，从热力学表面特性的角度解析其颗粒化过程",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-114"
+          }
+        ]
+      },
+      {
+        "text": "藻菌比例（C/N比）",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "并用方程 （31）估计微藻与细菌的比例",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-121"
+          }
+        ]
+      },
+      {
+        "text": "污染物去除效能（COD, NH4+-N, PO43--P, TIN）",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "图 36(a-c)为各反应器COD、NH4+-N、PO43--P的去除效率变化趋势",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-129"
+          }
+        ]
+      },
+      {
+        "text": "EPS含量与蛋白质二级结构",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过分析EPS的组成和浓度，研究MBGS形成和脱氮过程中EPS的生成情况",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-137"
+          }
+        ]
+      }
+    ],
+    "experimental_unit": {
+      "text": "SBR反应器",
+      "status": "missing",
+      "locations": []
+    },
+    "groups": [
+      {
+        "name": "R1",
+        "treatment": "原始污泥，不投加任何藻种",
+        "n_claimed": "1",
+        "status": "stated",
+        "quote": "原始污泥，不投加任何藻种",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R1为原始污泥，不投加任何藻种",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      },
+      {
+        "name": "R2",
+        "treatment": "投加小球藻",
+        "n_claimed": "1",
+        "status": "stated",
+        "quote": "投加小球藻",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      },
+      {
+        "name": "R3",
+        "treatment": "投加斜生四链藻",
+        "n_claimed": "1",
+        "status": "stated",
+        "quote": "投加斜生四链藻",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      }
+    ],
+    "controls": [
+      {
+        "type": "negative",
+        "label": "R1",
+        "present": true,
+        "excludes_alternative": "",
+        "status": "stated",
+        "quote": "R1",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "R1为原始污泥，不投加任何藻种",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-96"
+          }
+        ]
+      }
+    ],
+    "endpoints": [
+      {
+        "text": "MLSS与MLVSS浓度",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "图 32a为污泥颗粒化过程中MLSS和MLVSS浓度以及MLVSS/MLSS比值的变化",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-104"
+          }
+        ]
+      },
+      {
+        "text": "SVI5与颗粒平均粒径",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "污泥沉降性如图 32b所示",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-105"
+          }
+        ]
+      },
+      {
+        "text": "颗粒强度（OD600）",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "取上清液在600 nm波长处测定吸光度OD600",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-110"
+          }
+        ]
+      },
+      {
+        "text": "表面热力学参数与XDLVO势垒",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "选取了第110 d三个反应器中的污泥样品，从热力学表面特性的角度解析其颗粒化过程",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-114"
+          }
+        ]
+      },
+      {
+        "text": "藻菌比例（C/N比）",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "并用方程 （31）估计微藻与细菌的比例",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-121"
+          }
+        ]
+      },
+      {
+        "text": "污染物去除效能（COD, NH4+-N, PO43--P, TIN）",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "图 36(a-c)为各反应器COD、NH4+-N、PO43--P的去除效率变化趋势",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-129"
+          }
+        ]
+      },
+      {
+        "text": "EPS含量与蛋白质二级结构",
+        "status": "stated",
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过分析EPS的组成和浓度，研究MBGS形成和脱氮过程中EPS的生成情况",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-137"
+          }
+        ]
+      }
+    ],
+    "replication": {
+      "text": "分配单位=SBR反应器; 子样本=污泥混合液/颗粒污泥样品; 声称为独立单位=SBR反应器",
+      "status": "contradictory",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "MBGS培养在自制的SBR中进行",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-95"
+        },
+        {
+          "source_file": "trial4.docx",
+          "original_text": "每个样品至少测定6次取平均值",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-115"
+        }
+      ]
+    },
+    "statistics": {
+      "text": "unknown",
+      "status": "stated",
+      "locations": []
+    },
+    "claims": [
+      {
+        "text": "使用外源添加藻种的方式培养MBGS确实可以提高R2、R3中的藻菌比，但是其比例却不影响造粒过程中的势力壁垒大小和颗粒强度",
+        "status": "stated",
+        "locations": []
+      },
+      {
+        "text": "总体而言，R1和R3反应器所形成的MBGS要优于R2反应器所形成的MBGS",
+        "status": "stated",
+        "locations": []
+      }
+    ],
+    "gaps": [
+      "research_question",
+      "replication",
+      "experimental_unit"
+    ]
+  },
+  "claim_evidence_map": {
+    "rows": [
+      {
+        "id": "CE01",
+        "claim": "H1：原生藻种和投加斜生四链藻形成的MBGS优于投加小球藻",
+        "evidence_from_design": "比较：实验室短期/简化体系结果 → 工程或连续运行性能主张；指标：MLSS与MLVSS浓度；EPS含量与蛋白质二级结构",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "短周期/简化工况不足以支撑工程或连续运行主张",
+        "aligned_goal_levels": [
+          "generalizability"
+        ],
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过培养不同初始条件下MBGS，明确胞外聚合物特征、微生物菌群组成的变化及相互之间的内在联系，构建得到长期稳定运行的相对较优的脱氮MBGS体系。",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-82"
+          }
+        ],
+        "hypothesis_id": "H1",
+        "planned_comparison": "实验室短期/简化体系结果 → 工程或连续运行性能主张",
+        "endpoints": [
+          "MLSS与MLVSS浓度",
+          "EPS含量与蛋白质二级结构"
+        ],
+        "evidence_needed": "更长周期、相关工况或现场/中试验证；若涉及跨批次推广还需独立制备批次证据",
+        "design_supports": "no",
+        "fix_hint": "收紧为初步实验室证据；外推需补验证"
+      },
+      {
+        "id": "CE02",
+        "claim": "H2：直接氨氧化菌强化MBGS体系具有更高的脱氮能力并改变脱氮基因表达",
+        "evidence_from_design": "比较：组间比较（R1:原始污泥，不投加任何藻种；R2:投加小球藻；R3:投加斜生四链藻）；相关因素：接种方式/藻种添加[不投加任何藻种/投加小球藻/投加斜生四链藻]；指标：MLSS与MLVSS浓度；EPS含量与蛋白质二级结构",
+        "judgment": "当前设计不能支持该主张",
+        "gap": "「平行/重复」独立性未写清；处理组缺乏独立的实验单元重复，存在严重的伪重复风险",
+        "aligned_goal_levels": [
+          "treatment_effect",
+          "exploratory"
+        ],
+        "locations": [
+          {
+            "source_file": "trial4.docx",
+            "original_text": "通过构建直接氨氧化菌强化MBGS脱氮体系，探究该体系的脱氮能力、微生物菌群组成的变化以及部分脱氮基因相对表达量变化，得到对城市污水高效脱氮的MBGS体系，并探究体系的藻菌互作机理",
+            "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "paragraph_id": "p-83"
+          }
+        ],
+        "hypothesis_id": "H2",
+        "planned_comparison": "组间比较（R1:原始污泥，不投加任何藻种；R2:投加小球藻；R3:投加斜生四链藻）；相关因素：接种方式/藻种添加[不投加任何藻种/投加小球藻/投加斜生四链藻]",
+        "endpoints": [
+          "MLSS与MLVSS浓度",
+          "EPS含量与蛋白质二级结构"
+        ],
+        "evidence_needed": "与假设对齐的对照、独立实验单位与终点",
+        "design_supports": "no",
+        "fix_hint": "明确实验单位：独立批次/独立生物重复 vs 技术复孔；统计仅对独立单位推断。"
+      }
+    ],
+    "notes": [
+      "当前 research_goal_level=unspecified（未在证据不足时自动升为 mechanism_causal）。",
+      "Claim–Evidence 按假设分行；比较句由分组/因素/主张类型生成，禁止按 H 编号套领域模板。",
+      "实验单位重复 ≠ 独立制备批次；单批次不自动升为 confirmed blocker，跨批次推广须单独论证。"
+    ]
+  },
+  "clarifying_questions": [
+    {
+      "id": "Q01",
+      "question": "请确认：文中的「平行/重复」是独立实验批次（或独立生物重复），还是同一批样品的技术平行/复孔？",
+      "blocks_dimensions": [
+        "pseudoreplication",
+        "statistics"
+      ],
+      "priority": "critical",
+      "context_quote": "分配单位=SBR反应器; 子样本=污泥混合液/颗粒污泥样品; 声称为独立单位=SBR反应器",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "MBGS培养在自制的SBR中进行",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-95"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "dimension": "pseudoreplication",
+      "severity": "high",
+      "category": "needs_info",
+      "title": "「平行/重复」独立性未写清",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "MBGS培养在自制的SBR中进行",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-95"
+        }
+      ],
+      "why_invalidates": "若平行为同一实验单位的技术重复，直接作独立样本会低估变异。",
+      "fix": "明确实验单位：独立批次/独立生物重复 vs 技术复孔；统计仅对独立单位推断。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [
+        {
+          "url": "https://beta.nih.gov/funding/preparing-your-application/preparing-research-plan/rigorous-study-design-and-transparent-reporting",
+          "title": "NIH — Rigorous Study Design and Transparent Reporting",
+          "verified": true,
+          "doi": null
+        }
+      ],
+      "estimated_burden": "unknown",
+      "hard_error": false,
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F02",
+      "dimension": "pseudoreplication",
+      "severity": "blocker",
+      "category": "confirmed",
+      "title": "处理组缺乏独立的实验单元重复，存在严重的伪重复风险",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "R1为原始污泥，不投加任何藻种；R2反应器与R3反应器分别在第一个月每周投加一次小球藻/斜生四链藻",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-96"
+        }
+      ],
+      "why_invalidates": "每个处理组仅配置1个SBR反应器（n=1），独立实验单元为SBR反应器。从单一反应器内多次取样或多次测定产生的数据属于子样本或技术重复，不能作为评估处理效应的生物学重复。若将这些子样本数据作为独立样本进行差异统计，将构成伪重复，导致无法区分处理效应与反应器随机误差，任何组间差异的统计推断均无效。",
+      "fix": "每个处理组至少增加至3个独立的SBR反应器作为真正的生物学重复，统计检验应以反应器水平的聚合数据（如各反应器子样本的均值）进行。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [],
+      "estimated_burden": "unknown",
+      "hard_error": true,
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F03",
+      "dimension": "claim_evidence",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "组学相关性证据不足以支撑因果机制结论",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "通过构建直接氨氧化菌强化MBGS脱氮体系，探究该体系的脱氮能力、微生物菌群组成的变化以及部分脱氮基因相对表达量变化，得到对城市污水高效脱氮的MBGS体系，并探究体系的藻菌互作机理",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-83"
+        }
+      ],
+      "why_invalidates": "仅依赖脱氮基因相对表达量变化和微生物群落组成变化等组学观测数据，只能证明变量间的相关性或表型响应，缺乏对目标基因/途径的操纵性验证（如抑制、敲除或过表达），无法证实直接氨氧化菌与脱氮效能提升之间的因果驱动关系，将此相关性结论升格为因果“机理”不符合当前证据等级。",
+      "fix": "将结论从“互作机理”降级为“互作关联特征”或“潜在互作途径”；或补充因果操纵实验（如添加特定途径抑制剂或构建突变株）以验证直接氨氧化途径的因果贡献。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [],
+      "estimated_burden": "unknown",
+      "hard_error": true,
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F04",
+      "dimension": "statistics",
+      "severity": "high",
+      "category": "needs_info",
+      "title": "重复测量时间序列数据的统计分析方案缺失",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "第一阶段反应器运行时间为2023年11月15日至2024年3月6日，共计112天",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-104"
+        }
+      ],
+      "why_invalidates": "实验设计涉及同一反应器在多个时间点（D0至D112）的重复测量，此类纵向数据具有时间自相关性。当前统计计划未知，若采用忽略时间序列相关结构的常规方差分析，将低估标准误，大幅增加第一类错误率。",
+      "fix": "明确补充针对纵向重复测量数据的统计分析方法，建议采用重复测量方差分析或线性混合效应模型，将反应器作为随机效应以正确处理时间自相关。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [],
+      "estimated_burden": "unknown",
+      "hard_error": false,
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F05",
+      "dimension": "reproducibility",
+      "severity": "high",
+      "category": "confirmed",
+      "title": "实验室微体积反应器结论直接外推至工程尺度存在风险",
+      "locations": [
+        {
+          "source_file": "trial4.docx",
+          "original_text": "得到对城市污水高效脱氮的MBGS体系",
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "paragraph_id": "p-83"
+        }
+      ],
+      "why_invalidates": "实验在2L自制SBR（p-95）中进行，该微体积体系的光衰减、水力剪切及传质特性受器壁效应影响极大，与城市污水处理的工程尺度环境差异显著。将此微型反应器结果直接声明为适用于“城市污水”的体系，缺乏尺度放大验证，存在工程外推风险。",
+      "fix": "建议将结论限定为“在实验室尺度下，为城市污水脱氮提供了具有潜力的MBGS体系参考”，避免过度外推；或在条件允许时补充中试规模数据。",
+      "evidence_class": "实验设计方法学原则",
+      "evidence_refs": [],
+      "estimated_burden": "unknown",
+      "hard_error": true,
+      "duplicate_relation": "none"
+    }
+  ],
+  "optimizer": {
+    "plan_id": "A",
+    "title": "最小必要修改",
+    "rationale": "只修改会直接影响主要结论可靠性的关键证据缺口（分配单位重复、对照可分性、因素解耦、空间位置、取样衡算、主张边界等），最大程度保留原方案；表述跟随本方案的分配单位与 findings，不套用无关领域模具；不以换模型替代设计重复。每个 confirmed blocker 必须有对应动作，否则标记 optimizer_incomplete。",
+    "revised_group_table": {
+      "columns": [
+        "group_name",
+        "treatment",
+        "control_role",
+        "n_suggested",
+        "replicate_unit",
+        "notes"
+      ],
+      "rows": [
+        {
+          "row_id": "G01",
+          "group_name": "R1",
+          "treatment": "原始污泥，不投加任何藻种",
+          "control_role": "negative",
+          "n_suggested": "≥3 独立SBR反应器（技术复孔不计入 n）",
+          "replicate_unit": "SBR反应器（技术复孔另计）",
+          "notes": "原始污泥，不投加任何藻种"
+        },
+        {
+          "row_id": "G02",
+          "group_name": "R2",
+          "treatment": "投加小球藻",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立SBR反应器（技术复孔不计入 n）",
+          "replicate_unit": "SBR反应器（技术复孔另计）",
+          "notes": "投加小球藻"
+        },
+        {
+          "row_id": "G03",
+          "group_name": "R3",
+          "treatment": "投加斜生四链藻",
+          "control_role": "experimental",
+          "n_suggested": "≥3 独立SBR反应器（技术复孔不计入 n）",
+          "replicate_unit": "SBR反应器（技术复孔另计）",
+          "notes": "投加斜生四链藻"
+        }
+      ],
+      "notes": [
+        "Plan A 优先修改主张边界，不机械堆叠新实验组。"
+      ]
+    },
+    "change_notes": [
+      {
+        "id": "C01",
+        "summary": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+        "addresses_finding_ids": [
+          "F03",
+          "F05"
+        ],
+        "burden": "none"
+      },
+      {
+        "id": "C02",
+        "summary": "显式定义实验单位（当前解析：SBR反应器）；统计仅对独立重复推断",
+        "addresses_finding_ids": [
+          "F01"
+        ],
+        "burden": "low"
+      },
+      {
+        "id": "C03",
+        "summary": "每个处理组至少增加至3个独立的SBR反应器作为真正的生物学重复，统计检验应以反应器水平的聚合数据（如各反应器子样本的均值）进行。",
+        "addresses_finding_ids": [
+          "F02"
+        ],
+        "burden": "high",
+        "solves": "每个处理组仅配置1个SBR反应器（n=1），独立实验单元为SBR反应器。从单一反应器内多次取样或多次测定产生的数据属于子样本或技术重复，不能作为评估处理效应的生物学重复。若将这些子样本数据作为独立样本进行差异统计，将构成伪重复，导致无法区分处理效应与反应器随机误差，任何组间差异的统计推断均无效。",
+        "verification": "修改后复审：该 blocker 对应的混杂/单位/终点问题不再阻断主要结论；或主张已显式降级且与证据匹配"
+      }
+    ],
+    "blocker_action_map": [
+      {
+        "finding_id": "F02",
+        "action": "每个处理组至少增加至3个独立的SBR反应器作为真正的生物学重复，统计检验应以反应器水平的聚合数据（如各反应器子样本的均值）进行。",
+        "problem": "每个处理组仅配置1个SBR反应器（n=1），独立实验单元为SBR反应器。从单一反应器内多次取样或多次测定产生的数据属于子样本或技术重复，不能作为评估处理效应的生物学重复。若将这些子样本数据作为独立样本进行差异统计，将构成伪重复，导致无法区分处理效应与反应器随机误差，任何组间差异的统计推断均无效。",
+        "verification": "修改后复审：该 blocker 对应的混杂/单位/终点问题不再阻断主要结论；或主张已显式降级且与证据匹配",
+        "change_note_id": "C03",
+        "covered": true,
+        "uncovered_reason": null
+      }
+    ],
+    "optimizer_incomplete": false,
+    "completeness_note": "全部 confirmed blocker 已建立 finding→action 映射。"
+  },
+  "group_table": {
+    "columns": [
+      "group_name",
+      "treatment",
+      "control_role",
+      "n_suggested",
+      "replicate_unit",
+      "notes"
+    ],
+    "rows": [
+      {
+        "row_id": "G01",
+        "group_name": "R1",
+        "treatment": "原始污泥，不投加任何藻种",
+        "control_role": "negative",
+        "n_suggested": "1",
+        "replicate_unit": "分配单位=SBR反应器；子样本=污泥混合液/颗粒污泥样品",
+        "notes": "原始污泥，不投加任何藻种"
+      },
+      {
+        "row_id": "G02",
+        "group_name": "R2",
+        "treatment": "投加小球藻",
+        "control_role": "experimental",
+        "n_suggested": "1",
+        "replicate_unit": "分配单位=SBR反应器；子样本=污泥混合液/颗粒污泥样品",
+        "notes": "投加小球藻"
+      },
+      {
+        "row_id": "G03",
+        "group_name": "R3",
+        "treatment": "投加斜生四链藻",
+        "control_role": "experimental",
+        "n_suggested": "1",
+        "replicate_unit": "分配单位=SBR反应器；子样本=污泥混合液/颗粒污泥样品",
+        "notes": "投加斜生四链藻"
+      }
+    ],
+    "notes": []
+  },
+  "literature_hints": [],
+  "reverse_review": {
+    "enabled": false,
+    "status": "deferred_v0_2",
+    "preview_strongest_claim": "在澄清与最小修改前，不宜把相关或短周期结果写成机制/工程定论。",
+    "note": "完整逆向审查延后到 V0.2；此处仅提供 strongest_supported_claim 预览。"
+  },
+  "privacy_applied": {
+    "public_literature_search_used": false,
+    "note": "V0.1 骨架默认不触发公开文献检索"
+  },
+  "limited_audit": false,
+  "coverage_note": "已解析块 364；手动补充 0；未解析资产 31。"
+}

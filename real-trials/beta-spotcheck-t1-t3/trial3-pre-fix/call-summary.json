@@ -1,0 +1,252 @@
+{
+  "trial": "trial3",
+  "mode": "Beta-spotcheck-real-LLM",
+  "code_version": "0.1.3.3",
+  "science_freeze": "V0.1.2",
+  "no_tuning": true,
+  "no_gold_injected": true,
+  "prompt_hashes": {
+    "design_extract": "241f78e5f12e53bb7da427dfe40722ab4ad928d53f2b28c45c466df7fdd4713b",
+    "scientific_review": "26285e01f779200741af462d998367bab72158191fb533499f53a468bfd64705"
+  },
+  "prompt_match_v012_freeze": true,
+  "source": "/workspace/product/protocol-audit/real-trials/trial3.docx",
+  "started_at": "2026-10-26T10:26:35+08:00",
+  "provider_requested": "glm",
+  "model_requested": "glm-4.6",
+  "finished_at": "2026-10-26T10:40:48+08:00",
+  "elapsed_s": 853.4,
+  "schema_ok": true,
+  "schema_errors": [],
+  "boundary_note": "学科边界：本次按 environmental 规则审查（环境/生物/化学）。科学审查 LLM 调用失败或截断后仍无法解析：本报告 findings 以规则为主，禁止伪装为完整 LLM 审查。findings 来源统计：llm_review=0，rule=5，partial_fallback=0。引擎：V0.1.3.3 结构规则/后处理 + 方法优先审查窗 + 审查截断扩容重试（科学 Prompt 仍冻结于 V0.1.2；含 0.1.2.1 解析可靠性与 0.1.3.3 审查可靠性；外推严重度与软去重收窄；CE 限制句 scope_note；提取/窗口策略为独立技术版本）+ LLM 解析（解析可用 LLM，科学审查未完整成功）。不得将模拟输出冒充实测。",
+  "coverage_note": "已解析块 42；手动补充 0；未解析资产 0。 review_coverage[0.1.3.2-review-windows]: 全文 2994 字，送审 2994 字/1 窗（单窗上限 14000）。方法段已检出且已入窗。可声称覆盖本次送审窗口（非未解析资产）。短文不截断。",
+  "summary": {
+    "verdict": "needs_redesign",
+    "blocker_count": 1,
+    "high_count": 2,
+    "confirmed_count": 3,
+    "needs_info_count": 2,
+    "suggestion_count": 0,
+    "one_liner": "确认问题 3，待核实 2，建议 0；见 Plan A 最小修改。",
+    "strongest_supported_claim": "在澄清与最小修改前，不宜把相关或短周期结果写成机制/工程定论。"
+  },
+  "findings_brief": [
+    {
+      "id": "F01",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "重复测量与破坏性检测冲突",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F02",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "high",
+      "title": "相关性/表征共变不足以支持主要机制主张",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F03",
+      "origin": "rule",
+      "category": "confirmed",
+      "severity": "blocker",
+      "title": "由短周期/简化工况试验外推长期或工程依据过度",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F04",
+      "origin": "rule",
+      "category": "needs_info",
+      "severity": "medium",
+      "title": "以代表单元指导整组补水/处理时，组内独立性待核实",
+      "duplicate_relation": "none"
+    },
+    {
+      "id": "F05",
+      "origin": "rule",
+      "category": "needs_info",
+      "severity": "medium",
+      "title": "材料/菌剂为单批次制备，跨批次推广边界待明确",
+      "duplicate_relation": "none"
+    }
+  ],
+  "origin_counts": {
+    "rule": 5
+  },
+  "rules_only_count": 5,
+  "llm_incremental_titles": [],
+  "facade_risk_flag": false,
+  "review_hint": "partial_or_failed_declared",
+  "ce_brief": [
+    {
+      "id": "CE01",
+      "hypothesis_id": "H1",
+      "row_kind": "claim",
+      "design_supports": "partial",
+      "claim": "H1：接种菌剂后玉米生物量提高，干旱对生长的抑制减轻"
+    },
+    {
+      "id": "CE02",
+      "hypothesis_id": "H2",
+      "row_kind": "claim",
+      "design_supports": "no",
+      "claim": "H2：接种处理下根际EPS增加、土壤团聚体稳定性提高，进而促进玉米生长"
+    },
+    {
+      "id": "CE03",
+      "hypothesis_id": "H3",
+      "row_kind": "claim",
+      "design_supports": "partial",
+      "claim": "H3：菌剂在两类土壤中均表现促生效果"
+    },
+    {
+      "id": "CE04",
+      "hypothesis_id": "EXTRAP",
+      "row_kind": "claim",
+      "design_supports": "no",
+      "claim": "该菌剂可用于退化旱地土壤改良的推广应用"
+    }
+  ],
+  "optimizer": {
+    "optimizer_incomplete": false,
+    "blocker_action_map": [
+      {
+        "finding_id": "F03",
+        "action": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据",
+        "problem": "短周期、批式、盆栽或简化水质的实验室结果不能直接作为长期工程/田间推广/连续运行的主要依据。",
+        "verification": "复审该 blocker 是否仍阻断主要结论",
+        "change_note_id": "C02",
+        "covered": true,
+        "uncovered_reason": null
+      }
+    ],
+    "change_notes": [
+      {
+        "id": "C01",
+        "addresses_finding_ids": [
+          "F01"
+        ],
+        "summary": "停止破坏性测定后放回：改为各时间点独立牺牲样品，或仅终点做破坏性测定"
+      },
+      {
+        "id": "C02",
+        "addresses_finding_ids": [
+          "F02",
+          "F03"
+        ],
+        "summary": "收紧主张：相关/表征共变≠主要机制；短周期或简化工况结果不作为长期/工程主要依据"
+      },
+      {
+        "id": "C03",
+        "addresses_finding_ids": [
+          "F04"
+        ],
+        "summary": "显式定义实验单位（当前解析：盆）；统计仅对独立重复推断"
+      }
+    ]
+  },
+  "clarifying_questions_n": 2,
+  "calls": {
+    "n_calls": 3,
+    "n_ok": 3,
+    "n_fail": 0,
+    "n_expand_retry": 1,
+    "fail_errors": [],
+    "latency_ms_sum": 853313,
+    "purposes": [
+      "design_extract",
+      "scientific_review",
+      "scientific_review_expand_retry"
+    ],
+    "models": [
+      "glm-4.6"
+    ],
+    "finish_reasons": [
+      "stop",
+      "stop",
+      "stop"
+    ],
+    "tokens": {
+      "prompt": 12491,
+      "completion": 19821,
+      "reasoning": 12869,
+      "total": 32312
+    },
+    "calls": [
+      {
+        "ts": "2026-10-26T10:26:35+08:00",
+        "purpose": "design_extract",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 178744,
+        "prompt_tokens": 3149,
+        "completion_tokens": 6864,
+        "finish_reason": "stop",
+        "max_tokens": 8192,
+        "error": null
+      },
+      {
+        "ts": "2026-10-26T10:29:34+08:00",
+        "purpose": "scientific_review",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 209497,
+        "prompt_tokens": 4671,
+        "completion_tokens": 6612,
+        "finish_reason": "stop",
+        "max_tokens": 8192,
+        "error": null
+      },
+      {
+        "ts": "2026-10-26T10:33:03+08:00",
+        "purpose": "scientific_review_expand_retry",
+        "ok": true,
+        "model": "glm-4.6",
+        "latency_ms": 465072,
+        "prompt_tokens": 4671,
+        "completion_tokens": 6345,
+        "finish_reason": "stop",
+        "max_tokens": 16384,
+        "error": null
+      }
+    ]
+  },
+  "review_coverage": {
+    "tech_version": "0.1.3.2-review-windows",
+    "total_chars": 2994,
+    "chars_sent": 2994,
+    "window_count": 1,
+    "window_budget_chars": 14000,
+    "max_windows": 3,
+    "methods_detected": true,
+    "methods_included": true,
+    "methods_spans": [
+      {
+        "start": 939,
+        "end": 2994,
+        "label": "4 实验设计与分组"
+      }
+    ],
+    "truncated": false,
+    "omitted_char_count": 0,
+    "omitted_ranges": [],
+    "comprehensive": true,
+    "notes": [
+      "短文不截断"
+    ],
+    "windows": [
+      {
+        "window_id": "W01",
+        "start": 0,
+        "end": 2994,
+        "char_len": 2994,
+        "priority": 0,
+        "reason": "短文全文入窗（未截断）",
+        "text_sha16": "ea51722b386e1060",
+        "preview": "植物促生菌剂对干旱胁迫下玉米生长及土壤团聚体稳定性的影响\n\n盆栽试验方案（ProtocolAudit Trial 3 测试稿）\n\n研究类型：温室盆栽控制实验；研究对象：玉米幼苗、植物促生细菌及两类土壤；试验周期：28 d；方案版本：1.0。\n\n1 研究背景与目标\n\n干旱胁迫会降低玉米幼苗的生长和养分吸收能力。植物促生细菌可能通过改善根系生长、改变根际微环境及促进土壤团聚体形成，增强植物对水分胁迫的耐受性。本研究采用一株具有胞外聚合物（EPS）产生能力的 Bacillus ve"
+      }
+    ]
+  }
+}

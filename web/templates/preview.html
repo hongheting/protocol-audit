@@ -62,7 +62,7 @@
       <td>{{ b.block_id }}</td>
       <td>{{ b.block_type }}</td>
       <td>{{ b.source or 'extracted' }}</td>
-      <td>{{ (b.text or '')[:160] %}{% if (b.text or '')|length > 160 %}…{% endif %}</td>
+      <td>{{ (b.text or '')[:160] }}{% if (b.text or '')|length > 160 %}…{% endif %}</td>
     </tr>
     {% endfor %}
   </table>

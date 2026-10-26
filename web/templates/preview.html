@@ -37,7 +37,7 @@
 
 <div class="card">
   <h3>提取的实验设计（可编辑 JSON，确认后作为 design_override）</h3>
-  <form action="{{ url_for('audit', job_id=job_id) }}" method="post">
+  <form action="{{ url_for('audit', job_id=job_id) }}" method="post" data-long-wait="正在运行科学审查（含 LLM），通常约 2–5 分钟。页面暂时无跳转是正常的，请勿关闭或重复点击。">
     <textarea name="design_override_json" rows="18">{{ design_json }}</textarea>
     <p><label>确认时的目标层级
       <select name="research_goal_level">
@@ -49,6 +49,7 @@
     </label></p>
     <p><label>确认备注<br><input type="text" name="confirmation_notes" placeholder="例如：已核对分组与重复"></label></p>
     <button type="submit">确认解析并运行审查</button>
+    <p class="muted" style="margin-top:0.6rem">审查比解析更久，完成后会进入报告页。</p>
   </form>
 </div>
 

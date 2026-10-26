@@ -7,13 +7,13 @@
 # =============================================================================
 # ProtocolAudit Beta — Flask UI
 # Build from protocol-audit root:
-#   docker build --platform linux/amd64 -f web/Dockerfile -t protocol-audit-beta:0.1.3.3 .
+#   docker build --platform linux/amd64 -f web/Dockerfile -t protocol-audit-beta:0.1.3.3-ui1 .
 FROM python:3.12-slim-bookworm
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
-    PROTOCOL_AUDIT_VERSION=0.1.3.3 \
+    PROTOCOL_AUDIT_VERSION=0.1.3.3-ui1 \
     PORT=8080
 
 WORKDIR /app

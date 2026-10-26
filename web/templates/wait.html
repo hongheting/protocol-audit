@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}{% if phase == 'audit' %}审查进行中{% else %}解析进行中{% endif %} · ProtocolAudit{% endblock %}
+{% block body %}
+<div class="card warn" id="wait-card" role="status" aria-live="polite">
+  <h2 id="wait-title">{% if phase == 'audit' %}科学审查进行中{% else %}方案解析进行中{% endif %}</h2>
+  <p id="wait-msg">服务端 LLM 在后台运行。请保持本页打开；通常约 1–5 分钟。请勿关闭或重复提交。</p>
+  <p class="muted">任务 <code>{{ job_id }}</code> · 阶段 <code>{{ phase }}</code></p>
+  <p id="wait-elapsed" class="muted"></p>
+</div>
+<div class="card err" id="wait-error" style="display:none">
+  <h3>失败</h3>
+  <pre id="wait-error-text"></pre>
+  <p>
+    <a class="btn" href="{{ url_for('index') }}">返回首页</a>
+    {% if phase == 'audit' %}
+    <a class="btn secondary" id="back-preview" href="{{ url_for('preview', job_id=job_id) }}">回预览</a>
+    {% endif %}
+  </p>
+</div>
+<script>
+(function () {
+  var jobId = {{ job_id|tojson }};
+  var phase = {{ phase|tojson }};
+  var statusUrl = {{ url_for('job_status', job_id=job_id)|tojson }} + '?phase=' + encodeURIComponent(phase);
+  var started = Date.now();
+  var elapsedEl = document.getElementById('wait-elapsed');
+  var errBox = document.getElementById('wait-error');
+  var errText = document.getElementById('wait-error-text');
+  var waitCard = document.getElementById('wait-card');
+  var timer = null;
+
+  function tickElapsed() {
+    if (!elapsedEl) return;
+    var s = Math.floor((Date.now() - started) / 1000);
+    elapsedEl.textContent = '已等待 ' + s + ' 秒…';
+  }
+
+  function poll() {
+    fetch(statusUrl, { credentials: 'same-origin', headers: { 'Accept': 'application/json' } })
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+      .then(function (res) {
+        var j = res.body || {};
+        if (j.status === 'done' && j.redirect) {
+          window.location.href = j.redirect;
+          return;
+        }
+        if (j.status === 'error') {
+          if (waitCard) waitCard.style.display = 'none';
+          if (errBox) errBox.style.display = 'block';
+          if (errText) errText.textContent = j.error || '未知错误';
+          if (timer) clearInterval(timer);
+          return;
+        }
+        // running / unknown — keep polling
+      })
+      .catch(function () { /* network blip; next tick retries */ });
+  }
+
+  tickElapsed();
+  poll();
+  timer = setInterval(function () {
+    tickElapsed();
+    poll();
+  }, 2000);
+})();
+</script>
+{% endblock %}

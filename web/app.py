@@ -1,4 +1,4 @@
-"""ProtocolAudit V0.1.3.3-async1 Beta — Flask UI (async upload/parse + audit).
+"""ProtocolAudit V0.1.3.3-async2 Beta — Flask UI (async upload/parse + audit).
 
 Beta hardening (release blockers only):
 - upload extension allowlist + size cap
@@ -50,7 +50,7 @@ ASYNC_ENABLED = os.environ.get("PROTOCOL_AUDIT_ASYNC", "1").strip().lower() not 
     "no",
     "off",
 )
-APP_VERSION = "0.1.3.3-async1"
+APP_VERSION = "0.1.3.3-async2"
 
 app = Flask(__name__)
 _secret = os.environ.get("PROTOCOL_AUDIT_SECRET", "").strip()

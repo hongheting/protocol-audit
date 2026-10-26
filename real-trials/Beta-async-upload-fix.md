@@ -1,4 +1,4 @@
-# Beta async upload/audit fix (0.1.3.3-async1)
+# Beta async upload/audit fix (0.1.3.3-async2)
 
 **日期：** 2026-10-26（Asia/Shanghai）  
 **动机：** 线上 `POST /upload` 同步跑 LLM，约 4 分钟后 ACA/网关返回 **504**（`stream timeout`）。UX 提示（ui1）不足以避免超时。
@@ -10,14 +10,15 @@
 - `GET /jobs/<id>/status?phase=`：JSON（running/done/error）；done 含 redirect
 - 状态文件原子写（`.tmp` + `os.replace`）；同 job 用锁避免重复 worker
 - `PROTOCOL_AUDIT_ASYNC=0` 可回退同步（默认异步开）
-- 版本：`0.1.3.3-async1`（`/health` + base 标题）
+- 版本：`0.1.3.3-async2`（`/health` + base 标题）
+- 热修：`preview.html` 摄取块摘要表达式改为 `{{ (b.text or '')[:160] }}`（原先 `{{` 配 `%}`，解析成功后 `/preview` 500）
 - **未改** 科学 Prompt / 规则引擎
 
 ## 验证
-1. `/health` → version `0.1.3.3-async1`，`async: true`
+1. `/health` → version `0.1.3.3-async2`，`async: true`
 2. Basic 登录后上传小文件 → **秒级**进等待页（非卡在 `/upload`）
 3. 等待页轮询至 preview；确认审查同理进 wait→report
 4. 若失败：等待页显示 error + 回首页/预览
 
 ## 发版
-镜像建议 tag：`protocol-audit-beta:0.1.3.3-async1`；Jassy 滚动 `ca-protocol-audit`。
+镜像建议 tag：`protocol-audit-beta:0.1.3.3-async2`；Jassy 滚动 `ca-protocol-audit`。
